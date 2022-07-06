@@ -1,29 +1,49 @@
 <odoo>
+
+    <record id="axdoo_field_notebook.field_notebook_parcel_view_tree" model="ir.ui.view">
+        <field name="name">field.notebook.parcel.view.tree</field>
+        <field name="model">field.notebook.parcel</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="axdoo_field_notebook.field_notebook_parcel_view_filter" model="ir.ui.view">
+        <field name="name">fha.subvention.view.filter</field>
+        <field name="model">field.notebook.parcel</field>
+        <field name="priority" eval="1"/>
+        <field name="arch" type="xml">
+            <search string="Search Parcel">
+                <group expand="0" string="Group By">
+                    <filter string="Name" name="name" context="{'group_by': 'name'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="axdoo_field_notebook.field_notebook_parcel_action"
+            model="ir.actions.act_window">
+        <field name="name">Parcel</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">field.notebook.parcel</field>
+        <field name="view_mode">tree,form,kanban</field>
+        <field name="view_id"
+               ref="field_notebook_parcel_view_tree"/>
+        <field name="search_view_id"
+               ref="field_notebook_parcel_view_filter"/>
+    </record>
+
     <menuitem name="Field Notebook"
               id="axdoo_field_notebook.axdoo_field_notebook_menu"
               sequence="1"
-              web_icon="axdoo_field_notebook,static/description/icon.png"
-              groups="axdoo_field_notebook.group_fha_user_subvention"/>
+              web_icon="axdoo_field_notebook,static/description/icon.png"/>
 
-<!--    <menuitem id="fha_subvention.fha_subvention_menu_subvention"-->
-<!--              name="Subventions"-->
-<!--              parent="fha_subvention_menu"-->
-<!--              action="fha_subvention_action"-->
-<!--              sequence="2"-->
-<!--              groups="fha_subvention.group_fha_user_subvention"/>-->
-
-<!--    <menuitem id="fha_subvention.fha_subvention_menu_timesheet"-->
-<!--              name="Timesheet"-->
-<!--              parent="fha_subvention_menu"-->
-<!--              action="fha_timesheet_action"-->
-<!--              sequence="2"-->
-<!--              groups="fha_subvention.group_fha_user_subvention"/>-->
-
-<!--    <menuitem id="fha_subvention.fha_subvention_menu_report"-->
-<!--              name="Report"-->
-<!--              parent="fha_subvention_menu"-->
-<!--              action="action_account_analytic_line_report_wizard"-->
-<!--              sequence="2"-->
-<!--              groups="fha_subvention.group_fha_user_subvention"/>-->
+    <menuitem id="axdoo_field_notebook.field_notebook_parcel_action"
+              name="Parcel"
+              parent="axdoo_field_notebook_menu"
+              action="field_notebook_parcel_action"
+              sequence="2"/>
 
 </odoo>

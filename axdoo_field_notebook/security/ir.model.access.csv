@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_field_notebook_parcel,access_field_notebook_parcel,model_field_notebook_parcel,base.group_erp_manager,1,1,1,1
+access_field_notebook_parcel_special,access_field_notebook_parcel_special,model_field_notebook_parcel,axdoo_field_notebook.group_axdoo_field_notebook,1,1,1,1
