@@ -11,6 +11,7 @@
     'author': 'Xtendoo',
     'depends': [
         'base',
+        'mail',
     ],
     'data': [
         'security/security.xml',
