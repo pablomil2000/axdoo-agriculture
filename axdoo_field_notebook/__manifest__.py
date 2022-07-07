@@ -16,6 +16,8 @@
     'data': [
         'security/security.xml',
         'security/ir.model.access.csv',
+        'views/field_notebook_parcel_view.xml',
+        'views/field_notebook_exploitation_view.xml',
         'views/axdoo_field_notebook_view.xml',
     ],
     'application': True,
