@@ -28,4 +28,22 @@
               action="field_notebook_crop_action"
               sequence="2"/>
 
+    <menuitem id="axdoo_field_notebook.field_notebook_variety_action"
+              name="Variety"
+              parent="axdoo_field_notebook.field_notebook_configuration_action"
+              action="field_notebook_variety_action"
+              sequence="3"/>
+
+    <menuitem id="axdoo_field_notebook.field_notebook_plot_use_action"
+              name="Plot use"
+              parent="axdoo_field_notebook.field_notebook_configuration_action"
+              action="field_notebook_plot_use_action"
+              sequence="4"/>
+
+    <menuitem id="axdoo_field_notebook.field_notebook_vulnerable_zone_action"
+              name="Vulnerable zone"
+              parent="axdoo_field_notebook.field_notebook_configuration_action"
+              action="field_notebook_vulnerable_zone_action"
+              sequence="5"/>
+
 </odoo>

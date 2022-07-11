@@ -2,9 +2,9 @@
      License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).-->
 <odoo>
 
-    <record id="field_notebook_crop_view_form" model="ir.ui.view">
-        <field name="name">field.notebook.crop.form</field>
-        <field name="model">field.notebook.crop</field>
+    <record id="field_notebook_vulnerable_zone_view_form" model="ir.ui.view">
+        <field name="name">field.notebook.vulnerable.zone.form</field>
+        <field name="model">field.notebook.vulnerable.zone</field>
         <field name="arch" type="xml">
             <form>
                 <sheet>
@@ -23,9 +23,9 @@
         </field>
     </record>
 
-    <record id="axdoo_field_notebook.field_notebook_crop_view_tree" model="ir.ui.view">
-        <field name="name">field.notebook.crop.view.tree</field>
-        <field name="model">field.notebook.crop</field>
+    <record id="axdoo_field_notebook.field_notebook_vulnerable_zone_view_tree" model="ir.ui.view">
+        <field name="name">field.notebook.vulnerable.zone.view.tree</field>
+        <field name="model">field.notebook.vulnerable.zone</field>
         <field name="arch" type="xml">
             <tree>
                 <field name="name"/>
@@ -33,12 +33,12 @@
         </field>
     </record>
 
-    <record id="axdoo_field_notebook.field_notebook_crop_view_filter" model="ir.ui.view">
+    <record id="axdoo_field_notebook.field_notebook_vulnerable_zone_view_filter" model="ir.ui.view">
         <field name="name">fha.subvention.view.filter</field>
-        <field name="model">field.notebook.crop</field>
+        <field name="model">field.notebook.vulnerable.zone</field>
         <field name="priority" eval="1"/>
         <field name="arch" type="xml">
-            <search string="Search Parcel">
+            <search string="Search vulnerable zone">
                 <group expand="0" string="Group By">
                     <filter string="Name" name="name" context="{'group_by': 'name'}"/>
                 </group>
@@ -46,16 +46,16 @@
         </field>
     </record>
 
-    <record id="field_notebook_crop_action"
+    <record id="field_notebook_vulnerable_zone_action"
             model="ir.actions.act_window">
-        <field name="name">Crop</field>
+        <field name="name">Vulnerable Zone</field>
         <field name="type">ir.actions.act_window</field>
-        <field name="res_model">field.notebook.crop</field>
+        <field name="res_model">field.notebook.vulnerable.zone</field>
         <field name="view_mode">tree,form,kanban</field>
         <field name="view_id"
-               ref="field_notebook_crop_view_tree"/>
+               ref="field_notebook_vulnerable_zone_view_tree"/>
         <field name="search_view_id"
-               ref="field_notebook_crop_view_filter"/>
+               ref="field_notebook_vulnerable_zone_view_filter"/>
     </record>
 
 </odoo>
