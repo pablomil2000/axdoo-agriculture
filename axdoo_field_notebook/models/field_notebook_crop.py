@@ -4,7 +4,7 @@
 from odoo import fields, models
 
 
-class Crop(models.Model):
+class FieldNotebookCrop(models.Model):
     _name = "field.notebook.crop"
     _inherit = ["mail.thread", "mail.activity.mixin"]
     _description = "Field Notebook Crop"

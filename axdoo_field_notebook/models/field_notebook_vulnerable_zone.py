@@ -4,7 +4,7 @@
 from odoo import fields, models
 
 
-class Crop(models.Model):
+class FieldNotebookVulnerableZone(models.Model):
     _name = "field.notebook.vulnerable.zone"
     _inherit = ["mail.thread", "mail.activity.mixin"]
     _description = "Field Notebook Vulnerable Zone"

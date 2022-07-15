@@ -4,7 +4,7 @@
 from odoo import fields, models
 
 
-class Crop(models.Model):
+class FieldNotebookPlotUse(models.Model):
     _name = "field.notebook.plot.use"
     _inherit = ["mail.thread", "mail.activity.mixin"]
     _description = "Field Notebook Plot Use"
