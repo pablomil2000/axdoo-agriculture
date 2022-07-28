@@ -11,6 +11,15 @@
                         </h1>
                     </div>
                     <field name="year_harvest"/>
+                    <notebook>
+                        <page name="technical" string="Tecnical ">
+                            <field name="technical_ids" widget="one2many" context="{'show_attribute': False}">
+                                <tree editable="bottom">
+                                    <field name="technical_id"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
                 </sheet>
                 <div class="oe_chatter">
                     <field name="message_follower_ids"/>

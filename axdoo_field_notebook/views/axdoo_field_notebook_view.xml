@@ -46,4 +46,16 @@
               action="field_notebook_vulnerable_zone_action"
               sequence="5"/>
 
+    <menuitem id="axdoo_field_notebook.field_notebook_technical_action"
+              name="Technical"
+              parent="axdoo_field_notebook.field_notebook_configuration_action"
+              action="field_notebook_technical_action"
+              sequence="6"/>
+
+    <menuitem id="axdoo_field_notebook.field_notebook_enclosure_action"
+              name="Enclosure"
+              parent="axdoo_field_notebook.field_notebook_configuration_action"
+              action="field_notebook_enclosure_action"
+              sequence="7"/>
+
 </odoo>
