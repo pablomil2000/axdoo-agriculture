@@ -11,8 +11,9 @@
                         </h1>
                     </div>
                     <field name="year_harvest"/>
+                    <field name="exploitation_id"/>
                     <notebook>
-                        <page name="technical" string="Tecnical ">
+                        <page name="technical" string="Technical">
                             <field name="technical_ids" widget="one2many" context="{'show_attribute': False}">
                                 <tree editable="bottom">
                                     <field name="technical_id"/>
