@@ -32,6 +32,13 @@ class FieldNotebookParcel(models.Model):
         comodel_name='field.notebook.exploitation',
         string='Exploitation',
     )
+    enclosure_ids = fields.One2many(
+        comodel_name='field.notebook.parcel.enclosure',
+        inverse_name='parcel_id',
+        string='Enclosure',
+        copy=True,
+        auto_join=True,
+    )
 
 class FieldNotebookParcelTechnical(models.Model):
     _name = 'field.notebook.parcel.technical'
@@ -58,5 +65,32 @@ class FieldNotebookParcelTechnical(models.Model):
             "technical_uniq",
             "unique(technical_id, parcel_id)",
             _("This technical already exists in this parcel !"),
+        )
+    ]
+
+class FieldNotebookParcelEnclosure(models.Model):
+    _name = 'field.notebook.parcel.enclosure'
+    _description = 'Parcel Enclosure'
+
+    enclosure_id = fields.Many2one(
+        comodel_name='field.notebook.enclosure',
+        string='Enclosure',
+        required=True,
+        ondelete='cascade',
+        delegate=True,
+    )
+    parcel_id = fields.Many2one(
+        comodel_name='field.notebook.parcel',
+        string='Parcel',
+        required=True,
+        ondelete='cascade',
+        index=True,
+        copy=False,
+    )
+    _sql_constraints = [
+        (
+            "enclosure_uniq",
+            "unique(enclosure_id, parcel_id)",
+            _("This enclosure already exists in this parcel !"),
         )
     ]

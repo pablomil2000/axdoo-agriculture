@@ -18,7 +18,7 @@ class FieldNotebookTechnical(models.Model):
     )
     parcel_ids = fields.Many2one(
         comodel_name='field.notebook.parcel.technical',
-        inverse_name='technical_ids',
+        inverse_name='technical_id',
         string='Parcel',
         copy=True,
         auto_join=True,
