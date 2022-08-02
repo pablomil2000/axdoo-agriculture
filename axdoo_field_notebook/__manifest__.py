@@ -12,6 +12,7 @@
     'depends': [
         'base',
         'mail',
+        'mrp',
     ],
     'data': [
         'security/security.xml',

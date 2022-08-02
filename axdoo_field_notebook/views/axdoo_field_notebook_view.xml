@@ -58,4 +58,10 @@
               action="field_notebook_enclosure_action"
               sequence="7"/>
 
+    <menuitem id="axdoo_field_notebook.mrp_workcenter_productivity_report"
+              name="Maquinaria"
+              parent="axdoo_field_notebook.field_notebook_configuration_action"
+              action="mrp.mrp_workcenter_action"
+              sequence="8"/>
+
 </odoo>
