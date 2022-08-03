@@ -1,0 +1,15 @@
+<!-- Copyright 2022 Darío Cruz
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).-->
+<odoo>
+
+    <record id="mrp_workcenter_view" model="ir.ui.view">
+        <field name="name">mrp.workcenter.form</field>
+        <field name="model">mrp.workcenter</field>
+        <field name="inherit_id" ref="mrp.mrp_workcenter_view" />
+        <field name="arch" type="xml">
+            <field name="company_id" position="after">
+                <field name="implement" string="Implement" />
+            </field>
+        </field>
+    </record>
+</odoo>

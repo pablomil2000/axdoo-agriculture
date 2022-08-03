@@ -15,3 +15,26 @@ class FieldNotebookCrop(models.Model):
         index=True,
         tracking=True,
     )
+    variety_ids = fields.One2many(
+        comodel_name='field.notebook.crop.variety',
+        inverse_name='crop_id',
+        string='Crop Variety',
+    )
+
+class FieldNotebookCropVariety(models.Model):
+    _name = 'field.notebook.crop.variety'
+    _description = 'Crop Variety'
+
+    variety_id = fields.Many2one(
+        comodel_name='field.notebook.variety',
+        string='Variety',
+        required=True,
+        ondelete='cascade',
+    )
+    crop_id = fields.Many2one(
+        comodel_name='field.notebook.crop',
+        string='Crop',
+        required=True,
+        ondelete='cascade',
+        index=True,
+    )

@@ -6,3 +6,4 @@ from . import field_notebook_parcel
 from . import field_notebook_exploitation
 from . import field_notebook_technical
 from . import field_notebook_enclosure
+from . import mrp_workcenter

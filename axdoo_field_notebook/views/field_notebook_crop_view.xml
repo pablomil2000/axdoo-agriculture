@@ -13,6 +13,15 @@
                             <field name="name" class="oe_inline"/>
                         </h1>
                     </div>
+                    <notebook>
+                        <page name="varieties" string="Varieties ">
+                            <field name="variety_ids" widget="one2many" context="{'show_attribute': False}">
+                                <tree editable="bottom">
+                                    <field name="variety_id"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
                 </sheet>
                 <div class="oe_chatter">
                     <field name="message_follower_ids"/>

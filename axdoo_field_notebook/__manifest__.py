@@ -26,6 +26,7 @@
         'views/field_notebook_technical_view.xml',
         'views/field_notebook_enclosure_view.xml',
         'views/axdoo_field_notebook_view.xml',
+        'views/mrp_workcenter_views.xml',
     ],
     'application': True,
 }
