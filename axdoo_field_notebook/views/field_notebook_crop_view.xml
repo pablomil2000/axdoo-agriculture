@@ -18,6 +18,7 @@
                             <field name="variety_ids" widget="one2many" context="{'show_attribute': False}">
                                 <tree editable="bottom">
                                     <field name="variety_id"/>
+                                    <!--Voy por aqui-->
                                 </tree>
                             </field>
                         </page>
