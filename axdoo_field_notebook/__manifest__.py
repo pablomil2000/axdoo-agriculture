@@ -13,6 +13,7 @@
         'base',
         'mail',
         'mrp',
+        'maintenance',
     ],
     'data': [
         'security/security.xml',
@@ -23,7 +24,7 @@
         'views/field_notebook_vulnerable_zone_view.xml',
         'views/field_notebook_parcel_view.xml',
         'views/field_notebook_exploitation_view.xml',
-        'views/field_notebook_technical_view.xml',
+        'views/res_partner_view.xml',
         'views/field_notebook_enclosure_view.xml',
         'views/axdoo_field_notebook_view.xml',
         'views/mrp_workcenter_views.xml',

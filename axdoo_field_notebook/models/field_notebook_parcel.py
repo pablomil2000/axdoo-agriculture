@@ -1,5 +1,6 @@
 # Copyright 2020 Manuel Calero <manuelcalero@xtendoo.es>
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).
+# Parcela
 
 from datetime import date
 from odoo import _, fields, models
@@ -20,6 +21,11 @@ class FieldNotebookParcel(models.Model):
         string="Year of harvest",
         required=True,
         default=date.today().year
+    )
+    company_id = fields.Many2one(
+        comodel_name='res.company',
+        required=True,
+        default=lambda self: self.env.company,
     )
     technical_ids = fields.One2many(
         comodel_name='field.notebook.parcel.technical',
@@ -45,11 +51,11 @@ class FieldNotebookParcelTechnical(models.Model):
     _description = 'Parcel Technical'
 
     technical_id = fields.Many2one(
-        comodel_name='field.notebook.technical',
+        comodel_name='res.partner',
         string='Technical',
         required=True,
-        ondelete='cascade',
-        delegate=True,
+        domain="[('technical','=', True)]",
+        check_company=True,
     )
     parcel_id = fields.Many2one(
         comodel_name='field.notebook.parcel',

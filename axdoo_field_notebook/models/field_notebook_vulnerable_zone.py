@@ -6,12 +6,13 @@ from odoo import fields, models
 
 class FieldNotebookVulnerableZone(models.Model):
     _name = "field.notebook.vulnerable.zone"
-    _inherit = ["mail.thread", "mail.activity.mixin"]
     _description = "Field Notebook Vulnerable Zone"
 
     name = fields.Char(
         string="Vulnerable Zone Name",
         required=True,
         index=True,
-        tracking=True,
+    )
+    sequence = fields.Integer(
+        default=10,
     )

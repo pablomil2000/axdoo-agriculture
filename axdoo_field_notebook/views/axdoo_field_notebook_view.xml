@@ -1,14 +1,14 @@
 <odoo>
 
     <menuitem name="Field Notebook"
-              id="axdoo_field_notebook.axdoo_field_notebook_menu"
-              sequence="1"
+              id="axdoo_field_notebook_menu"
+              sequence="10"
               web_icon="axdoo_field_notebook,static/description/icon.png"/>
 
     <menuitem id="axdoo_field_notebook.field_notebook_exploitation_action"
               name="Exploitation"
               parent="axdoo_field_notebook_menu"
-              action="axdoo_field_notebook.field_notebook_exploitation_action"
+              action="field_notebook_exploitation_action"
               sequence="1"/>
 
     <menuitem id="axdoo_field_notebook.field_notebook_configuration_action"
@@ -49,7 +49,7 @@
     <menuitem id="axdoo_field_notebook.field_notebook_technical_action"
               name="Technical"
               parent="axdoo_field_notebook.field_notebook_configuration_action"
-              action="field_notebook_technical_action"
+              action="action_technical_contacts"
               sequence="6"/>
 
     <menuitem id="axdoo_field_notebook.field_notebook_enclosure_action"
@@ -63,5 +63,27 @@
               parent="axdoo_field_notebook.field_notebook_configuration_action"
               action="mrp.mrp_workcenter_action"
               sequence="8"/>
+
+<!--    <menuitem id="axdoo_field_notebook.field_notebook_equipment_action"-->
+<!--              name="Maquinaria"-->
+<!--              parent="axdoo_field_notebook.field_notebook_configuration_action"-->
+<!--              action="axdoo_field_notebook.field_notebook_equipment_action"-->
+<!--              sequence="8"/>-->
+
+    <!-- equiment : actions -->
+<!--    <record id="field_notebook_equipment_action" model="ir.actions.act_window">-->
+<!--        <field name="name">Equipments</field>-->
+<!--        <field name="res_model">maintenance.equipment</field>-->
+<!--        <field name="view_mode">tree,kanban,form</field>-->
+<!--        <field name="view_id" ref="hr_equipment_view_kanban"/>-->
+<!--        <field name="help" type="html">-->
+<!--            <p class="o_view_nocontent_smiling_face">-->
+<!--                Add a new equipment-->
+<!--            </p><p>-->
+<!--                Track equipments and link it to an employee or department.-->
+<!--                You will be able to manage allocations, issues and maintenance of your equipment.-->
+<!--            </p>-->
+<!--        </field>-->
+<!--    </record>-->
 
 </odoo>
