@@ -10,6 +10,7 @@
                             <field name="name"/>
                             <field name="year_harvest"/>
                             <field name="company_id" options="{'no_create': True}" groups="base.group_multi_company"/>
+                            <field name="exploitation_id" options="{'no_create': True}"/>
                         </group>
                     </group>
                     <notebook>

@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-12 08:36+0000\n"
-"PO-Revision-Date: 2022-07-12 08:36+0000\n"
+"POT-Creation-Date: 2022-08-08 11:32+0000\n"
+"PO-Revision-Date: 2022-08-08 11:32+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,74 +16,134 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: axdoo_field_notebook
+#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_exploitation_view_form
+msgid ""
+"<span class=\"o_form_label o_td_label\" name=\"address_name\">\n"
+"                                <b>Address</b>\n"
+"                            </span>"
+msgstr ""
+"<span class=\"o_form_label o_td_label\" name=\"address_name\">\n"
+"                                <b>Dirección</b>\n"
+"                            </span>"
+
+#. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__message_needaction
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__message_needaction
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__message_needaction
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__message_needaction
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_plot_use__message_needaction
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__message_needaction
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__message_needaction
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_vulnerable_zone__message_needaction
 msgid "Action Needed"
 msgstr "Acción necesaria"
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__activity_ids
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__activity_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__activity_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__activity_ids
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_plot_use__activity_ids
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__activity_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__activity_ids
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_vulnerable_zone__activity_ids
 msgid "Activities"
 msgstr "Actividades"
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__activity_exception_decoration
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__activity_exception_decoration
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__activity_exception_decoration
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__activity_exception_decoration
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_plot_use__activity_exception_decoration
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__activity_exception_decoration
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__activity_exception_decoration
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_vulnerable_zone__activity_exception_decoration
 msgid "Activity Exception Decoration"
 msgstr "Decoración de excepción de actividad"
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__activity_state
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__activity_state
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__activity_state
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__activity_state
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_plot_use__activity_state
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__activity_state
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__activity_state
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_vulnerable_zone__activity_state
 msgid "Activity State"
-msgstr ""
+msgstr "Estado de la actividad"
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__activity_type_icon
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__activity_type_icon
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__activity_type_icon
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__activity_type_icon
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_plot_use__activity_type_icon
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__activity_type_icon
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__activity_type_icon
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_vulnerable_zone__activity_type_icon
 msgid "Activity Type Icon"
 msgstr "Icono tipo actividad"
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__message_attachment_count
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__message_attachment_count
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__message_attachment_count
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__message_attachment_count
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_plot_use__message_attachment_count
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__message_attachment_count
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__message_attachment_count
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_vulnerable_zone__message_attachment_count
 msgid "Attachment Count"
 msgstr "Archivos adjuntos"
 
 #. module: axdoo_field_notebook
-#: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_configuration_action
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__business_name
+msgid "Business name"
+msgstr "Nombre del negocio"
+
+#. module: axdoo_field_notebook
+#: model:ir.model.fields,help:axdoo_field_notebook.field_res_partner__technical
+#: model:ir.model.fields,help:axdoo_field_notebook.field_res_users__technical
+msgid "Check this field if technical is implement."
+msgstr "Marque este campo si es técnico."
+
+#. module: axdoo_field_notebook
+#: model:ir.model.fields,help:axdoo_field_notebook.field_maintenance_equipment__implement
+msgid "Check this field if the equipment is implement."
+msgstr "Marque este campo si la maquinaria es apero"
+
+#. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__city
+#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_exploitation_view_form
+msgid "City"
+msgstr "Ciudad"
+
+#. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__company_id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__company_id
+msgid "Company"
+msgstr "Compañia"
+
+#. module: axdoo_field_notebook
+#: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_configuration_menu
 msgid "Configuration"
-msgstr "Configuración"
+msgstr "Cofiguración"
+
+#. module: axdoo_field_notebook
+#: model:ir.model,name:axdoo_field_notebook.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__country_id
+#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_exploitation_view_form
+msgid "Country"
+msgstr "País"
+
+#. module: axdoo_field_notebook
+#: model_terms:ir.actions.act_window,help:axdoo_field_notebook.action_technical_contacts
+msgid "Create a Technical in your address book"
+msgstr "Cree un técnico en su libreta de direcciones"
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__create_uid
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop_variety__create_uid
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__create_uid
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__create_uid
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation_parcel__create_uid
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__create_uid
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__create_uid
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_technical__create_uid
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_plot_use__create_uid
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__create_uid
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_vulnerable_zone__create_uid
@@ -92,8 +152,13 @@ msgstr "Creado por"
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__create_date
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop_variety__create_date
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__create_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__create_date
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation_parcel__create_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__create_date
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__create_date
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_technical__create_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_plot_use__create_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__create_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_vulnerable_zone__create_date
@@ -101,9 +166,12 @@ msgid "Created on"
 msgstr "Creado en"
 
 #. module: axdoo_field_notebook
-#: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_crop_action
+#: model:ir.actions.act_window,name:axdoo_field_notebook.field_notebook_crop_action
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop_variety__crop_id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__crop_id
+#: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_crop_menu
 msgid "Crop"
-msgstr "Cultivos"
+msgstr "Cultivo"
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__name
@@ -111,9 +179,20 @@ msgid "Crop Name"
 msgstr "Nombre cultivo"
 
 #. module: axdoo_field_notebook
+#: model:ir.model,name:axdoo_field_notebook.model_field_notebook_crop_variety
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__variety_ids
+msgid "Crop Variety"
+msgstr "Variedad de Cultivo"
+
+#. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__display_name
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop_variety__display_name
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__display_name
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__display_name
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation_parcel__display_name
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__display_name
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__display_name
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_technical__display_name
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_plot_use__display_name
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__display_name
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_vulnerable_zone__display_name
@@ -121,14 +200,49 @@ msgid "Display Name"
 msgstr "Nombre"
 
 #. module: axdoo_field_notebook
-#: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_exploitation_action
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__email
+msgid "Email"
+msgstr ""
+
+#. module: axdoo_field_notebook
+#: model:ir.actions.act_window,name:axdoo_field_notebook.field_notebook_enclosure_action
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__enclosure_ids
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__enclosure_id
+#: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_enclosure_menu
+#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_parcel_view_form
+msgid "Enclosure"
+msgstr "Recinto"
+
+#. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__name
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__name
+msgid "Enclosure Name"
+msgstr "Nombre de Recinto"
+
+#. module: axdoo_field_notebook
+#: model:ir.actions.act_window,name:axdoo_field_notebook.field_notebook_equipment_action
+#: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_equipment_menu
+msgid "Equipments"
+msgstr "Maquinaria"
+
+#. module: axdoo_field_notebook
+#: model:ir.actions.act_window,name:axdoo_field_notebook.field_notebook_exploitation_action
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation_parcel__exploitation_id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__exploitation_id
+#: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_exploitation_menu
 msgid "Exploitation"
 msgstr "Explotación"
 
 #. module: axdoo_field_notebook
+#: model:ir.model,name:axdoo_field_notebook.model_field_notebook_exploitation_parcel
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__parcel_ids
+msgid "Exploitation Parcel"
+msgstr "Parcela de la Explotación"
+
+#. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__name
-msgid "Exploitation Name"
-msgstr "Nombre explotación"
+msgid "Exploitation name"
+msgstr "Nombre de la Explotación"
 
 #. module: axdoo_field_notebook
 #: model:ir.ui.menu,name:axdoo_field_notebook.axdoo_field_notebook_menu
@@ -138,7 +252,12 @@ msgstr "Cuaderno de campo"
 #. module: axdoo_field_notebook
 #: model:ir.model,name:axdoo_field_notebook.model_field_notebook_crop
 msgid "Field Notebook Crop"
-msgstr "Cultivo"
+msgstr "Clutlivo de Cuaderno de Campo"
+
+#. module: axdoo_field_notebook
+#: model:ir.model,name:axdoo_field_notebook.model_field_notebook_enclosure
+msgid "Field Notebook Enclosure"
+msgstr "Recinto del Cuaderno de Campo"
 
 #. module: axdoo_field_notebook
 #: model:ir.model,name:axdoo_field_notebook.model_field_notebook_exploitation
@@ -172,130 +291,152 @@ msgstr "Zona vulnerable"
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__message_follower_ids
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__message_follower_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__message_follower_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__message_follower_ids
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_plot_use__message_follower_ids
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__message_follower_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__message_follower_ids
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_vulnerable_zone__message_follower_ids
 msgid "Followers"
 msgstr "Seguidores"
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__message_partner_ids
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__message_partner_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__message_partner_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__message_partner_ids
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_plot_use__message_partner_ids
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__message_partner_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__message_partner_ids
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_vulnerable_zone__message_partner_ids
 msgid "Followers (Partners)"
 msgstr "Seguidores"
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_crop__activity_type_icon
+#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_enclosure__activity_type_icon
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_exploitation__activity_type_icon
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_parcel__activity_type_icon
-#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_plot_use__activity_type_icon
+#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_parcel_enclosure__activity_type_icon
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_variety__activity_type_icon
-#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_vulnerable_zone__activity_type_icon
 msgid "Font awesome icon e.g. fa-tasks"
 msgstr ""
 
 #. module: axdoo_field_notebook
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_crop_view_filter
+#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_enclosure_view_filter
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_exploitation_view_filter
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_parcel_view_filter
-#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_plot_use_view_filter
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_variety_view_filter
-#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_vulnerable_zone_view_filter
 msgid "Group By"
 msgstr "Agrupar por"
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__has_message
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__has_message
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__has_message
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__has_message
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_plot_use__has_message
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__has_message
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__has_message
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_vulnerable_zone__has_message
 msgid "Has Message"
 msgstr "Tiene mensaje"
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop_variety__id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation_parcel__id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_technical__id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_plot_use__id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_vulnerable_zone__id
 msgid "ID"
-msgstr "ID"
+msgstr ""
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__activity_exception_icon
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__activity_exception_icon
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__activity_exception_icon
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__activity_exception_icon
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_plot_use__activity_exception_icon
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__activity_exception_icon
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__activity_exception_icon
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_vulnerable_zone__activity_exception_icon
 msgid "Icon"
 msgstr "Icono"
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_crop__activity_exception_icon
+#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_enclosure__activity_exception_icon
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_exploitation__activity_exception_icon
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_parcel__activity_exception_icon
-#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_plot_use__activity_exception_icon
+#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_parcel_enclosure__activity_exception_icon
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_variety__activity_exception_icon
-#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_vulnerable_zone__activity_exception_icon
 msgid "Icon to indicate an exception activity."
-msgstr ""
+msgstr "Icono para indicar una actividad de excepción."
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_crop__message_needaction
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_crop__message_unread
+#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_enclosure__message_needaction
+#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_enclosure__message_unread
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_exploitation__message_needaction
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_exploitation__message_unread
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_parcel__message_needaction
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_parcel__message_unread
-#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_plot_use__message_needaction
-#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_plot_use__message_unread
+#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_parcel_enclosure__message_needaction
+#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_parcel_enclosure__message_unread
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_variety__message_needaction
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_variety__message_unread
-#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_vulnerable_zone__message_needaction
-#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_vulnerable_zone__message_unread
 msgid "If checked, new messages require your attention."
 msgstr "Los mensajes requieren atención"
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_crop__message_has_error
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_crop__message_has_sms_error
+#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_enclosure__message_has_error
+#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_enclosure__message_has_sms_error
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_exploitation__message_has_error
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_exploitation__message_has_sms_error
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_parcel__message_has_error
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_parcel__message_has_sms_error
-#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_plot_use__message_has_error
-#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_plot_use__message_has_sms_error
+#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_parcel_enclosure__message_has_error
+#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_parcel_enclosure__message_has_sms_error
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_variety__message_has_error
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_variety__message_has_sms_error
-#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_vulnerable_zone__message_has_error
-#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_vulnerable_zone__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
-msgstr ""
+msgstr "Si está marcado, algunos mensajes tienen un error de entrega"
+
+#. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_maintenance_equipment__implement
+#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.maintenance_equipment_view_form_inherit_field_notebook
+#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.maintenance_equipment_view_search_implement
+msgid "Implement"
+msgstr "Apero"
+
+#. module: axdoo_field_notebook
+#: model:ir.actions.act_window,name:axdoo_field_notebook.field_notebook_equipment_implement_action
+#: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_equipment_implement_menu
+msgid "Implements"
+msgstr "Aperos"
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__message_is_follower
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__message_is_follower
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__message_is_follower
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__message_is_follower
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_plot_use__message_is_follower
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__message_is_follower
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__message_is_follower
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_vulnerable_zone__message_is_follower
 msgid "Is Follower"
 msgstr "Es seguidor"
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop____last_update
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop_variety____last_update
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure____last_update
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation____last_update
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation_parcel____last_update
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel____last_update
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure____last_update
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_technical____last_update
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_plot_use____last_update
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety____last_update
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_vulnerable_zone____last_update
@@ -304,8 +445,13 @@ msgstr "Última modificacnón"
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__write_uid
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop_variety__write_uid
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__write_uid
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__write_uid
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation_parcel__write_uid
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__write_uid
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__write_uid
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_technical__write_uid
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_plot_use__write_uid
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__write_uid
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_vulnerable_zone__write_uid
@@ -314,8 +460,13 @@ msgstr "Última modificación"
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__write_date
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop_variety__write_date
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__write_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__write_date
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation_parcel__write_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__write_date
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__write_date
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_technical__write_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_plot_use__write_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__write_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_vulnerable_zone__write_date
@@ -324,138 +475,161 @@ msgstr "Última modificación"
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__message_main_attachment_id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__message_main_attachment_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__message_main_attachment_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__message_main_attachment_id
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_plot_use__message_main_attachment_id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__message_main_attachment_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__message_main_attachment_id
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_vulnerable_zone__message_main_attachment_id
 msgid "Main Attachment"
 msgstr "Adjunto"
 
 #. module: axdoo_field_notebook
+#: model:ir.model,name:axdoo_field_notebook.model_maintenance_equipment
+msgid "Maintenance Equipment"
+msgstr "Equipo de mantenimiento"
+
+#. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__message_has_error
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__message_has_error
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__message_has_error
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__message_has_error
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_plot_use__message_has_error
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__message_has_error
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__message_has_error
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_vulnerable_zone__message_has_error
 msgid "Message Delivery error"
 msgstr "Error al entregar mensaje"
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__message_ids
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__message_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__message_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__message_ids
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_plot_use__message_ids
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__message_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__message_ids
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_vulnerable_zone__message_ids
 msgid "Messages"
 msgstr "Mensajes"
 
 #. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__mobile
+msgid "Mobile"
+msgstr "Móvil"
+
+#. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__my_activity_date_deadline
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__my_activity_date_deadline
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__my_activity_date_deadline
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__my_activity_date_deadline
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_plot_use__my_activity_date_deadline
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__my_activity_date_deadline
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__my_activity_date_deadline
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_vulnerable_zone__my_activity_date_deadline
 msgid "My Activity Deadline"
 msgstr "Fecha límite de mi actividad"
 
 #. module: axdoo_field_notebook
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_crop_view_filter
+#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_enclosure_view_filter
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_exploitation_view_filter
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_parcel_view_filter
-#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_plot_use_view_filter
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_variety_view_filter
-#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_vulnerable_zone_view_filter
 msgid "Name"
 msgstr "Nombre"
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__activity_date_deadline
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__activity_date_deadline
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__activity_date_deadline
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__activity_date_deadline
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_plot_use__activity_date_deadline
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__activity_date_deadline
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__activity_date_deadline
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_vulnerable_zone__activity_date_deadline
 msgid "Next Activity Deadline"
 msgstr "Fecha límite de la próxima actividad"
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__activity_summary
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__activity_summary
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__activity_summary
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__activity_summary
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_plot_use__activity_summary
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__activity_summary
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__activity_summary
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_vulnerable_zone__activity_summary
 msgid "Next Activity Summary"
 msgstr "Resumen de la siguiente actividad"
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__activity_type_id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__activity_type_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__activity_type_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__activity_type_id
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_plot_use__activity_type_id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__activity_type_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__activity_type_id
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_vulnerable_zone__activity_type_id
 msgid "Next Activity Type"
 msgstr "Siguiente tipo de actividad"
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__message_needaction_counter
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__message_needaction_counter
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__message_needaction_counter
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__message_needaction_counter
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_plot_use__message_needaction_counter
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__message_needaction_counter
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__message_needaction_counter
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_vulnerable_zone__message_needaction_counter
 msgid "Number of Actions"
 msgstr "Número de acciones"
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__message_has_error_counter
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__message_has_error_counter
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__message_has_error_counter
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__message_has_error_counter
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_plot_use__message_has_error_counter
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__message_has_error_counter
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__message_has_error_counter
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_vulnerable_zone__message_has_error_counter
 msgid "Number of errors"
 msgstr "Número de errores"
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_crop__message_needaction_counter
+#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_enclosure__message_needaction_counter
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_exploitation__message_needaction_counter
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_parcel__message_needaction_counter
-#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_plot_use__message_needaction_counter
+#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_parcel_enclosure__message_needaction_counter
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_variety__message_needaction_counter
-#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_vulnerable_zone__message_needaction_counter
 msgid "Number of messages which requires an action"
 msgstr "Número de mensajes que requieren una acción"
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_crop__message_has_error_counter
+#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_enclosure__message_has_error_counter
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_exploitation__message_has_error_counter
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_parcel__message_has_error_counter
-#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_plot_use__message_has_error_counter
+#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_parcel_enclosure__message_has_error_counter
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_variety__message_has_error_counter
-#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_vulnerable_zone__message_has_error_counter
 msgid "Number of messages with delivery error"
 msgstr "Número de mensajes con error de entrega"
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_crop__message_unread_counter
+#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_enclosure__message_unread_counter
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_exploitation__message_unread_counter
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_parcel__message_unread_counter
-#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_plot_use__message_unread_counter
+#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_parcel_enclosure__message_unread_counter
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_variety__message_unread_counter
-#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_vulnerable_zone__message_unread_counter
 msgid "Number of unread messages"
 msgstr "Número de mensajes no leídos"
 
 #. module: axdoo_field_notebook
-#: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_parcel_action
+#: model_terms:ir.actions.act_window,help:axdoo_field_notebook.action_technical_contacts
+msgid "Odoo helps you track all activities related to your contacts."
+msgstr "Odoo te ayuda a rastrear todas las actividades relacionadas con tus contactos"
+
+#. module: axdoo_field_notebook
+#: model:ir.actions.act_window,name:axdoo_field_notebook.field_notebook_parcel_action
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation_parcel__parcel_id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__parcel_id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_technical__parcel_id
+#: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_parcel_menu
 msgid "Parcel"
 msgstr "Parcela"
+
+#. module: axdoo_field_notebook
+#: model:ir.model,name:axdoo_field_notebook.model_field_notebook_parcel_enclosure
+msgid "Parcel Enclosure"
+msgstr "Recinto de la Parcela"
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__name
@@ -463,34 +637,66 @@ msgid "Parcel Name"
 msgstr "Nombre parcela"
 
 #. module: axdoo_field_notebook
+#: model:ir.model,name:axdoo_field_notebook.model_field_notebook_parcel_technical
+msgid "Parcel Technical"
+msgstr "Técnico de la Parcela"
+
+#. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__parcel_ids
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__parcel_ids
+#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_exploitation_view_form
+msgid "Parcels"
+msgstr "Parcelas"
+
+#. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__phone
+msgid "Phone"
+msgstr "Teléfono"
+
+#. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__planting_date
+msgid "Planting Date"
+msgstr "Fecha de siembra"
+
+#. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_plot_use__name
 msgid "Plot Use Name"
 msgstr "Nombre uso de parcela"
 
 #. module: axdoo_field_notebook
-#: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_plot_use_action
+#: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_plot_use_menu
 msgid "Plot use"
-msgstr "Uso de parcela"
+msgstr "Uso de la parcela"
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__activity_user_id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__activity_user_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__activity_user_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__activity_user_id
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_plot_use__activity_user_id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__activity_user_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__activity_user_id
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_vulnerable_zone__activity_user_id
 msgid "Responsible User"
 msgstr "Responsable"
 
 #. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__revision
+msgid "Revision"
+msgstr "Revisión"
+
+#. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__message_has_sms_error
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__message_has_sms_error
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__message_has_sms_error
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__message_has_sms_error
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_plot_use__message_has_sms_error
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__message_has_sms_error
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__message_has_sms_error
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_vulnerable_zone__message_has_sms_error
 msgid "SMS Delivery error"
 msgstr "Error de entrega de SMS"
+
+#. module: axdoo_field_notebook
+#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_enclosure_view_filter
+msgid "Search Enclosure"
+msgstr "Buscar Recinto"
 
 #. module: axdoo_field_notebook
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_crop_view_filter
@@ -501,22 +707,24 @@ msgid "Search Parcel"
 msgstr "Burscar parcela"
 
 #. module: axdoo_field_notebook
-#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_plot_use_view_filter
-msgid "Search plot use"
-msgstr "Buscar uso de parcela"
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_plot_use__sequence
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_vulnerable_zone__sequence
+msgid "Sequence"
+msgstr "Secuencia"
 
 #. module: axdoo_field_notebook
-#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_vulnerable_zone_view_filter
-msgid "Search vulnerable zone"
-msgstr "Buscar zona vulnerable"
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__state_id
+#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_exploitation_view_form
+msgid "State"
+msgstr "Estado"
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_crop__activity_state
+#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_enclosure__activity_state
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_exploitation__activity_state
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_parcel__activity_state
-#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_plot_use__activity_state
+#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_parcel_enclosure__activity_state
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_variety__activity_state
-#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_vulnerable_zone__activity_state
 msgid ""
 "Status based on activities\n"
 "Overdue: Due date is already passed\n"
@@ -525,37 +733,91 @@ msgid ""
 msgstr ""
 
 #. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__street
+msgid "Street"
+msgstr "Calle"
+
+#. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__street2
+msgid "Street2"
+msgstr "Calle 2"
+
+#. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__technical_ids
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_technical__technical_id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_res_partner__technical
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_res_users__technical
+#: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_technical_menu
+#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_parcel_view_form
+#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.view_res_partner_technical_filter
+msgid "Technical"
+msgstr "Técnico"
+
+#. module: axdoo_field_notebook
+#: model:ir.actions.act_window,name:axdoo_field_notebook.action_technical_contacts
+msgid "Technicals"
+msgstr "Técnicos"
+
+#. module: axdoo_field_notebook
+#: code:addons/axdoo_field_notebook/models/field_notebook_parcel.py:0
+#: model:ir.model.constraint,message:axdoo_field_notebook.constraint_field_notebook_parcel_enclosure_enclosure_uniq
+#, python-format
+msgid "This enclosure already exists in this parcel !"
+msgstr ""
+
+#. module: axdoo_field_notebook
+#: code:addons/axdoo_field_notebook/models/field_notebook_exploitation.py:0
+#: model:ir.model.constraint,message:axdoo_field_notebook.constraint_field_notebook_exploitation_parcel_parcel_uniq
+#, python-format
+msgid "This parcel already exists in some exploitation !"
+msgstr "Esta parcela ya existe en otra explotación !"
+
+#. module: axdoo_field_notebook
+#: code:addons/axdoo_field_notebook/models/field_notebook_parcel.py:0
+#: model:ir.model.constraint,message:axdoo_field_notebook.constraint_field_notebook_parcel_technical_technical_uniq
+#, python-format
+msgid "This technical already exists in this parcel !"
+msgstr "Este técnico ya existe en esta parecela !"
+
+#. module: axdoo_field_notebook
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_crop__activity_exception_decoration
+#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_enclosure__activity_exception_decoration
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_exploitation__activity_exception_decoration
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_parcel__activity_exception_decoration
-#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_plot_use__activity_exception_decoration
+#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_parcel_enclosure__activity_exception_decoration
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_variety__activity_exception_decoration
-#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_vulnerable_zone__activity_exception_decoration
 msgid "Type of the exception activity on record."
 msgstr "Tipo de actividad de excepción registrada."
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__message_unread
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__message_unread
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__message_unread
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__message_unread
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_plot_use__message_unread
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__message_unread
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__message_unread
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_vulnerable_zone__message_unread
 msgid "Unread Messages"
 msgstr "Mensajes no leídos"
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__message_unread_counter
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__message_unread_counter
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__message_unread_counter
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__message_unread_counter
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_plot_use__message_unread_counter
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__message_unread_counter
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__message_unread_counter
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_vulnerable_zone__message_unread_counter
 msgid "Unread Messages Counter"
 msgstr "Mensajes no leídos"
 
 #. module: axdoo_field_notebook
-#: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_variety_action
+#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_crop_view_form
+msgid "Varieties"
+msgstr "Variedades"
+
+#. module: axdoo_field_notebook
+#: model:ir.actions.act_window,name:axdoo_field_notebook.field_notebook_variety_action
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop_variety__variety_id
+#: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_variety_menu
 msgid "Variety"
 msgstr "Variedad"
 
@@ -565,32 +827,44 @@ msgid "Variety Name"
 msgstr "Nombre variedad"
 
 #. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__vat
+msgid "Vat"
+msgstr "IVA"
+
+#. module: axdoo_field_notebook
+#: model:ir.actions.act_window,name:axdoo_field_notebook.field_notebook_plot_use_action
+#: model:ir.actions.act_window,name:axdoo_field_notebook.field_notebook_vulnerable_zone_action
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__vulnerable_zone_id
+msgid "Vulnerable Zone"
+msgstr "Zona Vulnerable"
+
+#. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_vulnerable_zone__name
 msgid "Vulnerable Zone Name"
 msgstr "Nombre zona vulnerable"
 
 #. module: axdoo_field_notebook
-#: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_vulnerable_zone_action
+#: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_vulnerable_zone_menu
 msgid "Vulnerable zone"
-msgstr "Zona vulnerable"
+msgstr "Zona Vulnerable"
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__website_message_ids
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__website_message_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__website_message_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__website_message_ids
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_plot_use__website_message_ids
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__website_message_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__website_message_ids
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_vulnerable_zone__website_message_ids
 msgid "Website Messages"
 msgstr ""
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_crop__website_message_ids
+#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_enclosure__website_message_ids
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_exploitation__website_message_ids
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_parcel__website_message_ids
-#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_plot_use__website_message_ids
+#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_parcel_enclosure__website_message_ids
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_variety__website_message_ids
-#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_vulnerable_zone__website_message_ids
 msgid "Website communication history"
 msgstr "Historial de comunicación del sitio web"
 
@@ -598,3 +872,33 @@ msgstr "Historial de comunicación del sitio web"
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__year_harvest
 msgid "Year of harvest"
 msgstr "Año de cosecha"
+
+#. module: axdoo_field_notebook
+#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_exploitation_view_form
+msgid "ZIP"
+msgstr "Código Postal"
+
+#. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__zip
+msgid "Zip"
+msgstr "Código Postal"
+
+#. module: axdoo_field_notebook
+#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_exploitation_view_form
+msgid "businees name..."
+msgstr "nombre de negocio ..."
+
+#. module: axdoo_field_notebook
+#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_exploitation_view_form
+msgid "e.g. BE0477472701"
+msgstr ""
+
+#. module: axdoo_field_notebook
+#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_exploitation_view_form
+msgid "street 2..."
+msgstr "calle 2..."
+
+#. module: axdoo_field_notebook
+#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_exploitation_view_form
+msgid "street..."
+msgstr "calle..."

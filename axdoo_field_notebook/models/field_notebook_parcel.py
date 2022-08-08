@@ -27,16 +27,16 @@ class FieldNotebookParcel(models.Model):
         required=True,
         default=lambda self: self.env.company,
     )
+    exploitation_id = fields.Many2one(
+        comodel_name='field.notebook.exploitation',
+        string='Exploitation',
+    )
     technical_ids = fields.One2many(
         comodel_name='field.notebook.parcel.technical',
         inverse_name='parcel_id',
         string='Technical',
         copy=True,
         auto_join=True,
-    )
-    exploitation_id = fields.Many2one(
-        comodel_name='field.notebook.exploitation',
-        string='Exploitation',
     )
     enclosure_ids = fields.One2many(
         comodel_name='field.notebook.parcel.enclosure',
