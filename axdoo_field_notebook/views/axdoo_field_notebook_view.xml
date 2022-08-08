@@ -5,85 +5,69 @@
               sequence="10"
               web_icon="axdoo_field_notebook,static/description/icon.png"/>
 
-    <menuitem id="axdoo_field_notebook.field_notebook_exploitation_action"
+    <menuitem id="field_notebook_exploitation_menu"
               name="Exploitation"
               parent="axdoo_field_notebook_menu"
               action="field_notebook_exploitation_action"
               sequence="1"/>
 
-    <menuitem id="axdoo_field_notebook.field_notebook_configuration_action"
+    <menuitem id="field_notebook_configuration_menu"
               name="Configuration"
-              parent="axdoo_field_notebook.axdoo_field_notebook_menu"
+              parent="axdoo_field_notebook_menu"
               sequence="2"/>
 
-    <menuitem id="axdoo_field_notebook.field_notebook_parcel_action"
+    <menuitem id="field_notebook_parcel_menu"
               name="Parcel"
-              parent="axdoo_field_notebook.field_notebook_configuration_action"
+              parent="field_notebook_configuration_menu"
               action="field_notebook_parcel_action"
               sequence="1"/>
 
-    <menuitem id="axdoo_field_notebook.field_notebook_crop_action"
+    <menuitem id="field_notebook_crop_menu"
               name="Crop"
-              parent="axdoo_field_notebook.field_notebook_configuration_action"
+              parent="field_notebook_configuration_menu"
               action="field_notebook_crop_action"
               sequence="2"/>
 
-    <menuitem id="axdoo_field_notebook.field_notebook_variety_action"
+    <menuitem id="field_notebook_variety_menu"
               name="Variety"
-              parent="axdoo_field_notebook.field_notebook_configuration_action"
+              parent="field_notebook_configuration_menu"
               action="field_notebook_variety_action"
               sequence="3"/>
 
-    <menuitem id="axdoo_field_notebook.field_notebook_plot_use_action"
+    <menuitem id="field_notebook_plot_use_menu"
               name="Plot use"
-              parent="axdoo_field_notebook.field_notebook_configuration_action"
+              parent="field_notebook_configuration_menu"
               action="field_notebook_plot_use_action"
               sequence="4"/>
 
-    <menuitem id="axdoo_field_notebook.field_notebook_vulnerable_zone_action"
+    <menuitem id="field_notebook_vulnerable_zone_menu"
               name="Vulnerable zone"
-              parent="axdoo_field_notebook.field_notebook_configuration_action"
+              parent="field_notebook_configuration_menu"
               action="field_notebook_vulnerable_zone_action"
               sequence="5"/>
 
-    <menuitem id="axdoo_field_notebook.field_notebook_technical_action"
+    <menuitem id="field_notebook_technical_menu"
               name="Technical"
-              parent="axdoo_field_notebook.field_notebook_configuration_action"
+              parent="field_notebook_configuration_menu"
               action="action_technical_contacts"
               sequence="6"/>
 
-    <menuitem id="axdoo_field_notebook.field_notebook_enclosure_action"
+    <menuitem id="field_notebook_enclosure_menu"
               name="Enclosure"
-              parent="axdoo_field_notebook.field_notebook_configuration_action"
+              parent="field_notebook_configuration_menu"
               action="field_notebook_enclosure_action"
               sequence="7"/>
 
-    <menuitem id="axdoo_field_notebook.mrp_workcenter_productivity_report"
-              name="Maquinaria"
-              parent="axdoo_field_notebook.field_notebook_configuration_action"
-              action="mrp.mrp_workcenter_action"
+    <menuitem id="field_notebook_equipment_menu"
+              name="Equipments"
+              parent="field_notebook_configuration_menu"
+              action="field_notebook_equipment_action"
               sequence="8"/>
 
-<!--    <menuitem id="axdoo_field_notebook.field_notebook_equipment_action"-->
-<!--              name="Maquinaria"-->
-<!--              parent="axdoo_field_notebook.field_notebook_configuration_action"-->
-<!--              action="axdoo_field_notebook.field_notebook_equipment_action"-->
-<!--              sequence="8"/>-->
-
-    <!-- equiment : actions -->
-<!--    <record id="field_notebook_equipment_action" model="ir.actions.act_window">-->
-<!--        <field name="name">Equipments</field>-->
-<!--        <field name="res_model">maintenance.equipment</field>-->
-<!--        <field name="view_mode">tree,kanban,form</field>-->
-<!--        <field name="view_id" ref="hr_equipment_view_kanban"/>-->
-<!--        <field name="help" type="html">-->
-<!--            <p class="o_view_nocontent_smiling_face">-->
-<!--                Add a new equipment-->
-<!--            </p><p>-->
-<!--                Track equipments and link it to an employee or department.-->
-<!--                You will be able to manage allocations, issues and maintenance of your equipment.-->
-<!--            </p>-->
-<!--        </field>-->
-<!--    </record>-->
+    <menuitem id="field_notebook_equipment_implement_menu"
+              name="Implements"
+              parent="field_notebook_configuration_menu"
+              action="field_notebook_equipment_implement_action"
+              sequence="9"/>
 
 </odoo>

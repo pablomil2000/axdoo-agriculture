@@ -1,0 +1,46 @@
+<!-- Copyright 2022 Darío Cruz
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).-->
+<odoo>
+
+    <record id="field_notebook_equipment_action" model="ir.actions.act_window">
+        <field name="name">Equipments</field>
+        <field name="res_model">maintenance.equipment</field>
+        <field name="view_mode">tree,kanban,form,activity</field>
+    </record>
+
+    <record id="maintenance_equipment_view_search_implement" model='ir.ui.view'>
+        <field name="name">maintenance.equipment.view.search.implement</field>
+        <field name="model">maintenance.equipment</field>
+        <field name="inherit_id" ref="maintenance.hr_equipment_view_search"/>
+        <field name="arch" type="xml">
+            <xpath expr="//filter[@name='inactive']" position="before">
+                <filter
+                    string="Implement"
+                    name="implement"
+                    domain="[('implement','=',True)]"
+                />
+            </xpath>
+        </field>
+    </record>
+
+    <record id="field_notebook_equipment_implement_action" model="ir.actions.act_window">
+        <field name="name">Implements</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">maintenance.equipment</field>
+        <field name="view_mode">tree,kanban,form,activity</field>
+        <field name="search_view_id" ref="maintenance.hr_equipment_view_search"/>
+        <field name="context">{'search_default_implement': 1}</field>
+    </record>
+
+    <record id="maintenance_equipment_view_form_inherit_field_notebook" model="ir.ui.view">
+        <field name="name">maintenance.equipment.view.form.inherit.hr</field>
+        <field name="model">maintenance.equipment</field>
+        <field name="inherit_id" ref="maintenance.hr_equipment_view_form"/>
+        <field name="arch" type="xml">
+            <field name="location" position="after">
+                <field name="implement" string="Implement"/>
+            </field>
+        </field>
+    </record>
+
+</odoo>

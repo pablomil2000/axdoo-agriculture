@@ -6,4 +6,4 @@ from . import field_notebook_parcel
 from . import field_notebook_exploitation
 from . import res_partner
 from . import field_notebook_enclosure
-from . import mrp_workcenter
+from . import equipment
