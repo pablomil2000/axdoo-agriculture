@@ -1,15 +1,16 @@
 # Copyright 2022 Darío Cruz
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
+# Zonas
 
 from odoo import fields, models
 
 
-class FieldNotebookVulnerableZone(models.Model):
-    _name = "field.notebook.vulnerable.zone"
-    _description = "Field Notebook Vulnerable Zone"
+class FieldNotebookZone(models.Model):
+    _name = "field.notebook.zone"
+    _description = "Field Notebook Zone"
 
     name = fields.Char(
-        string="Vulnerable Zone Name",
+        string="Zone Name",
         required=True,
         index=True,
     )

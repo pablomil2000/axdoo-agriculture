@@ -17,10 +17,9 @@ class FieldNotebookParcel(models.Model):
         index=True,
         tracking=True,
     )
-    year_harvest = fields.Integer(
-        string="Year of harvest",
+    campaign_id = fields.Many2one(
+        comodel_name='field.notebook.campaign',
         required=True,
-        default=date.today().year
     )
     company_id = fields.Many2one(
         comodel_name='res.company',
@@ -30,6 +29,24 @@ class FieldNotebookParcel(models.Model):
     exploitation_id = fields.Many2one(
         comodel_name='field.notebook.exploitation',
         string='Exploitation',
+    )
+    zone_ids = fields.Many2many(
+        string='Zone',
+        comodel_name='field.notebook.zone',
+        readonly=False,
+        store=True,
+    )
+    system_ids = fields.Many2many(
+        string='System',
+        comodel_name='field.notebook.system',
+        readonly=False,
+        store=True
+    )
+    irrigation_id = fields.Many2one(
+        string='Irrigation',
+        comodel_name='field.notebook.irrigation',
+        readonly=False,
+        store=True
     )
     technical_ids = fields.One2many(
         comodel_name='field.notebook.parcel.technical',

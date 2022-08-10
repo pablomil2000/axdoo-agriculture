@@ -55,7 +55,7 @@
 
     <record id="field_notebook_plot_use_action"
             model="ir.actions.act_window">
-        <field name="name">Vulnerable Zone</field>
+        <field name="name">Plot Use</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">field.notebook.plot.use</field>
         <field name="view_mode">tree,form,kanban</field>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+    <record id="zone_vulnerable" model="field.notebook.zone">
+        <field name="name">Zona Vulnerable</field>
+    </record>
+    <record id="zone_especifica" model="field.notebook.zone">
+        <field name="name">Zona Especifica</field>
+    </record>
+    <record id="zone_lic" model="field.notebook.zone">
+        <field name="name">Zona LIC</field>
+    </record>
+    <record id="zone_zepa" model="field.notebook.zone">
+        <field name="name">Zona ZEPA</field>
+    </record>
+
+    <record id="system_ecologica" model="field.notebook.system">
+        <field name="name">Agricultura ecológica</field>
+    </record>
+    <record id="system_produccion_integrada" model="field.notebook.system">
+        <field name="name">Producción integrada</field>
+    </record>
+    <record id="system_certificacion_privada" model="field.notebook.system">
+        <field name="name">Certificación privada</field>
+    </record>
+    <record id="system_agrupacion_tratamiento_integrado" model="field.notebook.system">
+        <field name="name">Agrupación de tratamiento integrado</field>
+    </record>
+    <record id="system_asistencia_asesor" model="field.notebook.system">
+        <field name="name">Agrupación de un asesor</field>
+    </record>
+    <record id="system_sin_obligacion_asesor" model="field.notebook.system">
+        <field name="name">Sin obligación de disponer de asesor en GIP</field>
+    </record>
+
+    <record id="irrigation_secano" model="field.notebook.irrigation">
+        <field name="name">Secano</field>
+    </record>
+    <record id="irrigation_aspersion" model="field.notebook.irrigation">
+        <field name="name">Aspersión</field>
+    </record>
+    <record id="irrigation_goteo" model="field.notebook.irrigation">
+        <field name="name">Goteo o localizado</field>
+    </record>
+    <record id="irrigation_gravedad" model="field.notebook.irrigation">
+        <field name="name">Gravedad</field>
+    </record>
+    <record id="irrigation_hidroponia" model="field.notebook.irrigation">
+        <field name="name">Hidroponia</field>
+    </record>
+
+</odoo>

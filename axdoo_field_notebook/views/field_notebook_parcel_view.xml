@@ -8,9 +8,14 @@
                     <group>
                         <group>
                             <field name="name"/>
-                            <field name="year_harvest"/>
+                            <field name="campaign_id"/>
                             <field name="company_id" options="{'no_create': True}" groups="base.group_multi_company"/>
                             <field name="exploitation_id" options="{'no_create': True}"/>
+                        </group>
+                        <group>
+                            <field name="zone_ids" widget="many2many_tags"/>
+                            <field name="system_ids" widget="many2many_tags"/>
+                            <field name="irrigation_id" />
                         </group>
                     </group>
                     <notebook>
