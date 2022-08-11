@@ -48,6 +48,13 @@ class FieldNotebookParcel(models.Model):
         readonly=False,
         store=True
     )
+    nursery_ids = fields.One2many(
+        comodel_name='field.notebook.parcel.nursery',
+        inverse_name='parcel_id',
+        string='Nursery',
+        copy=True,
+        auto_join=True,
+    )
     technical_ids = fields.One2many(
         comodel_name='field.notebook.parcel.technical',
         inverse_name='parcel_id',
@@ -62,6 +69,42 @@ class FieldNotebookParcel(models.Model):
         copy=True,
         auto_join=True,
     )
+    total_plants = fields.Integer(
+        string='Total Plants',
+    )
+
+
+class FieldNotebookParcelNursery(models.Model):
+    _name = 'field.notebook.parcel.nursery'
+    _description = 'Parcel Nursery'
+
+    nursery_id = fields.Many2one(
+        comodel_name='res.partner',
+        string='Nursery',
+        required=True,
+        domain="[('nursery','=', True)]",
+    )
+    parcel_id = fields.Many2one(
+        comodel_name='field.notebook.parcel',
+        string='Parcel',
+        required=True,
+        ondelete='cascade',
+        index=True,
+        copy=False,
+    )
+    plants = fields.Integer(
+        string='Plants',
+    )
+    mortality_percentage = fields.Float(
+        string='Mortality percentage',
+        digits=(3, 2),
+        default=0.0,
+    )
+    replant = fields.Boolean(
+        string='Replant',
+        default=False,
+    )
+
 
 class FieldNotebookParcelTechnical(models.Model):
     _name = 'field.notebook.parcel.technical'

@@ -64,10 +64,10 @@
               action="field_notebook_irrigation_action"
               sequence="8"/>
 
-    <menuitem id="field_notebook_technical_menu"
-              name="Technical"
+    <menuitem id="field_notebook_nursery_menu"
+              name="Nursery"
               parent="field_notebook_configuration_menu"
-              action="action_technical_contacts"
+              action="action_nursery_contacts"
               sequence="9"/>
 
     <menuitem id="field_notebook_enclosure_menu"

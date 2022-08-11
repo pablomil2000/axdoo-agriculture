@@ -1,12 +1,15 @@
 <odoo>
 
-    <record id="view_partner_form_technical" model="ir.ui.view" >
+    <record id="view_partner_form_technical" model="ir.ui.view">
         <field name="name">Partner form with technical</field>
         <field name="model">res.partner</field>
-        <field name="inherit_id" ref="base.view_partner_form" />
+        <field name="inherit_id" ref="base.view_partner_form"/>
         <field name="arch" type="xml">
             <field name="category_id" position="after">
-                <field name="technical"/>
+                <field name="nursery"/>
+                <field name="plant_passport"
+                       attrs="{'invisible': [('nursery','=', False)]}"
+                />
             </field>
         </field>
     </record>
@@ -14,14 +17,19 @@
     <record id="view_res_partner_technical_filter" model="ir.ui.view">
         <field name="name">res.partner.technical.filter</field>
         <field name="model">res.partner</field>
-        <field name="inherit_id" ref="base.view_res_partner_filter" />
+        <field name="inherit_id" ref="base.view_res_partner_filter"/>
         <field name="arch" type="xml">
             <filter name="inactive" position="after">
-                <separator />
+                <separator/>
                 <filter
                     string="Technical"
                     name="technical"
                     domain="[('technical','=',True)]"
+                />
+                <filter
+                    string="Nursery"
+                    name="nursery"
+                    domain="[('nursery','=',True)]"
                 />
             </filter>
         </field>
@@ -34,13 +42,15 @@
         <field name="view_mode">tree,kanban,form,activity</field>
         <field name="search_view_id" ref="base.view_res_partner_filter"/>
         <field name="context">{'search_default_technical': 1}</field>
-        <field name="help" type="html">
-          <p class="o_view_nocontent_smiling_face">
-            Create a Technical in your address book
-          </p><p>
-            Odoo helps you track all activities related to your contacts.
-          </p>
-        </field>
+    </record>
+
+    <record id="action_nursery_contacts" model="ir.actions.act_window">
+        <field name="name">Nursery</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">res.partner</field>
+        <field name="view_mode">tree,kanban,form,activity</field>
+        <field name="search_view_id" ref="base.view_res_partner_filter"/>
+        <field name="context">{'search_default_nursery': 1}</field>
     </record>
 
 </odoo>

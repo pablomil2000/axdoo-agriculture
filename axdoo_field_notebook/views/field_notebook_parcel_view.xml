@@ -15,10 +15,24 @@
                         <group>
                             <field name="zone_ids" widget="many2many_tags"/>
                             <field name="system_ids" widget="many2many_tags"/>
-                            <field name="irrigation_id" />
+                            <field name="irrigation_id"/>
                         </group>
                     </group>
                     <notebook>
+                        <page name="nursery" string="Nursery">
+                            <field name="nursery_ids" widget="One2many" context="{'show_attribute': False}">
+                                <tree editable="bottom">
+                                    <field name="nursery_id"/>
+                                    <field name="plants"/>
+                                    <field name="replant"/>
+                                    <field name="mortality_percentage"/>
+                                </tree>
+                            </field>
+                            <group>
+                                <field name="total_plants"/>
+                            </group>
+                        </page>
+
                         <page name="technical" string="Technical">
                             <field name="technical_ids" widget="One2many" context="{'show_attribute': False}">
                                 <tree editable="bottom">

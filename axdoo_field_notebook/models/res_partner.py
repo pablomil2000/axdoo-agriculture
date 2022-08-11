@@ -12,3 +12,11 @@ class ResPartner(models.Model):
         string="Technical",
         help="Check this field if technical is implement.",
     )
+    nursery = fields.Boolean(
+        string="Nursery",
+        help="Check this field if nursery is implement.",
+    )
+    plant_passport = fields.Char(
+        string="Plant Passport",
+        help="Fill this field if nursery is implement.",
+    )
