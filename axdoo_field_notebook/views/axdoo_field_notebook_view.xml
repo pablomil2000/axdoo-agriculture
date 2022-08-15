@@ -88,4 +88,16 @@
               action="field_notebook_equipment_implement_action"
               sequence="12"/>
 
+    <menuitem id="field_notebook_province_menu"
+              name="Provinces"
+              parent="field_notebook_configuration_menu"
+              action="field_notebook_province_action"
+              sequence="13"/>
+
+    <menuitem id="field_notebook_town_menu"
+              name="Towns"
+              parent="field_notebook_configuration_menu"
+              action="field_notebook_town_action"
+              sequence="13"/>
+
 </odoo>

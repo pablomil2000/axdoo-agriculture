@@ -2,6 +2,8 @@ id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_field_notebook_parcel,access_field_notebook_parcel,model_field_notebook_parcel,base.group_user,1,1,1,1
 access_field_notebook_exploitation,access_field_notebook_exploitation,model_field_notebook_exploitation,base.group_user,1,1,1,1
 access_field_notebook_crop,access_field_notebook_crop,model_field_notebook_crop,base.group_user,1,1,1,1
+access_field_notebook_town,access_field_notebook_town,model_field_notebook_town,base.group_user,1,1,1,1
+access_field_notebook_province,access_field_notebook_province,model_field_notebook_province,base.group_user,1,1,1,1
 access_field_notebook_campaign,access_field_notebook_campaign,model_field_notebook_campaign,base.group_user,1,1,1,1
 access_field_notebook_variety,access_field_notebook_variety,model_field_notebook_variety,base.group_user,1,1,1,1
 access_field_notebook_plot_use,access_field_notebook_plot_use,model_field_notebook_plot_use,base.group_user,1,1,1,1

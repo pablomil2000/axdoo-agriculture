@@ -20,6 +20,8 @@
         'security/ir.model.access.csv',
         'views/field_notebook_campaign_view.xml',
         'views/field_notebook_crop_view.xml',
+        'views/field_notebook_town_view.xml',
+        'views/field_notebook_province_view.xml',
         'views/field_notebook_variety_view.xml',
         'views/field_notebook_plot_use_view.xml',
         'views/field_notebook_zone_view.xml',
