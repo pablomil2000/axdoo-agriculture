@@ -14,6 +14,10 @@ class FieldNotebookTown(models.Model):
         string="Code Autonomy",
         required=True,
     )
+    autonomy_id = fields.Many2one(
+        comodel_name='field.notebook.autonomy',
+        string="Autonomy",
+    )
     code_province = fields.Char(
         string="Code Province",
         required=True,

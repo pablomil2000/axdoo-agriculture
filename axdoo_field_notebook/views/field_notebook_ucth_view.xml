@@ -1,0 +1,97 @@
+<odoo>
+    <record id="field_notebook_ucth_view_form" model="ir.ui.view">
+        <field name="name">field.notebook.ucth.form</field>
+        <field name="model">field.notebook.ucth</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="campaign_id"/>
+                            <field name="company_id" options="{'no_create': True}" groups="base.group_multi_company"/>
+                            <field name="exploitation_id" options="{'no_create': True}"/>
+                        </group>
+                        <group>
+                            <field name="zone_ids" widget="many2many_tags"/>
+                            <field name="system_ids" widget="many2many_tags"/>
+                            <field name="irrigation_id"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page name="nursery" string="Nursery">
+                            <field name="nursery_ids" widget="One2many" context="{'show_attribute': False}">
+                                <tree editable="bottom">
+                                    <field name="nursery_id"/>
+                                    <field name="plants"/>
+                                    <field name="replant"/>
+                                    <field name="mortality_percentage"/>
+                                </tree>
+                            </field>
+                            <group>
+                                <field name="total_plants"/>
+                            </group>
+                        </page>
+
+                        <page name="technical" string="Technical">
+                            <field name="technical_ids" widget="One2many" context="{'show_attribute': False}">
+                                <tree editable="bottom">
+                                    <field name="technical_id"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page name="enclosure" string="Enclosure">
+                            <field name="enclosure_ids" widget="one2many" context="{'show_attribute': False}">
+                                <tree editable="bottom">
+                                    <field name="enclosure_id"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="axdoo_field_notebook.field_notebook_ucth_view_tree" model="ir.ui.view">
+        <field name="name">field.notebook.ucth.view.tree</field>
+        <field name="model">field.notebook.ucth</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="exploitation_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="axdoo_field_notebook.field_notebook_ucth_view_filter" model="ir.ui.view">
+        <field name="name">fha.subvention.view.filter</field>
+        <field name="model">field.notebook.ucth</field>
+        <field name="priority" eval="1"/>
+        <field name="arch" type="xml">
+            <search string="Search UCTH">
+                <group expand="0" string="Group By">
+                    <filter string="Name" name="name" context="{'group_by': 'name'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="axdoo_field_notebook.field_notebook_ucth_action"
+            model="ir.actions.act_window">
+        <field name="name">UCTH</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">field.notebook.ucth</field>
+        <field name="view_mode">tree,form,kanban</field>
+        <field name="view_id"
+               ref="field_notebook_ucth_view_tree"/>
+        <field name="search_view_id"
+               ref="field_notebook_ucth_view_filter"/>
+    </record>
+
+</odoo>

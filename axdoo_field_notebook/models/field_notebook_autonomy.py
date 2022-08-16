@@ -1,14 +1,14 @@
 # Copyright 2022 Darío Cruz
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
-# Provincias
+# Autonomía
 
 from datetime import date
 from odoo import fields, models
 
 
-class FieldNotebookProvince(models.Model):
-    _name = "field.notebook.province"
-    _description = "Field Notebook Province"
+class FieldNotebookAutonomy(models.Model):
+    _name = "field.notebook.autonomy"
+    _description = "Field Notebook Autonomy"
 
     code = fields.Char(
         string="Code",
@@ -18,8 +18,4 @@ class FieldNotebookProvince(models.Model):
         string="Name",
         required=True,
         index=True,
-    )
-    autonomy_id = fields.Many2one(
-        comodel_name="field.notebook.autonomy",
-        string="Autonomy",
     )
