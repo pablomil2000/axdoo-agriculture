@@ -11,7 +11,7 @@
                 <field name="code_autonomy"/>
                 <field name="code_province"/>
                 <field name="province_id"/>
-                <field name="code_town"/>
+                <field name="code"/>
                 <field name="code_control"/>
                 <field name="name"/>
             </tree>

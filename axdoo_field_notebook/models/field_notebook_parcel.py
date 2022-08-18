@@ -3,7 +3,7 @@
 # Parcela
 
 from datetime import date
-from odoo import _, fields, models
+from odoo import _, fields, models, api
 
 
 class FieldNotebookParcel(models.Model):
@@ -25,6 +25,48 @@ class FieldNotebookParcel(models.Model):
         comodel_name='res.company',
         required=True,
         default=lambda self: self.env.company,
+    )
+    autonomy_id = fields.Many2one(
+        comodel_name='field.notebook.autonomy',
+        string='Autonomy',
+    )
+    autonomy_code = fields.Char(
+        related="autonomy_id.code",
+        string='Autonomy code',
+    )
+    province_id = fields.Many2one(
+        comodel_name='field.notebook.province',
+        string='Province',
+    )
+    province_code = fields.Char(
+        related="province_id.code",
+        string='Province code',
+    )
+    town_id = fields.Many2one(
+        comodel_name='field.notebook.town',
+        string='Town',
+    )
+    town_code = fields.Char(
+        related="town_id.code",
+        string='Town code',
+    )
+    aggregate = fields.Integer(
+        string='Aggregate',
+    )
+    zone = fields.Integer(
+        string='Zone',
+    )
+    polygon = fields.Integer(
+        string='Polygon',
+    )
+    parcel = fields.Integer(
+        string='Parcel',
+    )
+    surface = fields.Float(
+        string='Surface',
+    )
+    catastral_reference = fields.Char(
+        string="Catastral reference",
     )
     exploitation_id = fields.Many2one(
         comodel_name='field.notebook.exploitation',
@@ -72,6 +114,16 @@ class FieldNotebookParcel(models.Model):
     total_plants = fields.Integer(
         string='Total Plants',
     )
+
+    @api.onchange("autonomy_id")
+    def _onchange_autonomy_id(self):
+        for rec in self:
+            return {"domain": {"province_id": [("autonomy_id", "=", rec.autonomy_id.id)]}}
+
+    @api.onchange("province_id")
+    def _onchange_province_id(self):
+        for rec in self:
+            return {"domain": {"town_id": [("province_id", "=", rec.province_id.id)]}}
 
 
 class FieldNotebookParcelNursery(models.Model):
@@ -133,6 +185,7 @@ class FieldNotebookParcelTechnical(models.Model):
             _("This technical already exists in this parcel !"),
         )
     ]
+
 
 class FieldNotebookParcelEnclosure(models.Model):
     _name = 'field.notebook.parcel.enclosure'

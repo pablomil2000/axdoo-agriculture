@@ -10,9 +10,11 @@
                             <field name="name"/>
                             <field name="campaign_id"/>
                             <field name="company_id" options="{'no_create': True}" groups="base.group_multi_company"/>
-                            <field name="exploitation_id" options="{'no_create': True}"/>
                         </group>
                         <group>
+                            <field name="autonomy_id" options="{'no_create': True}"/>
+                            <field name="province_id" options="{'no_create': True}"/>
+                            <field name="town_id" options="{'no_create': True}"/>
                             <field name="zone_ids" widget="many2many_tags"/>
                             <field name="system_ids" widget="many2many_tags"/>
                             <field name="irrigation_id"/>
@@ -64,6 +66,12 @@
         <field name="arch" type="xml">
             <tree>
                 <field name="name"/>
+                <field name="autonomy_code"/>
+                <field name="autonomy_id"/>
+                <field name="province_code"/>
+                <field name="province_id"/>
+                <field name="town_code"/>
+                <field name="town_id"/>
                 <field name="exploitation_id"/>
             </tree>
         </field>

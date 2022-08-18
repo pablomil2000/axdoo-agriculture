@@ -26,7 +26,7 @@ class FieldNotebookTown(models.Model):
         comodel_name='field.notebook.province',
         string="Province",
     )
-    code_town = fields.Char(
+    code = fields.Char(
         string="Code Town",
         required=True,
     )
