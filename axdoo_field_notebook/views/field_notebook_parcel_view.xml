@@ -17,6 +17,7 @@
                             <field name="town_id" options="{'no_create': True}"/>
                             <field name="aggregate"/>
                             <field name="zone"/>
+                            <field name="polygon"/>
                             <field name="zone_ids" widget="many2many_tags"/>
                             <field name="system_ids" widget="many2many_tags"/>
                             <field name="surface"/>
