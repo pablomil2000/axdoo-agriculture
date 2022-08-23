@@ -15,43 +15,32 @@
                             <field name="autonomy_id" options="{'no_create': True}"/>
                             <field name="province_id" options="{'no_create': True}"/>
                             <field name="town_id" options="{'no_create': True}"/>
+                        </group>
+                        <group>
                             <field name="aggregate"/>
                             <field name="zone"/>
                             <field name="polygon"/>
                             <field name="parcel"/>
+                        </group>
+                        <group>
                             <field name="surface"/>
                             <field name="catastral_reference"/>
                         </group>
                     </group>
                     <notebook>
-                        <page name="nursery" string="Nursery">
-                            <field name="nursery_ids" widget="One2many" context="{'show_attribute': False}">
+                        <page name="enclosure" string="Enclosure">
+                            <field name="enclosure_ids" widget="One2many" context="{'show_attribute': False}">
                                 <tree editable="bottom">
-                                    <field name="nursery_id"/>
-                                    <field name="plants"/>
-                                    <field name="replant"/>
-                                    <field name="mortality_percentage"/>
+                                    <field name="enclosure"/>
+                                    <field name="surface"/>
+                                    <field name="slope"/>
+                                    <field name="plot_use_id"/>
+                                    <field name="irrigation_coefficient"/>
+                                    <field name="region"/>
                                 </tree>
                             </field>
-                            <group>
-                                <field name="total_plants"/>
-                            </group>
                         </page>
 
-                        <page name="technical" string="Technical">
-                            <field name="technical_ids" widget="One2many" context="{'show_attribute': False}">
-                                <tree editable="bottom">
-                                    <field name="technical_id"/>
-                                </tree>
-                            </field>
-                        </page>
-                        <page name="enclosure" string="Enclosure">
-                            <field name="enclosure_ids" widget="one2many" context="{'show_attribute': False}">
-                                <tree editable="bottom">
-                                    <field name="enclosure_id"/>
-                                </tree>
-                            </field>
-                        </page>
                     </notebook>
                 </sheet>
                 <div class="oe_chatter">

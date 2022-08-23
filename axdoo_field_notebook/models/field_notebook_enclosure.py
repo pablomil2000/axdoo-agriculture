@@ -2,7 +2,6 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).
 # Recintos
 
-from datetime import date
 from odoo import fields, models
 
 
@@ -13,13 +12,39 @@ class FieldNotebookEnclosure(models.Model):
 
     name = fields.Char(
         string="Enclosure Name",
-        required=True,
         index=True,
         tracking=True,
     )
-    parcel_ids = fields.Many2one(
-        comodel_name='field.notebook.parcel.enclosure',
-        string='Parcels',
+    enclosure = fields.Float(
+        string='Enclosure',
+        digits=(6, 0),
+        default=0.0,
+        index=True,
+        tracking=True,
+    )
+    plot_use_id = fields.Many2one(
+        comodel_name='field.notebook.plot.use',
+        string='Plot Use',
         copy=True,
         auto_join=True,
+    )
+    surface = fields.Float(
+        string='Surface',
+        digits=(6, 4),
+        default=0.0,
+    )
+    slope = fields.Float(
+        string='Slope',
+        digits=(6, 2),
+        default=0.0,
+    )
+    irrigation_coefficient = fields.Float(
+        string='Irrigation Coefficient',
+        digits=(6, 2),
+        default=0.0,
+    )
+    region = fields.Float(
+        string='Region',
+        digits=(6, 0),
+        default=0.0,
     )

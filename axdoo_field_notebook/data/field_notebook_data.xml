@@ -48,6 +48,43 @@
         <field name="name">Hidroponia</field>
     </record>
 
+    <record id="pasto_arbolado" model="field.notebook.plot.use">
+        <field name="name">Pasto con Arbolado</field>
+    </record>
+    <record id="pasto_arbustivo" model="field.notebook.plot.use">
+        <field name="name">Pasto Arbustivo</field>
+    </record>
+    <record id="Pastizal" model="field.notebook.plot.use">
+        <field name="name">Pastizal</field>
+    </record>
+    <record id="tierra_arable" model="field.notebook.plot.use">
+        <field name="name">Tierra Arable</field>
+    </record>
+    <record id="huerta" model="field.notebook.plot.use">
+        <field name="name">Huerta</field>
+    </record>
+    <record id="frutal_viñedo" model="field.notebook.plot.use">
+        <field name="name">Asociación Frutal – Viñedo</field>
+    </record>
+    <record id="viñedo" model="field.notebook.plot.use">
+        <field name="name">Viñedo</field>
+    </record>
+    <record id="olivar_viñedo" model="field.notebook.plot.use">
+        <field name="name">Asociación Olivar – Viñedo</field>
+    </record>
+    <record id="zona_concentrada" model="field.notebook.plot.use">
+        <field name="name">Zona Concentrada</field>
+    </record>
+    <record id="zona_urbana" model="field.notebook.plot.use">
+        <field name="name">Zona Urbana</field>
+    </record>
+    <record id="zona_censurada" model="field.notebook.plot.use">
+        <field name="name">Zona Censurada</field>
+    </record>
+    <record id="improductivos" model="field.notebook.plot.use">
+        <field name="name">Improductivo</field>
+    </record>
+
     <record id="autonomy_code_01" model="field.notebook.autonomy">
         <field name="code">01</field>
         <field name="name">Andalucía</field>

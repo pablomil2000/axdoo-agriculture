@@ -64,6 +64,8 @@ class FieldNotebookParcel(models.Model):
     )
     surface = fields.Float(
         string='Surface',
+        digits=(6, 4),
+        default=0.0,
     )
     catastral_reference = fields.Char(
         string="Catastral reference",
@@ -73,13 +75,13 @@ class FieldNotebookParcel(models.Model):
         string='Exploitation',
     )
     zone_ids = fields.Many2many(
-        string='Zone',
+        string='Zones',
         comodel_name='field.notebook.zone',
         readonly=False,
         store=True,
     )
     system_ids = fields.Many2many(
-        string='System',
+        string='Systems',
         comodel_name='field.notebook.system',
         readonly=False,
         store=True
@@ -89,6 +91,13 @@ class FieldNotebookParcel(models.Model):
         comodel_name='field.notebook.irrigation',
         readonly=False,
         store=True
+    )
+    enclosure_ids = fields.One2many(
+        comodel_name='field.notebook.enclosure',
+        inverse_name='parcel_id',
+        string='Enclosure',
+        copy=True,
+        auto_join=True,
     )
     nursery_ids = fields.One2many(
         comodel_name='field.notebook.parcel.nursery',
