@@ -48,24 +48,30 @@ class FieldNotebookUCTH(models.Model):
         readonly=False,
         store=True
     )
+    parcel_ids = fields.Many2many(
+        string='Parcels',
+        comodel_name='field.notebook.parcel',
+        readonly=False,
+        store=True
+    )
     nursery_ids = fields.One2many(
+        string='Nursery',
         comodel_name='field.notebook.ucth.nursery',
         inverse_name='ucth_id',
-        string='Nursery',
         copy=True,
         auto_join=True,
     )
     technical_ids = fields.One2many(
+        string='Technical',
         comodel_name='field.notebook.ucth.technical',
         inverse_name='ucth_id',
-        string='Technical',
         copy=True,
         auto_join=True,
     )
     enclosure_ids = fields.One2many(
+        string='Enclosure',
         comodel_name='field.notebook.ucth.enclosure',
         inverse_name='ucth_id',
-        string='Enclosure',
         copy=True,
         auto_join=True,
     )

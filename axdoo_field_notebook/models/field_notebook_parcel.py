@@ -92,13 +92,6 @@ class FieldNotebookParcel(models.Model):
         readonly=False,
         store=True
     )
-    enclosure_ids = fields.One2many(
-        comodel_name='field.notebook.enclosure',
-        inverse_name='parcel_id',
-        string='Enclosure',
-        copy=True,
-        auto_join=True,
-    )
     nursery_ids = fields.One2many(
         comodel_name='field.notebook.parcel.nursery',
         inverse_name='parcel_id',
@@ -115,7 +108,7 @@ class FieldNotebookParcel(models.Model):
     )
     enclosure_ids = fields.One2many(
         comodel_name='field.notebook.parcel.enclosure',
-        inverse_name='parcel_id',
+        inverse_name='enclosure_id',
         string='Enclosure',
         copy=True,
         auto_join=True,

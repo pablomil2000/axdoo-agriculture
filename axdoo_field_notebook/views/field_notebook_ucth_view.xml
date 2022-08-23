@@ -19,7 +19,14 @@
                         </group>
                     </group>
                     <notebook>
-                        <page name="nursery" string="Nursery">
+                        <page name="parcel" string="Parcels">
+                            <field name="parcel_ids" widget="Many2many" context="{'show_attribute': False}">
+<!--                                <tree editable="bottom">-->
+<!--                                    <field name="name"/>-->
+<!--                                </tree>-->
+                            </field>
+                        </page>
+                        <page name="nursery" string="Nurseries">
                             <field name="nursery_ids" widget="One2many" context="{'show_attribute': False}">
                                 <tree editable="bottom">
                                     <field name="nursery_id"/>
@@ -32,8 +39,7 @@
                                 <field name="total_plants"/>
                             </group>
                         </page>
-
-                        <page name="technical" string="Technical">
+                        <page name="technical" string="Technicals">
                             <field name="technical_ids" widget="One2many" context="{'show_attribute': False}">
                                 <tree editable="bottom">
                                     <field name="technical_id"/>
