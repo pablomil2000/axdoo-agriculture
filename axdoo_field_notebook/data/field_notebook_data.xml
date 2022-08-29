@@ -26671,7 +26671,7 @@
         <field name="code_control">0</field>
         <field name="name">Niebla</field>
     </record>
-    <record model="field.notebook.town">
+    <record id="town_code_21_054" model="field.notebook.town">
         <field name="code_autonomy">01</field>
         <field name="code_province">21</field>
         <field name="province_id" ref="province_code_21"/>

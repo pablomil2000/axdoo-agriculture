@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+
+    <record id="campaign_demo" model="field.notebook.campaign">
+        <field name="name">Campaña Demo 2022</field>
+        <field name="is_year">True</field>
+        <field name="year">2022</field>
+    </record>
+
+    <record id="parcel_demo" model="field.notebook.parcel">
+        <field name="name">Parcela Demo</field>
+        <field name="campaign_id" ref="campaign_demo"/>
+        <field name="autonomy_id" ref="autonomy_code_01"/>
+        <field name="province_id" ref="province_code_21"/>
+        <field name="town_id" ref="town_code_21_054"/>
+        <field name="surface">5.0077</field>
+        <field name="catastral_reference">21054A02100077UH</field>
+        <field name="polygon">21</field>
+        <field name="parcel">77</field>
+    </record>
+
+    <record id="enclosure_demo_1" model="field.notebook.enclosure">
+        <field name="parcel_id" ref="parcel_demo"/>
+        <field name="enclosure">2</field>
+        <field name="surface">4.9273</field>
+        <field name="slope">1.4</field>
+        <field name="plot_use_id" ref="tierra_arable"/>
+        <field name="irrigation_coefficient">100</field>
+        <field name="region">2101</field>
+    </record>
+
+    <record id="enclosure_demo_2" model="field.notebook.enclosure">
+        <field name="parcel_id" ref="parcel_demo"/>
+        <field name="enclosure">4</field>
+        <field name="surface">0.0804</field>
+        <field name="slope">1.4</field>
+        <field name="plot_use_id" ref="improductivos"/>
+        <field name="irrigation_coefficient">0</field>
+    </record>
+
+    <record id="ucth_demo_1" model="field.notebook.ucth">
+        <field name="name">UCTH Demo</field>
+        <field name="campaign_id" ref="campaign_demo"/>
+    </record>
+
+    <record id="ucth_parcel_demo" model="field.notebook.ucth.parcel">
+        <field name="parcel_id" ref="parcel_demo"/>
+        <field name="ucth_id" ref="ucth_demo_1"/>
+        <field name="surface">0.0804</field>
+    </record>
+
+    <record id="exploitation_demo" model="field.notebook.exploitation">
+        <field name="name">Explotación Demo</field>
+        <field name="business_name">Explotación Demo</field>
+        <field name="street">Calle Real, 58</field>
+        <field name="zip">21700</field>
+        <field name="city">La Palma del Condado</field>
+        <field name="state_id" ref="base.state_es_h" />
+        <field name="country_id" ref="base.es" />
+        <field name="vat">ESB16890287</field>
+    </record>
+
+    <record id="exploitation_ucth_demo" model="field.notebook.exploitation.ucth">
+        <field name="ucth_id" ref="ucth_demo_1"/>
+        <field name="exploitation_id" ref="exploitation_demo"/>
+    </record>
+
+</odoo>
+
+

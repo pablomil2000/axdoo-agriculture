@@ -32,7 +32,7 @@
                             <field name="enclosure_ids" widget="One2many" context="{'show_attribute': False}">
                                 <tree editable="bottom">
                                     <field name="enclosure"/>
-                                    <field name="surface"/>
+                                    <field name="surface" sum="total"/>
                                     <field name="slope"/>
                                     <field name="plot_use_id"/>
                                     <field name="irrigation_coefficient"/>

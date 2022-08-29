@@ -30,19 +30,6 @@
         </field>
     </record>
 
-    <record id="axdoo_field_notebook.field_notebook_enclosure_view_filter" model="ir.ui.view">
-        <field name="name">fha.subvention.view.filter</field>
-        <field name="model">field.notebook.enclosure</field>
-        <field name="priority" eval="1"/>
-        <field name="arch" type="xml">
-            <search string="Search Enclosure">
-                <group expand="0" string="Group By">
-                    <filter string="Name" name="name" context="{'group_by': 'name'}"/>
-                </group>
-            </search>
-        </field>
-    </record>
-
     <record id="axdoo_field_notebook.field_notebook_enclosure_action"
             model="ir.actions.act_window">
         <field name="name">Enclosure</field>
@@ -51,8 +38,6 @@
         <field name="view_mode">tree,form,kanban</field>
         <field name="view_id"
                ref="field_notebook_enclosure_view_tree"/>
-        <field name="search_view_id"
-               ref="field_notebook_enclosure_view_filter"/>
     </record>
 
 </odoo>

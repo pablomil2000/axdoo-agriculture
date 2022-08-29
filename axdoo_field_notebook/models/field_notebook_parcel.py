@@ -107,11 +107,11 @@ class FieldNotebookParcel(models.Model):
         auto_join=True,
     )
     enclosure_ids = fields.One2many(
-        comodel_name='field.notebook.parcel.enclosure',
-        inverse_name='enclosure_id',
+        comodel_name='field.notebook.enclosure',
+        inverse_name='parcel_id',
         string='Enclosure',
-        copy=True,
-        auto_join=True,
+        readonly=False,
+        store=True
     )
     total_plants = fields.Integer(
         string='Total Plants',

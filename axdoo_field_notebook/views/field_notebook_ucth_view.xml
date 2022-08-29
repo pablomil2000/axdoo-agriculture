@@ -20,18 +20,19 @@
                     </group>
                     <notebook>
                         <page name="parcel" string="Parcels">
-                            <field name="parcel_ids" widget="Many2many" context="{'show_attribute': False}">
-<!--                                <tree editable="bottom">-->
-<!--                                    <field name="name"/>-->
-<!--                                </tree>-->
+                            <field name="parcel_ids" widget="One2many" context="{'show_attribute': False}">
+                                <tree editable="bottom">
+                                    <field name="parcel_id"/>
+                                    <field name="surface" sum="Total"/>
+                                </tree>
                             </field>
                         </page>
                         <page name="nursery" string="Nurseries">
                             <field name="nursery_ids" widget="One2many" context="{'show_attribute': False}">
                                 <tree editable="bottom">
                                     <field name="nursery_id"/>
-                                    <field name="plants"/>
-                                    <field name="replant"/>
+                                    <field name="plants" sum="Total"/>
+                                    <field name="replant" sum="Total"/>
                                     <field name="mortality_percentage"/>
                                 </tree>
                             </field>
@@ -46,13 +47,13 @@
                                 </tree>
                             </field>
                         </page>
-                        <page name="enclosure" string="Enclosure">
-                            <field name="enclosure_ids" widget="one2many" context="{'show_attribute': False}">
-                                <tree editable="bottom">
-                                    <field name="enclosure_id"/>
-                                </tree>
-                            </field>
-                        </page>
+<!--                        <page name="enclosure" string="Enclosure">-->
+<!--                            <field name="enclosure_ids" widget="one2many" context="{'show_attribute': False}">-->
+<!--                                <tree editable="bottom">-->
+<!--                                    <field name="enclosure_id"/>-->
+<!--                                </tree>-->
+<!--                            </field>-->
+<!--                        </page>-->
                     </notebook>
                 </sheet>
                 <div class="oe_chatter">

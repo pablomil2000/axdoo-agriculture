@@ -27,7 +27,7 @@ class FieldNotebookUCTH(models.Model):
         default=lambda self: self.env.company,
     )
     exploitation_id = fields.Many2one(
-        comodel_name='field.notebook.exploitation',
+        comodel_name='field.notebook.ucth',
         string='Exploitation',
     )
     zone_ids = fields.Many2many(
@@ -48,11 +48,12 @@ class FieldNotebookUCTH(models.Model):
         readonly=False,
         store=True
     )
-    parcel_ids = fields.Many2many(
+    parcel_ids = fields.One2many(
         string='Parcels',
-        comodel_name='field.notebook.parcel',
-        readonly=False,
-        store=True
+        comodel_name='field.notebook.ucth.parcel',
+        inverse_name='ucth_id',
+        copy=True,
+        auto_join=True,
     )
     nursery_ids = fields.One2many(
         string='Nursery',
@@ -77,6 +78,30 @@ class FieldNotebookUCTH(models.Model):
     )
     total_plants = fields.Integer(
         string='Total Plants',
+    )
+
+
+class FieldNotebookUCTHParcel(models.Model):
+    _name = 'field.notebook.ucth.parcel'
+    _description = 'UCTH Parcel'
+
+    parcel_id = fields.Many2one(
+        string='Parcels',
+        comodel_name='field.notebook.parcel',
+        required=True,
+    )
+    ucth_id = fields.Many2one(
+        comodel_name='field.notebook.ucth',
+        string='UCTH',
+        required=True,
+        ondelete='cascade',
+        index=True,
+        copy=False,
+    )
+    surface = fields.Float(
+        string='Surface',
+        digits=(6, 4),
+        default=0.0,
     )
 
 
@@ -139,6 +164,7 @@ class FieldNotebookUCTHTechnical(models.Model):
             _("This technical already exists in this ucth !"),
         )
     ]
+
 
 class FieldNotebookUCTHEnclosure(models.Model):
     _name = 'field.notebook.ucth.enclosure'

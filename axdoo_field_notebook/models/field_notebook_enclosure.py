@@ -10,6 +10,14 @@ class FieldNotebookEnclosure(models.Model):
     _inherit = ["mail.thread", "mail.activity.mixin"]
     _description = "Field Notebook Enclosure"
 
+    parcel_id = fields.Many2one(
+        comodel_name='field.notebook.parcel',
+        string='Parcel',
+        required=True,
+        ondelete='cascade',
+        index=True,
+        copy=False,
+    )
     name = fields.Char(
         string="Enclosure Name",
         index=True,

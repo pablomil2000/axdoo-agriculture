@@ -36,6 +36,7 @@
         'views/maintenance_view.xml',
         'views/axdoo_field_notebook_view.xml',
         'data/field_notebook_data.xml',
+        'data/field_notebook_demo_data.xml',
     ],
     'application': True,
 }
