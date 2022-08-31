@@ -10,6 +10,8 @@ from . import field_notebook_system
 from . import field_notebook_irrigation
 from . import field_notebook_ucth
 from . import field_notebook_parcel
+from . import field_notebook_labor
+from . import field_notebook_labor_type
 from . import field_notebook_exploitation
 from . import res_partner
 from . import field_notebook_enclosure

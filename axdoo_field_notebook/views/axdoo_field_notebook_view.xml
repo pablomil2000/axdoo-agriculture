@@ -17,6 +17,12 @@
               action="field_notebook_ucth_action"
               sequence="2"/>
 
+    <menuitem id="field_notebook_labor_menu"
+              name="Labor"
+              parent="axdoo_field_notebook_menu"
+              action="field_notebook_labor_action"
+              sequence="3"/>
+
     <menuitem id="field_notebook_configuration_menu"
               name="Configuration"
               parent="axdoo_field_notebook_menu"
@@ -82,12 +88,6 @@
               action="field_notebook_enclosure_action"
               sequence="10"/>
 
-    <menuitem id="field_notebook_equipment_menu"
-              name="Equipments"
-              parent="field_notebook_configuration_menu"
-              action="field_notebook_equipment_action"
-              sequence="11"/>
-
     <menuitem id="field_notebook_equipment_implement_menu"
               name="Implements"
               parent="field_notebook_configuration_menu"
@@ -110,6 +110,26 @@
               name="Towns"
               parent="field_notebook_configuration_menu"
               action="field_notebook_town_action"
-              sequence="14"/>
+              sequence="15"/>
+
+    <menuitem id="field_notebook_town_menu"
+              name="Towns"
+              parent="field_notebook_configuration_menu"
+              action="field_notebook_town_action"
+              sequence="15"/>
+
+    <record id="field_notebook_equipment_action" model="ir.actions.act_window">
+        <field name="name">Equipments</field>
+        <field name="res_model">maintenance.equipment</field>
+        <field name="view_mode">tree,form,kanban</field>
+        <field name="view_id" ref="maintenance.hr_equipment_view_tree"/>
+    </record>
+
+    <menuitem id="menu_equipment_form"
+              name="Equipments"
+              parent="field_notebook_configuration_menu"
+              action="field_notebook_equipment_action"
+              groups="maintenance.group_equipment_manager,base.group_user"
+              sequence="16"/>
 
 </odoo>

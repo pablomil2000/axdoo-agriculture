@@ -27,7 +27,7 @@ class FieldNotebookUCTH(models.Model):
         default=lambda self: self.env.company,
     )
     exploitation_id = fields.Many2one(
-        comodel_name='field.notebook.ucth',
+        comodel_name='field.notebook.exploitation',
         string='Exploitation',
     )
     zone_ids = fields.Many2many(

@@ -204,7 +204,7 @@ msgstr "Compañia"
 #. module: axdoo_field_notebook
 #: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_configuration_menu
 msgid "Configuration"
-msgstr "Cofiguración"
+msgstr "Configuración"
 
 #. module: axdoo_field_notebook
 #: model:ir.model,name:axdoo_field_notebook.model_res_partner
@@ -367,8 +367,8 @@ msgstr "Explotación"
 #. module: axdoo_field_notebook
 #: model:ir.model,name:axdoo_field_notebook.model_field_notebook_exploitation_ucth
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__ucth_ids
-msgid "Exploitation UCTH"
-msgstr "Explotacion UCTH"
+msgid "Exploitations UCTH"
+msgstr "Explotaciones UCTH"
 
 #. module: axdoo_field_notebook
 #: model:ir.ui.menu,name:axdoo_field_notebook.axdoo_field_notebook_menu

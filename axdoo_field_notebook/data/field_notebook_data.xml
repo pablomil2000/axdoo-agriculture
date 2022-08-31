@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo noupdate="1">
+
+    <record id="sequence_field_notebook_labor" model="ir.sequence">
+        <field name="name">Sequence of labors</field>
+        <field name="code">field.notebook.labor</field>
+        <field name="active">True</field>
+        <field name="prefix">LABOR/%(year)s/</field>
+        <field name="padding">5</field>
+        <field name="number_next">1</field>
+        <field name="number_increment">1</field>
+    </record>
+
     <record id="zone_vulnerable" model="field.notebook.zone">
         <field name="name">Zona Vulnerable</field>
     </record>
