@@ -2,8 +2,7 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).
 # Parcela
 
-from datetime import date
-from odoo import _, fields, models
+from odoo import _, fields, models, api
 
 
 class FieldNotebookUCTH(models.Model):
@@ -79,6 +78,23 @@ class FieldNotebookUCTH(models.Model):
     total_plants = fields.Integer(
         string='Total Plants',
     )
+    crop_id = fields.Many2one(
+        string='Crop',
+        comodel_name='field.notebook.crop',
+        readonly=False,
+        store=True
+    )
+    crop_variety_id = fields.Many2one(
+        string='Crop Variety',
+        comodel_name='field.notebook.crop.variety',
+        readonly=False,
+        store=True
+    )
+
+    @api.onchange("autonomy_id")
+    def _onchange_crop_id(self):
+        for rec in self:
+            return {"domain": {"crop_variety_id": [("crop_id", "=", rec.crop_id.id)]}}
 
 
 class FieldNotebookUCTHParcel(models.Model):

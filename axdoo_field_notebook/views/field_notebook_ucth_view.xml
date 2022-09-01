@@ -16,6 +16,8 @@
                             <field name="zone_ids" widget="many2many_tags"/>
                             <field name="system_ids" widget="many2many_tags"/>
                             <field name="irrigation_id"/>
+                            <field name="crop_id"/>
+                            <field name="crop_variety_id"/>
                         </group>
                     </group>
                     <notebook>

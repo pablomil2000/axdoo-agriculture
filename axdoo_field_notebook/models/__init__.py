@@ -1,5 +1,6 @@
 from . import field_notebook_crop
 from . import field_notebook_autonomy
+from . import field_notebook_product
 from . import field_notebook_province
 from . import field_notebook_town
 from . import field_notebook_campaign

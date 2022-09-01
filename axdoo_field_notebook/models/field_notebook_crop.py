@@ -11,10 +11,25 @@ class FieldNotebookCrop(models.Model):
     _description = "Field Notebook Crop"
 
     name = fields.Char(
-        string="Crop Name",
+        string="Name",
         required=True,
         index=True,
         tracking=True,
+    )
+    latin_name = fields.Char(
+        string="Latin Name",
+    )
+    type = fields.Char(
+        string="Type",
+    )
+    crop_type = fields.Char(
+        string="Type",
+    )
+    eppo_code = fields.Char(
+        string="Eppo Code",
+    )
+    crop_code = fields.Char(
+        string="Crop Code",
     )
     variety_ids = fields.One2many(
         comodel_name='field.notebook.crop.variety',
@@ -22,15 +37,15 @@ class FieldNotebookCrop(models.Model):
         string='Crop Variety',
     )
 
+
 class FieldNotebookCropVariety(models.Model):
     _name = 'field.notebook.crop.variety'
     _description = 'Crop Variety'
 
-    variety_id = fields.Many2one(
-        comodel_name='field.notebook.variety',
-        string='Variety',
+    name = fields.Char(
+        string="Crop Variety Name",
         required=True,
-        ondelete='cascade',
+        index=True,
     )
     crop_id = fields.Many2one(
         comodel_name='field.notebook.crop',

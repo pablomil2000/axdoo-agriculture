@@ -21,6 +21,7 @@
         'security/ir.model.access.csv',
         'views/field_notebook_campaign_view.xml',
         'views/field_notebook_crop_view.xml',
+        'views/field_notebook_product_view.xml',
         'views/field_notebook_labor_view.xml',
         'views/field_notebook_autonomy_view.xml',
         'views/field_notebook_town_view.xml',
@@ -39,6 +40,7 @@
         'views/axdoo_field_notebook_view.xml',
         'data/field_notebook_data.xml',
         'data/field_notebook_demo_data.xml',
+        'data/field_notebook_crop_data.xml',
     ],
     'application': True,
 }

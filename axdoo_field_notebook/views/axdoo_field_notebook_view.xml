@@ -132,4 +132,10 @@
               groups="maintenance.group_equipment_manager,base.group_user"
               sequence="16"/>
 
+    <menuitem id="menu_product_form"
+              name="Products"
+              parent="field_notebook_configuration_menu"
+              action="field_notebook_product_action"
+              sequence="17"/>
+
 </odoo>

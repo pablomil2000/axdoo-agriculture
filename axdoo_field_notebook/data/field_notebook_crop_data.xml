@@ -1,0 +1,3035 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo noupdate="1">
+
+  <record model="field.notebook.crop">
+    <field name="name">Acedera</field>
+    <field name="latin_name">Rumex spp.</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1RUMG</field>
+    <field name="crop_code">0103010710000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Acelga</field>
+    <field name="latin_name">Beta vulgaris subsp.vulgaris var.flavescens, B.vulgaris subsp.vulgaris var.cicla</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">BEAVF, BEAVV</field>
+    <field name="crop_code">0103010602010000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Acequias</field>
+    <field name="latin_name">Acequias</field>
+    <field name="type">Otro</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0302020000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Aceras en zonas urbanas y residenciales</field>
+    <field name="latin_name">Aceras en zonas urbanas y residenciales</field>
+    <field name="type">Otro</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0304120000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Acerolo</field>
+    <field name="latin_name">Crataegus azarolus</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">CSCAZ</field>
+    <field name="crop_code">0101010402060000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Achicoria (hojas)</field>
+    <field name="latin_name">Cichorium intybus</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">CICIN</field>
+    <field name="crop_code">0103010601050000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Adormidera</field>
+    <field name="latin_name">Papaver somniferum</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">PAPSO</field>
+    <field name="crop_code">0102080300000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Agerato</field>
+    <field name="latin_name">Ageratum spp.</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1AGEG</field>
+    <field name="crop_code">0103051800000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Aguacate</field>
+    <field name="latin_name">Persea americana</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">PEBAM</field>
+    <field name="crop_code">0101020301000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Aguacates</field>
+    <field name="latin_name">Persea americana</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">PEBAM</field>
+    <field name="crop_code">0201050100000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Ajedrea</field>
+    <field name="latin_name">Satureja montana</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">STIMO</field>
+    <field name="crop_code">0103010711000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Ajete, ajo tierno</field>
+    <field name="latin_name">Allium kurrat</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">ALLKU</field>
+    <field name="crop_code">0103010907000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Ajo</field>
+    <field name="latin_name">Allium sativum</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">ALLSA</field>
+    <field name="crop_code">0103010201000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Ajos</field>
+    <field name="latin_name">Allium sativum</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">ALLSA</field>
+    <field name="crop_code">0202020100000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Álamo blanco</field>
+    <field name="latin_name">Populus alba</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">POPAL</field>
+    <field name="crop_code">0101010206020200</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Albahaca</field>
+    <field name="latin_name">Ocimum basilicum</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">OCIBA</field>
+    <field name="crop_code">0103010718000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Albaricoquero</field>
+    <field name="latin_name">Prunus armeniaca</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">PRNAR</field>
+    <field name="crop_code">0101020402000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Alcachofa</field>
+    <field name="latin_name">Cynara cardunculus grupo Alcachofa</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">CYUSC</field>
+    <field name="crop_code">0103010905000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Alcaparra</field>
+    <field name="latin_name">Capparis spinosa</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">CPPSP</field>
+    <field name="crop_code">0101020805000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Alcaravea</field>
+    <field name="latin_name">Carum carvi</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">CRYCA</field>
+    <field name="crop_code">0103040300000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Alcornoque</field>
+    <field name="latin_name">Quercus suber</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">QUESU</field>
+    <field name="crop_code">0101010204020300</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Alfalfa</field>
+    <field name="latin_name">Medicago sativa</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">MEDSA</field>
+    <field name="crop_code">0102070100000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Alforfón</field>
+    <field name="latin_name">Fagopyrum esculentum</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">FAGES</field>
+    <field name="crop_code">0102040000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Algarrobas, alverja</field>
+    <field name="latin_name">Vicia monantha</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">VICMO</field>
+    <field name="crop_code">0102070900000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Algarrobo</field>
+    <field name="latin_name">Ceratonia siliqua</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">CEQSI</field>
+    <field name="crop_code">0101021000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Algodonero</field>
+    <field name="latin_name">Gossypium spp.</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1GOSG</field>
+    <field name="crop_code">0102080201000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Alhova, fenogreco</field>
+    <field name="latin_name">Trigonella foenum-graecum</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">TRKFG</field>
+    <field name="crop_code">0103040700000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Almacenes</field>
+    <field name="latin_name">Almacenes</field>
+    <field name="type">Otro</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0305050000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Almendro</field>
+    <field name="latin_name">Prunus dulcis</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">PRNDU</field>
+    <field name="crop_code">0101020601000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Almorta</field>
+    <field name="latin_name">Lathyrus sativus</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">LTHSA</field>
+    <field name="crop_code">0102060700000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Alpiste</field>
+    <field name="latin_name">Phalaris canariensis</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">PHACA</field>
+    <field name="crop_code">0102010500000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Altramuz</field>
+    <field name="latin_name">Lupinus albus</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">LUPAL</field>
+    <field name="crop_code">0102060100000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Altramuz forrajero</field>
+    <field name="latin_name">Lupinus albus</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">LUPAL</field>
+    <field name="crop_code">0102070400000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Anacardiáceas</field>
+    <field name="latin_name">Anacardiaceae</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1ANAF, only ornamental species.</field>
+    <field name="crop_code">0101010412000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Anacardos</field>
+    <field name="latin_name">Anacardium occidentale</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">ANAOC</field>
+    <field name="crop_code">0227030000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Angélica</field>
+    <field name="latin_name">Angelica archangelica</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">ANKAR</field>
+    <field name="crop_code">0103010712000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Apio</field>
+    <field name="latin_name">Apium graveolens var.dulce</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">APUGD</field>
+    <field name="crop_code">0103010903000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Apionabo</field>
+    <field name="latin_name">Apium graveolens var.rapaceum</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">APUGR</field>
+    <field name="crop_code">0103010104000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Arándano, mirtilo</field>
+    <field name="latin_name">Vaccinium spp.excepto V.macrocarpon</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1VACG</field>
+    <field name="crop_code">0101020803000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Árbol de la pasión</field>
+    <field name="latin_name">Passiflora edulis</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">PAQED</field>
+    <field name="crop_code">0101020311000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Árboles y arbustos frutales</field>
+    <field name="latin_name">Árboles y arbustos frutales</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">NNNOG</field>
+    <field name="crop_code">0101020000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Arbustos frutales</field>
+    <field name="latin_name">Arbustos frutales</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">NNNOG</field>
+    <field name="crop_code">0101020800000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Arbustos y pequeños árboles ornamentales</field>
+    <field name="latin_name">Arbustos y pequeños árboles ornamentales</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">NNNZG</field>
+    <field name="crop_code">0101010400000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Áreas no cultivadas  (agrícolas y forestales)</field>
+    <field name="latin_name">Áreas no cultivadas (agrícolas y forestales)</field>
+    <field name="type">Otro</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0303000000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Áreas no cultivadas  (no agrícolas ni forestales)</field>
+    <field name="latin_name">Áreas no cultivadas (no agrícolas ni forestales)</field>
+    <field name="type">Otro</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0304000000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Arroz</field>
+    <field name="latin_name">Oryza sativa</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">ORYSA</field>
+    <field name="crop_code">0102030000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Avellano</field>
+    <field name="latin_name">Corylus avellana</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">CYLAV</field>
+    <field name="crop_code">0101020602000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Avena</field>
+    <field name="latin_name">Avena sativa</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">AVESA</field>
+    <field name="crop_code">0102020300000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Azaleas y rododendros</field>
+    <field name="latin_name">Rhododendron spp.</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1RHOG</field>
+    <field name="crop_code">0101010421030000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Azucena</field>
+    <field name="latin_name">Lilium spp.</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1LILG</field>
+    <field name="crop_code">0103050900000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Azufaifo</field>
+    <field name="latin_name">Ziziphus jujuba, Z.lotus</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">ZIPJU, ZIPLO</field>
+    <field name="crop_code">0101010407010000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Barbarea</field>
+    <field name="latin_name">Barbarea verna</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">BARVE</field>
+    <field name="crop_code">0103010601090000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Barbechos</field>
+    <field name="latin_name">Barbechos</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0105000000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Batata, boniato</field>
+    <field name="latin_name">Ipomoea batatas</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">IPOBA</field>
+    <field name="crop_code">0103010114000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Bayas de goji</field>
+    <field name="latin_name">Lycium barbarum, L.chinense</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">LYUHA, LYUCN</field>
+    <field name="crop_code">0103010305000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Begoña</field>
+    <field name="latin_name">Begonia spp.</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1BEGG</field>
+    <field name="crop_code">0103050100000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Berenjena</field>
+    <field name="latin_name">Solanum melongena</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">SOLME</field>
+    <field name="crop_code">0103010303000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Berro de agua</field>
+    <field name="latin_name">Nasturtium officinale</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">NAAOF</field>
+    <field name="crop_code">0103010603000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Berro, mastuerzo</field>
+    <field name="latin_name">Lepidium sativum</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">LEPSA</field>
+    <field name="crop_code">0103010601010000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Berza , col</field>
+    <field name="latin_name">Brassica oleracea var.sabellica/var.viridis</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">BRSOC, BRSOA</field>
+    <field name="crop_code">0103010503020000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Bojs</field>
+    <field name="latin_name">Buxus spp.</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1BUXG</field>
+    <field name="crop_code">0101010413010000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Bordes de arcén y cunetas</field>
+    <field name="latin_name">Bordes de arcén y cunetas</field>
+    <field name="type">Otro</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0304010100000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Borraja</field>
+    <field name="latin_name">Borago officinalis</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">BOROF</field>
+    <field name="crop_code">0103010909000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Brécol</field>
+    <field name="latin_name">Brassica oleracea var.italica</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">BRSOK</field>
+    <field name="crop_code">0103010501010000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Brotes tiernos, incluidas las especies de Brassica</field>
+    <field name="latin_name">Brotes tiernos, incluidas las especies de Brassica</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0103010601100000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Bulbos</field>
+    <field name="latin_name">Bulbos</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">1ALLG</field>
+    <field name="crop_code">0202020000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Bulbos hortícolas</field>
+    <field name="latin_name">Bulbos hortícolas</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1ALLG</field>
+    <field name="crop_code">0103010200000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Cacahuete</field>
+    <field name="latin_name">Arachis hypogaea</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">ARHHY</field>
+    <field name="crop_code">0102080105000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Cacao en grano</field>
+    <field name="latin_name">Theobroma cacao</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">THOCA</field>
+    <field name="crop_code">0205000000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Café en grano</field>
+    <field name="latin_name">Coffea spp.</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">COFAR</field>
+    <field name="crop_code">0206000000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Calabacín</field>
+    <field name="latin_name">Cucurbita pepo</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">CUUPE</field>
+    <field name="crop_code">0103010401030000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Calabaza</field>
+    <field name="latin_name">Cucurbita maxima</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">CUUMA</field>
+    <field name="crop_code">0103010402020000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Calabaza del peregrino</field>
+    <field name="latin_name">Lagenaria siceraria</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">LGNSI</field>
+    <field name="crop_code">0103010401060000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Caléndulas</field>
+    <field name="latin_name">Calendula officinalis</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">CLDOF</field>
+    <field name="crop_code">0103052500000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Camelina</field>
+    <field name="latin_name">Camelina sativa</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">CMASA</field>
+    <field name="crop_code">0102080107000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Caminos</field>
+    <field name="latin_name">Caminos</field>
+    <field name="type">Otro</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0303030000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Caña de azúcar</field>
+    <field name="latin_name">Saccharum officinarum</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">SACOF</field>
+    <field name="crop_code">0102080600000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Canales de riego</field>
+    <field name="latin_name">Canales de riego</field>
+    <field name="type">Otro</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0302010000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Cáñamo</field>
+    <field name="latin_name">Cannabis sativa</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">CNISA</field>
+    <field name="crop_code">0102080203000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Canónigo</field>
+    <field name="latin_name">Valerianella locusta</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">VLLLO</field>
+    <field name="crop_code">0103010601020000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Capuchina</field>
+    <field name="latin_name">Tropaeolum majus</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">TOPMA</field>
+    <field name="crop_code">0103052600000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Caqui</field>
+    <field name="latin_name">Diospyros kaki</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">DOSKA</field>
+    <field name="crop_code">0101020302000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Caquis</field>
+    <field name="latin_name">Diospyros kaki</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">DOSKA</field>
+    <field name="crop_code">0201051400000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Carambola</field>
+    <field name="latin_name">Averrhoa carambola</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">AVRCA</field>
+    <field name="crop_code">0101020320000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Cardo</field>
+    <field name="latin_name">Cynara cardunculus grupo Cardos</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">CYUCA</field>
+    <field name="crop_code">0103010902000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Carreteras</field>
+    <field name="latin_name">Carreteras</field>
+    <field name="type">Otro</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0304010000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Cártamo</field>
+    <field name="latin_name">Carthamus tinctorius</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">CAUTI</field>
+    <field name="crop_code">0102080101000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Castaño</field>
+    <field name="latin_name">Castanea sativa</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">CSNSA</field>
+    <field name="crop_code">0101020605000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Cebada</field>
+    <field name="latin_name">Hordeum vulgare</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">HORVX</field>
+    <field name="crop_code">0102020200000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Cebolla</field>
+    <field name="latin_name">Allium cepa</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">ALLCE</field>
+    <field name="crop_code">0103010202000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Cebolleta</field>
+    <field name="latin_name">Allium fistulosum</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">ALLFI</field>
+    <field name="crop_code">0103010204000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Cebollino</field>
+    <field name="latin_name">Allium schoenoprasum</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">ALLSC</field>
+    <field name="crop_code">0103010702000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Cementerios</field>
+    <field name="latin_name">Cementerios</field>
+    <field name="type">Otro</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0304100000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Centeno</field>
+    <field name="latin_name">Secale cereale</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">SECCE</field>
+    <field name="crop_code">0102020400000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Cereales de invierno / primavera</field>
+    <field name="latin_name">Cereales de invierno / primavera</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">NNNGS, NNNGS</field>
+    <field name="crop_code">0102020000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Cereales de verano</field>
+    <field name="latin_name">Cereales de verano</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0102010000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Cerezas</field>
+    <field name="latin_name">Prunus avium</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">PRNAV</field>
+    <field name="crop_code">0201030400000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Cerezo</field>
+    <field name="latin_name">Prunus avium</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">PRNAV</field>
+    <field name="crop_code">0101020404000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Céspedes</field>
+    <field name="latin_name">Céspedes</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">3AMGC</field>
+    <field name="crop_code">0107000000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Céspedes de gramíneas</field>
+    <field name="latin_name">Céspedes de gramíneas</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1GRAF</field>
+    <field name="crop_code">0107010000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Chalote</field>
+    <field name="latin_name">Allium ascalonicum</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">ALLAS</field>
+    <field name="crop_code">0103010203000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Chalotes</field>
+    <field name="latin_name">Allium ascalonicum</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">ALLAS</field>
+    <field name="crop_code">0202020300000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Champiñón</field>
+    <field name="latin_name">Agaricus spp.</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1AGARG</field>
+    <field name="crop_code">0108010100000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Chayote</field>
+    <field name="latin_name">Sechium edule</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">SEHED</field>
+    <field name="crop_code">0103010401040000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Chirimoyas</field>
+    <field name="latin_name">Annona cherimola</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">ANUCH</field>
+    <field name="crop_code">0201051300000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Chirimoyo</field>
+    <field name="latin_name">Annona cherimola</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">ANUCH</field>
+    <field name="crop_code">0101020303000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Chirivía</field>
+    <field name="latin_name">Pastinaca sativa</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">PAVSA</field>
+    <field name="crop_code">0103010106000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Chopos y álamos</field>
+    <field name="latin_name">Populus spp.</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1POPG</field>
+    <field name="crop_code">0101010206020000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Chufa</field>
+    <field name="latin_name">Cyperus esculentus</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">CYPES</field>
+    <field name="crop_code">0103010116000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Chumbera</field>
+    <field name="latin_name">Opuntia ficus-indica</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">OPUFI</field>
+    <field name="crop_code">0101020318000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Cilantro</field>
+    <field name="latin_name">Coriandrum sativum</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">CORSA</field>
+    <field name="crop_code">0103010705000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Cineraria</field>
+    <field name="latin_name">Cineraria spp.</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1CHFG</field>
+    <field name="crop_code">0103051900000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Cipreses</field>
+    <field name="latin_name">Cupressus spp.</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1CVBG</field>
+    <field name="crop_code">0101010102010000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Ciruelas</field>
+    <field name="latin_name">Prunus domestica</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">PRNDO</field>
+    <field name="crop_code">0201030300000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Ciruelo</field>
+    <field name="latin_name">Prunus domestica</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">PRNDO</field>
+    <field name="crop_code">0101020403000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Cítricos</field>
+    <field name="latin_name">Citrus spp.</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1CIDG</field>
+    <field name="crop_code">0101020100000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Clavel</field>
+    <field name="latin_name">Dianthus spp.</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1DING</field>
+    <field name="crop_code">0103051500000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Cocos</field>
+    <field name="latin_name">Cocos nucifera</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">CCNNU</field>
+    <field name="crop_code">0227050000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Cogollos</field>
+    <field name="latin_name">Cogollos</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1BRSG</field>
+    <field name="crop_code">0103010502000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Col de Bruselas</field>
+    <field name="latin_name">Brassica oleracea var.gemmifera</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">BRSOF</field>
+    <field name="crop_code">0103010502010000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Col de China</field>
+    <field name="latin_name">Brassica rapa subsp.pekinensis</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">BRSRP</field>
+    <field name="crop_code">0103010503010000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Coliflor</field>
+    <field name="latin_name">Brassica oleracea var.botrytis</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">BRSOB</field>
+    <field name="crop_code">0103010501020000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Colinabo</field>
+    <field name="latin_name">Brassica napus subsp. napobrassica</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">BRSNA</field>
+    <field name="crop_code">0103010109000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Colirrábano</field>
+    <field name="latin_name">Brassica oleracea var.gongylodes</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">BRSOG</field>
+    <field name="crop_code">0103010504000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Colza</field>
+    <field name="latin_name">Brassica napus subsp.napus</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">BRSNN</field>
+    <field name="crop_code">0102080104000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Comino</field>
+    <field name="latin_name">Cuminum cyminum</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">CVUCY</field>
+    <field name="crop_code">0103040200000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Coníferas</field>
+    <field name="latin_name">Coniferae/Pinopsida</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1PINC</field>
+    <field name="crop_code">0101010100000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Cortafuegos</field>
+    <field name="latin_name">Cortafuegos</field>
+    <field name="type">Otro</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0303040000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Crisantemo</field>
+    <field name="latin_name">Crysanthenum spp.</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1CHYG</field>
+    <field name="crop_code">0103051600000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Cucurbitáceas</field>
+    <field name="latin_name">Cucurbitaceae</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1CUCF</field>
+    <field name="crop_code">0103010400000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Cucurbitáceas de piel comestible</field>
+    <field name="latin_name">Cucurbitáceas de piel comestible</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1CUCF</field>
+    <field name="crop_code">0103010401000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Cucurbitáceas de piel comestible (producto cosechado)</field>
+    <field name="latin_name">Cucurbitáceas de piel comestible (producto cosechado)</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">1CUCF</field>
+    <field name="crop_code">0202040100000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Cucurbitáceas de piel no comestible</field>
+    <field name="latin_name">Cucurbitáceas de piel no comestible</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1CUCF</field>
+    <field name="crop_code">0103010402000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Cupresáceas</field>
+    <field name="latin_name">Cupressaceae</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1CUPF</field>
+    <field name="crop_code">0101010102000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Dalia</field>
+    <field name="latin_name">Dahlia spp.</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1DAHG</field>
+    <field name="crop_code">0103050300000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Desagües</field>
+    <field name="latin_name">Desagües</field>
+    <field name="type">Otro</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0302050000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Diente de león</field>
+    <field name="latin_name">Taraxacum officinale</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">TAROF</field>
+    <field name="crop_code">0103010601080000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Drenajes</field>
+    <field name="latin_name">Drenajes</field>
+    <field name="type">Otro</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0302060000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Encina</field>
+    <field name="latin_name">Quercus ilex</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">QUEIL</field>
+    <field name="crop_code">0101010204020200</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Endibia</field>
+    <field name="latin_name">Cichorium intybus var.foliosum</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">CICIF</field>
+    <field name="crop_code">0103010604000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Endrino</field>
+    <field name="latin_name">Prunus spinosa</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">PRNSN</field>
+    <field name="crop_code">0101020405000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Eneldo</field>
+    <field name="latin_name">Anethum graveolens</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">AFEGR</field>
+    <field name="crop_code">0103010713000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Envases y embalajes</field>
+    <field name="latin_name">Envases y embalajes</field>
+    <field name="type">Otro</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0306090000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Equipos y utillaje</field>
+    <field name="latin_name">Equipos y utillaje</field>
+    <field name="type">Otro</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0306000000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Eriales</field>
+    <field name="latin_name">Eriales</field>
+    <field name="type">Otro</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0303050000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Escarola</field>
+    <field name="latin_name">Cichorium endivia var.latifolia</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">CICEL</field>
+    <field name="crop_code">0103010601040000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Escorzonera</field>
+    <field name="latin_name">Scorzonera hispanica</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">SCVHI</field>
+    <field name="crop_code">0103010111000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Esparceta</field>
+    <field name="latin_name">Onobrychis spp.</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1ONBG</field>
+    <field name="crop_code">0102070800000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Espárrago</field>
+    <field name="latin_name">Asparagus officinalis</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">ASPOF</field>
+    <field name="crop_code">0103010901000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Especias</field>
+    <field name="latin_name">Especias</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0212000000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Especias e infusiones</field>
+    <field name="latin_name">Especias</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">3HSMC</field>
+    <field name="crop_code">0103040000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Especies vegetales</field>
+    <field name="latin_name">Plantae</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1PLAK</field>
+    <field name="crop_code">0100000000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Espinaca</field>
+    <field name="latin_name">Spinacia oleracea</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">SPQOL</field>
+    <field name="crop_code">0103010602020000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Espinacas y similares</field>
+    <field name="latin_name">Espinacas y similares</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">BEAVX, SPQOL, POROL</field>
+    <field name="crop_code">0103010602000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Espino amarillo, cambrón</field>
+    <field name="latin_name">Hippophae rhamnoides</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">HIORH</field>
+    <field name="crop_code">0101010403010000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Esquejes</field>
+    <field name="latin_name">Esquejes</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0223000000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Estragón</field>
+    <field name="latin_name">Artemisia dracunculus</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">ARTDR</field>
+    <field name="crop_code">0103010709000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Eucaliptos</field>
+    <field name="latin_name">Eucalyptus spp.</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1EUCG</field>
+    <field name="crop_code">0101010212000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Flores cortadas</field>
+    <field name="latin_name">Flores cortadas</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0221000000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Forestales y ornamentales leñosas</field>
+    <field name="latin_name">Forestales y ornamentales leñosas</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">3FORC, 2ORNW</field>
+    <field name="crop_code">0101010000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Frambueso</field>
+    <field name="latin_name">Rubus idaeus</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">RUBID</field>
+    <field name="crop_code">0101020802000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Fresal</field>
+    <field name="latin_name">Fragaria x ananassa</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">FRAAN</field>
+    <field name="crop_code">0103030000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Frondosas</field>
+    <field name="latin_name">Frondosas</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">NNNWL</field>
+    <field name="crop_code">0101010200000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Frutales de cáscara</field>
+    <field name="latin_name">Prunus dulcis, Corylus avellana, Juglans regia, J.nigra, Pistacia vera, Castanea sativa, Carya illinoinensis</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">PRNDU, CYLAV, IUGRE, IUGNI, PIAVE, CSNSA, CYAIL</field>
+    <field name="crop_code">0101020600000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Frutales de hueso</field>
+    <field name="latin_name">Prunus persica, P.armeniaca, P.domestica, P.avium</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">PRNPS, PRNAR, PRNDO, PRNAV</field>
+    <field name="crop_code">0101020400000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Frutales de pepita</field>
+    <field name="latin_name">Malus domestica., Pyrus communis, Eriobotrya japonica, Cydonia oblonga</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">MABSD, PYUCO, EIOJA, CYDOB</field>
+    <field name="crop_code">0101020500000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Frutos cítricos</field>
+    <field name="latin_name">Citrus spp.</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">1CIDG</field>
+    <field name="crop_code">0201010000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Frutos de hueso</field>
+    <field name="latin_name">Prunus persica, P.armeniaca, P.domestica, P.avium</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">PRNPS, PRNAR, PRNDO, PRNAV</field>
+    <field name="crop_code">0201030000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Frutos de la pasión</field>
+    <field name="latin_name">Passiflora edulis</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">PAQED</field>
+    <field name="crop_code">0201051000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Frutos de pepita</field>
+    <field name="latin_name">Malus domestica, Pyrus communis, Eriobotrya japonica Cydonia oblonga.</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">MABSD, PYUCO, CYDOB, EIOJA</field>
+    <field name="crop_code">0201020000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Frutos secos</field>
+    <field name="latin_name">Frutos secos</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0227000000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Garbanzo</field>
+    <field name="latin_name">Cicer arietinum</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">CIEAR</field>
+    <field name="crop_code">0102060200000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Garbanzo verde</field>
+    <field name="latin_name">Cicer arietimum</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">CICAR</field>
+    <field name="crop_code">0103010805000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Gardenia</field>
+    <field name="latin_name">Gardenia jasminoides</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">GADJA</field>
+    <field name="crop_code">0101010422010000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Geranio</field>
+    <field name="latin_name">Pelargonium spp.</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1PELG</field>
+    <field name="crop_code">0103051100000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Girasol</field>
+    <field name="latin_name">Helianthus annuus</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">HELAN</field>
+    <field name="crop_code">0102080102000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Gramíneas (prados de siembra)</field>
+    <field name="latin_name">Gramíneas (prados de siembra)</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1GRAF</field>
+    <field name="crop_code">0104030100000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Granadas</field>
+    <field name="latin_name">Punica granatum</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">PUNGR</field>
+    <field name="crop_code">0201051200000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Granado</field>
+    <field name="latin_name">Punica granatum</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">PUNGR</field>
+    <field name="crop_code">0101020317000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Granos de avena</field>
+    <field name="latin_name">Avena sativa</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">AVESA</field>
+    <field name="crop_code">0213040000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Granos de cebada</field>
+    <field name="latin_name">Hordeum vulgare</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">HORVX</field>
+    <field name="crop_code">0213030000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Granos de centeno</field>
+    <field name="latin_name">Secale cereale</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">SECCE</field>
+    <field name="crop_code">0213020000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Granos de cereales</field>
+    <field name="latin_name">Granos de cereales</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">YCEST</field>
+    <field name="crop_code">0213000000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Granos de leguminosas</field>
+    <field name="latin_name">Leguminosae</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">1LEGF</field>
+    <field name="crop_code">0203000000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Granos de maíz</field>
+    <field name="latin_name">Zea mays</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">ZEAMX</field>
+    <field name="crop_code">0213070000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Granos de sorgo-grano</field>
+    <field name="latin_name">Sorghum bicolor</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">SORVU</field>
+    <field name="crop_code">0213080000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Granos de trigo</field>
+    <field name="latin_name">Triticum aestivum, T.durum</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">TRZAX, TRZDU</field>
+    <field name="crop_code">0213010000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Granos de triticale</field>
+    <field name="latin_name">x Triticosecale rimpaui</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">TTLRI</field>
+    <field name="crop_code">0213050000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Grosellero</field>
+    <field name="latin_name">Ribes nigrum, R.rubrum, R.uvacrispa</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">RIBNI, RIBRU, RIBUC</field>
+    <field name="crop_code">0101020804000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Guanábano</field>
+    <field name="latin_name">Annona muricata</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">ANUMU</field>
+    <field name="crop_code">0101020314000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Guayabo</field>
+    <field name="latin_name">Psidium guajava</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">PSIGU</field>
+    <field name="crop_code">0101020315000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Guisante para grano</field>
+    <field name="latin_name">Pisum sativum</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">PIBSX</field>
+    <field name="crop_code">0102060600000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Guisante proteaginoso /forrajero</field>
+    <field name="latin_name">Pisum sativum</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">PIBSX</field>
+    <field name="crop_code">0102070700000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Guisante verde</field>
+    <field name="latin_name">Pisum sativum</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">PIBSX</field>
+    <field name="crop_code">0103010802000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Guisantes verdes</field>
+    <field name="latin_name">Pisum sativum</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">PIBSX</field>
+    <field name="crop_code">0202080200000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Haba forrajera</field>
+    <field name="latin_name">Vicia faba var.minor</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">VICFM</field>
+    <field name="crop_code">0102070600000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Haba para grano</field>
+    <field name="latin_name">Vicia faba</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">VICFX</field>
+    <field name="crop_code">0102060300000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Haba verde</field>
+    <field name="latin_name">Vicia faba</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">VICFX</field>
+    <field name="crop_code">0103010803000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Habas de soja</field>
+    <field name="latin_name">Glycine max</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">GLXMA</field>
+    <field name="crop_code">0204070000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Habas verdes</field>
+    <field name="latin_name">Vicia faba</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">VICFX</field>
+    <field name="crop_code">0202080300000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Herbáceas extensivas</field>
+    <field name="latin_name">Herbáceas extensivas</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0102000000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Herbáceas intensivas</field>
+    <field name="latin_name">Herbáceas intensivas</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0103000000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Hibiscos</field>
+    <field name="latin_name">Hibiscus spp.</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1HIBG</field>
+    <field name="crop_code">0101010419010000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Hierba limón</field>
+    <field name="latin_name">Cymbopogon citratus</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">GYGCI</field>
+    <field name="crop_code">0103010721000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Hierbas aromáticas y flores comestibles</field>
+    <field name="latin_name">Hierbas aromáticas y flores comestibles</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">3HSMC</field>
+    <field name="crop_code">0103010700000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Hierbas aromáticas y flores comestibles (producto cosechado)</field>
+    <field name="latin_name">Hierbas aromáticas y flores comestibles (producto cosechado)</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">3HSMC</field>
+    <field name="crop_code">0202070500000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Higuera</field>
+    <field name="latin_name">Ficus carica</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">FIUCA</field>
+    <field name="crop_code">0101020900000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Hinojo</field>
+    <field name="latin_name">Foeniculum vulgare</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">FOEVU</field>
+    <field name="crop_code">0103010904000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Hinojos</field>
+    <field name="latin_name">Foeniculum vulgare</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">FOEVU</field>
+    <field name="crop_code">0202090400000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Hisopo</field>
+    <field name="latin_name">Hyssopus officinalis</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">HYSOF</field>
+    <field name="crop_code">0103010714000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Hortalizas de hoja</field>
+    <field name="latin_name">Hortalizas de hoja</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">3LEAC</field>
+    <field name="crop_code">0103010600000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Hortalizas del género Brassica</field>
+    <field name="latin_name">Brassica spp.</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1BRSG</field>
+    <field name="crop_code">0103010500000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Hortensias</field>
+    <field name="latin_name">Hydrangea spp.</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1HYEG</field>
+    <field name="crop_code">0101010418020000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Hortícolas</field>
+    <field name="latin_name">Hortícolas</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">NNNGB</field>
+    <field name="crop_code">0103010000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Humedales</field>
+    <field name="latin_name">Zonas húmedas</field>
+    <field name="type">Otro</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0301000000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Impatiens</field>
+    <field name="latin_name">Impatiens spp.</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1IPAG</field>
+    <field name="crop_code">0103052000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Industriales</field>
+    <field name="latin_name">Industriales</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0102080000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Inflorescencias</field>
+    <field name="latin_name">Inflorescencias</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1BRSG</field>
+    <field name="crop_code">0103010501000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Invernaderos</field>
+    <field name="latin_name">Invernaderos</field>
+    <field name="type">Otro</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0305020000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Judía forrajera</field>
+    <field name="latin_name">Phaseolus vulgaris</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">PHSVX</field>
+    <field name="crop_code">0102070500000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Judía para grano</field>
+    <field name="latin_name">Phaseolus vulgaris</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">PHSVX</field>
+    <field name="crop_code">0102060400000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Judía verde</field>
+    <field name="latin_name">Phaseolus vulgaris</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">PHSVX</field>
+    <field name="crop_code">0103010801000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Judías verdes</field>
+    <field name="latin_name">Phaseolus vulgaris</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">PHSVX</field>
+    <field name="crop_code">0202080100000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Kalanchoe</field>
+    <field name="latin_name">Kalanchoe spp.</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1KANG</field>
+    <field name="crop_code">0103052100000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Kiwano</field>
+    <field name="latin_name">Cucumis metuliferus</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">CUMMT</field>
+    <field name="crop_code">0103010402040000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Kiwi</field>
+    <field name="latin_name">Actinidia deliciosa</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">ATIDE</field>
+    <field name="crop_code">0101020304000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Kiwiberry / kiwiño</field>
+    <field name="latin_name">Actinidia arguta</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">ATIAR</field>
+    <field name="crop_code">0101020305000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Kiwis</field>
+    <field name="latin_name">Actinidia deliciosa</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">ATIDE</field>
+    <field name="crop_code">0201050500000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Kumquat</field>
+    <field name="latin_name">Fortunella margarita</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">FOLMA</field>
+    <field name="crop_code">0101020308000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Laurel</field>
+    <field name="latin_name">Laurus nobilis</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">LURNO</field>
+    <field name="crop_code">0101010214000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Lavandas</field>
+    <field name="latin_name">Lavandula spp.</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1LAVG</field>
+    <field name="crop_code">0102080900000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Lechuga</field>
+    <field name="latin_name">Lactuca sativa</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">LACSA</field>
+    <field name="crop_code">0103010601030000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Lechuga y similares</field>
+    <field name="latin_name">Lechuga y similares</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">3LETC</field>
+    <field name="crop_code">0103010601000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Leguminosas de grano</field>
+    <field name="latin_name">Leguminosae</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1LEGF</field>
+    <field name="crop_code">0102060000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Leguminosas forrajeras</field>
+    <field name="latin_name">Leguminosas forrajeras</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1LEGF</field>
+    <field name="crop_code">0102070000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Leguminosas verdes (frescas)</field>
+    <field name="latin_name">Leguminosae</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1LEGF</field>
+    <field name="crop_code">0103010800000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Leñosas</field>
+    <field name="latin_name">Leñosas</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">NNNVP</field>
+    <field name="crop_code">0101000000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Lenteja</field>
+    <field name="latin_name">Lens culinaris</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">LENCU</field>
+    <field name="crop_code">0102060500000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Lenteja verde</field>
+    <field name="latin_name">Lens culinaris</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">LENCU</field>
+    <field name="crop_code">0103010804000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Levístico</field>
+    <field name="latin_name">Levisticum officinale</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">LEWOF</field>
+    <field name="crop_code">0103010720000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Lichi</field>
+    <field name="latin_name">Litchi chinensis</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">LIHCH</field>
+    <field name="crop_code">0101020309000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Lima</field>
+    <field name="latin_name">Citrus aurantifolia</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">CIDAF</field>
+    <field name="crop_code">0101020105000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Limas</field>
+    <field name="latin_name">Citrus aurantifolia</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">CIDAF</field>
+    <field name="crop_code">0201010500000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Limonero</field>
+    <field name="latin_name">Citrus limon</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">CIDLI</field>
+    <field name="crop_code">0101020104000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Limones</field>
+    <field name="latin_name">Citrus limon</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">CIDLI</field>
+    <field name="crop_code">0201010400000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Linderos</field>
+    <field name="latin_name">Linderos</field>
+    <field name="type">Otro</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0303020000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Lino</field>
+    <field name="latin_name">Linum usitatissimum</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">LIUUT</field>
+    <field name="crop_code">0102080202000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Lirio de los valles</field>
+    <field name="latin_name">Covallaria majalis</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">CNKMA</field>
+    <field name="crop_code">0103052200000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Lobelia</field>
+    <field name="latin_name">Lobelia spp.</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1LOBG</field>
+    <field name="crop_code">0103052300000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Locales y almacenes</field>
+    <field name="latin_name">Locales y almacenes</field>
+    <field name="type">Otro</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0305000000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Lonas</field>
+    <field name="latin_name">Lonas</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0306070000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Lotos, cuernecillos</field>
+    <field name="latin_name">Lotus spp.</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1LOTG</field>
+    <field name="crop_code">0102071200000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Luffa, esponja vegetal</field>
+    <field name="latin_name">Luffa acutangula, L.cylindrica</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">LUFAE, LUFAC</field>
+    <field name="crop_code">0103010401050000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Lúpulo</field>
+    <field name="latin_name">Humulus lupulus</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">HUMLU</field>
+    <field name="crop_code">0103020000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Macadamias</field>
+    <field name="latin_name">Macadamia spp.</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">MCDSS</field>
+    <field name="crop_code">0227070000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Maíz</field>
+    <field name="latin_name">Zea mays</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">ZEAMX</field>
+    <field name="crop_code">0102010100000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Maíz de grano</field>
+    <field name="latin_name">Zea mays</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">ZEAMX</field>
+    <field name="crop_code">0102010103000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Maíz dulce</field>
+    <field name="latin_name">Zea mays</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">ZEAMX</field>
+    <field name="crop_code">0102010101000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Maíz forrajero</field>
+    <field name="latin_name">Zea mays</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">ZEAMX</field>
+    <field name="crop_code">0102010102000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Mandarinas (incluidas las clementinas e híbridos)</field>
+    <field name="latin_name">Citrus reticulata e híbridos</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">CIDRE</field>
+    <field name="crop_code">0201010200000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Mandarino (incluido clementino e híbridos)</field>
+    <field name="latin_name">Citrus reticulata e híbridos</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">CIDRE</field>
+    <field name="crop_code">0101020102000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Mango</field>
+    <field name="latin_name">Mangifera indica</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">MNGIN</field>
+    <field name="crop_code">0101020306000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Mangos</field>
+    <field name="latin_name">Mangifera indica</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">MNGIN</field>
+    <field name="crop_code">0201050800000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Manzanas</field>
+    <field name="latin_name">Malus domestica</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">MABSD</field>
+    <field name="crop_code">0201020100000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Manzanillas</field>
+    <field name="latin_name">Chamaemelum nobile/Matricaria chamomilla</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">ANTNO/MATCH</field>
+    <field name="crop_code">0103040600000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Manzano</field>
+    <field name="latin_name">Malus domestica</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">MABSD</field>
+    <field name="crop_code">0101020501000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Márgenes de cultivos</field>
+    <field name="latin_name">Márgenes de cultivos</field>
+    <field name="type">Otro</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0303010000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Mejorana</field>
+    <field name="latin_name">Origanum majorana</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">MAJHO</field>
+    <field name="crop_code">0103010715000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Melisa</field>
+    <field name="latin_name">Melissa officinalis</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">MLSOF</field>
+    <field name="crop_code">0103010716000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Melocotonero</field>
+    <field name="latin_name">Prunus persica</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">PRNPS</field>
+    <field name="crop_code">0101020401000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Melocotones (incluidas las nectarinas e híbridos)</field>
+    <field name="latin_name">Prunus persica</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">PRNPS</field>
+    <field name="crop_code">0201030100000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Melón</field>
+    <field name="latin_name">Cucumis melo</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">CUMME</field>
+    <field name="crop_code">0103010402010000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Melones</field>
+    <field name="latin_name">Cucumis melo</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">CUMME</field>
+    <field name="crop_code">0202040201000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Membrillero</field>
+    <field name="latin_name">Cydonia oblonga</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">CYDOB</field>
+    <field name="crop_code">0101020504000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Membrillos</field>
+    <field name="latin_name">Cydonia oblonga</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">CYDOB</field>
+    <field name="crop_code">0201020300000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Mentas incluida hierbabuena</field>
+    <field name="latin_name">Mentha spp.</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1MENG</field>
+    <field name="crop_code">0103010704000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Mijo</field>
+    <field name="latin_name">Panicum miliaceum</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">PANMI</field>
+    <field name="crop_code">0102010300000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Moreras</field>
+    <field name="latin_name">Morus spp.</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1MORG</field>
+    <field name="crop_code">0101010203010000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Mostaza china</field>
+    <field name="latin_name">Brassica juncea var.rugosa</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">BRSJU</field>
+    <field name="crop_code">0103010601070000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Mostaza, mostaza blanca</field>
+    <field name="latin_name">Sinapis alba</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">SINAL</field>
+    <field name="crop_code">0102080106000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Nabo</field>
+    <field name="latin_name">Brassica rapa subsp.rapa</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">BRSRR</field>
+    <field name="crop_code">0103010110000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Ñame</field>
+    <field name="latin_name">Dioscorea spp.</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1DIUG</field>
+    <field name="crop_code">0103010115000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Naranjas</field>
+    <field name="latin_name">Citrus sinensis, Citrus aurantium</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">CIDSI, CIDAU</field>
+    <field name="crop_code">0201010100000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Naranjo</field>
+    <field name="latin_name">Citrus sinensis, Citrus aurantium</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">CIDSI, CIDAU</field>
+    <field name="crop_code">0101020101000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Narciso</field>
+    <field name="latin_name">Narcissus spp.</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1NARG</field>
+    <field name="crop_code">0103050800000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Níspero, níspero del Japón</field>
+    <field name="latin_name">Eriobotrya japonica</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">EIOJA</field>
+    <field name="crop_code">0101020503000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Nispolero, níspero europeo</field>
+    <field name="latin_name">Mespilus germanica</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">MSPGE</field>
+    <field name="crop_code">0101010402120000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Nogal</field>
+    <field name="latin_name">Juglans regia, Juglans nigra</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">IUGRE, IUGNI</field>
+    <field name="crop_code">0101020603000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Nuez de cola</field>
+    <field name="latin_name">Cola spp.</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">1COHG</field>
+    <field name="crop_code">0207000000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Ojo de dragón, longan</field>
+    <field name="latin_name">Dimocarpus longan</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">DMCLO</field>
+    <field name="crop_code">0101020310000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Okra, quimbombo</field>
+    <field name="latin_name">Abelmoschus esculentus</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">ABMES</field>
+    <field name="crop_code">0103010304000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Oleaginosas</field>
+    <field name="latin_name">Oleaginosas</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">NNNQQ</field>
+    <field name="crop_code">0102080100000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Olivo</field>
+    <field name="latin_name">Olea europaea</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">OLVEU</field>
+    <field name="crop_code">0101020200000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Olivo de almazara</field>
+    <field name="latin_name">Olea europaea</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">OLVEU</field>
+    <field name="crop_code">0101020202000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Olivo de verdeo</field>
+    <field name="latin_name">Olea europaea</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">OLVEU</field>
+    <field name="crop_code">0101020201000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Orégano</field>
+    <field name="latin_name">Origanum vulgare</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">ORIVU</field>
+    <field name="crop_code">0103010717000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Ornamentales herbáceas</field>
+    <field name="latin_name">Ornamentales herbáceas</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0103050000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Otras aplicaciones</field>
+    <field name="latin_name">Otras aplicaciones</field>
+    <field name="type">Otro</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0300000000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Otros objetos de uso agrícola</field>
+    <field name="latin_name">Otros objetos de uso agrícola</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0306080000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Pacanas, nueces de Pecán</field>
+    <field name="latin_name">Carya illinoinensis</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">CYAIL</field>
+    <field name="crop_code">0227080000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Pacano, nuez de pecán</field>
+    <field name="latin_name">Carya illinoinensis</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">CYAIL</field>
+    <field name="crop_code">0101020606000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Palmáceas</field>
+    <field name="latin_name">Palmae</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1PALF</field>
+    <field name="crop_code">0101010301000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Palmera datilera</field>
+    <field name="latin_name">Phoenix datylifera</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">PHXDA</field>
+    <field name="crop_code">0101020307000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Panizo, moha</field>
+    <field name="latin_name">Setaria italica</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">SETIT</field>
+    <field name="crop_code">0102010400000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Papaya</field>
+    <field name="latin_name">Carica papaya</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">CIAPA</field>
+    <field name="crop_code">0101020316000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Papayas</field>
+    <field name="latin_name">Carica papaya</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">CIAPA</field>
+    <field name="crop_code">0201051500000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Pastizales</field>
+    <field name="latin_name">Pastizales</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0104020000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Pastos y praderas</field>
+    <field name="latin_name">Pastos y praderas</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0104000000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Pataca, aguaturma, tupinambo</field>
+    <field name="latin_name">Helianthus tuberosus</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">HELTU</field>
+    <field name="crop_code">0103010112000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Patata</field>
+    <field name="latin_name">Solanum tuberosum</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">SOLTU</field>
+    <field name="crop_code">0102090000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Patata de siembra</field>
+    <field name="latin_name">Solanum tuberosum</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">SOLTU</field>
+    <field name="crop_code">0102090200000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Patatas</field>
+    <field name="latin_name">Solanum tuberosum</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">SOLTU</field>
+    <field name="crop_code">0209000000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Patatas de consumo</field>
+    <field name="latin_name">Solanum tuberosum</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">SOLTU</field>
+    <field name="crop_code">0209030000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Patatas para almacenar</field>
+    <field name="latin_name">Solanum tuberosum</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">SOLTU</field>
+    <field name="crop_code">0209020000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Pepinillo</field>
+    <field name="latin_name">Cucumis sativus</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">CUMSA</field>
+    <field name="crop_code">0103010401020000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Pepino</field>
+    <field name="latin_name">Cucumis sativus</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">CUMSA</field>
+    <field name="crop_code">0103010401010000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Peral</field>
+    <field name="latin_name">Pyrus communis</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">PYUCO</field>
+    <field name="crop_code">0101020502000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Peras</field>
+    <field name="latin_name">Pyrus communis</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">PYUCO</field>
+    <field name="crop_code">0201020200000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Perejil</field>
+    <field name="latin_name">Petroselinum crispum</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">PARCR</field>
+    <field name="crop_code">0103010703000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Perifollo</field>
+    <field name="latin_name">Anthriscus cerefolium</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">ANRCE</field>
+    <field name="crop_code">0103010701000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Petunia</field>
+    <field name="latin_name">Petunia spp.</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1PEUG</field>
+    <field name="crop_code">0103051700000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Pimiento</field>
+    <field name="latin_name">Capsicum annuum</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">CPSAN</field>
+    <field name="crop_code">0103010302000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Piña Tropical</field>
+    <field name="latin_name">Ananas comosus</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">ANHCO</field>
+    <field name="crop_code">0101020313000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Pinos</field>
+    <field name="latin_name">Pinus spp.</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1PIUG</field>
+    <field name="crop_code">0101010101010000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Pistachero</field>
+    <field name="latin_name">Pistacia vera</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">PIAVE</field>
+    <field name="crop_code">0101020604000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Pitaya, fruta del dragón</field>
+    <field name="latin_name">Hylocereus spp.</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1HCRG</field>
+    <field name="crop_code">0101020319000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Plantaciones tropicales y subtropicales</field>
+    <field name="latin_name">Plantaciones tropicales y subtropicales</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">NNNTO</field>
+    <field name="crop_code">0101020300000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Platanera</field>
+    <field name="latin_name">Musa x paradisiaca</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">MUBPK</field>
+    <field name="crop_code">0101020312000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Plátanos</field>
+    <field name="latin_name">Musa x paradisiaca</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">MUBPK</field>
+    <field name="crop_code">0201050200000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Plátanos de sombra</field>
+    <field name="latin_name">Platanus spp.</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1PLTG</field>
+    <field name="crop_code">0101010207000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Poinsetia, flor de Pascua</field>
+    <field name="latin_name">Euphorbia pulcherrima</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">EPHPU</field>
+    <field name="crop_code">0101010420010000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Praderas de siembra</field>
+    <field name="latin_name">Praderas de siembra</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0104030000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Praderas naturales</field>
+    <field name="latin_name">Praderas naturales</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0104010000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Productos desecados</field>
+    <field name="latin_name">Productos desecados</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0218000000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Productos transformados</field>
+    <field name="latin_name">Productos transformados</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0219000000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Puerro</field>
+    <field name="latin_name">Allium porrum</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">ALLPO</field>
+    <field name="crop_code">0103010906000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Quercus</field>
+    <field name="latin_name">Quercus spp.</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1QUEG</field>
+    <field name="crop_code">0101010204020000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Quinoa</field>
+    <field name="latin_name">Chenopodium quinoa</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">CHEQU</field>
+    <field name="crop_code">0102050000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Rábano</field>
+    <field name="latin_name">Raphanus sativus</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">RAPSR</field>
+    <field name="crop_code">0103010107000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Rábano rusticano</field>
+    <field name="latin_name">Armoracia rusticana</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">ARWLA</field>
+    <field name="crop_code">0103010105000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Raíces de achicoria (industrial)</field>
+    <field name="latin_name">Cichorium intybus var.sativum</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">CICIS</field>
+    <field name="crop_code">0102080700000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Raíces y tubérculos (excepto remolacha azucarera y patata)</field>
+    <field name="latin_name">Raíces y tubérculos (excepto remolacha azucarera y patata)</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">NNNHP, NNNZK, excepting sugarbeet and potato</field>
+    <field name="crop_code">0103010100000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Raíz de perejil</field>
+    <field name="latin_name">Petroselinum crispum convar.radicosum</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">PARCR</field>
+    <field name="crop_code">0103010113000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Rastrojeras</field>
+    <field name="latin_name">Rastrojeras</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0106000000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Recintos industriales</field>
+    <field name="latin_name">Recintos industriales</field>
+    <field name="type">Otro</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0304040000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Redes de servicios</field>
+    <field name="latin_name">Redes de servicios</field>
+    <field name="type">Otro</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0304030000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Regaliz</field>
+    <field name="latin_name">Glyzyrrhiza glabra</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">GYCGL</field>
+    <field name="crop_code">0103040400000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Remolacha azucarera</field>
+    <field name="latin_name">Beta vulgaris subsp.vulgaris var.altissima</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">BEAVA</field>
+    <field name="crop_code">0102080500000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Remolacha de mesa</field>
+    <field name="latin_name">Beta vulgaris subsp. vulgaris var conditiva</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">BEAVD</field>
+    <field name="crop_code">0103010102000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Remolacha forrajera</field>
+    <field name="latin_name">Beta vulgaris subsp. vulgaris var crassa</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">BEAVC</field>
+    <field name="crop_code">0103010101000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Repollo</field>
+    <field name="latin_name">Brassica oleracea var.capitata</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">BRSOL</field>
+    <field name="crop_code">0103010502020000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Ricino</field>
+    <field name="latin_name">Ricinus communis</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">RIICO</field>
+    <field name="crop_code">0101010420020000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Robles</field>
+    <field name="latin_name">Quercus robur, Q.pyrenaica, Q.petraea</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">QUERO, QUEPN, QUEPE</field>
+    <field name="crop_code">0101010204020100</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Romero</field>
+    <field name="latin_name">Rosmarinus officinalis</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">RMSOF</field>
+    <field name="crop_code">0103010707000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Rosáceas</field>
+    <field name="latin_name">Rosaceae</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1ROSF, only ornamental species.</field>
+    <field name="crop_code">0101010402000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Rosales</field>
+    <field name="latin_name">Rosa spp.</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1ROSG</field>
+    <field name="crop_code">0101010402010000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Rúcula</field>
+    <field name="latin_name">Eruca sativa</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">ERUVE</field>
+    <field name="crop_code">0103010601060000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Ruda</field>
+    <field name="latin_name">Ruta graveolens</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">RUAGR</field>
+    <field name="crop_code">0103010719000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Ruibarbo</field>
+    <field name="latin_name">Rheum rhabarbarum</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">RHERH</field>
+    <field name="crop_code">0103010908000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Sacos</field>
+    <field name="latin_name">Sacos</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0306010000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Salsifí</field>
+    <field name="latin_name">Tragopogon porrifolius</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">TROPS</field>
+    <field name="crop_code">0103010108000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Salvia</field>
+    <field name="latin_name">Salvia officinalis</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">SALOF</field>
+    <field name="crop_code">0103010706000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Sandía</field>
+    <field name="latin_name">Citrullus vulgaris</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">CITLA</field>
+    <field name="crop_code">0103010402030000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Saúcos</field>
+    <field name="latin_name">Sambucus spp.</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1SAMG</field>
+    <field name="crop_code">0101010408010000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Semillas de  algodón</field>
+    <field name="latin_name">Gossypium spp.</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">1GOSG</field>
+    <field name="crop_code">0204090000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Semillas de adormidera</field>
+    <field name="latin_name">Papaver somniferum</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">PAPSO</field>
+    <field name="crop_code">0204030000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Semillas de cacahuetes</field>
+    <field name="latin_name">Arachis hypogaea</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">ARHHY</field>
+    <field name="crop_code">0204020000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Semillas de girasol</field>
+    <field name="latin_name">Helianthus annus</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">HELAN</field>
+    <field name="crop_code">0204050000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Semillas oleaginosas</field>
+    <field name="latin_name">Oleaginosas</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">NNNQQ</field>
+    <field name="crop_code">0204000000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Sésamo, ajonjolí</field>
+    <field name="latin_name">Sesamum indicum</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">SEGIN</field>
+    <field name="crop_code">0102080108000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Setas</field>
+    <field name="latin_name">Setas</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">NNNFU</field>
+    <field name="crop_code">0108000000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Setas cultivadas</field>
+    <field name="latin_name">Setas cultivadas</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">3EDMC</field>
+    <field name="crop_code">0108010000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Simiente de algodón</field>
+    <field name="latin_name">Gossypium spp.</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">1GOSG</field>
+    <field name="crop_code">0220040200000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Simiente de arroz</field>
+    <field name="latin_name">Oryza sativa</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">ORYSA</field>
+    <field name="crop_code">0220010800000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Simiente de avena</field>
+    <field name="latin_name">Avena sativa</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">AVESA</field>
+    <field name="crop_code">0220010200000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Simiente de cebada</field>
+    <field name="latin_name">Hordeum vulgare</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">HORVX</field>
+    <field name="crop_code">0220010300000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Simiente de cebolla</field>
+    <field name="latin_name">Allium cepa</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">ALLCE</field>
+    <field name="crop_code">0220020600000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Simiente de centeno</field>
+    <field name="latin_name">Secale cereale</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">SECCE</field>
+    <field name="crop_code">0220010600000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Simiente de cereales</field>
+    <field name="latin_name">Simiente de cereales</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">3CERC</field>
+    <field name="crop_code">0220010000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Simiente de colza</field>
+    <field name="latin_name">Brassica napus subsp.napus</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">BRSNN</field>
+    <field name="crop_code">0220040500000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Simiente de crucíferas</field>
+    <field name="latin_name">Cruciferae</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">1CRUF</field>
+    <field name="crop_code">0220020400000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Simiente de cucurbitáceas</field>
+    <field name="latin_name">Cucurbitaceae</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">1CUCF</field>
+    <field name="crop_code">0220020100000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Simiente de espinacas</field>
+    <field name="latin_name">Spinacia oleracea</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">SPQOL</field>
+    <field name="crop_code">0220020900000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Simiente de girasol</field>
+    <field name="latin_name">Helianthus annus</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">HELAN</field>
+    <field name="crop_code">0220040400000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Simiente de hierbas aromáticas</field>
+    <field name="latin_name">Simiente de hierbas aromáticas</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">3HSMC</field>
+    <field name="crop_code">0220020800000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Simiente de hortícolas</field>
+    <field name="latin_name">Simiente de hortícolas</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0220020000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Simiente de lechugas</field>
+    <field name="latin_name">Lactuca sativa</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">LACSA</field>
+    <field name="crop_code">0220020700000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Simiente de maíz</field>
+    <field name="latin_name">Zea mays</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">ZEAMX</field>
+    <field name="crop_code">0220010400000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Simiente de patatas</field>
+    <field name="latin_name">Solanum tuberosum</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">SOLTU</field>
+    <field name="crop_code">0220070000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Simiente de remolacha azucarera</field>
+    <field name="latin_name">Beta vulgaris subsp.vulgaris var.altissima</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">BEAVA</field>
+    <field name="crop_code">0220040300000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Simiente de remolacha forrajera</field>
+    <field name="latin_name">Beta vulgaris subsp. vulgaris var crassa</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">BEAVC</field>
+    <field name="crop_code">0220021300000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Simiente de trigo</field>
+    <field name="latin_name">Triticum aestivum</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">TRZAX</field>
+    <field name="crop_code">0220010100000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Simiente de triticale</field>
+    <field name="latin_name">x Triticosecale rimpaui</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">TTLRI</field>
+    <field name="crop_code">0220010700000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Simiente de zanahoria</field>
+    <field name="latin_name">Daucus carota subsp.sativus</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">DAUCS</field>
+    <field name="crop_code">0220021200000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Simientes</field>
+    <field name="latin_name">Simientes</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0220000000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Soja</field>
+    <field name="latin_name">Glycine max</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">GLXMA</field>
+    <field name="crop_code">0102080103000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Solanáceas (excepto patata)</field>
+    <field name="latin_name">Solanaceae (excepto Solanum tuberosum)</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1SOLF (excepting S.tuberosum)</field>
+    <field name="crop_code">0103010300000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Solares</field>
+    <field name="latin_name">Solares</field>
+    <field name="type">Otro</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0304110000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Sorbos y serbales</field>
+    <field name="latin_name">Sorbus spp.</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1SOUG</field>
+    <field name="crop_code">0101010402080000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Sorgo</field>
+    <field name="latin_name">Sorghum bicolor</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">SORVU</field>
+    <field name="crop_code">0102010200000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Stevia</field>
+    <field name="latin_name">Stevia rebaudiana</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">SVARE</field>
+    <field name="crop_code">0102080800000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Sustratos, enmiendas y materiales de acolchado</field>
+    <field name="latin_name">Se refiere a tratamientos de desinfección de las distintas categorías incluidas dentro de sustratos, enmiendas y materiales de acolchado, siempre y cuando no puedan ser considerados biocidas</field>
+    <field name="type">Otro</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0307000000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Tabaco</field>
+    <field name="latin_name">Nicotiana tabacum</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">NIOTA</field>
+    <field name="crop_code">0102080400000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Tabaco (producto cosechado)</field>
+    <field name="latin_name">Nicotiana tabacum</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">NIOTA</field>
+    <field name="crop_code">0214000000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Tagetes</field>
+    <field name="latin_name">Tagetes spp.</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1TAGG</field>
+    <field name="crop_code">0103052400000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Tallos jóvenes</field>
+    <field name="latin_name">Tallos jóvenes</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0103010900000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Té</field>
+    <field name="latin_name">Camellia sinensis</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">CAHSI</field>
+    <field name="crop_code">0210010000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Té y otras infusiones</field>
+    <field name="latin_name">Té y otras infusiones</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0210000000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Teff</field>
+    <field name="latin_name">Eragrostis tef</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">ERATF</field>
+    <field name="crop_code">0102010600000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Tendidos eléctricos</field>
+    <field name="latin_name">Tendidos eléctricos</field>
+    <field name="type">Otro</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0304030100000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Terrenos encharcados</field>
+    <field name="latin_name">Terrenos encharcados</field>
+    <field name="type">Otro</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0301020000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Tomate</field>
+    <field name="latin_name">Solanum lycopersicum (= Lycopersicon esculentum)</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">LYPES</field>
+    <field name="crop_code">0103010301000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Tomates</field>
+    <field name="latin_name">Solanum lycopersicum (= Lycopersicon esculentum)</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">LYPES</field>
+    <field name="crop_code">0202030100000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Tomillo</field>
+    <field name="latin_name">Thymus spp.</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1THYG</field>
+    <field name="crop_code">0103010708000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Toronja, pomelo</field>
+    <field name="latin_name">Citrus paradisi</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">CIDPA</field>
+    <field name="crop_code">0101020103000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Toronjas, pomelos</field>
+    <field name="latin_name">Citrus paradisi</field>
+    <field name="type">Producto</field>
+    <field name="eppo_code">CIDPA</field>
+    <field name="crop_code">0201010300000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Trébol</field>
+    <field name="latin_name">Trifolium spp.</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1TRFG</field>
+    <field name="crop_code">0102070200000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Trigo</field>
+    <field name="latin_name">Triticum aestivum, Triticum durum</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">TRZAX, TRZDU</field>
+    <field name="crop_code">0102020100000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Triticale</field>
+    <field name="latin_name">x Triticosecale rimpaui</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">TTLRI</field>
+    <field name="crop_code">0102020500000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Tritordeum</field>
+    <field name="latin_name">x Tritordeum sp.</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">TTOSS</field>
+    <field name="crop_code">0102020600000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Valeriana</field>
+    <field name="latin_name">Valeriana officinalis</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">VALOF</field>
+    <field name="crop_code">0103040900000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Verdolaga</field>
+    <field name="latin_name">Portulaca oleracea</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">POROL</field>
+    <field name="crop_code">0103010602030000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Veza</field>
+    <field name="latin_name">Vicia sativa</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">VICSA</field>
+    <field name="crop_code">0102070300000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Vías férreas</field>
+    <field name="latin_name">Vías férreas</field>
+    <field name="type">Otro</field>
+    <field name="eppo_code"></field>
+    <field name="crop_code">0304020000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Vid</field>
+    <field name="latin_name">Vitis vinifera</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">VITVI</field>
+    <field name="crop_code">0101020700000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Vid de mesa</field>
+    <field name="latin_name">Vitis vinifera</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">VITVI</field>
+    <field name="crop_code">0101020701000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Vid de vinificación</field>
+    <field name="latin_name">Vitis vinifera</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">VITVI</field>
+    <field name="crop_code">0101020702000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Violeta</field>
+    <field name="latin_name">Viola spp.</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1VIOG</field>
+    <field name="crop_code">0103051000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Yeros</field>
+    <field name="latin_name">Vicia ervilia</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">VICER</field>
+    <field name="crop_code">0102071000000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Yucas</field>
+    <field name="latin_name">Yucca spp.</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">1UCCG</field>
+    <field name="crop_code">0101010427020000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Zanahoria</field>
+    <field name="latin_name">Daucus carota subsp.sativus</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">DAUCS</field>
+    <field name="crop_code">0103010103000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Zarzamoras</field>
+    <field name="latin_name">Rubus ulmifolius</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">RUBUL</field>
+    <field name="crop_code">0101020801000000</field>
+  </record>
+  <record model="field.notebook.crop">
+    <field name="name">Zulla</field>
+    <field name="latin_name">Hedysarum coronarium</field>
+    <field name="type">Vegetal</field>
+    <field name="eppo_code">HESCO</field>
+    <field name="crop_code">0102071100000000</field>
+  </record>
+</odoo>
