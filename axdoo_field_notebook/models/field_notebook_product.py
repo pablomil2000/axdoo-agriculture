@@ -52,8 +52,8 @@ class FieldNotebookProduct(models.Model):
     procedure_state = fields.Char(
         string="Procedure state",
     )
-    consitioning = fields.Char(
-        string="Consitioning",
+    conditioning = fields.Char(
+        string="Conditioning",
     )
     symbol_1 = fields.Char(
         string="Symbol 1",
@@ -115,44 +115,23 @@ class FieldNotebookProduct(models.Model):
     procedure_date = fields.Date(
         string="Procedure date",
     )
-    comment_procedure_date = fields.Char(
-        string="Comment procedure date",
-    )
     expiration_date = fields.Date(
         string="Expiration date",
-    )
-    comment_expiration_date = fields.Char(
-        string="Comment expiration date",
     )
     inscription_date = fields.Date(
         string="Inscription date",
     )
-    comment_inscription_date = fields.Char(
-        string="Comment expiration date",
-    )
     renewal_date = fields.Date(
         string="Renewal date",
-    )
-    comment_renewal_date = fields.Char(
-        string="Comment renewal date",
     )
     modification_date = fields.Date(
         string="Modification date",
     )
-    comment_modification_date = fields.Char(
-        string="Comment modification date",
-    )
     sale_deadline = fields.Date(
         string="Renewal date",
     )
-    comment_sale_deadline = fields.Char(
-        string="Comment sale deadline",
-    )
     authorization_date = fields.Date(
         string="Authorization date",
-    )
-    comment_authorization_date = fields.Char(
-        string="Comment authorization date",
     )
 
     # < IdProducto > 36725 < / IdProducto >***product_code***

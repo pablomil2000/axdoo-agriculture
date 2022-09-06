@@ -22,7 +22,7 @@
                             <field name="observations"/>
                             <field name="procedure"/>
                             <field name="procedure_state"/>
-                            <field name="consitioning"/>
+                            <field name="conditioning"/>
                             <field name="symbol_1"/>
                             <field name="symbol_2"/>
                             <field name="symbol_3"/>
@@ -43,19 +43,12 @@
                             <field name="headline_id"/>
                             <field name="formulated_id"/>
                             <field name="procedure_date"/>
-                            <field name="comment_procedure_date"/>
                             <field name="expiration_date"/>
-                            <field name="comment_expiration_date"/>
                             <field name="inscription_date"/>
-                            <field name="comment_inscription_date"/>
                             <field name="renewal_date"/>
-                            <field name="comment_renewal_date"/>
                             <field name="modification_date"/>
-                            <field name="comment_modification_date"/>
                             <field name="sale_deadline"/>
-                            <field name="comment_sale_deadline"/>
                             <field name="authorization_date"/>
-                            <field name="comment_authorization_date"/>
                         </group>
                     </group>
                 </sheet>
@@ -73,52 +66,40 @@
         <field name="model">field.notebook.product</field>
         <field name="arch" type="xml">
             <tree>
-                <field name="product_code"/>
-                <field name="manufacturer_internal_code"/>
                 <field name="registration_number"/>
                 <field name="name"/>
                 <field name="holder"/>
-                <field name="manufacturer"/>
-                <field name="factory"/>
+                <field name="product_code"/>
                 <field name="formulated"/>
+                <field name="manufacturer"/>
                 <field name="state"/>
                 <field name="observations"/>
-                <field name="procedure"/>
-                <field name="procedure_state"/>
-                <field name="consitioning"/>
-                <field name="symbol_1"/>
-                <field name="symbol_2"/>
-                <field name="symbol_3"/>
-                <field name="domestic"/>
-                <field name="storage_security"/>
-                <field name="handling_security"/>
-                <field name="spill_security"/>
-                <field name="directive_registration_number"/>
-                <field name="version"/>
-                <field name="departure_version"/>
-                <field name="state_version"/>
-                <field name="state_id"/>
-                <field name="substance_id"/>
-                <field name="ambit_id"/>
-                <field name="crop_id"/>
-                <field name="plague_id"/>
-                <field name="function_id"/>
-                <field name="headline_id"/>
-                <field name="formulated_id"/>
-                <field name="procedure_date"/>
-                <field name="comment_procedure_date"/>
-                <field name="expiration_date"/>
-                <field name="comment_expiration_date"/>
-                <field name="inscription_date"/>
-                <field name="comment_inscription_date"/>
-                <field name="renewal_date"/>
-                <field name="comment_renewal_date"/>
-                <field name="modification_date"/>
-                <field name="comment_modification_date"/>
-                <field name="sale_deadline"/>
-                <field name="comment_sale_deadline"/>
-                <field name="authorization_date"/>
-                <field name="comment_authorization_date"/>
+                <field name="procedure" optional="hide" />
+                <field name="procedure_state" optional="hide" />
+                <field name="conditioning" optional="hide" />
+                <field name="domestic" optional="hide" />
+                <field name="storage_security" optional="hide" />
+                <field name="handling_security" optional="hide" />
+                <field name="spill_security" optional="hide" />
+                <field name="directive_registration_number" optional="hide" />
+                <field name="version" optional="hide" />
+                <field name="departure_version" optional="hide" />
+                <field name="state_version" optional="hide" />
+                <field name="state_id" optional="hide" />
+                <field name="substance_id" optional="hide" />
+                <field name="ambit_id" optional="hide" />
+                <field name="crop_id" optional="hide" />
+                <field name="plague_id" optional="hide" />
+                <field name="function_id" optional="hide" />
+                <field name="headline_id" optional="hide" />
+                <field name="formulated_id" optional="hide" />
+                <field name="procedure_date" optional="hide" />
+                <field name="expiration_date" optional="hide" />
+                <field name="inscription_date" optional="hide" />
+                <field name="renewal_date" optional="hide" />
+                <field name="modification_date" optional="hide" />
+                <field name="sale_deadline" optional="hide" />
+                <field name="authorization_date" optional="hide" />
             </tree>
         </field>
     </record>
