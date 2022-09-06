@@ -10,8 +10,8 @@ class FieldNotebookProduct(models.Model):
     _inherit = ["mail.thread", "mail.activity.mixin"]
     _description = "Field Notebook Product"
 
-    product_code = fields.Char(
-        string="Product Code",
+    name = fields.Char(
+        string="Name",
         required=True,
         index=True,
         tracking=True,
@@ -22,9 +22,8 @@ class FieldNotebookProduct(models.Model):
     registration_number = fields.Char(
         string="Registration Number",
     )
-    name = fields.Char(
-        string="Name",
-        required=True,
+    product_code = fields.Char(
+        string="Product Code",
         index=True,
         tracking=True,
     )
