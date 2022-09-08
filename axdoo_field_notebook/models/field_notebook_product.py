@@ -127,7 +127,7 @@ class FieldNotebookProduct(models.Model):
         string="Modification date",
     )
     sale_deadline = fields.Date(
-        string="Renewal date",
+        string="Sale deadline date",
     )
     authorization_date = fields.Date(
         string="Authorization date",

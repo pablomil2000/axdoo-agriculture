@@ -2,9 +2,9 @@
      License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).-->
 <odoo>
 
-    <record id="field_notebook_labor_view_form" model="ir.ui.view">
-        <field name="name">field.notebook.labor.form</field>
-        <field name="model">field.notebook.labor</field>
+    <record id="field_notebook_phytosanitary_view_form" model="ir.ui.view">
+        <field name="name">field.notebook.phytosanitary.form</field>
+        <field name="model">field.notebook.phytosanitary</field>
         <field name="arch" type="xml">
             <form>
                 <sheet>
@@ -16,19 +16,27 @@
                     <group>
                         <group>
                             <field name="date_expected"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group>
                             <field name="date_start"/>
                         </group>
                         <group>
-                            <field name="state"/>
                             <field name="date_end"/>
                         </group>
                         <group>
                             <field name="ucth_id"/>
                             <field name="campaign_id"/>
-                            <field name="labor_type_id"/>
-                        </group>
-                        <group>
-                            <field name="duration" type="measure" widget="timesheet_uom" decoration-danger="duration &gt; 24"/>
+                            <field name="product_id"/>
+                            <field name="phytosanitary_application_type_id"/>
+                            <field name="justify"/>
+                            <field name="emergency"/>
+                            <field name="wind_speed"/>
+                            <field name="execution"/>
+                            <field name="problematic"/>
+                            <field name="efficiency"/>
+                            <field name="weather_condition"/>
                         </group>
                         <group colspan="12">
                             <field name="employee_ids" widget="many2many_tags" />
@@ -47,9 +55,9 @@
         </field>
     </record>
 
-    <record id="axdoo_field_notebook.field_notebook_labor_view_tree" model="ir.ui.view">
-        <field name="name">field.notebook.labor.view.tree</field>
-        <field name="model">field.notebook.labor</field>
+    <record id="axdoo_field_notebook.field_notebook_phytosanitary_view_tree" model="ir.ui.view">
+        <field name="name">field.notebook.phytosanitary.view.tree</field>
+        <field name="model">field.notebook.phytosanitary</field>
         <field name="arch" type="xml">
             <tree multi_edit="1" sample="1">
                 <field name="name" readonly="1" decoration-bf="1"/>
@@ -58,47 +66,41 @@
                 <field name="date_expected"/>
                 <field name="date_start" optional="hide"/>
                 <field name="date_end" optional="hide"/>
+                <field name="product_id" optional="show"/>
                 <field name="activity_ids" widget="list_activity" optional="show"/>
-                <field name="duration" type="measure" widget="timesheet_uom" decoration-danger="duration &gt; 24"/>
-                <field name="state"
-                       decoration-info="state == 'open'"
-                       decoration-warning="state == 'in_progress'"
-                       decoration-danger="state == 'closed'"
-                       widget="badge"/>
             </tree>
         </field>
     </record>
 
-    <record id="axdoo_field_notebook.field_notebook_labor_view_filter" model="ir.ui.view">
+    <record id="axdoo_field_notebook.field_notebook_phytosanitary_view_filter" model="ir.ui.view">
         <field name="name">fha.subvention.view.filter</field>
-        <field name="model">field.notebook.labor</field>
+        <field name="model">field.notebook.phytosanitary</field>
         <field name="priority" eval="1"/>
         <field name="arch" type="xml">
-            <search string="Search Parcel">
+            <search string="Search phytosanitary">
                 <group expand="0" string="Group By">
                     <filter string="Campaign" name="campaign_id" context="{'group_by': 'campaign_id'}"/>
                     <filter string="UCTH" name="ucth_id" context="{'group_by': 'ucth_id'}"/>
                     <filter string="Exploitation" name="exploitation_id" context="{'group_by': 'exploitation_id'}"/>
-                    <filter string="State" name="state" context="{'group_by': 'state'}"/>
+                    <filter string="Product" name="product_id" context="{'group_by': 'product_id'}"/>
                     <filter string="Expected date" name="date_expected" context="{'group_by': 'date_expected'}"/>
                     <filter string="Start date" name="date_start" context="{'group_by': 'date_start'}"/>
                     <filter string="End date" name="date_end" context="{'group_by': 'date_end'}"/>
-                    <filter string="Labor type" name="labor_type_id" context="{'group_by': 'labor_type_id'}"/>
                 </group>
             </search>
         </field>
     </record>
 
-    <record id="field_notebook_labor_action"
+    <record id="field_notebook_phytosanitary_action"
             model="ir.actions.act_window">
-        <field name="name">Labor</field>
+        <field name="name">Phytosanitary</field>
         <field name="type">ir.actions.act_window</field>
-        <field name="res_model">field.notebook.labor</field>
+        <field name="res_model">field.notebook.phytosanitary</field>
         <field name="view_mode">tree,kanban,form,calendar,pivot,graph,activity</field>
         <field name="view_id"
-               ref="field_notebook_labor_view_tree"/>
+               ref="field_notebook_phytosanitary_view_tree"/>
         <field name="search_view_id"
-               ref="field_notebook_labor_view_filter"/>
+               ref="field_notebook_phytosanitary_view_filter"/>
     </record>
 
 </odoo>

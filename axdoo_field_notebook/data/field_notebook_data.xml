@@ -11,6 +11,16 @@
         <field name="number_increment">1</field>
     </record>
 
+    <record id="sequence_field_notebook_phytosanitary" model="ir.sequence">
+        <field name="name">Sequence of phytosanitary</field>
+        <field name="code">field.notebook.phytosanitary</field>
+        <field name="active">True</field>
+        <field name="prefix">FITO/%(year)s/</field>
+        <field name="padding">5</field>
+        <field name="number_next">1</field>
+        <field name="number_increment">1</field>
+    </record>
+
     <record id="zone_vulnerable" model="field.notebook.zone">
         <field name="name">Zona Vulnerable</field>
     </record>
@@ -94,6 +104,34 @@
     </record>
     <record id="improductivos" model="field.notebook.plot.use">
         <field name="name">Improductivo</field>
+    </record>
+
+    <record model="field.notebook.phytosanitary.application.type">
+        <field name="name">(Ninguno)</field>
+    </record>
+    <record model="field.notebook.phytosanitary.application.type">
+        <field name="name">Aplicación de gránulos</field>
+    </record>
+    <record model="field.notebook.phytosanitary.application.type">
+        <field name="name">Aplicación en cebos</field>
+    </record>
+    <record model="field.notebook.phytosanitary.application.type">
+        <field name="name">Atomización</field>
+    </record>
+    <record model="field.notebook.phytosanitary.application.type">
+        <field name="name">Espolvoreo</field>
+    </record>
+    <record model="field.notebook.phytosanitary.application.type">
+        <field name="name">Fumigacón</field>
+    </record>
+    <record model="field.notebook.phytosanitary.application.type">
+        <field name="name">Inmersión</field>
+    </record>
+    <record model="field.notebook.phytosanitary.application.type">
+        <field name="name">Inyección</field>
+    </record>
+    <record model="field.notebook.phytosanitary.application.type">
+        <field name="name">Otros</field>
     </record>
 
     <record id="autonomy_code_01" model="field.notebook.autonomy">
