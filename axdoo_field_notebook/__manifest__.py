@@ -40,6 +40,7 @@
         'views/res_partner_view.xml',
         'views/maintenance_view.xml',
         'views/axdoo_field_notebook_view.xml',
+        'views/product_template_view.xml',
         'data/field_notebook_data.xml',
         'data/field_notebook_demo_data.xml',
         'data/field_notebook_crop_data.xml',

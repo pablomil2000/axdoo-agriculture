@@ -1,0 +1,79 @@
+<odoo>
+    <record model="ir.ui.view" id="product_template_form_view">
+        <field name="name">product.template.form</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_form_view" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='purchase_ok']/.." position="after">
+                <field name="phytosanitary" />
+                <label for="phytosanitary" />
+            </xpath>
+            <xpath expr="//page[@name='inventory']" position="after">
+                <page name="field_notebook" string="Field Notebook">
+                    <form>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="registration_number"/>
+                                <field name="holder"/>
+                                <field name="state"/>
+                                <field name="manufacturer"/>
+                                <field name="product_code"/>
+                                <field name="formulated"/>
+                            </group>
+                            <group>
+                                <field name="inscription_date"/>
+                                <field name="expiration_date"/>
+                                <field name="renewal_date"/>
+                                <field name="modification_date"/>
+                                <field name="procedure_date"/>
+                                <field name="authorization_date"/>
+                                <field name="conditioning"/>
+                            </group>
+                        </group>
+                        <group>
+                            <group>
+                                <field name="storage_security"/>
+                                <field name="handling_security"/>
+                            </group>
+                            <group>
+                                <field name="spill_security"/>
+                            </group>
+                        </group>
+                        <group>
+                            <group>
+                                <field name="factory"/>
+                                <field name="manufacturer_internal_code"/>
+                                <field name="observations"/>
+                                <field name="procedure"/>
+                                <field name="procedure_state"/>
+                                <field name="domestic"/>
+                                <field name="directive_registration_number"/>
+                                <field name="version"/>
+                                <field name="formulated_id"/>
+                            </group>
+                            <group>
+                                <field name="departure_version"/>
+                                <field name="state_version"/>
+                                <field name="state_id"/>
+                                <field name="substance_id"/>
+                                <field name="ambit_id"/>
+                                <field name="crop_id"/>
+                                <field name="plague_id"/>
+                                <field name="function_id"/>
+                                <field name="headline_id"/>
+                                <field name="sale_deadline"/>
+                            </group>
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids"/>
+                        <field name="activity_ids"/>
+                        <field name="message_ids"/>
+                    </div>
+                </form>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

@@ -19,3 +19,4 @@ from . import field_notebook_exploitation
 from . import res_partner
 from . import field_notebook_enclosure
 from . import equipment
+from . import product
