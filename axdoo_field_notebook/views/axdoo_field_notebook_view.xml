@@ -146,6 +146,8 @@
               action="product.product_template_action"
               sequence="15"/>
 
+
+
     <record id="field_notebook_equipment_action" model="ir.actions.act_window">
         <field name="name">Equipments</field>
         <field name="res_model">maintenance.equipment</field>
