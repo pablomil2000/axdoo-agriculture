@@ -140,6 +140,12 @@
               action="field_notebook_town_action"
               sequence="14"/>
 
+    <menuitem id="menu_product_form"
+              name="Products"
+              parent="field_notebook_configuration_menu"
+              action="product.product_template_action"
+              sequence="15"/>
+
     <record id="field_notebook_equipment_action" model="ir.actions.act_window">
         <field name="name">Equipments</field>
         <field name="res_model">maintenance.equipment</field>
@@ -152,18 +158,12 @@
               parent="field_notebook_configuration_menu"
               action="field_notebook_equipment_action"
               groups="maintenance.group_equipment_manager,base.group_user"
-              sequence="15"/>
-
-    <menuitem id="menu_product_form"
-              name="Products"
-              parent="field_notebook_configuration_menu"
-              action="field_notebook_product_action"
               sequence="16"/>
 
-<!--    <menuitem id="menu_product_form"-->
-<!--              name="Phytosanitary Application Type"-->
-<!--              parent="field_notebook_configuration_menu"-->
-<!--              action="field_notebook_phytosanitary_application_type_action"-->
-<!--              sequence="17"/>-->
+    <menuitem id="menu_product_form"
+              name="Phytosanitary Application Type"
+              parent="field_notebook_configuration_menu"
+              action="field_notebook_phytosanitary_application_type_action"
+              sequence="17"/>
 
 </odoo>
