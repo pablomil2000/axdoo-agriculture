@@ -9,13 +9,19 @@ class FieldNotebookLabor(models.Model):
     _name = "field.notebook.labor"
     _inherit = ["mail.thread", "mail.activity.mixin"]
     _description = "Field Notebook Labor"
+    _check_company_auto = True
 
+    company_id = fields.Many2one(
+        comodel_name='res.company',
+        required=True,
+        default=lambda self: self.env.company,
+    )
     name = fields.Char(
         string='Labor Reference',
         required=True,
         index=True,
         copy=False,
-        default=lambda self: self.env['ir.sequence'].next_by_code('field.notebook.labor'),
+        default="New",
     )
     date_expected = fields.Date(
         index=True,
@@ -69,6 +75,26 @@ class FieldNotebookLabor(models.Model):
         comodel_name='maintenance.equipment',
         string='Equipments',
     )
+
+    @api.model
+    def create(self, vals):
+        if vals.get("name", "New") == "New":
+            vals["name"] = self._prepare_name(vals)
+        return super().create(vals)
+
+    def copy(self, default=None):
+        self.ensure_one()
+        if default is None:
+            default = {}
+        if "name" not in default:
+            default["name"] = self._prepare_name(default)
+        return super().copy(default)
+
+    def _prepare_name(self, values):
+        seq = self.env["ir.sequence"]
+        if "company_id" in values:
+            seq = seq.with_company(values["company_id"])
+        return seq.next_by_code("field.notebook.labor") or "New"
 
     @api.onchange('ucth_id')
     def _onchange_ucth_id(self):

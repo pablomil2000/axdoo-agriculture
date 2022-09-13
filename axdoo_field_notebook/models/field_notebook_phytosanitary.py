@@ -9,13 +9,19 @@ class FieldNotebookPhytosanitary(models.Model):
     _name = "field.notebook.phytosanitary"
     _inherit = ["mail.thread", "mail.activity.mixin"]
     _description = "Field Notebook Phytosanitary"
+    _check_company_auto = True
 
+    company_id = fields.Many2one(
+        comodel_name='res.company',
+        required=True,
+        default=lambda self: self.env.company,
+    )
     name = fields.Char(
         string='Phytosanitary Reference',
         required=True,
         index=True,
-        copy=False,
-        default=lambda self: self.env['ir.sequence'].next_by_code('field.notebook.phytosanitary'),
+        readonly=True,
+        default="New",
     )
     date_expected = fields.Date(
         index=True,
@@ -41,24 +47,29 @@ class FieldNotebookPhytosanitary(models.Model):
         comodel_name='field.notebook.ucth',
         required=True,
         tracking=True,
+        domain="['|', ('company_id', '=', False), ('company_id', '=', company_id)]",
     )
     exploitation_id = fields.Many2one(
         comodel_name='field.notebook.exploitation',
         related="ucth_id.exploitation_id",
         store=True,
+        domain="['|', ('company_id', '=', False), ('company_id', '=', company_id)]",
     )
     employee_ids = fields.Many2many(
         comodel_name='hr.employee',
         string='Employees',
+        domain="['|', ('company_id', '=', False), ('company_id', '=', company_id)]",
     )
     equipment_ids = fields.Many2many(
         comodel_name='maintenance.equipment',
         string='Equipments',
+        domain="['|', ('company_id', '=', False), ('company_id', '=', company_id)]",
     )
     product_id = fields.Many2one(
-        comodel_name='field.notebook.product',
+        comodel_name='product.product',
         required=True,
         tracking=True,
+        domain="[('phytosanitary','=',True),'|', ('company_id', '=', False), ('company_id', '=', company_id)]",
     )
     phytosanitary_application_type_id = fields.Many2one(
         comodel_name='field.notebook.phytosanitary.application.type',
@@ -122,6 +133,26 @@ class FieldNotebookPhytosanitary(models.Model):
         default='none',
         tracking=True,
     )
+
+    @api.model
+    def create(self, vals):
+        if vals.get("name", "New") == "New":
+            vals["name"] = self._prepare_name(vals)
+        return super().create(vals)
+
+    def copy(self, default=None):
+        self.ensure_one()
+        if default is None:
+            default = {}
+        if "name" not in default:
+            default["name"] = self._prepare_name(default)
+        return super().copy(default)
+
+    def _prepare_name(self, values):
+        seq = self.env["ir.sequence"]
+        if "company_id" in values:
+            seq = seq.with_company(values["company_id"])
+        return seq.next_by_code("field.notebook.phytosanitary") or "New"
 
     @api.onchange('ucth_id')
     def _onchange_ucth_id(self):

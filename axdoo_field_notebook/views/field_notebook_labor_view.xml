@@ -37,6 +37,11 @@
                             <field name="equipment_ids" widget="many2many_tags" />
                         </group>
                     </group>
+                    <group>
+                        <group>
+                            <field name="company_id" options="{'no_create': True}" groups="base.group_multi_company"/>
+                        </group>
+                    </group>
                 </sheet>
                 <div class="oe_chatter">
                     <field name="message_follower_ids"/>
@@ -59,6 +64,7 @@
                 <field name="date_start" optional="hide"/>
                 <field name="date_end" optional="hide"/>
                 <field name="activity_ids" widget="list_activity" optional="show"/>
+                <field name="company_id" groups="base.group_multi_company" optional="show" readonly="1"/>
                 <field name="duration" type="measure" widget="timesheet_uom" decoration-danger="duration &gt; 24"/>
                 <field name="state"
                        decoration-info="state == 'open'"
