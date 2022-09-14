@@ -12,17 +12,23 @@
               parent="axdoo_field_notebook_menu"
               sequence="1"/>
 
-    <menuitem id="field_notebook_labor_menu"
-              name="Labor"
-              parent="field_notebook_performance_menu"
-              action="field_notebook_labor_action"
-              sequence="1"/>
-
     <menuitem id="field_notebook_phytosanitary_menu"
               name="Phytosanitary"
               parent="field_notebook_performance_menu"
               action="field_notebook_phytosanitary_action"
+              sequence="1"/>
+
+    <menuitem id="field_notebook_labor_menu"
+              name="Labor"
+              parent="field_notebook_performance_menu"
+              action="field_notebook_labor_action"
               sequence="2"/>
+
+    <menuitem id="field_notebook_harvest_menu"
+              name="Harvest"
+              parent="field_notebook_performance_menu"
+              action="field_notebook_harvest_action"
+              sequence="3"/>
 
     <!-- Structure-->
 

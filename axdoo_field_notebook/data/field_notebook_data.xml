@@ -17,6 +17,14 @@
 
     <function model="res.company" name="create_missing_labor_sequences" />
 
+    <record model="ir.rule" id="harvest_comp_rule">
+        <field name="name">Harvest multi-company</field>
+        <field name="model_id" ref="model_field_notebook_harvest"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+
+    <function model="res.company" name="create_missing_harvest_sequences" />
+
     <record id="zone_vulnerable" model="field.notebook.zone">
         <field name="name">Zona Vulnerable</field>
     </record>

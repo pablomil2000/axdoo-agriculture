@@ -22,6 +22,7 @@
         'views/field_notebook_campaign_view.xml',
         'views/field_notebook_crop_view.xml',
         'views/field_notebook_labor_view.xml',
+        'views/field_notebook_harvest_view.xml',
         'views/field_notebook_phytosanitary_view.xml',
         'views/field_notebook_phytosanitary_application_type_view.xml',
         'views/field_notebook_autonomy_view.xml',

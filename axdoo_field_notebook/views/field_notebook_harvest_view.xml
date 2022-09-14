@@ -1,0 +1,100 @@
+<!-- Copyright 2022 Darío Cruz
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).-->
+<odoo>
+
+    <record id="field_notebook_harvest_view_form" model="ir.ui.view">
+        <field name="name">field.notebook.harvest.form</field>
+        <field name="model">field.notebook.harvest</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" readonly="True"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="date"/>
+                            <field name="ucth_id"/>
+                            <field name="campaign_id"/>
+                            <field name="customer_id"/>
+                        </group>
+                        <group>
+                            <field name="commercialization"/>
+                        </group>
+                        <group>
+                            <field name="quantity_kg"/>
+                        </group>
+                        <group>
+                            <field name="price"/>
+                        </group>
+                        <group>
+                            <field name="total_price" />
+                        </group>
+                        <group>
+                            <field name="lot" />
+                        </group>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="company_id" options="{'no_create': True}" groups="base.group_multi_company"/>
+                        </group>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="axdoo_field_notebook.field_notebook_harvest_view_tree" model="ir.ui.view">
+        <field name="name">field.notebook.harvest.view.tree</field>
+        <field name="model">field.notebook.harvest</field>
+        <field name="arch" type="xml">
+            <tree multi_edit="1" sample="1">
+                <field name="name" readonly="1" decoration-bf="1"/>
+                <field name="campaign_id"/>
+                <field name="ucth_id"/>
+                <field name="date"/>
+                <field name="activity_ids" widget="list_activity" optional="show"/>
+                <field name="company_id" groups="base.group_multi_company" optional="show" readonly="1"/>
+                <field name="quantity_kg"/>
+                <field name="price"/>
+                <field name="total_price"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="axdoo_field_notebook.field_notebook_harvest_view_filter" model="ir.ui.view">
+        <field name="name">fha.subvention.view.filter</field>
+        <field name="model">field.notebook.harvest</field>
+        <field name="priority" eval="1"/>
+        <field name="arch" type="xml">
+            <search string="Search Parcel">
+                <group expand="0" string="Group By">
+                    <filter string="Campaign" name="campaign_id" context="{'group_by': 'campaign_id'}"/>
+                    <filter string="UCTH" name="ucth_id" context="{'group_by': 'ucth_id'}"/>
+                    <filter string="Exploitation" name="exploitation_id" context="{'group_by': 'exploitation_id'}"/>
+                    <filter string="Date" name="date" context="{'group_by': 'date'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="field_notebook_harvest_action"
+            model="ir.actions.act_window">
+        <field name="name">Harvest</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">field.notebook.harvest</field>
+        <field name="view_mode">tree,kanban,form,pivot,graph,activity</field>
+        <field name="view_id"
+               ref="field_notebook_harvest_view_tree"/>
+        <field name="search_view_id"
+               ref="field_notebook_harvest_view_filter"/>
+    </record>
+
+</odoo>
