@@ -30,6 +30,12 @@
               action="field_notebook_harvest_action"
               sequence="3"/>
 
+    <menuitem id="field_notebook_irrigation_menu"
+              name="Irrigation"
+              parent="field_notebook_performance_menu"
+              action="field_notebook_irrigation_action"
+              sequence="4"/>
+
     <!-- Structure-->
 
     <menuitem id="field_notebook_structure_menu"
@@ -98,10 +104,10 @@
               action="field_notebook_system_action"
               sequence="6"/>
 
-    <menuitem id="field_notebook_irrigation_menu"
+    <menuitem id="field_notebook_irrigation_system_menu"
               name="Irrigation"
               parent="field_notebook_configuration_menu"
-              action="field_notebook_irrigation_action"
+              action="field_notebook_irrigation_system_action"
               sequence="7"/>
 
     <menuitem id="field_notebook_nursery_menu"

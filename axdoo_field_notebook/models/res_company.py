@@ -76,11 +76,35 @@ class Company(models.Model):
         company_todo_sequence = company_ids - company_has_harvest_seq
         company_todo_sequence._create_harvest_sequence()
 
+    def _create_irrigation_sequence(self):
+        vals = []
+        for company in self:
+            vals.append({
+                'name': 'Sequence of irrigation',
+                'code': 'field.notebook.irrigation',
+                'company_id': company.id,
+                'prefix': 'RIEGO/%(year)s/',
+                'padding': 5,
+                'number_next': 1,
+                'number_increment': 1
+            })
+        if vals:
+            self.env['ir.sequence'].create(vals)
+
+    @api.model
+    def create_missing_irrigation_sequences(self):
+        company_ids = self.env['res.company'].search([])
+        company_has_irrigation_seq = self.env['ir.sequence'].search(
+            [('code', '=', 'field.notebook.irrigation')]).mapped('company_id')
+        company_todo_sequence = company_ids - company_has_irrigation_seq
+        company_todo_sequence._create_irrigation_sequence()
+
     def _create_per_company_sequences(self):
         super(Company, self)._create_per_company_sequences()
         self._create_phytosanitary_sequence()
         self._create_labor_sequence()
         self._create_harvest_sequence()
+        self._create_irrigation_sequence()
 
 
 

@@ -8,6 +8,7 @@ from . import field_notebook_plot_use
 from . import field_notebook_zone
 from . import field_notebook_system
 from . import field_notebook_irrigation
+from . import field_notebook_irrigation_system
 from . import field_notebook_ucth
 from . import field_notebook_parcel
 from . import field_notebook_labor

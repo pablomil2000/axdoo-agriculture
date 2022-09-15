@@ -88,7 +88,7 @@ class FieldNotebookParcel(models.Model):
     )
     irrigation_id = fields.Many2one(
         string='Irrigation',
-        comodel_name='field.notebook.irrigation',
+        comodel_name='field.notebook.irrigation.system',
         readonly=False,
         store=True
     )

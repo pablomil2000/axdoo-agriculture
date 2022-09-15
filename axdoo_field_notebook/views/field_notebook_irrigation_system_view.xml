@@ -1,0 +1,27 @@
+<!-- Copyright 2022 Darío Cruz
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).-->
+<odoo>
+
+    <record id="view_field_notebook_irrigation_system_tree" model="ir.ui.view">
+        <field name="name">field.notebook.irrigation.tree</field>
+        <field name="model">field.notebook.irrigation.system</field>
+        <field name="priority">1</field>
+        <field name="arch" type="xml">
+            <tree editable="bottom">
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="field_notebook_irrigation_system_action"
+            model="ir.actions.act_window">
+        <field name="name">Irrigation System</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">field.notebook.irrigation.system</field>
+        <field name="view_mode">tree,form,kanban</field>
+        <field name="view_id"
+               ref="view_field_notebook_irrigation_system_tree"/>
+    </record>
+
+</odoo>

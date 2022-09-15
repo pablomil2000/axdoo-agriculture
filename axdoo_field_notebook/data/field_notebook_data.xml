@@ -25,6 +25,14 @@
 
     <function model="res.company" name="create_missing_harvest_sequences" />
 
+    <record model="ir.rule" id="irrigation_comp_rule">
+        <field name="name">Irrigation multi-company</field>
+        <field name="model_id" ref="model_field_notebook_irrigation"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+
+    <function model="res.company" name="create_missing_irrigation_sequences" />
+
     <record id="zone_vulnerable" model="field.notebook.zone">
         <field name="name">Zona Vulnerable</field>
     </record>
@@ -57,19 +65,19 @@
         <field name="name">Sin obligación de disponer de asesor en GIP</field>
     </record>
 
-    <record id="irrigation_secano" model="field.notebook.irrigation">
+    <record id="irrigation_secano" model="field.notebook.irrigation.system">
         <field name="name">Secano</field>
     </record>
-    <record id="irrigation_aspersion" model="field.notebook.irrigation">
+    <record id="irrigation_aspersion" model="field.notebook.irrigation.system">
         <field name="name">Aspersión</field>
     </record>
-    <record id="irrigation_goteo" model="field.notebook.irrigation">
+    <record id="irrigation_goteo" model="field.notebook.irrigation.system">
         <field name="name">Goteo o localizado</field>
     </record>
-    <record id="irrigation_gravedad" model="field.notebook.irrigation">
+    <record id="irrigation_gravedad" model="field.notebook.irrigation.system">
         <field name="name">Gravedad</field>
     </record>
-    <record id="irrigation_hidroponia" model="field.notebook.irrigation">
+    <record id="irrigation_hidroponia" model="field.notebook.irrigation.system">
         <field name="name">Hidroponia</field>
     </record>
 

@@ -33,6 +33,7 @@
         'views/field_notebook_zone_view.xml',
         'views/field_notebook_system_view.xml',
         'views/field_notebook_irrigation_view.xml',
+        'views/field_notebook_irrigation_system_view.xml',
         'views/field_notebook_ucth_view.xml',
         'views/field_notebook_parcel_view.xml',
         'views/field_notebook_exploitation_view.xml',
