@@ -42,13 +42,13 @@
                                 <field name="total_plants"/>
                             </group>
                         </page>
-                        <page name="technical" string="Technicals">
-                            <field name="technical_ids" widget="One2many" context="{'show_attribute': False}">
-                                <tree editable="bottom">
-                                    <field name="technical_id"/>
-                                </tree>
-                            </field>
-                        </page>
+<!--                        <page name="technical" string="Technicals">-->
+<!--                            <field name="technical_ids" widget="One2many" context="{'show_attribute': False}">-->
+<!--                                <tree editable="bottom">-->
+<!--                                    <field name="technical_id"/>-->
+<!--                                </tree>-->
+<!--                            </field>-->
+<!--                        </page>-->
 <!--                        <page name="enclosure" string="Enclosure">-->
 <!--                            <field name="enclosure_ids" widget="one2many" context="{'show_attribute': False}">-->
 <!--                                <tree editable="bottom">-->

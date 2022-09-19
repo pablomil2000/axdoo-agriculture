@@ -8,9 +8,9 @@ from odoo import fields, models
 class ResPartner(models.Model):
     _inherit = 'res.partner'
 
-    technical = fields.Boolean(
-        string="Technical",
-        help="Check this field if technical is implement.",
+    associate = fields.Boolean(
+        string="Associate",
+        help="Check this field if is a associated.",
     )
     nursery = fields.Boolean(
         string="Nursery",

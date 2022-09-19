@@ -43,23 +43,29 @@
               parent="axdoo_field_notebook_menu"
               sequence="2"/>
 
+    <menuitem id="field_notebook_associated_menu"
+              name="Associated"
+              parent="field_notebook_structure_menu"
+              action="action_associate_contacts"
+              sequence="1"/>
+
     <menuitem id="field_notebook_exploitation_menu"
               name="Exploitation"
               parent="field_notebook_structure_menu"
               action="field_notebook_exploitation_action"
-              sequence="1"/>
+              sequence="2"/>
 
     <menuitem id="field_notebook_ucth_menu"
               name="U.C.T.H."
               parent="field_notebook_structure_menu"
               action="field_notebook_ucth_action"
-              sequence="2"/>
+              sequence="3"/>
 
     <menuitem id="field_notebook_parcel_menu"
               name="Parcel"
               parent="field_notebook_structure_menu"
               action="field_notebook_parcel_action"
-              sequence="3"/>
+              sequence="4"/>
 
     <!-- Configuration-->
 

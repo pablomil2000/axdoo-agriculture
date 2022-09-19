@@ -1,10 +1,28 @@
 <odoo>
 
+    <record id="res_partner_associated_action" model="ir.actions.act_window">
+        <field name="name">Associated</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">res.partner</field>
+        <field name="view_mode">kanban,tree,form</field>
+        <field name="context">{'search_default_associate': True,'res_partner_search_mode': 'associate', 'default_is_company': True, 'default_associate': True}</field>
+        <field name="help" type="html">
+          <p class="o_view_nocontent_smiling_face">
+            Create a new associated in your address book
+          </p><p>
+            Odoo helps you easily track all activities related to an associated.
+          </p>
+        </field>
+    </record>
+
     <record id="view_partner_form_technical" model="ir.ui.view">
         <field name="name">Partner form with technical</field>
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="base.view_partner_form"/>
         <field name="arch" type="xml">
+            <field name="vat" position="after">
+                <field name="associate"/>
+            </field>
             <field name="category_id" position="after">
                 <field name="nursery"/>
                 <field name="plant_passport"
@@ -22,9 +40,9 @@
             <filter name="inactive" position="after">
                 <separator/>
                 <filter
-                    string="Technical"
-                    name="technical"
-                    domain="[('technical','=',True)]"
+                    string="Associate"
+                    name="associate"
+                    domain="[('associate','=',True)]"
                 />
                 <filter
                     string="Nursery"
@@ -35,13 +53,20 @@
         </field>
     </record>
 
-    <record id="action_technical_contacts" model="ir.actions.act_window">
-        <field name="name">Technicals</field>
+    <record id="action_associate_contacts" model="ir.actions.act_window">
+        <field name="name">Associated</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">res.partner</field>
         <field name="view_mode">tree,kanban,form,activity</field>
         <field name="search_view_id" ref="base.view_res_partner_filter"/>
-        <field name="context">{'search_default_technical': 1}</field>
+        <field name="context">{'search_default_associate': 1,'res_partner_search_mode': 'associate', 'default_is_company': True, 'default_associate': True}</field>
+        <field name="help" type="html">
+          <p class="o_view_nocontent_smiling_face">
+            Create a new associated in your address book
+          </p><p>
+            Odoo helps you easily track all activities related to an associated.
+          </p>
+        </field>
     </record>
 
     <record id="action_nursery_contacts" model="ir.actions.act_window">
@@ -50,6 +75,8 @@
         <field name="res_model">res.partner</field>
         <field name="view_mode">tree,kanban,form,activity</field>
         <field name="search_view_id" ref="base.view_res_partner_filter"/>
+        <field name="context">{'search_default_nursery': 1,'res_partner_search_mode': 'nursery', 'default_is_company': True, 'default_nursery': True}</field>
+
         <field name="context">{'search_default_nursery': 1}</field>
     </record>
 
