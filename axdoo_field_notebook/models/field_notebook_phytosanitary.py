@@ -42,7 +42,7 @@ class FieldNotebookPhytosanitary(models.Model):
         comodel_name='field.notebook.campaign',
         required=True,
         tracking=True,
-        # default=lambda self: self._get_campaign_id(),
+        default=lambda self: self._get_campaign_id(),
     )
     ucth_id = fields.Many2one(
         comodel_name='field.notebook.ucth',
@@ -155,10 +155,9 @@ class FieldNotebookPhytosanitary(models.Model):
             seq = seq.with_company(values["company_id"])
         return seq.next_by_code("field.notebook.phytosanitary") or "New"
 
-    # @api.model
-    # def _get_campaign_id(self):
-    #     return (
-    #         self.env["ir.config_parameter"]
-    #         .sudo()
-    #         .get_param("field_notebook.campaign_id", "")
-    #     )
+    @api.model
+    def _get_campaign_id(self):
+        default_campaign_id = self.env["ir.config_parameter"].sudo().get_param("field_notebook.campaign_id")
+        if not default_campaign_id:
+            return None
+        return self.env['field.notebook.campaign'].sudo().browse(int(default_campaign_id)).exists()
