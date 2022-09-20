@@ -9,7 +9,6 @@
 
     <record id="parcel_demo" model="field.notebook.parcel">
         <field name="name">Parcela Demo</field>
-        <field name="campaign_id" ref="campaign_demo"/>
         <field name="autonomy_id" ref="autonomy_code_01"/>
         <field name="province_id" ref="province_code_21"/>
         <field name="town_id" ref="town_code_21_054"/>
@@ -40,7 +39,6 @@
 
     <record id="ucth_demo_1" model="field.notebook.ucth">
         <field name="name">UCTH Demo</field>
-        <field name="campaign_id" ref="campaign_demo"/>
     </record>
 
     <record id="ucth_parcel_demo" model="field.notebook.ucth.parcel">

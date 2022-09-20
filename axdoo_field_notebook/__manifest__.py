@@ -40,6 +40,7 @@
         'views/field_notebook_enclosure_view.xml',
         'views/res_partner_view.xml',
         'views/maintenance_view.xml',
+        'views/res_config_settings_views.xml',
         'views/axdoo_field_notebook_view.xml',
         'views/product_template_view.xml',
         'data/field_notebook_data.xml',

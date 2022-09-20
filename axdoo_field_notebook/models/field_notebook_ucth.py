@@ -16,10 +16,6 @@ class FieldNotebookUCTH(models.Model):
         index=True,
         tracking=True,
     )
-    campaign_id = fields.Many2one(
-        comodel_name='field.notebook.campaign',
-        required=True,
-    )
     company_id = fields.Many2one(
         comodel_name='res.company',
         required=True,

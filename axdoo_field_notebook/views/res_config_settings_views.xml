@@ -7,10 +7,10 @@
         <field name="inherit_id" ref="base.res_config_settings_view_form"/>
         <field name="arch" type="xml">
             <xpath expr="//div[hasclass('settings')]" position="inside">
-                <div class="app_settings_block" data-string="Employees" string="Employees" data-key="hr" groups="hr.group_hr_manager">
+                <div class="app_settings_block" data-string="Field Notebook" string="Field Notebook" data-key="axdoo_field_notebook">
                     <h2>Field Notebook</h2>
                     <div class="row mt16 o_settings_container" name="work_organization_setting_container">
-                        <div class="col-12 col-lg-6 o_setting_box" id="default_company_schedule_setting">
+                        <div class="col-12 col-lg-6 o_setting_box" id="default_campaign_id_setting">
                             <div class="o_setting_right_pane">
                                 <label for="campaign_id"/>
                                 <div class="content-group">
@@ -36,10 +36,4 @@
         <field name="context">{'module' : 'axdoo_field_notebook', 'bin_size': False}</field>
     </record>
 
-    <menuitem id="axdoo_field_notebook_menu_configuration"
-        name="Settings"
-        parent="menu_human_resources_configuration"
-        sequence="0"
-        action="axdoo_field_notebook_config_settings_action"
-        groups="base.group_system"/>
 </odoo>

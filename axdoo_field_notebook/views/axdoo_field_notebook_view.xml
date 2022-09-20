@@ -74,6 +74,14 @@
               parent="axdoo_field_notebook_menu"
               sequence="3"/>
 
+    <menuitem id="axdoo_field_notebook_menu_configuration"
+        name="Settings"
+        parent="field_notebook_configuration_menu"
+        sequence="0"
+        action="axdoo_field_notebook_config_settings_action"
+        groups="base.group_system"/>
+
+
     <menuitem id="field_notebook_campaign_menu"
               name="Campaign"
               parent="field_notebook_configuration_menu"
@@ -163,8 +171,6 @@
               parent="field_notebook_configuration_menu"
               action="product.product_template_action"
               sequence="15"/>
-
-
 
     <record id="field_notebook_equipment_action" model="ir.actions.act_window">
         <field name="name">Equipments</field>

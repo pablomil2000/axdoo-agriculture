@@ -10,5 +10,6 @@ class ResConfigSettings(models.TransientModel):
         comodel_name='field.notebook.campaign',
         string='Set default campaign',
         readonly=False,
+        config_parameter='field_notebook.campaign_id',
     )
 
