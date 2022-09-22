@@ -18,16 +18,21 @@
                         <group>
                             <field name="company_id" options="{'no_create': True}" groups="base.group_multi_company"/>
                             <field name="campaign_id"/>
-                            <field name="date_expected"/>
+                            <field name="associate_id"/>
                         </group>
                     </group>
+
                     <group>
                         <group>
-                            <field name="date_start"/>
+                            <field name="date_expected"/>
                         </group>
                         <group>
+                            <field name="date_start"/>
                             <field name="date_end"/>
                         </group>
+                    </group>
+
+                    <group>
                         <group>
                             <field name="ucth_id"/>
                             <field name="product_id"/>
@@ -47,6 +52,7 @@
                             <field name="equipment_ids" widget="many2many_tags" />
                         </group>
                     </group>
+
                 </sheet>
                 <div class="oe_chatter">
                     <field name="message_follower_ids"/>
@@ -64,6 +70,7 @@
             <tree multi_edit="1" sample="1">
                 <field name="name" readonly="1" decoration-bf="1"/>
                 <field name="campaign_id"/>
+                <field name="associate_id"/>
                 <field name="ucth_id"/>
                 <field name="date_expected"/>
                 <field name="date_start" optional="hide"/>
@@ -84,6 +91,7 @@
                 <group expand="0" string="Group By">
                     <filter string="Campaign" name="campaign_id" context="{'group_by': 'campaign_id'}"/>
                     <filter string="UCTH" name="ucth_id" context="{'group_by': 'ucth_id'}"/>
+                    <filter string="Associated" name="associate_id" context="{'group_by': 'associate_id'}"/>
                     <filter string="Exploitation" name="exploitation_id" context="{'group_by': 'exploitation_id'}"/>
                     <filter string="Product" name="product_id" context="{'group_by': 'product_id'}"/>
                     <filter string="Expected date" name="date_expected" context="{'group_by': 'date_expected'}"/>

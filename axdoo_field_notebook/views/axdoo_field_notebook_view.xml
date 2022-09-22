@@ -1,5 +1,12 @@
 <odoo>
 
+    <record id="field_notebook_equipment_action" model="ir.actions.act_window">
+        <field name="name">Equipments</field>
+        <field name="res_model">maintenance.equipment</field>
+        <field name="view_mode">tree,form,kanban</field>
+        <field name="view_id" ref="maintenance.hr_equipment_view_tree"/>
+    </record>
+
     <menuitem name="Field Notebook"
               id="axdoo_field_notebook_menu"
               sequence="10"
@@ -10,62 +17,58 @@
     <menuitem id="field_notebook_performance_menu"
               name="Performances"
               parent="axdoo_field_notebook_menu"
-              sequence="1"/>
+              sequence="1">
 
-    <menuitem id="field_notebook_phytosanitary_menu"
-              name="Phytosanitary"
-              parent="field_notebook_performance_menu"
-              action="field_notebook_phytosanitary_action"
-              sequence="1"/>
+        <menuitem id="field_notebook_phytosanitary_menu"
+                  name="Phytosanitary"
+                  action="field_notebook_phytosanitary_action"
+                  sequence="1"/>
 
-    <menuitem id="field_notebook_labor_menu"
-              name="Labor"
-              parent="field_notebook_performance_menu"
-              action="field_notebook_labor_action"
-              sequence="2"/>
+        <menuitem id="field_notebook_labor_menu"
+                  name="Labor"
+                  action="field_notebook_labor_action"
+                  sequence="2"/>
 
-    <menuitem id="field_notebook_harvest_menu"
-              name="Harvest"
-              parent="field_notebook_performance_menu"
-              action="field_notebook_harvest_action"
-              sequence="3"/>
+        <menuitem id="field_notebook_harvest_menu"
+                  name="Harvest"
+                  action="field_notebook_harvest_action"
+                  sequence="3"/>
 
-    <menuitem id="field_notebook_irrigation_menu"
-              name="Irrigation"
-              parent="field_notebook_performance_menu"
-              action="field_notebook_irrigation_action"
-              sequence="4"/>
+        <menuitem id="field_notebook_irrigation_menu"
+                  name="Irrigation"
+                  action="field_notebook_irrigation_action"
+                  sequence="4"/>
+
+    </menuitem>
 
     <!-- Structure-->
 
     <menuitem id="field_notebook_structure_menu"
               name="Structure"
               parent="axdoo_field_notebook_menu"
-              sequence="2"/>
+              sequence="2">
 
-    <menuitem id="field_notebook_associated_menu"
-              name="Associated"
-              parent="field_notebook_structure_menu"
-              action="action_associate_contacts"
-              sequence="1"/>
+        <menuitem id="field_notebook_associated_menu"
+                  name="Associated"
+                  action="action_associate_contacts"
+                  sequence="1"/>
 
-    <menuitem id="field_notebook_exploitation_menu"
-              name="Exploitation"
-              parent="field_notebook_structure_menu"
-              action="field_notebook_exploitation_action"
-              sequence="2"/>
+        <menuitem id="field_notebook_exploitation_menu"
+                  name="Exploitation"
+                  action="field_notebook_exploitation_action"
+                  sequence="2"/>
 
-    <menuitem id="field_notebook_ucth_menu"
-              name="U.C.T.H."
-              parent="field_notebook_structure_menu"
-              action="field_notebook_ucth_action"
-              sequence="3"/>
+        <menuitem id="field_notebook_ucth_menu"
+                  name="U.C.T.H."
+                  action="field_notebook_ucth_action"
+                  sequence="3"/>
 
-    <menuitem id="field_notebook_parcel_menu"
-              name="Parcel"
-              parent="field_notebook_structure_menu"
-              action="field_notebook_parcel_action"
-              sequence="4"/>
+        <menuitem id="field_notebook_parcel_menu"
+                  name="Parcel"
+                  action="field_notebook_parcel_action"
+                  sequence="4"/>
+
+    </menuitem>
 
     <!-- Configuration-->
 
@@ -75,121 +78,102 @@
               sequence="3"/>
 
     <menuitem id="axdoo_field_notebook_menu_configuration"
-        name="Settings"
-        parent="field_notebook_configuration_menu"
-        sequence="0"
-        action="axdoo_field_notebook_config_settings_action"
-        groups="base.group_system"/>
-
-
-    <menuitem id="field_notebook_campaign_menu"
-              name="Campaign"
+              name="Settings"
               parent="field_notebook_configuration_menu"
-              action="field_notebook_campaign_action"
-              sequence="1"/>
+              sequence="0"
+              action="axdoo_field_notebook_config_settings_action"
+              groups="base.group_system"/>
 
-    <menuitem id="field_notebook_crop_menu"
-              name="Crop"
+    <menuitem id="field_notebook_parcel_ucth_menu"
+              name="Parcel / U.C.T.H."
               parent="field_notebook_configuration_menu"
-              action="field_notebook_crop_action"
-              sequence="2"/>
+              sequence="1">
 
-    <menuitem id="field_notebook_variety_menu"
-              name="Variety"
+        <menuitem id="field_notebook_campaign_menu"
+                  name="Campaign"
+                  action="field_notebook_campaign_action"
+                  sequence="1"/>
+
+        <menuitem id="field_notebook_crop_menu"
+                  name="Crop"
+                  action="field_notebook_crop_action"
+                  sequence="2"/>
+
+        <menuitem id="field_notebook_plot_use_menu"
+                  name="Plot use"
+                  action="field_notebook_plot_use_action"
+                  sequence="3"/>
+
+        <menuitem id="field_notebook_zone_menu"
+                  name="Vulnerable zone"
+                  action="field_notebook_zone_action"
+                  sequence="4"/>
+
+        <menuitem id="field_notebook_system_menu"
+                  name="System"
+                  action="field_notebook_system_action"
+                  sequence="5"/>
+
+        <menuitem id="field_notebook_irrigation_system_menu"
+                  name="Irrigation"
+                  action="field_notebook_irrigation_system_action"
+                  sequence="6"/>
+
+        <menuitem id="field_notebook_nursery_menu"
+                  name="Nursery"
+                  action="action_nursery_contacts"
+                  sequence="7"/>
+
+        <menuitem id="menu_phytosanitary_application_type_form"
+                  name="Phytosanitary Application Type"
+                  action="field_notebook_phytosanitary_application_type_action"
+                  sequence="8"/>
+
+    </menuitem>
+
+    <menuitem id="field_notebook_location_menu"
+              name="Location"
               parent="field_notebook_configuration_menu"
-              action="field_notebook_variety_action"
-              sequence="3"/>
+              sequence="2">
 
-    <menuitem id="field_notebook_plot_use_menu"
-              name="Plot use"
+        <menuitem id="field_notebook_autonomy_menu"
+                  name="Autonomy"
+                  action="field_notebook_autonomy_action"
+                  sequence="1"/>
+
+        <menuitem id="field_notebook_province_menu"
+                  name="Provinces"
+                  action="field_notebook_province_action"
+                  sequence="2"/>
+
+        <menuitem id="field_notebook_town_menu"
+                  name="Towns"
+                  action="field_notebook_town_action"
+                  sequence="3"/>
+
+    </menuitem>
+
+    <menuitem id="field_notebook_machinery_menu"
+              name="Machinery"
               parent="field_notebook_configuration_menu"
-              action="field_notebook_plot_use_action"
-              sequence="4"/>
+              sequence="3">
 
-    <menuitem id="field_notebook_zone_menu"
-              name="Vulnerable zone"
-              parent="field_notebook_configuration_menu"
-              action="field_notebook_zone_action"
-              sequence="5"/>
+        <menuitem id="field_notebook_equipment_implement_menu"
+                  name="Implements"
+                  action="field_notebook_equipment_implement_action"
+                  sequence="1"/>
 
-    <menuitem id="field_notebook_system_menu"
-              name="Systems"
-              parent="field_notebook_configuration_menu"
-              action="field_notebook_system_action"
-              sequence="6"/>
+        <menuitem id="menu_product_form"
+                  name="Products"
+                  action="product.product_template_action"
+                  sequence="2"/>
 
-    <menuitem id="field_notebook_irrigation_system_menu"
-              name="Irrigation"
-              parent="field_notebook_configuration_menu"
-              action="field_notebook_irrigation_system_action"
-              sequence="7"/>
+        <menuitem id="menu_equipment_form"
+                  name="Equipments"
+                  action="field_notebook_equipment_action"
+                  groups="maintenance.group_equipment_manager,base.group_user"
+                  sequence="3"/>
 
-    <menuitem id="field_notebook_nursery_menu"
-              name="Nursery"
-              parent="field_notebook_configuration_menu"
-              action="action_nursery_contacts"
-              sequence="8"/>
-
-    <menuitem id="field_notebook_enclosure_menu"
-              name="Enclosure"
-              parent="field_notebook_configuration_menu"
-              action="field_notebook_enclosure_action"
-              sequence="9"/>
-
-    <menuitem id="field_notebook_equipment_implement_menu"
-              name="Implements"
-              parent="field_notebook_configuration_menu"
-              action="field_notebook_equipment_implement_action"
-              sequence="10"/>
-
-    <menuitem id="field_notebook_autonomy_menu"
-              name="Autonomy"
-              parent="field_notebook_configuration_menu"
-              action="field_notebook_autonomy_action"
-              sequence="11"/>
-
-    <menuitem id="field_notebook_province_menu"
-              name="Provinces"
-              parent="field_notebook_configuration_menu"
-              action="field_notebook_province_action"
-              sequence="12"/>
-
-    <menuitem id="field_notebook_town_menu"
-              name="Towns"
-              parent="field_notebook_configuration_menu"
-              action="field_notebook_town_action"
-              sequence="13"/>
-
-    <menuitem id="field_notebook_town_menu"
-              name="Towns"
-              parent="field_notebook_configuration_menu"
-              action="field_notebook_town_action"
-              sequence="14"/>
-
-    <menuitem id="menu_product_form"
-              name="Products"
-              parent="field_notebook_configuration_menu"
-              action="product.product_template_action"
-              sequence="15"/>
-
-    <record id="field_notebook_equipment_action" model="ir.actions.act_window">
-        <field name="name">Equipments</field>
-        <field name="res_model">maintenance.equipment</field>
-        <field name="view_mode">tree,form,kanban</field>
-        <field name="view_id" ref="maintenance.hr_equipment_view_tree"/>
-    </record>
-
-    <menuitem id="menu_equipment_form"
-              name="Equipments"
-              parent="field_notebook_configuration_menu"
-              action="field_notebook_equipment_action"
-              groups="maintenance.group_equipment_manager,base.group_user"
-              sequence="16"/>
-
-    <menuitem id="menu_product_form"
-              name="Phytosanitary Application Type"
-              parent="field_notebook_configuration_menu"
-              action="field_notebook_phytosanitary_application_type_action"
-              sequence="17"/>
+    </menuitem>
 
 </odoo>

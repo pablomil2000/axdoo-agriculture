@@ -44,6 +44,12 @@ class FieldNotebookPhytosanitary(models.Model):
         tracking=True,
         default=lambda self: self._get_campaign_id(),
     )
+    associate_id = fields.Many2one(
+        comodel_name='res.partner',
+        string='Associated',
+        required=True,
+        domain="[('associate','=', True)]",
+    )
     ucth_id = fields.Many2one(
         comodel_name='field.notebook.ucth',
         required=True,
