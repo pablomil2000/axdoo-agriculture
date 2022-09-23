@@ -15,9 +15,16 @@
                     </div>
                     <group>
                         <group>
-                            <field name="date"/>
-                            <field name="ucth_id"/>
+                            <field name="company_id" options="{'no_create': True}" groups="base.group_multi_company"/>
                             <field name="campaign_id"/>
+                            <field name="associate_id"/>
+                            <field name="ucth_id"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="date"/>
+                            <field name="product_id"/>
                             <field name="customer_id"/>
                         </group>
                         <group>
@@ -36,11 +43,6 @@
                             <field name="lot" />
                         </group>
                     </group>
-                    <group>
-                        <group>
-                            <field name="company_id" options="{'no_create': True}" groups="base.group_multi_company"/>
-                        </group>
-                    </group>
                 </sheet>
                 <div class="oe_chatter">
                     <field name="message_follower_ids"/>
@@ -57,7 +59,6 @@
         <field name="arch" type="xml">
             <tree multi_edit="1" sample="1">
                 <field name="name" readonly="1" decoration-bf="1"/>
-                <field name="campaign_id"/>
                 <field name="ucth_id"/>
                 <field name="date"/>
                 <field name="activity_ids" widget="list_activity" optional="show"/>
@@ -76,7 +77,6 @@
         <field name="arch" type="xml">
             <search string="Search Parcel">
                 <group expand="0" string="Group By">
-                    <filter string="Campaign" name="campaign_id" context="{'group_by': 'campaign_id'}"/>
                     <filter string="UCTH" name="ucth_id" context="{'group_by': 'ucth_id'}"/>
                     <filter string="Exploitation" name="exploitation_id" context="{'group_by': 'exploitation_id'}"/>
                     <filter string="Date" name="date" context="{'group_by': 'date'}"/>

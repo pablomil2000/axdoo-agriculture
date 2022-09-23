@@ -42,16 +42,30 @@ class FieldNotebookIrrigation(models.Model):
         comodel_name='field.notebook.campaign',
         required=True,
         tracking=True,
+        default=lambda self: self._get_campaign_id(),
+    )
+    associate_id = fields.Many2one(
+        comodel_name='res.partner',
+        string='Associated',
+        required=True,
+        domain="[('associate','=', True)]",
     )
     ucth_id = fields.Many2one(
         comodel_name='field.notebook.ucth',
         required=True,
         tracking=True,
+        domain="['|', ('company_id', '=', False), ('company_id', '=', company_id)]",
     )
     exploitation_id = fields.Many2one(
         comodel_name='field.notebook.exploitation',
         related="ucth_id.exploitation_id",
         store=True,
+    )
+    product_id = fields.Many2one(
+        comodel_name='product.product',
+        required=True,
+        tracking=True,
+        domain="[('phytosanitary','=',True),'|', ('company_id', '=', False), ('company_id', '=', company_id)]",
     )
     water_quality = fields.Selection([
         ('good', 'Good'),
@@ -99,7 +113,9 @@ class FieldNotebookIrrigation(models.Model):
             seq = seq.with_company(values["company_id"])
         return seq.next_by_code("field.notebook.irrigation") or "New"
 
-    @api.onchange('ucth_id')
-    def _onchange_ucth_id(self):
-        if self.ucth_id.campaign_id:
-            self.campaign_id = self.ucth_id.campaign_id
+    @api.model
+    def _get_campaign_id(self):
+        default_campaign_id = self.env["ir.config_parameter"].sudo().get_param("field_notebook.campaign_id")
+        if not default_campaign_id:
+            return None
+        return self.env['field.notebook.campaign'].sudo().browse(int(default_campaign_id)).exists()
