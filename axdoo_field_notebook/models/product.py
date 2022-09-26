@@ -128,51 +128,10 @@ class ProductTemplate(models.Model):
     authorization_date = fields.Date(
         string="Authorization date",
     )
-
-    # < IdProducto > 36725 < / IdProducto >***product_code***
-    # < CodInternoFabricante / >***manufacturer_internal_code***
-    # < NumRegistro >< / NumRegistro >***registration_number***
-    # < Titular ></ Titular >***holder***
-    # < Fabricante >< / Fabricante >***manufacturer***
-    # < Fabrica / >***factory***
-    # < Formulado > < / Formulado >***formulated***
-    # < Estado >< / Estado >***state***
-    # < Observaciones / >***observations***
-    # < Tramite / >***procedure***
-    # < EstadoTramite / >***procedure_state***
-    # < Condicionamiento >< / Condicionamiento >***consitioning***
-    # < Simbolo_1 / >***symbol_1***
-    # < Simbolo_2 / >***symbol_2***
-    # < Simbolo_3 / >***symbol_3***
-    # < Domestico / >***domestic***
-    # < Seg_Almacenamiento >< / Seg_Almacenamiento >***storage_security***
-    # < Seg_Manipulacion >< / Seg_Manipulacion >***handling_security***
-    # < Seg_Des_Vertido >< / Seg_Des_Vertido >***spill_security***
-    # < NRegDirectiva / >***directive_registration_number***
-    # < Version / >***version***
-    # < VersionDePartida / >***departure_version***
-    # < EstadoVersion / >***state_version***
-    # < IdEstado / >***state_id***
-    # < IdSustancia / >***substance_id***
-    # < IdAmbito / >***ambit_id***
-    # < IdCultivo / >***crop_id***
-    # < IdPlaga / >***plague_id***
-    # < IdFuncion / >***function_id***
-    # < IdTitular / >***headline_id***
-    # < IdFormulado >< / IdFormulado >***formulated_id***
-    # < FechaTramite / >***procedure_date***
-    # < StrFechaTramite / >***comment_procedure_date***
-    # < FechaCaducidad >< / FechaCaducidad >***expiration_date***
-    # < StrFechaCaducidad >< / StrFechaCaducidad >***comment_expiration_date***
-    # < FechaInscripcion >< / FechaInscripcion >***inscription_date***
-    # < StrFechaInscripcion >< / StrFechaInscripcion >***comment_inscription_date***
-    # < FechaRenovacion / >***renewal_date***
-    # < StrFechaRenovacion / >***comment_renewal_date***
-    # < FechaModificacion / >***modification_date***
-    # < StrFechaModificacion / >***comment_modification_date***
-    # < FechaLimiteVenta / >***sale_deadline***
-    # < StrFechaLimiteVenta / >***comment_sale_deadline***
-    # < FechaAutorizacion / >***authorization_date***
-    # < StrFechaAutorizacion / >***comment_authorization_date***
-
-
+    security_term_ids = fields.One2many(
+        string='Security Term',
+        comodel_name='product.template.security.term',
+        inverse_name='security_term_id',
+        copy=True,
+        auto_join=True,
+    )
