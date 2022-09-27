@@ -132,6 +132,9 @@ class ProductTemplate(models.Model):
         string='Security Term',
         comodel_name='product.template.security.term',
         inverse_name='security_term_id',
-        copy=True,
-        auto_join=True,
+    )
+    dose_ids = fields.One2many(
+        string='Dose',
+        comodel_name='product.template.dose',
+        inverse_name='dose_id',
     )

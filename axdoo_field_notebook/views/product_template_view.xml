@@ -74,7 +74,20 @@
                 </form>
                 </page>
                 <page name="security_term" string="Security Term">
-                    <field name="security_term_ids" colspan="4" nolabel="1" widget="one2many_list" />
+                    <field name="security_term_ids" widget="One2many" context="{'show_attribute': False}">
+                        <tree editable="bottom">
+                            <field name="crop_id"/>
+                            <field name="days_of_security"/>
+                        </tree>
+                    </field>
+                </page>
+                <page name="use_dose" string="Dose">
+                    <field name="dose_ids" widget="One2many" context="{'show_attribute': False}">
+                        <tree editable="bottom">
+                            <field name="crop_id"/>
+                            <field name="dose"/>
+                        </tree>
+                    </field>
                 </page>
             </xpath>
         </field>

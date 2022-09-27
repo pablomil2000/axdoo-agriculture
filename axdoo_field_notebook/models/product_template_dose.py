@@ -5,20 +5,22 @@
 from datetime import date
 from odoo import _, fields, models, api
 
-class ProductTemplateSecurityTerm(models.Model):
-    _name = 'product.template.security.term'
-    _description = 'Product Template Security Term'
+class ProductTemplateDose(models.Model):
+    _name = 'product.template.dose'
+    _description = 'Product Template Dose'
 
-    security_term_id = fields.Many2one(
+    dose_id = fields.Many2one(
         comodel_name='product.template',
-        string='Security Term',
+        string='Dose',
     )
     crop_id = fields.Many2one(
         string='Crop',
         comodel_name='field.notebook.crop',
         required=True,
     )
-    days_of_security = fields.Integer(
-        string='Days of security',
+    dose = fields.Float(
+        string='Dose',
+        digits=(16, 2),
+        default=0.0,
         required=True,
     )

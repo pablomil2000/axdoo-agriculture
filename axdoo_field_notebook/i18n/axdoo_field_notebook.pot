@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 06:41+0000\n"
-"PO-Revision-Date: 2022-09-09 06:41+0000\n"
+"POT-Creation-Date: 2022-09-27 11:18+0000\n"
+"PO-Revision-Date: 2022-09-27 11:18+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -40,11 +40,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__message_needaction
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__message_needaction
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__message_needaction
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_harvest__message_needaction
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__message_needaction
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor__message_needaction
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__message_needaction
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__message_needaction
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__message_needaction
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__message_needaction
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth__message_needaction
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth_enclosure__message_needaction
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__message_needaction
@@ -56,11 +57,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__activity_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__activity_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__activity_ids
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_harvest__activity_ids
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__activity_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor__activity_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__activity_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__activity_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__activity_ids
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__activity_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth__activity_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth_enclosure__activity_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__activity_ids
@@ -72,11 +74,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__activity_exception_decoration
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__activity_exception_decoration
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__activity_exception_decoration
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_harvest__activity_exception_decoration
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__activity_exception_decoration
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor__activity_exception_decoration
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__activity_exception_decoration
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__activity_exception_decoration
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__activity_exception_decoration
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__activity_exception_decoration
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth__activity_exception_decoration
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth_enclosure__activity_exception_decoration
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__activity_exception_decoration
@@ -88,11 +91,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__activity_state
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__activity_state
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__activity_state
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_harvest__activity_state
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__activity_state
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor__activity_state
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__activity_state
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__activity_state
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__activity_state
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__activity_state
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth__activity_state
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth_enclosure__activity_state
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__activity_state
@@ -104,11 +108,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__activity_type_icon
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__activity_type_icon
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__activity_type_icon
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_harvest__activity_type_icon
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__activity_type_icon
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor__activity_type_icon
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__activity_type_icon
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__activity_type_icon
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__activity_type_icon
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__activity_type_icon
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth__activity_type_icon
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth_enclosure__activity_type_icon
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__activity_type_icon
@@ -121,10 +126,28 @@ msgid "Aggregate"
 msgstr ""
 
 #. module: axdoo_field_notebook
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__ambit_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__ambit_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template__ambit_id
 msgid "Ambit id"
+msgstr ""
+
+#. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_res_partner__associate
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_res_users__associate
+#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.view_res_partner_technical_filter
+msgid "Associate"
+msgstr ""
+
+#. module: axdoo_field_notebook
+#: model:ir.actions.act_window,name:axdoo_field_notebook.action_associate_contacts
+#: model:ir.actions.act_window,name:axdoo_field_notebook.res_partner_associated_action
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_harvest__associate_id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__associate_id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor__associate_id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__associate_id
+#: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_associated_menu
+#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_phytosanitary_view_filter
+msgid "Associated"
 msgstr ""
 
 #. module: axdoo_field_notebook
@@ -132,11 +155,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__message_attachment_count
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__message_attachment_count
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__message_attachment_count
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_harvest__message_attachment_count
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__message_attachment_count
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor__message_attachment_count
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__message_attachment_count
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__message_attachment_count
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__message_attachment_count
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__message_attachment_count
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth__message_attachment_count
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth_enclosure__message_attachment_count
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__message_attachment_count
@@ -144,7 +168,6 @@ msgid "Attachment Count"
 msgstr ""
 
 #. module: axdoo_field_notebook
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__authorization_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__authorization_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template__authorization_date
 msgid "Authorization date"
@@ -165,6 +188,7 @@ msgid "Autonomy code"
 msgstr ""
 
 #. module: axdoo_field_notebook
+#: model:ir.model.fields.selection,name:axdoo_field_notebook.selection__field_notebook_irrigation__water_quality__bad
 #: model:ir.model.fields.selection,name:axdoo_field_notebook.selection__field_notebook_phytosanitary__efficiency__bad
 msgid "Bad"
 msgstr ""
@@ -175,12 +199,11 @@ msgid "Business name"
 msgstr ""
 
 #. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_harvest__campaign_id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__campaign_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor__campaign_id
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__campaign_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__campaign_id
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth__campaign_id
 #: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_campaign_menu
-#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_labor_view_filter
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_phytosanitary_view_filter
 msgid "Campaign"
 msgstr ""
@@ -196,6 +219,12 @@ msgid "Check this field if campaign is annual."
 msgstr ""
 
 #. module: axdoo_field_notebook
+#: model:ir.model.fields,help:axdoo_field_notebook.field_res_partner__associate
+#: model:ir.model.fields,help:axdoo_field_notebook.field_res_users__associate
+msgid "Check this field if is a associated."
+msgstr ""
+
+#. module: axdoo_field_notebook
 #: model:ir.model.fields,help:axdoo_field_notebook.field_res_partner__nursery
 #: model:ir.model.fields,help:axdoo_field_notebook.field_res_users__nursery
 msgid "Check this field if nursery is implement."
@@ -205,12 +234,6 @@ msgstr ""
 #: model:ir.model.fields,help:axdoo_field_notebook.field_product_product__phytosanitary
 #: model:ir.model.fields,help:axdoo_field_notebook.field_product_template__phytosanitary
 msgid "Check this field if phytosanitary product."
-msgstr ""
-
-#. module: axdoo_field_notebook
-#: model:ir.model.fields,help:axdoo_field_notebook.field_res_partner__technical
-#: model:ir.model.fields,help:axdoo_field_notebook.field_res_users__technical
-msgid "Check this field if technical is implement."
 msgstr ""
 
 #. module: axdoo_field_notebook
@@ -261,17 +284,40 @@ msgid "Code Town"
 msgstr ""
 
 #. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_harvest__commercialization
+msgid "Commercialization"
+msgstr ""
+
+#. module: axdoo_field_notebook
+#: model:ir.model.fields.selection,name:axdoo_field_notebook.selection__field_notebook_harvest__commercialization__commercialized
+msgid "Commercialized"
+msgstr ""
+
+#. module: axdoo_field_notebook
+#: model:ir.model,name:axdoo_field_notebook.model_res_company
+msgid "Companies"
+msgstr ""
+
+#. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__company_id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_harvest__company_id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__company_id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor__company_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__company_id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__company_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth__company_id
 msgid "Company"
 msgstr ""
 
 #. module: axdoo_field_notebook
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__conditioning
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__conditioning
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template__conditioning
 msgid "Conditioning"
+msgstr ""
+
+#. module: axdoo_field_notebook
+#: model:ir.model,name:axdoo_field_notebook.model_res_config_settings
+msgid "Config Settings"
 msgstr ""
 
 #. module: axdoo_field_notebook
@@ -291,6 +337,12 @@ msgid "Country"
 msgstr ""
 
 #. module: axdoo_field_notebook
+#: model_terms:ir.actions.act_window,help:axdoo_field_notebook.action_associate_contacts
+#: model_terms:ir.actions.act_window,help:axdoo_field_notebook.res_partner_associated_action
+msgid "Create a new associated in your address book"
+msgstr ""
+
+#. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_autonomy__create_uid
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_campaign__create_uid
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__create_uid
@@ -298,7 +350,9 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__create_uid
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__create_uid
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation_ucth__create_uid
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_harvest__create_uid
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__create_uid
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation_system__create_uid
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor__create_uid
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor_type__create_uid
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__create_uid
@@ -308,7 +362,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__create_uid
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary_application_type__create_uid
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_plot_use__create_uid
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__create_uid
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_province__create_uid
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_system__create_uid
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_town__create_uid
@@ -319,6 +372,8 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth_technical__create_uid
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__create_uid
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_zone__create_uid
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_dose__create_uid
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_security_term__create_uid
 msgid "Created by"
 msgstr ""
 
@@ -330,7 +385,9 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__create_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__create_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation_ucth__create_date
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_harvest__create_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__create_date
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation_system__create_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor__create_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor_type__create_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__create_date
@@ -340,7 +397,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__create_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary_application_type__create_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_plot_use__create_date
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__create_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_province__create_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_system__create_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_town__create_date
@@ -351,6 +407,8 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth_technical__create_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__create_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_zone__create_date
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_dose__create_date
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_security_term__create_date
 msgid "Created on"
 msgstr ""
 
@@ -360,6 +418,8 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop_variety__crop_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth__crop_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__crop_id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_dose__crop_id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_security_term__crop_id
 #: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_crop_menu
 msgid "Crop"
 msgstr ""
@@ -382,10 +442,14 @@ msgid "Crop Variety Name"
 msgstr ""
 
 #. module: axdoo_field_notebook
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__crop_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__crop_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template__crop_id
 msgid "Crop id"
+msgstr ""
+
+#. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__cubic_meters
+msgid "Cubic Meters"
 msgstr ""
 
 #. module: axdoo_field_notebook
@@ -394,32 +458,54 @@ msgid "Current Campaign"
 msgstr ""
 
 #. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_harvest__customer_id
+msgid "Customer"
+msgstr ""
+
+#. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_harvest__date
+#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_harvest_view_filter
+msgid "Date"
+msgstr ""
+
+#. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__date_end
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor__date_end
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__date_end
 msgid "Date End"
 msgstr ""
 
 #. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__date_expected
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor__date_expected
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__date_expected
 msgid "Date Expected"
 msgstr ""
 
 #. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__date_start
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor__date_start
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__date_start
 msgid "Date Start"
 msgstr ""
 
 #. module: axdoo_field_notebook
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__departure_version
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_security_term__days_of_security
+msgid "Days of security"
+msgstr ""
+
+#. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__departure_version
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template__departure_version
 msgid "Departure version"
 msgstr ""
 
 #. module: axdoo_field_notebook
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__directive_registration_number
+#: model:ir.model.fields.selection,name:axdoo_field_notebook.selection__field_notebook_harvest__commercialization__direct
+msgid "Direct"
+msgstr ""
+
+#. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__directive_registration_number
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template__directive_registration_number
 msgid "Directive registration Number"
@@ -438,7 +524,9 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__display_name
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__display_name
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation_ucth__display_name
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_harvest__display_name
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__display_name
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation_system__display_name
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor__display_name
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor_type__display_name
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__display_name
@@ -448,7 +536,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__display_name
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary_application_type__display_name
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_plot_use__display_name
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__display_name
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_province__display_name
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_system__display_name
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_town__display_name
@@ -459,17 +546,28 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth_technical__display_name
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__display_name
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_zone__display_name
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_dose__display_name
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_security_term__display_name
 msgid "Display Name"
 msgstr ""
 
 #. module: axdoo_field_notebook
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__domestic
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__domestic
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template__domestic
 msgid "Domestic"
 msgstr ""
 
 #. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__dose_ids
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template__dose_ids
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_dose__dose
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_dose__dose_id
+#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.product_template_form_view
+msgid "Dose"
+msgstr ""
+
+#. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__duration
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor__duration
 msgid "Duration"
 msgstr ""
@@ -490,6 +588,7 @@ msgid "Emergency"
 msgstr ""
 
 #. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__employee_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor__employee_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__employee_ids
 msgid "Employees"
@@ -504,7 +603,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth__enclosure_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth_enclosure__enclosure
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth_enclosure__enclosure_id
-#: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_enclosure_menu
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_parcel_view_form
 msgid "Enclosure"
 msgstr ""
@@ -522,6 +620,7 @@ msgid "End Date"
 msgstr ""
 
 #. module: axdoo_field_notebook
+#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_irrigation_view_filter
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_labor_view_filter
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_phytosanitary_view_filter
 msgid "End date"
@@ -534,15 +633,11 @@ msgstr ""
 
 #. module: axdoo_field_notebook
 #: model:ir.actions.act_window,name:axdoo_field_notebook.field_notebook_equipment_action
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__equipment_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor__equipment_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__equipment_ids
 #: model:ir.ui.menu,name:axdoo_field_notebook.menu_equipment_form
 msgid "Equipments"
-msgstr ""
-
-#. module: axdoo_field_notebook
-#: model:ir.model.constraint,message:axdoo_field_notebook.constraint_field_notebook_parcel_technical_technical_uniq
-msgid "Este técnico ya existe en esta parecela !"
 msgstr ""
 
 #. module: axdoo_field_notebook
@@ -551,13 +646,13 @@ msgid "Execution"
 msgstr ""
 
 #. module: axdoo_field_notebook
+#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_irrigation_view_filter
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_labor_view_filter
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_phytosanitary_view_filter
 msgid "Expected date"
 msgstr ""
 
 #. module: axdoo_field_notebook
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__expiration_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__expiration_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template__expiration_date
 msgid "Expiration date"
@@ -566,11 +661,15 @@ msgstr ""
 #. module: axdoo_field_notebook
 #: model:ir.actions.act_window,name:axdoo_field_notebook.field_notebook_exploitation_action
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation_ucth__exploitation_id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_harvest__exploitation_id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__exploitation_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor__exploitation_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__exploitation_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__exploitation_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth__exploitation_id
 #: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_exploitation_menu
+#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_harvest_view_filter
+#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_irrigation_view_filter
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_labor_view_filter
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_phytosanitary_view_filter
 msgid "Exploitation"
@@ -587,7 +686,6 @@ msgid "Exploitations UCTH"
 msgstr ""
 
 #. module: axdoo_field_notebook
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__factory
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__factory
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template__factory
 msgid "Factory"
@@ -596,6 +694,7 @@ msgstr ""
 #. module: axdoo_field_notebook
 #: model:ir.ui.menu,name:axdoo_field_notebook.axdoo_field_notebook_menu
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.product_template_form_view
+#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.res_config_settings_view_form
 msgid "Field Notebook"
 msgstr ""
 
@@ -625,8 +724,18 @@ msgid "Field Notebook Exploitation"
 msgstr ""
 
 #. module: axdoo_field_notebook
+#: model:ir.model,name:axdoo_field_notebook.model_field_notebook_harvest
+msgid "Field Notebook Harvest"
+msgstr ""
+
+#. module: axdoo_field_notebook
 #: model:ir.model,name:axdoo_field_notebook.model_field_notebook_irrigation
 msgid "Field Notebook Irrigation"
+msgstr ""
+
+#. module: axdoo_field_notebook
+#: model:ir.model,name:axdoo_field_notebook.model_field_notebook_irrigation_system
+msgid "Field Notebook Irrigation System"
 msgstr ""
 
 #. module: axdoo_field_notebook
@@ -662,11 +771,6 @@ msgstr ""
 #. module: axdoo_field_notebook
 #: model:ir.model,name:axdoo_field_notebook.model_field_notebook_plot_use
 msgid "Field Notebook Plot Use"
-msgstr ""
-
-#. module: axdoo_field_notebook
-#: model:ir.model,name:axdoo_field_notebook.model_field_notebook_product
-msgid "Field Notebook Product"
 msgstr ""
 
 #. module: axdoo_field_notebook
@@ -710,11 +814,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__message_follower_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__message_follower_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__message_follower_ids
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_harvest__message_follower_ids
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__message_follower_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor__message_follower_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__message_follower_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__message_follower_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__message_follower_ids
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__message_follower_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth__message_follower_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth_enclosure__message_follower_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__message_follower_ids
@@ -726,11 +831,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__message_partner_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__message_partner_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__message_partner_ids
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_harvest__message_partner_ids
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__message_partner_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor__message_partner_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__message_partner_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__message_partner_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__message_partner_ids
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__message_partner_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth__message_partner_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth_enclosure__message_partner_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__message_partner_ids
@@ -742,11 +848,12 @@ msgstr ""
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_crop__activity_type_icon
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_enclosure__activity_type_icon
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_exploitation__activity_type_icon
+#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_harvest__activity_type_icon
+#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_irrigation__activity_type_icon
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_labor__activity_type_icon
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_parcel__activity_type_icon
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_parcel_enclosure__activity_type_icon
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_phytosanitary__activity_type_icon
-#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_product__activity_type_icon
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_ucth__activity_type_icon
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_ucth_enclosure__activity_type_icon
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_variety__activity_type_icon
@@ -754,27 +861,25 @@ msgid "Font awesome icon e.g. fa-tasks"
 msgstr ""
 
 #. module: axdoo_field_notebook
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__formulated
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__formulated
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template__formulated
 msgid "Formulated"
 msgstr ""
 
 #. module: axdoo_field_notebook
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__formulated_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__formulated_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template__formulated_id
 msgid "Formulated id"
 msgstr ""
 
 #. module: axdoo_field_notebook
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__function_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__function_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template__function_id
 msgid "Function id"
 msgstr ""
 
 #. module: axdoo_field_notebook
+#: model:ir.model.fields.selection,name:axdoo_field_notebook.selection__field_notebook_irrigation__water_quality__good
 #: model:ir.model.fields.selection,name:axdoo_field_notebook.selection__field_notebook_phytosanitary__efficiency__good
 msgid "Good"
 msgstr ""
@@ -788,20 +893,31 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_campaign_view_filter
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_crop_view_filter
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_exploitation_view_filter
+#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_harvest_view_filter
+#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_irrigation_view_filter
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_labor_view_filter
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_parcel_view_filter
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_phytosanitary_view_filter
-#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_product_view_filter
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_ucth_view_filter
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_variety_view_filter
 msgid "Group By"
 msgstr ""
 
 #. module: axdoo_field_notebook
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__handling_security
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__handling_security
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template__handling_security
 msgid "Handling security"
+msgstr ""
+
+#. module: axdoo_field_notebook
+#: model:ir.actions.act_window,name:axdoo_field_notebook.field_notebook_harvest_action
+#: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_harvest_menu
+msgid "Harvest"
+msgstr ""
+
+#. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_harvest__name
+msgid "Harvest Reference"
 msgstr ""
 
 #. module: axdoo_field_notebook
@@ -809,11 +925,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__has_message
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__has_message
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__has_message
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_harvest__has_message
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__has_message
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor__has_message
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__has_message
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__has_message
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__has_message
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__has_message
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth__has_message
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth_enclosure__has_message
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__has_message
@@ -821,7 +938,6 @@ msgid "Has Message"
 msgstr ""
 
 #. module: axdoo_field_notebook
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__headline_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__headline_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template__headline_id
 msgid "Headline id"
@@ -833,7 +949,6 @@ msgid "Hired"
 msgstr ""
 
 #. module: axdoo_field_notebook
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__holder
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__holder
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template__holder
 msgid "Holder"
@@ -847,7 +962,9 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation_ucth__id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_harvest__id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation_system__id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor__id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor_type__id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__id
@@ -857,7 +974,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary_application_type__id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_plot_use__id
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_province__id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_system__id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_town__id
@@ -868,6 +984,8 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth_technical__id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_zone__id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_dose__id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_security_term__id
 msgid "ID"
 msgstr ""
 
@@ -876,11 +994,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__activity_exception_icon
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__activity_exception_icon
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__activity_exception_icon
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_harvest__activity_exception_icon
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__activity_exception_icon
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor__activity_exception_icon
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__activity_exception_icon
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__activity_exception_icon
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__activity_exception_icon
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__activity_exception_icon
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth__activity_exception_icon
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth_enclosure__activity_exception_icon
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__activity_exception_icon
@@ -892,11 +1011,12 @@ msgstr ""
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_crop__activity_exception_icon
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_enclosure__activity_exception_icon
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_exploitation__activity_exception_icon
+#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_harvest__activity_exception_icon
+#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_irrigation__activity_exception_icon
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_labor__activity_exception_icon
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_parcel__activity_exception_icon
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_parcel_enclosure__activity_exception_icon
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_phytosanitary__activity_exception_icon
-#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_product__activity_exception_icon
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_ucth__activity_exception_icon
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_ucth_enclosure__activity_exception_icon
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_variety__activity_exception_icon
@@ -912,6 +1032,10 @@ msgstr ""
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_enclosure__message_unread
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_exploitation__message_needaction
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_exploitation__message_unread
+#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_harvest__message_needaction
+#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_harvest__message_unread
+#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_irrigation__message_needaction
+#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_irrigation__message_unread
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_labor__message_needaction
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_labor__message_unread
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_parcel__message_needaction
@@ -920,8 +1044,6 @@ msgstr ""
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_parcel_enclosure__message_unread
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_phytosanitary__message_needaction
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_phytosanitary__message_unread
-#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_product__message_needaction
-#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_product__message_unread
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_ucth__message_needaction
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_ucth__message_unread
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_ucth_enclosure__message_needaction
@@ -940,6 +1062,10 @@ msgstr ""
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_enclosure__message_has_sms_error
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_exploitation__message_has_error
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_exploitation__message_has_sms_error
+#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_harvest__message_has_error
+#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_harvest__message_has_sms_error
+#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_irrigation__message_has_error
+#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_irrigation__message_has_sms_error
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_labor__message_has_error
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_labor__message_has_sms_error
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_parcel__message_has_error
@@ -948,8 +1074,6 @@ msgstr ""
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_parcel_enclosure__message_has_sms_error
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_phytosanitary__message_has_error
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_phytosanitary__message_has_sms_error
-#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_product__message_has_error
-#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_product__message_has_sms_error
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_ucth__message_has_error
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_ucth__message_has_sms_error
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_ucth_enclosure__message_has_error
@@ -978,17 +1102,18 @@ msgid "In progress"
 msgstr ""
 
 #. module: axdoo_field_notebook
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__inscription_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__inscription_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template__inscription_date
 msgid "Inscription date"
 msgstr ""
 
 #. module: axdoo_field_notebook
+#: model:ir.actions.act_window,name:axdoo_field_notebook.field_notebook_irrigation_action
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__irrigation_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__irrigation_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth__irrigation_id
 #: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_irrigation_menu
+#: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_irrigation_system_menu
 msgid "Irrigation"
 msgstr ""
 
@@ -1000,8 +1125,24 @@ msgid "Irrigation Coefficient"
 msgstr ""
 
 #. module: axdoo_field_notebook
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__name
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation_system__name
 msgid "Irrigation Name"
+msgstr ""
+
+#. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__name
+msgid "Irrigation Reference"
+msgstr ""
+
+#. module: axdoo_field_notebook
+#: model:ir.actions.act_window,name:axdoo_field_notebook.field_notebook_irrigation_system_action
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__irrigation_system_id
+msgid "Irrigation System"
+msgstr ""
+
+#. module: axdoo_field_notebook
+#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_irrigation_view_filter
+msgid "Irrigation type"
 msgstr ""
 
 #. module: axdoo_field_notebook
@@ -1009,11 +1150,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__message_is_follower
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__message_is_follower
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__message_is_follower
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_harvest__message_is_follower
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__message_is_follower
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor__message_is_follower
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__message_is_follower
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__message_is_follower
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__message_is_follower
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__message_is_follower
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth__message_is_follower
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth_enclosure__message_is_follower
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__message_is_follower
@@ -1054,7 +1196,9 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure____last_update
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation____last_update
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation_ucth____last_update
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_harvest____last_update
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation____last_update
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation_system____last_update
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor____last_update
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor_type____last_update
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel____last_update
@@ -1064,7 +1208,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary____last_update
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary_application_type____last_update
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_plot_use____last_update
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product____last_update
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_province____last_update
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_system____last_update
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_town____last_update
@@ -1075,6 +1218,8 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth_technical____last_update
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety____last_update
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_zone____last_update
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_dose____last_update
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_security_term____last_update
 msgid "Last Modified on"
 msgstr ""
 
@@ -1086,7 +1231,9 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__write_uid
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__write_uid
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation_ucth__write_uid
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_harvest__write_uid
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__write_uid
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation_system__write_uid
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor__write_uid
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor_type__write_uid
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__write_uid
@@ -1096,7 +1243,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__write_uid
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary_application_type__write_uid
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_plot_use__write_uid
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__write_uid
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_province__write_uid
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_system__write_uid
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_town__write_uid
@@ -1107,6 +1253,8 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth_technical__write_uid
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__write_uid
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_zone__write_uid
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_dose__write_uid
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_security_term__write_uid
 msgid "Last Updated by"
 msgstr ""
 
@@ -1118,7 +1266,9 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__write_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__write_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation_ucth__write_date
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_harvest__write_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__write_date
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation_system__write_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor__write_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor_type__write_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__write_date
@@ -1128,7 +1278,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__write_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary_application_type__write_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_plot_use__write_date
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__write_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_province__write_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_system__write_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_town__write_date
@@ -1139,6 +1288,8 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth_technical__write_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__write_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_zone__write_date
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_dose__write_date
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_security_term__write_date
 msgid "Last Updated on"
 msgstr ""
 
@@ -1153,15 +1304,31 @@ msgid "Less than 15 km"
 msgstr ""
 
 #. module: axdoo_field_notebook
+#: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_location_menu
+msgid "Location"
+msgstr ""
+
+#. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_harvest__lot
+msgid "Lot"
+msgstr ""
+
+#. module: axdoo_field_notebook
+#: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_machinery_menu
+msgid "Machinery"
+msgstr ""
+
+#. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_campaign__message_main_attachment_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__message_main_attachment_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__message_main_attachment_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__message_main_attachment_id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_harvest__message_main_attachment_id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__message_main_attachment_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor__message_main_attachment_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__message_main_attachment_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__message_main_attachment_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__message_main_attachment_id
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__message_main_attachment_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth__message_main_attachment_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth_enclosure__message_main_attachment_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__message_main_attachment_id
@@ -1174,17 +1341,20 @@ msgid "Maintenance Equipment"
 msgstr ""
 
 #. module: axdoo_field_notebook
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__manufacturer
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__manufacturer
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template__manufacturer
 msgid "Manufacturer"
 msgstr ""
 
 #. module: axdoo_field_notebook
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__manufacturer_internal_code
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__manufacturer_internal_code
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template__manufacturer_internal_code
 msgid "Manufacturer Internal Code"
+msgstr ""
+
+#. module: axdoo_field_notebook
+#: model:ir.model.fields.selection,name:axdoo_field_notebook.selection__field_notebook_irrigation__water_quality__medium
+msgid "Medium"
 msgstr ""
 
 #. module: axdoo_field_notebook
@@ -1192,11 +1362,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__message_has_error
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__message_has_error
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__message_has_error
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_harvest__message_has_error
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__message_has_error
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor__message_has_error
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__message_has_error
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__message_has_error
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__message_has_error
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__message_has_error
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth__message_has_error
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth_enclosure__message_has_error
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__message_has_error
@@ -1208,11 +1379,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__message_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__message_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__message_ids
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_harvest__message_ids
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__message_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor__message_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__message_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__message_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__message_ids
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__message_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth__message_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth_enclosure__message_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__message_ids
@@ -1230,7 +1402,6 @@ msgid "Mobile"
 msgstr ""
 
 #. module: axdoo_field_notebook
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__modification_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__modification_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template__modification_date
 msgid "Modification date"
@@ -1252,11 +1423,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__my_activity_date_deadline
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__my_activity_date_deadline
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__my_activity_date_deadline
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_harvest__my_activity_date_deadline
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__my_activity_date_deadline
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor__my_activity_date_deadline
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__my_activity_date_deadline
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__my_activity_date_deadline
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__my_activity_date_deadline
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__my_activity_date_deadline
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth__my_activity_date_deadline
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth_enclosure__my_activity_date_deadline
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__my_activity_date_deadline
@@ -1275,14 +1447,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__name
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor_type__name
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary_application_type__name
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__name
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_province__name
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_town__name
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_campaign_view_filter
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_crop_view_filter
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_exploitation_view_filter
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_parcel_view_filter
-#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_product_view_filter
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_ucth_view_filter
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_variety_view_filter
 msgid "Name"
@@ -1293,11 +1463,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__activity_date_deadline
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__activity_date_deadline
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__activity_date_deadline
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_harvest__activity_date_deadline
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__activity_date_deadline
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor__activity_date_deadline
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__activity_date_deadline
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__activity_date_deadline
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__activity_date_deadline
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__activity_date_deadline
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth__activity_date_deadline
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth_enclosure__activity_date_deadline
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__activity_date_deadline
@@ -1309,11 +1480,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__activity_summary
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__activity_summary
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__activity_summary
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_harvest__activity_summary
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__activity_summary
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor__activity_summary
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__activity_summary
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__activity_summary
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__activity_summary
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__activity_summary
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth__activity_summary
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth_enclosure__activity_summary
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__activity_summary
@@ -1325,11 +1497,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__activity_type_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__activity_type_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__activity_type_id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_harvest__activity_type_id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__activity_type_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor__activity_type_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__activity_type_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__activity_type_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__activity_type_id
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__activity_type_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth__activity_type_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth_enclosure__activity_type_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__activity_type_id
@@ -1341,11 +1514,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__message_needaction_counter
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__message_needaction_counter
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__message_needaction_counter
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_harvest__message_needaction_counter
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__message_needaction_counter
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor__message_needaction_counter
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__message_needaction_counter
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__message_needaction_counter
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__message_needaction_counter
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__message_needaction_counter
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth__message_needaction_counter
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth_enclosure__message_needaction_counter
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__message_needaction_counter
@@ -1357,11 +1531,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__message_has_error_counter
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__message_has_error_counter
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__message_has_error_counter
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_harvest__message_has_error_counter
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__message_has_error_counter
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor__message_has_error_counter
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__message_has_error_counter
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__message_has_error_counter
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__message_has_error_counter
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__message_has_error_counter
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth__message_has_error_counter
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth_enclosure__message_has_error_counter
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__message_has_error_counter
@@ -1373,11 +1548,12 @@ msgstr ""
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_crop__message_needaction_counter
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_enclosure__message_needaction_counter
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_exploitation__message_needaction_counter
+#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_harvest__message_needaction_counter
+#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_irrigation__message_needaction_counter
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_labor__message_needaction_counter
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_parcel__message_needaction_counter
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_parcel_enclosure__message_needaction_counter
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_phytosanitary__message_needaction_counter
-#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_product__message_needaction_counter
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_ucth__message_needaction_counter
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_ucth_enclosure__message_needaction_counter
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_variety__message_needaction_counter
@@ -1389,11 +1565,12 @@ msgstr ""
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_crop__message_has_error_counter
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_enclosure__message_has_error_counter
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_exploitation__message_has_error_counter
+#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_harvest__message_has_error_counter
+#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_irrigation__message_has_error_counter
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_labor__message_has_error_counter
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_parcel__message_has_error_counter
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_parcel_enclosure__message_has_error_counter
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_phytosanitary__message_has_error_counter
-#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_product__message_has_error_counter
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_ucth__message_has_error_counter
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_ucth_enclosure__message_has_error_counter
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_variety__message_has_error_counter
@@ -1405,11 +1582,12 @@ msgstr ""
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_crop__message_unread_counter
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_enclosure__message_unread_counter
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_exploitation__message_unread_counter
+#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_harvest__message_unread_counter
+#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_irrigation__message_unread_counter
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_labor__message_unread_counter
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_parcel__message_unread_counter
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_parcel_enclosure__message_unread_counter
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_phytosanitary__message_unread_counter
-#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_product__message_unread_counter
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_ucth__message_unread_counter
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_ucth_enclosure__message_unread_counter
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_variety__message_unread_counter
@@ -1435,10 +1613,15 @@ msgid "Nursery"
 msgstr ""
 
 #. module: axdoo_field_notebook
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__observations
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__observations
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template__observations
 msgid "Observations"
+msgstr ""
+
+#. module: axdoo_field_notebook
+#: model_terms:ir.actions.act_window,help:axdoo_field_notebook.action_associate_contacts
+#: model_terms:ir.actions.act_window,help:axdoo_field_notebook.res_partner_associated_action
+msgid "Odoo helps you easily track all activities related to an associated."
 msgstr ""
 
 #. module: axdoo_field_notebook
@@ -1461,6 +1644,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth_enclosure__parcel_id
 #: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_parcel_menu
 msgid "Parcel"
+msgstr ""
+
+#. module: axdoo_field_notebook
+#: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_parcel_ucth_menu
+msgid "Parcel / U.C.T.H."
 msgstr ""
 
 #. module: axdoo_field_notebook
@@ -1515,6 +1703,7 @@ msgstr ""
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__phytosanitary_application_type_id
+#: model:ir.ui.menu,name:axdoo_field_notebook.menu_phytosanitary_application_type_form
 msgid "Phytosanitary Application Type"
 msgstr ""
 
@@ -1524,7 +1713,6 @@ msgid "Phytosanitary Reference"
 msgstr ""
 
 #. module: axdoo_field_notebook
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__plague_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__plague_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template__plague_id
 msgid "Plague id"
@@ -1587,40 +1775,43 @@ msgid "Pre emergency"
 msgstr ""
 
 #. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_harvest__price
+msgid "Price"
+msgstr ""
+
+#. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__problematic
 msgid "Problematic"
 msgstr ""
 
 #. module: axdoo_field_notebook
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__procedure
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__procedure
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template__procedure
 msgid "Procedure"
 msgstr ""
 
 #. module: axdoo_field_notebook
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__procedure_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__procedure_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template__procedure_date
 msgid "Procedure date"
 msgstr ""
 
 #. module: axdoo_field_notebook
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__procedure_state
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__procedure_state
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template__procedure_state
 msgid "Procedure state"
 msgstr ""
 
 #. module: axdoo_field_notebook
-#: model:ir.actions.act_window,name:axdoo_field_notebook.field_notebook_product_action
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_harvest__product_id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__product_id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor__product_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__product_id
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_phytosanitary_view_filter
 msgid "Product"
 msgstr ""
 
 #. module: axdoo_field_notebook
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__product_code
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__product_code
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template__product_code
 msgid "Product Code"
@@ -1629,6 +1820,16 @@ msgstr ""
 #. module: axdoo_field_notebook
 #: model:ir.model,name:axdoo_field_notebook.model_product_template
 msgid "Product Template"
+msgstr ""
+
+#. module: axdoo_field_notebook
+#: model:ir.model,name:axdoo_field_notebook.model_product_template_dose
+msgid "Product Template Dose"
+msgstr ""
+
+#. module: axdoo_field_notebook
+#: model:ir.model,name:axdoo_field_notebook.model_product_template_security_term
+msgid "Product Template Security Term"
 msgstr ""
 
 #. module: axdoo_field_notebook
@@ -1654,6 +1855,11 @@ msgid "Provinces"
 msgstr ""
 
 #. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_harvest__quantity_kg
+msgid "Quantity Kg"
+msgstr ""
+
+#. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__region
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__region
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth_enclosure__region
@@ -1661,7 +1867,6 @@ msgid "Region"
 msgstr ""
 
 #. module: axdoo_field_notebook
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__registration_number
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__registration_number
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template__registration_number
 msgid "Registration Number"
@@ -1673,7 +1878,6 @@ msgid "Regular"
 msgstr ""
 
 #. module: axdoo_field_notebook
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__renewal_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__renewal_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template__renewal_date
 msgid "Renewal date"
@@ -1690,11 +1894,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__activity_user_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__activity_user_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__activity_user_id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_harvest__activity_user_id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__activity_user_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor__activity_user_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__activity_user_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__activity_user_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__activity_user_id
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__activity_user_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth__activity_user_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth_enclosure__activity_user_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__activity_user_id
@@ -1711,11 +1916,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__message_has_sms_error
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__message_has_sms_error
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__message_has_sms_error
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_harvest__message_has_sms_error
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__message_has_sms_error
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor__message_has_sms_error
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__message_has_sms_error
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__message_has_sms_error
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__message_has_sms_error
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__message_has_sms_error
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth__message_has_sms_error
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth_enclosure__message_has_sms_error
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__message_has_sms_error
@@ -1723,7 +1929,6 @@ msgid "SMS Delivery error"
 msgstr ""
 
 #. module: axdoo_field_notebook
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__sale_deadline
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__sale_deadline
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template__sale_deadline
 msgid "Sale deadline date"
@@ -1737,9 +1942,10 @@ msgstr ""
 #. module: axdoo_field_notebook
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_crop_view_filter
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_exploitation_view_filter
+#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_harvest_view_filter
+#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_irrigation_view_filter
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_labor_view_filter
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_parcel_view_filter
-#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_product_view_filter
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_variety_view_filter
 msgid "Search Parcel"
 msgstr ""
@@ -1755,12 +1961,31 @@ msgid "Search phytosanitary"
 msgstr ""
 
 #. module: axdoo_field_notebook
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__sequence
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__security_term_ids
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template__security_term_ids
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_security_term__security_term_id
+#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.product_template_form_view
+msgid "Security Term"
+msgstr ""
+
+#. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation_system__sequence
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary_application_type__sequence
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_plot_use__sequence
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_system__sequence
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_zone__sequence
 msgid "Sequence"
+msgstr ""
+
+#. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_res_config_settings__campaign_id
+msgid "Set default campaign"
+msgstr ""
+
+#. module: axdoo_field_notebook
+#: model:ir.actions.act_window,name:axdoo_field_notebook.axdoo_field_notebook_config_settings_action
+#: model:ir.ui.menu,name:axdoo_field_notebook.axdoo_field_notebook_menu_configuration
+msgid "Settings"
 msgstr ""
 
 #. module: axdoo_field_notebook
@@ -1771,7 +1996,6 @@ msgid "Slope"
 msgstr ""
 
 #. module: axdoo_field_notebook
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__spill_security
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__spill_security
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template__spill_security
 msgid "Spill security"
@@ -1783,6 +2007,7 @@ msgid "Start Date"
 msgstr ""
 
 #. module: axdoo_field_notebook
+#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_irrigation_view_filter
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_labor_view_filter
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_phytosanitary_view_filter
 msgid "Start date"
@@ -1791,7 +2016,6 @@ msgstr ""
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__state_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor__state
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__state
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__state
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template__state
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_exploitation_view_form
@@ -1800,14 +2024,12 @@ msgid "State"
 msgstr ""
 
 #. module: axdoo_field_notebook
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__state_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__state_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template__state_id
 msgid "State id"
 msgstr ""
 
 #. module: axdoo_field_notebook
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__state_version
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__state_version
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template__state_version
 msgid "State version"
@@ -1818,11 +2040,12 @@ msgstr ""
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_crop__activity_state
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_enclosure__activity_state
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_exploitation__activity_state
+#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_harvest__activity_state
+#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_irrigation__activity_state
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_labor__activity_state
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_parcel__activity_state
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_parcel_enclosure__activity_state
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_phytosanitary__activity_state
-#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_product__activity_state
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_ucth__activity_state
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_ucth_enclosure__activity_state
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_variety__activity_state
@@ -1834,7 +2057,6 @@ msgid ""
 msgstr ""
 
 #. module: axdoo_field_notebook
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__storage_security
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__storage_security
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template__storage_security
 msgid "Storage security"
@@ -1856,7 +2078,6 @@ msgid "Structure"
 msgstr ""
 
 #. module: axdoo_field_notebook
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__substance_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__substance_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template__substance_id
 msgid "Substance id"
@@ -1877,31 +2098,28 @@ msgid "Surface"
 msgstr ""
 
 #. module: axdoo_field_notebook
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__symbol_1
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__symbol_1
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template__symbol_1
 msgid "Symbol 1"
 msgstr ""
 
 #. module: axdoo_field_notebook
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__symbol_2
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__symbol_2
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template__symbol_2
 msgid "Symbol 2"
 msgstr ""
 
 #. module: axdoo_field_notebook
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__symbol_3
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__symbol_3
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template__symbol_3
 msgid "Symbol 3"
 msgstr ""
 
 #. module: axdoo_field_notebook
-#: model:ir.actions.act_window,name:axdoo_field_notebook.field_notebook_irrigation_action
 #: model:ir.actions.act_window,name:axdoo_field_notebook.field_notebook_system_action
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__system_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth__system_ids
+#: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_system_menu
 msgid "System"
 msgstr ""
 
@@ -1912,7 +2130,6 @@ msgstr ""
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__system_ids
-#: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_system_menu
 msgid "Systems"
 msgstr ""
 
@@ -1921,44 +2138,40 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_technical__technical_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth__technical_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth_technical__technical_id
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_res_partner__technical
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_res_users__technical
-#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.view_res_partner_technical_filter
 msgid "Technical"
 msgstr ""
 
 #. module: axdoo_field_notebook
-#: model:ir.actions.act_window,name:axdoo_field_notebook.action_technical_contacts
-#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_ucth_view_form
-msgid "Technicals"
-msgstr ""
-
-#. module: axdoo_field_notebook
 #: code:addons/axdoo_field_notebook/models/field_notebook_exploitation.py:0
+#: model:ir.model.constraint,message:axdoo_field_notebook.constraint_field_notebook_exploitation_ucth_ucth_uniq
 #, python-format
 msgid "This UCTH already exists in some exploitation !"
 msgstr ""
 
 #. module: axdoo_field_notebook
 #: code:addons/axdoo_field_notebook/models/field_notebook_parcel.py:0
+#: model:ir.model.constraint,message:axdoo_field_notebook.constraint_field_notebook_parcel_enclosure_enclosure_uniq
 #, python-format
 msgid "This enclosure already exists in this parcel !"
 msgstr ""
 
 #. module: axdoo_field_notebook
 #: code:addons/axdoo_field_notebook/models/field_notebook_ucth.py:0
+#: model:ir.model.constraint,message:axdoo_field_notebook.constraint_field_notebook_ucth_enclosure_enclosure_uniq
 #, python-format
 msgid "This enclosure already exists in this ucth !"
 msgstr ""
 
 #. module: axdoo_field_notebook
 #: code:addons/axdoo_field_notebook/models/field_notebook_parcel.py:0
+#: model:ir.model.constraint,message:axdoo_field_notebook.constraint_field_notebook_parcel_technical_technical_uniq
 #, python-format
 msgid "This technical already exists in this parcel !"
 msgstr ""
 
 #. module: axdoo_field_notebook
 #: code:addons/axdoo_field_notebook/models/field_notebook_ucth.py:0
+#: model:ir.model.constraint,message:axdoo_field_notebook.constraint_field_notebook_ucth_technical_technical_uniq
 #, python-format
 msgid "This technical already exists in this ucth !"
 msgstr ""
@@ -1977,6 +2190,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__total_plants
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth__total_plants
 msgid "Total Plants"
+msgstr ""
+
+#. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_harvest__total_price
+msgid "Total Price"
 msgstr ""
 
 #. module: axdoo_field_notebook
@@ -2006,11 +2224,12 @@ msgstr ""
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_crop__activity_exception_decoration
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_enclosure__activity_exception_decoration
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_exploitation__activity_exception_decoration
+#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_harvest__activity_exception_decoration
+#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_irrigation__activity_exception_decoration
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_labor__activity_exception_decoration
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_parcel__activity_exception_decoration
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_parcel_enclosure__activity_exception_decoration
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_phytosanitary__activity_exception_decoration
-#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_product__activity_exception_decoration
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_ucth__activity_exception_decoration
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_ucth_enclosure__activity_exception_decoration
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_variety__activity_exception_decoration
@@ -2029,6 +2248,8 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth_nursery__ucth_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth_parcel__ucth_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth_technical__ucth_id
+#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_harvest_view_filter
+#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_irrigation_view_filter
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_labor_view_filter
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_phytosanitary_view_filter
 msgid "UCTH"
@@ -2060,6 +2281,8 @@ msgid "UCTH Technical"
 msgstr ""
 
 #. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_harvest__ucth_id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__ucth_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor__ucth_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__ucth_id
 msgid "Ucth"
@@ -2070,11 +2293,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__message_unread
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__message_unread
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__message_unread
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_harvest__message_unread
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__message_unread
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor__message_unread
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__message_unread
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__message_unread
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__message_unread
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__message_unread
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth__message_unread
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth_enclosure__message_unread
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__message_unread
@@ -2086,11 +2310,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__message_unread_counter
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__message_unread_counter
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__message_unread_counter
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_harvest__message_unread_counter
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__message_unread_counter
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor__message_unread_counter
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__message_unread_counter
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__message_unread_counter
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__message_unread_counter
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__message_unread_counter
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth__message_unread_counter
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth_enclosure__message_unread_counter
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__message_unread_counter
@@ -2104,7 +2329,6 @@ msgstr ""
 
 #. module: axdoo_field_notebook
 #: model:ir.actions.act_window,name:axdoo_field_notebook.field_notebook_variety_action
-#: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_variety_menu
 msgid "Variety"
 msgstr ""
 
@@ -2114,7 +2338,6 @@ msgid "Variety Name"
 msgstr ""
 
 #. module: axdoo_field_notebook
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__version
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__version
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template__version
 msgid "Version"
@@ -2131,6 +2354,16 @@ msgid "Vulnerable zone"
 msgstr ""
 
 #. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__water_quality
+msgid "Water Quality"
+msgstr ""
+
+#. module: axdoo_field_notebook
+#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_irrigation_view_filter
+msgid "Water quality"
+msgstr ""
+
+#. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__weather_condition
 msgid "Weather Condition"
 msgstr ""
@@ -2140,11 +2373,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__website_message_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__website_message_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__website_message_ids
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_harvest__website_message_ids
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__website_message_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor__website_message_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__website_message_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__website_message_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__website_message_ids
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_product__website_message_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth__website_message_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth_enclosure__website_message_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__website_message_ids
@@ -2156,11 +2390,12 @@ msgstr ""
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_crop__website_message_ids
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_enclosure__website_message_ids
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_exploitation__website_message_ids
+#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_harvest__website_message_ids
+#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_irrigation__website_message_ids
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_labor__website_message_ids
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_parcel__website_message_ids
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_parcel_enclosure__website_message_ids
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_phytosanitary__website_message_ids
-#: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_product__website_message_ids
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_ucth__website_message_ids
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_ucth_enclosure__website_message_ids
 #: model:ir.model.fields,help:axdoo_field_notebook.field_field_notebook_variety__website_message_ids
@@ -2238,24 +2473,4 @@ msgstr ""
 #. module: axdoo_field_notebook
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_parcel_view_form
 msgid "total"
-msgstr ""
-
-#. module: axdoo_field_notebook
-#: model:ir.model.constraint,message:axdoo_field_notebook.constraint_field_notebook_exploitation_ucth_ucth_uniq
-msgid "¡Esta UCTH ya existe en alguna explotación!"
-msgstr ""
-
-#. module: axdoo_field_notebook
-#: model:ir.model.constraint,message:axdoo_field_notebook.constraint_field_notebook_ucth_technical_technical_uniq
-msgid "¡Esta técnico ya existe en este UCTH!"
-msgstr ""
-
-#. module: axdoo_field_notebook
-#: model:ir.model.constraint,message:axdoo_field_notebook.constraint_field_notebook_parcel_enclosure_enclosure_uniq
-msgid "¡Este recinto ya existe en esta parcela!"
-msgstr ""
-
-#. module: axdoo_field_notebook
-#: model:ir.model.constraint,message:axdoo_field_notebook.constraint_field_notebook_ucth_enclosure_enclosure_uniq
-msgid "¡Este recinto ya existe en este ucth!"
 msgstr ""
