@@ -16,7 +16,7 @@
 
     <record id="field_notebook_phytosanitary_application_type_action"
             model="ir.actions.act_window">
-        <field name="name">Plot Use</field>
+        <field name="name">Phytosanitary application</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">field.notebook.phytosanitary.application.type</field>
         <field name="view_mode">tree,form,kanban</field>

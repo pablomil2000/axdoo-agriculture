@@ -110,12 +110,12 @@
                   sequence="4"/>
 
         <menuitem id="field_notebook_system_menu"
-                  name="System"
+                  name="Agricultural system"
                   action="field_notebook_system_action"
                   sequence="5"/>
 
         <menuitem id="field_notebook_irrigation_system_menu"
-                  name="Irrigation"
+                  name="Irrigation system"
                   action="field_notebook_irrigation_system_action"
                   sequence="6"/>
 
@@ -128,6 +128,11 @@
                   name="Phytosanitary Application Type"
                   action="field_notebook_phytosanitary_application_type_action"
                   sequence="8"/>
+
+        <menuitem id="menu_agents_form"
+                  name="Agents"
+                  action="field_notebook_agent_action"
+                  sequence="9"/>
 
     </menuitem>
 

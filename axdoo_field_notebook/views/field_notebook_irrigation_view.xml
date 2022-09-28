@@ -92,7 +92,7 @@
 
     <record id="field_notebook_irrigation_action"
             model="ir.actions.act_window">
-        <field name="name">Irrigation</field>
+        <field name="name">Irrigation system</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">field.notebook.irrigation</field>
         <field name="view_mode">tree,kanban,form,calendar,pivot,graph,activity</field>

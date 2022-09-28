@@ -38,6 +38,7 @@
         'views/field_notebook_parcel_view.xml',
         'views/field_notebook_exploitation_view.xml',
         'views/field_notebook_enclosure_view.xml',
+        'views/field_notebook_agent.xml',
         'views/res_partner_view.xml',
         'views/maintenance_view.xml',
         'views/res_config_settings_views.xml',

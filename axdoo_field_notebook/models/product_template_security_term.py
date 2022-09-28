@@ -13,7 +13,7 @@ class ProductTemplateSecurityTerm(models.Model):
         comodel_name='product.template',
         string='Security Term',
     )
-    crop_id = fields.Many2one(
+    crop_ids = fields.Many2many(
         string='Crop',
         comodel_name='field.notebook.crop',
         required=True,

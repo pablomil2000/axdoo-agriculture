@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-27 11:18+0000\n"
-"PO-Revision-Date: 2022-09-27 11:18+0000\n"
+"POT-Creation-Date: 2022-09-28 11:10+0000\n"
+"PO-Revision-Date: 2022-09-28 11:10+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -121,8 +121,25 @@ msgid "Activity Type Icon"
 msgstr ""
 
 #. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_dose__agent_ids
+msgid "Agent"
+msgstr ""
+
+#. module: axdoo_field_notebook
+#: model:ir.actions.act_window,name:axdoo_field_notebook.field_notebook_agent_action
+#: model:ir.ui.menu,name:axdoo_field_notebook.menu_agents_form
+msgid "Agents"
+msgstr ""
+
+#. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__aggregate
 msgid "Aggregate"
+msgstr ""
+
+#. module: axdoo_field_notebook
+#: model:ir.actions.act_window,name:axdoo_field_notebook.field_notebook_system_action
+#: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_system_menu
+msgid "Agricultural system"
 msgstr ""
 
 #. module: axdoo_field_notebook
@@ -343,6 +360,7 @@ msgid "Create a new associated in your address book"
 msgstr ""
 
 #. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_agent__create_uid
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_autonomy__create_uid
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_campaign__create_uid
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__create_uid
@@ -378,6 +396,7 @@ msgid "Created by"
 msgstr ""
 
 #. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_agent__create_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_autonomy__create_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_campaign__create_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__create_date
@@ -418,8 +437,8 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop_variety__crop_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth__crop_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__crop_id
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_dose__crop_id
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_security_term__crop_id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_dose__crop_ids
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_security_term__crop_ids
 #: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_crop_menu
 msgid "Crop"
 msgstr ""
@@ -517,6 +536,7 @@ msgid "Diseases"
 msgstr ""
 
 #. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_agent__display_name
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_autonomy__display_name
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_campaign__display_name
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__display_name
@@ -560,10 +580,14 @@ msgstr ""
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__dose_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template__dose_ids
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_dose__dose
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_dose__dose_id
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.product_template_form_view
 msgid "Dose"
+msgstr ""
+
+#. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_dose__dose
+msgid "Dose Kg/ha"
 msgstr ""
 
 #. module: axdoo_field_notebook
@@ -696,6 +720,11 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.product_template_form_view
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.res_config_settings_view_form
 msgid "Field Notebook"
+msgstr ""
+
+#. module: axdoo_field_notebook
+#: model:ir.model,name:axdoo_field_notebook.model_field_notebook_agent
+msgid "Field Notebook Agent"
 msgstr ""
 
 #. module: axdoo_field_notebook
@@ -955,6 +984,7 @@ msgid "Holder"
 msgstr ""
 
 #. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_agent__id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_autonomy__id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_campaign__id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__id
@@ -1108,12 +1138,15 @@ msgid "Inscription date"
 msgstr ""
 
 #. module: axdoo_field_notebook
-#: model:ir.actions.act_window,name:axdoo_field_notebook.field_notebook_irrigation_action
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_dose__intervals_days
+msgid "Intervals"
+msgstr ""
+
+#. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__irrigation_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__irrigation_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth__irrigation_id
 #: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_irrigation_menu
-#: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_irrigation_system_menu
 msgid "Irrigation"
 msgstr ""
 
@@ -1138,6 +1171,12 @@ msgstr ""
 #: model:ir.actions.act_window,name:axdoo_field_notebook.field_notebook_irrigation_system_action
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__irrigation_system_id
 msgid "Irrigation System"
+msgstr ""
+
+#. module: axdoo_field_notebook
+#: model:ir.actions.act_window,name:axdoo_field_notebook.field_notebook_irrigation_action
+#: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_irrigation_system_menu
+msgid "Irrigation system"
 msgstr ""
 
 #. module: axdoo_field_notebook
@@ -1189,6 +1228,7 @@ msgid "Labor type"
 msgstr ""
 
 #. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_agent____last_update
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_autonomy____last_update
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_campaign____last_update
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop____last_update
@@ -1224,6 +1264,7 @@ msgid "Last Modified on"
 msgstr ""
 
 #. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_agent__write_uid
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_autonomy__write_uid
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_campaign__write_uid
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__write_uid
@@ -1259,6 +1300,7 @@ msgid "Last Updated by"
 msgstr ""
 
 #. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_agent__write_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_autonomy__write_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_campaign__write_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__write_date
@@ -1441,6 +1483,7 @@ msgid "NIF"
 msgstr ""
 
 #. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_agent__name
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_autonomy__name
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_campaign__name
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__name
@@ -1613,6 +1656,11 @@ msgid "Nursery"
 msgstr ""
 
 #. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_dose__aplication_number
+msgid "Nº aplication"
+msgstr ""
+
+#. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__observations
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template__observations
 msgid "Observations"
@@ -1713,6 +1761,11 @@ msgid "Phytosanitary Reference"
 msgstr ""
 
 #. module: axdoo_field_notebook
+#: model:ir.actions.act_window,name:axdoo_field_notebook.field_notebook_phytosanitary_application_type_action
+msgid "Phytosanitary application"
+msgstr ""
+
+#. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__plague_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template__plague_id
 msgid "Plague id"
@@ -1736,7 +1789,6 @@ msgid "Plants"
 msgstr ""
 
 #. module: axdoo_field_notebook
-#: model:ir.actions.act_window,name:axdoo_field_notebook.field_notebook_phytosanitary_application_type_action
 #: model:ir.actions.act_window,name:axdoo_field_notebook.field_notebook_plot_use_action
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__plot_use_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__plot_use_id
@@ -1996,6 +2048,11 @@ msgid "Slope"
 msgstr ""
 
 #. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_dose__specific_conditions
+msgid "Specific conditions"
+msgstr ""
+
+#. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__spill_security
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template__spill_security
 msgid "Spill security"
@@ -2116,10 +2173,8 @@ msgid "Symbol 3"
 msgstr ""
 
 #. module: axdoo_field_notebook
-#: model:ir.actions.act_window,name:axdoo_field_notebook.field_notebook_system_action
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__system_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth__system_ids
-#: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_system_menu
 msgid "System"
 msgstr ""
 
@@ -2346,6 +2401,11 @@ msgstr ""
 #. module: axdoo_field_notebook
 #: model:ir.model.fields.selection,name:axdoo_field_notebook.selection__field_notebook_phytosanitary__weather_condition__very_cloudy
 msgid "Very cloudy"
+msgstr ""
+
+#. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_dose__volumen_broth
+msgid "Vol/Caldo"
 msgstr ""
 
 #. module: axdoo_field_notebook

@@ -76,7 +76,7 @@
                 <page name="security_term" string="Security Term">
                     <field name="security_term_ids" widget="One2many" context="{'show_attribute': False}">
                         <tree editable="bottom">
-                            <field name="crop_id"/>
+                            <field name="crop_ids" widget="many2many_tags"/>
                             <field name="days_of_security"/>
                         </tree>
                     </field>
@@ -84,8 +84,13 @@
                 <page name="use_dose" string="Dose">
                     <field name="dose_ids" widget="One2many" context="{'show_attribute': False}">
                         <tree editable="bottom">
-                            <field name="crop_id"/>
+                            <field name="crop_ids" widget="many2many_tags"/>
+                            <field name="agent_ids" widget="many2many_tags"/>
                             <field name="dose"/>
+                            <field name="aplication_number"/>
+                            <field name="intervals_days"/>
+                            <field name="volumen_broth"/>
+                            <field name="specific_conditions"/>
                         </tree>
                     </field>
                 </page>
