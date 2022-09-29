@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-27 10:50+0000\n"
-"PO-Revision-Date: 2022-09-27 10:50+0000\n"
+"POT-Creation-Date: 2022-09-29 07:41+0000\n"
+"PO-Revision-Date: 2022-09-29 07:41+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -124,9 +124,26 @@ msgid "Activity Type Icon"
 msgstr "Icono tipo actividad"
 
 #. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_dose__agent_ids
+msgid "Agent"
+msgstr ""
+
+#. module: axdoo_field_notebook
+#: model:ir.actions.act_window,name:axdoo_field_notebook.field_notebook_agent_action
+#: model:ir.ui.menu,name:axdoo_field_notebook.menu_agents_form
+msgid "Agents"
+msgstr ""
+
+#. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__aggregate
 msgid "Aggregate"
 msgstr "Agregar"
+
+#. module: axdoo_field_notebook
+#: model:ir.actions.act_window,name:axdoo_field_notebook.field_notebook_system_action
+#: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_system_menu
+msgid "Agricultural system"
+msgstr ""
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__ambit_id
@@ -346,6 +363,7 @@ msgid "Create a new associated in your address book"
 msgstr "Crea un nuevo asociado en tu libreta de direcciones"
 
 #. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_agent__create_uid
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_autonomy__create_uid
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_campaign__create_uid
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__create_uid
@@ -381,6 +399,7 @@ msgid "Created by"
 msgstr "Creado por"
 
 #. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_agent__create_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_autonomy__create_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_campaign__create_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__create_date
@@ -421,8 +440,8 @@ msgstr "Creado en"
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop_variety__crop_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth__crop_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__crop_id
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_dose__crop_id
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_security_term__crop_id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_dose__crop_ids
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_security_term__crop_ids
 #: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_crop_menu
 msgid "Crop"
 msgstr "Cultivo"
@@ -520,6 +539,7 @@ msgid "Diseases"
 msgstr "Enfermedades"
 
 #. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_agent__display_name
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_autonomy__display_name
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_campaign__display_name
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__display_name
@@ -563,10 +583,15 @@ msgstr "Doméstico"
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__dose_ids
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template__dose_ids
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_dose__dose
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_dose__dose_id
+#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.product_template_form_view
 msgid "Dose"
 msgstr "Dosis"
+
+#. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_dose__dose
+msgid "Dose Kg/ha"
+msgstr ""
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__duration
@@ -582,7 +607,7 @@ msgstr "Eficiencia"
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__email
 msgid "Email"
-msgstr "Email"
+msgstr ""
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__emergency
@@ -643,11 +668,6 @@ msgid "Equipments"
 msgstr "Maquinaria"
 
 #. module: axdoo_field_notebook
-#: model:ir.model.constraint,message:axdoo_field_notebook.constraint_field_notebook_parcel_technical_technical_uniq
-msgid "Este técnico ya existe en esta parecela !"
-msgstr "Este técnico ya existe en esta parecela !"
-
-#. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__execution
 msgid "Execution"
 msgstr "Ejecución"
@@ -704,6 +724,11 @@ msgstr "Fábrica"
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.res_config_settings_view_form
 msgid "Field Notebook"
 msgstr "Cuaderno de campo"
+
+#. module: axdoo_field_notebook
+#: model:ir.model,name:axdoo_field_notebook.model_field_notebook_agent
+msgid "Field Notebook Agent"
+msgstr ""
 
 #. module: axdoo_field_notebook
 #: model:ir.model,name:axdoo_field_notebook.model_field_notebook_autonomy
@@ -962,6 +987,7 @@ msgid "Holder"
 msgstr "Poseedor"
 
 #. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_agent__id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_autonomy__id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_campaign__id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__id
@@ -994,7 +1020,7 @@ msgstr "Poseedor"
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_dose__id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_security_term__id
 msgid "ID"
-msgstr "ID"
+msgstr ""
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_campaign__activity_exception_icon
@@ -1115,12 +1141,15 @@ msgid "Inscription date"
 msgstr "Fecha de inscripción"
 
 #. module: axdoo_field_notebook
-#: model:ir.actions.act_window,name:axdoo_field_notebook.field_notebook_irrigation_action
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_dose__intervals_days
+msgid "Intervals"
+msgstr ""
+
+#. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__irrigation_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__irrigation_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth__irrigation_id
 #: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_irrigation_menu
-#: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_irrigation_system_menu
 msgid "Irrigation"
 msgstr "Riego"
 
@@ -1146,6 +1175,12 @@ msgstr "Referencia método de riego"
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__irrigation_system_id
 msgid "Irrigation System"
 msgstr "Sistema método de riego"
+
+#. module: axdoo_field_notebook
+#: model:ir.actions.act_window,name:axdoo_field_notebook.field_notebook_irrigation_action
+#: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_irrigation_system_menu
+msgid "Irrigation system"
+msgstr ""
 
 #. module: axdoo_field_notebook
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_irrigation_view_filter
@@ -1178,7 +1213,7 @@ msgstr "Justificar"
 #: model:ir.actions.act_window,name:axdoo_field_notebook.field_notebook_labor_action
 #: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_labor_menu
 msgid "Labor"
-msgstr "Labor"
+msgstr ""
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor__name
@@ -1196,6 +1231,7 @@ msgid "Labor type"
 msgstr "Tipo de labor"
 
 #. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_agent____last_update
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_autonomy____last_update
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_campaign____last_update
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop____last_update
@@ -1231,6 +1267,7 @@ msgid "Last Modified on"
 msgstr "Última modificacnón"
 
 #. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_agent__write_uid
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_autonomy__write_uid
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_campaign__write_uid
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__write_uid
@@ -1266,6 +1303,7 @@ msgid "Last Updated by"
 msgstr "Última modificación"
 
 #. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_agent__write_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_autonomy__write_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_campaign__write_date
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__write_date
@@ -1445,9 +1483,10 @@ msgstr "Fecha límite de mi actividad"
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__vat
 msgid "NIF"
-msgstr "NIF"
+msgstr ""
 
 #. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_agent__name
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_autonomy__name
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_campaign__name
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__name
@@ -1620,6 +1659,11 @@ msgid "Nursery"
 msgstr "Vivero"
 
 #. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_dose__aplication_number
+msgid "Nº aplication"
+msgstr ""
+
+#. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__observations
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template__observations
 msgid "Observations"
@@ -1629,7 +1673,9 @@ msgstr "Observaciones"
 #: model_terms:ir.actions.act_window,help:axdoo_field_notebook.action_associate_contacts
 #: model_terms:ir.actions.act_window,help:axdoo_field_notebook.res_partner_associated_action
 msgid "Odoo helps you easily track all activities related to an associated."
-msgstr "Odoo lo ayuda a rastrear fácilmente todas las actividades relacionadas con un asociado."
+msgstr ""
+"Odoo lo ayuda a rastrear fácilmente todas las actividades relacionadas con "
+"un asociado."
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields.selection,name:axdoo_field_notebook.selection__field_notebook_labor__state__open
@@ -1720,6 +1766,11 @@ msgid "Phytosanitary Reference"
 msgstr "Referencia fitosanitario"
 
 #. module: axdoo_field_notebook
+#: model:ir.actions.act_window,name:axdoo_field_notebook.field_notebook_phytosanitary_application_type_action
+msgid "Phytosanitary application"
+msgstr ""
+
+#. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__plague_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template__plague_id
 msgid "Plague id"
@@ -1743,7 +1794,6 @@ msgid "Plants"
 msgstr "Plantas"
 
 #. module: axdoo_field_notebook
-#: model:ir.actions.act_window,name:axdoo_field_notebook.field_notebook_phytosanitary_application_type_action
 #: model:ir.actions.act_window,name:axdoo_field_notebook.field_notebook_plot_use_action
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__plot_use_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__plot_use_id
@@ -1882,7 +1932,7 @@ msgstr "Registro"
 #. module: axdoo_field_notebook
 #: model:ir.model.fields.selection,name:axdoo_field_notebook.selection__field_notebook_phytosanitary__efficiency__regular
 msgid "Regular"
-msgstr "Regular"
+msgstr ""
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__renewal_date
@@ -2001,6 +2051,11 @@ msgstr "Ajustes"
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth_enclosure__slope
 msgid "Slope"
 msgstr "Pendiente"
+
+#. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_dose__specific_conditions
+msgid "Specific conditions"
+msgstr ""
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__spill_security
@@ -2127,10 +2182,8 @@ msgid "Symbol 3"
 msgstr "Símbolo 3"
 
 #. module: axdoo_field_notebook
-#: model:ir.actions.act_window,name:axdoo_field_notebook.field_notebook_system_action
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__system_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth__system_ids
-#: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_system_menu
 msgid "System"
 msgstr "Sistema"
 
@@ -2154,30 +2207,35 @@ msgstr "Técnico"
 
 #. module: axdoo_field_notebook
 #: code:addons/axdoo_field_notebook/models/field_notebook_exploitation.py:0
+#: model:ir.model.constraint,message:axdoo_field_notebook.constraint_field_notebook_exploitation_ucth_ucth_uniq
 #, python-format
 msgid "This UCTH already exists in some exploitation !"
 msgstr "¡Esta UCTH ya existe en alguna explotación!"
 
 #. module: axdoo_field_notebook
 #: code:addons/axdoo_field_notebook/models/field_notebook_parcel.py:0
+#: model:ir.model.constraint,message:axdoo_field_notebook.constraint_field_notebook_parcel_enclosure_enclosure_uniq
 #, python-format
 msgid "This enclosure already exists in this parcel !"
 msgstr "¡Este recinto ya existe en esta parcela!"
 
 #. module: axdoo_field_notebook
 #: code:addons/axdoo_field_notebook/models/field_notebook_ucth.py:0
+#: model:ir.model.constraint,message:axdoo_field_notebook.constraint_field_notebook_ucth_enclosure_enclosure_uniq
 #, python-format
 msgid "This enclosure already exists in this ucth !"
 msgstr "¡Este recinto ya existe en este ucth!"
 
 #. module: axdoo_field_notebook
 #: code:addons/axdoo_field_notebook/models/field_notebook_parcel.py:0
+#: model:ir.model.constraint,message:axdoo_field_notebook.constraint_field_notebook_parcel_technical_technical_uniq
 #, python-format
 msgid "This technical already exists in this parcel !"
 msgstr "Este técnico ya existe en esta parecela !"
 
 #. module: axdoo_field_notebook
 #: code:addons/axdoo_field_notebook/models/field_notebook_ucth.py:0
+#: model:ir.model.constraint,message:axdoo_field_notebook.constraint_field_notebook_ucth_technical_technical_uniq
 #, python-format
 msgid "This technical already exists in this ucth !"
 msgstr "¡Esta técnico ya existe en este UCTH!"
@@ -2190,7 +2248,7 @@ msgstr "Cruce de umbral"
 #. module: axdoo_field_notebook
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_ucth_view_form
 msgid "Total"
-msgstr "Total"
+msgstr ""
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__total_plants
@@ -2329,11 +2387,6 @@ msgid "Unread Messages Counter"
 msgstr "Mensajes no leídos"
 
 #. module: axdoo_field_notebook
-#: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.product_template_form_view
-msgid "Use dose"
-msgstr "Dosis"
-
-#. module: axdoo_field_notebook
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_crop_view_form
 msgid "Varieties"
 msgstr "Variedades"
@@ -2358,6 +2411,11 @@ msgstr "Versión"
 #: model:ir.model.fields.selection,name:axdoo_field_notebook.selection__field_notebook_phytosanitary__weather_condition__very_cloudy
 msgid "Very cloudy"
 msgstr "Muy nublado"
+
+#. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_dose__volumen_broth
+msgid "Vol/Caldo"
+msgstr ""
 
 #. module: axdoo_field_notebook
 #: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_zone_menu
@@ -2484,24 +2542,4 @@ msgstr "calle..."
 #. module: axdoo_field_notebook
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_parcel_view_form
 msgid "total"
-msgstr "total"
-
-#. module: axdoo_field_notebook
-#: model:ir.model.constraint,message:axdoo_field_notebook.constraint_field_notebook_exploitation_ucth_ucth_uniq
-msgid "¡Esta UCTH ya existe en alguna explotación!"
-msgstr "¡Esta UCTH ya existe en alguna explotación!"
-
-#. module: axdoo_field_notebook
-#: model:ir.model.constraint,message:axdoo_field_notebook.constraint_field_notebook_ucth_technical_technical_uniq
-msgid "¡Esta técnico ya existe en este UCTH!"
-msgstr "¡Esta técnico ya existe en este UCTH!"
-
-#. module: axdoo_field_notebook
-#: model:ir.model.constraint,message:axdoo_field_notebook.constraint_field_notebook_parcel_enclosure_enclosure_uniq
-msgid "¡Este recinto ya existe en esta parcela!"
-msgstr "¡Este recinto ya existe en esta parcela!"
-
-#. module: axdoo_field_notebook
-#: model:ir.model.constraint,message:axdoo_field_notebook.constraint_field_notebook_ucth_enclosure_enclosure_uniq
-msgid "¡Este recinto ya existe en este ucth!"
-msgstr "¡Este recinto ya existe en este ucth!"
+msgstr ""
