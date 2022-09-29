@@ -14,27 +14,27 @@ class ProductTemplateDose(models.Model):
         string='Dose',
     )
     crop_ids = fields.Many2many(
-        string='Crop',
+        string='Cultivo',
         comodel_name='field.notebook.crop',
         required=True,
     )
     agent_ids = fields.Many2many(
-        string='Agent',
+        string='Agente',
         comodel_name='field.notebook.agent',
         required=True,
     )
     dose = fields.Float(
-        string='Dose Kg/ha',
+        string='Dosis Kg/ha',
         digits=(16, 2),
         default=0.0,
         required=True,
     )
     aplication_number = fields.Integer(
-        string='Nº aplication',
+        string='Nº aplicación',
         required=True,
     )
     intervals_days = fields.Integer(
-        string='Intervals',
+        string='Intervalo',
         required=True,
     )
     volumen_broth = fields.Char(
@@ -42,6 +42,6 @@ class ProductTemplateDose(models.Model):
         required=True,
     )
     specific_conditions = fields.Char(
-        string='Specific conditions',
+        string='Condiciones',
         required=True,
     )
