@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-29 07:41+0000\n"
-"PO-Revision-Date: 2022-09-29 07:41+0000\n"
+"POT-Creation-Date: 2022-09-29 08:44+0000\n"
+"PO-Revision-Date: 2022-09-29 08:44+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -146,6 +146,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__ambit_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template__ambit_id
 msgid "Ambit id"
+msgstr ""
+
+#. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_dose__application_number
+msgid "Application N."
 msgstr ""
 
 #. module: axdoo_field_notebook
@@ -330,6 +335,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__conditioning
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template__conditioning
 msgid "Conditioning"
+msgstr ""
+
+#. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_dose__specific_conditions
+msgid "Conditions"
 msgstr ""
 
 #. module: axdoo_field_notebook
@@ -1336,6 +1346,7 @@ msgid "Last Updated on"
 msgstr ""
 
 #. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_agent__latin_name
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__latin_name
 msgid "Latin Name"
 msgstr ""
@@ -1502,6 +1513,23 @@ msgid "Name"
 msgstr ""
 
 #. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_campaign__activity_calendar_event_id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__activity_calendar_event_id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__activity_calendar_event_id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__activity_calendar_event_id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_harvest__activity_calendar_event_id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__activity_calendar_event_id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor__activity_calendar_event_id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__activity_calendar_event_id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__activity_calendar_event_id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__activity_calendar_event_id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth__activity_calendar_event_id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth_enclosure__activity_calendar_event_id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr ""
+
+#. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_campaign__activity_date_deadline
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__activity_date_deadline
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__activity_date_deadline
@@ -1653,11 +1681,6 @@ msgstr ""
 #: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_nursery_menu
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.view_res_partner_technical_filter
 msgid "Nursery"
-msgstr ""
-
-#. module: axdoo_field_notebook
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_dose__aplication_number
-msgid "Nº aplication"
 msgstr ""
 
 #. module: axdoo_field_notebook
@@ -2048,11 +2071,6 @@ msgid "Slope"
 msgstr ""
 
 #. module: axdoo_field_notebook
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_dose__specific_conditions
-msgid "Specific conditions"
-msgstr ""
-
-#. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__spill_security
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template__spill_security
 msgid "Spill security"
@@ -2404,8 +2422,8 @@ msgid "Very cloudy"
 msgstr ""
 
 #. module: axdoo_field_notebook
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_dose__volumen_broth
-msgid "Vol/Caldo"
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_template_dose__volume_broth
+msgid "Vol/Broth"
 msgstr ""
 
 #. module: axdoo_field_notebook

@@ -87,9 +87,9 @@
                             <field name="crop_ids" widget="many2many_tags"/>
                             <field name="agent_ids" widget="many2many_tags"/>
                             <field name="dose"/>
-                            <field name="aplication_number"/>
+                            <field name="application_number"/>
                             <field name="intervals_days"/>
-                            <field name="volumen_broth"/>
+                            <field name="volume_broth"/>
                             <field name="specific_conditions"/>
                         </tree>
                     </field>

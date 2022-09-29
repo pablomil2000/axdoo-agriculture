@@ -2,8 +2,8 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).
 # Parcela
 
-from datetime import date
 from odoo import _, fields, models, api
+
 
 class ProductTemplateDose(models.Model):
     _name = 'product.template.dose'
@@ -14,34 +14,32 @@ class ProductTemplateDose(models.Model):
         string='Dose',
     )
     crop_ids = fields.Many2many(
-        string='Cultivo',
+        string='Crop',
         comodel_name='field.notebook.crop',
         required=True,
     )
     agent_ids = fields.Many2many(
-        string='Agente',
+        string='Agent',
         comodel_name='field.notebook.agent',
         required=True,
     )
     dose = fields.Float(
-        string='Dosis Kg/ha',
+        string='Dose Kg/ha',
         digits=(16, 2),
         default=0.0,
         required=True,
     )
-    aplication_number = fields.Integer(
-        string='Nº aplicación',
+    application_number = fields.Integer(
+        string='Application N.',
         required=True,
     )
     intervals_days = fields.Integer(
-        string='Intervalo',
+        string='Intervals',
         required=True,
     )
-    volumen_broth = fields.Char(
-        string='Vol/Caldo',
-        required=True,
+    volume_broth = fields.Char(
+        string='Vol/Broth',
     )
     specific_conditions = fields.Char(
-        string='Condiciones',
-        required=True,
+        string='Conditions',
     )
