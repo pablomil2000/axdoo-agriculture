@@ -1,5 +1,7 @@
-<!-- Copyright 2022 Darío Cruz
-     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).-->
+<!--
+Copyright 2022 Darío Cruz
+License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
+-->
 <odoo>
 
     <record id="view_field_notebook_agent_tree" model="ir.ui.view">
@@ -9,6 +11,7 @@
         <field name="arch" type="xml">
             <tree editable="bottom">
                 <field name="name"/>
+                <field name="latin_name"/>
             </tree>
         </field>
     </record>
