@@ -16,8 +16,8 @@
 
                     <group>
                         <group>
-                            <field name="company_id" options="{'no_create': True}" groups="base.group_multi_company"/>
                             <field name="campaign_id"/>
+                            <field name="company_id" options="{'no_create': True}" groups="base.group_multi_company"/>
                             <field name="associate_id"/>
                             <field name="ucth_id"/>
                         </group>

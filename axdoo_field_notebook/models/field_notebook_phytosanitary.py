@@ -167,3 +167,8 @@ class FieldNotebookPhytosanitary(models.Model):
         if not default_campaign_id:
             return None
         return self.env['field.notebook.campaign'].sudo().browse(int(default_campaign_id)).exists()
+
+    @api.onchange("campaign_id")
+    def _onchange_campaign_id(self):
+        for rec in self:
+            return {"domain": {"associate_id": ['|', ('company_id', '=', False), ('company_id', '=', rec.campaign_id.id)]}}
