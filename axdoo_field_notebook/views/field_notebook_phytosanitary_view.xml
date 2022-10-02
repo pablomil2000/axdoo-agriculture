@@ -18,7 +18,8 @@
                         <group>
                             <field name="campaign_id"/>
                             <field name="company_id" options="{'no_create': True}" groups="base.group_multi_company"/>
-                            <field name="associate_id"/>
+                            <field name="associate_id_domain" invisible="1"/>
+                            <field name="associate_id" domain="associate_id_domain"/>
                             <field name="ucth_id"/>
                         </group>
                     </group>

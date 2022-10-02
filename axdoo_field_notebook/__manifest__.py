@@ -15,6 +15,7 @@
         'mrp',
         'maintenance',
         'hr',
+        'web_domain_field',
     ],
     'data': [
         'security/security.xml',

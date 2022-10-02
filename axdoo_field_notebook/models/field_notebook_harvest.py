@@ -2,6 +2,8 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 # Cosecha
 
+import json
+
 from odoo import fields, models, api
 
 
@@ -38,7 +40,11 @@ class FieldNotebookHarvest(models.Model):
         comodel_name='res.partner',
         string='Associated',
         required=True,
-        domain="[('associate','=', True)]",
+    )
+    associate_id_domain = fields.Char(
+        compute="_compute_associate_id_domain",
+        readonly=True,
+        store=False,
     )
     ucth_id = fields.Many2one(
         comodel_name='field.notebook.ucth',
@@ -117,3 +123,10 @@ class FieldNotebookHarvest(models.Model):
         if not default_campaign_id:
             return None
         return self.env['field.notebook.campaign'].sudo().browse(int(default_campaign_id)).exists()
+
+    @api.depends('company_id')
+    def _compute_associate_id_domain(self):
+        for rec in self:
+            rec.associate_id_domain = json.dumps(
+                [('associate', '=', True), '|', ('company_id', '=', False), ('company_id', '=', rec.company_id.id)]
+            )
