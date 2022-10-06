@@ -19,12 +19,12 @@ class FieldNotebookEnclosure(models.Model):
         copy=False,
     )
     name = fields.Char(
-        string="Enclosure Name",
+        string='Enclosure Name',
         index=True,
         tracking=True,
     )
     enclosure = fields.Float(
-        string='Enclosure',
+        string='Enclosure Number',
         digits=(6, 0),
         default=0.0,
         index=True,

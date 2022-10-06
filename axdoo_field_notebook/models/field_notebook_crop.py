@@ -23,7 +23,7 @@ class FieldNotebookCrop(models.Model):
         string="Type",
     )
     crop_type = fields.Char(
-        string="Type",
+        string="Crop Type",
     )
     eppo_code = fields.Char(
         string="Eppo Code",

@@ -77,7 +77,7 @@ class FieldNotebookUCTH(models.Model):
         auto_join=True,
     )
     enclosure_ids = fields.One2many(
-        string='Enclosure',
+        string='Enclosures',
         comodel_name='field.notebook.ucth.enclosure',
         inverse_name='ucth_id',
         copy=True,
@@ -156,7 +156,8 @@ class FieldNotebookUCTHNursery(models.Model):
     )
     campaign_id = fields.Many2one(
         comodel_name='field.notebook.campaign',
-        tracking=True,
+        required=True,
+        default=lambda self: self._get_campaign_id(),
     )
     plants = fields.Integer(
         string='Plants',
@@ -170,6 +171,13 @@ class FieldNotebookUCTHNursery(models.Model):
         string='Replant',
         default=False,
     )
+
+    @api.model
+    def _get_campaign_id(self):
+        default_campaign_id = self.env["ir.config_parameter"].sudo().get_param("field_notebook.campaign_id")
+        if not default_campaign_id:
+            return None
+        return self.env['field.notebook.campaign'].sudo().browse(int(default_campaign_id)).exists()
 
 
 class FieldNotebookUCTHTechnical(models.Model):
