@@ -156,6 +156,7 @@ class FieldNotebookUCTHNursery(models.Model):
     )
     campaign_id = fields.Many2one(
         comodel_name='field.notebook.campaign',
+        string='Champaign',
         required=True,
         default=lambda self: self._get_campaign_id(),
     )
