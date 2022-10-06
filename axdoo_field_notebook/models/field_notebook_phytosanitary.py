@@ -13,11 +13,6 @@ class FieldNotebookPhytosanitary(models.Model):
     _description = "Field Notebook Phytosanitary"
     _check_company_auto = True
 
-    company_id = fields.Many2one(
-        comodel_name='res.company',
-        required=True,
-        default=lambda self: self.env.company,
-    )
     name = fields.Char(
         string='Phytosanitary Reference',
         required=True,
@@ -46,27 +41,30 @@ class FieldNotebookPhytosanitary(models.Model):
         tracking=True,
         default=lambda self: self._get_campaign_id(),
     )
-    associate_id = fields.Many2one(
-        comodel_name='res.partner',
-        string='Associated',
-        required=True,
-    )
-    associate_id_domain = fields.Char(
-        compute="_compute_associate_id_domain",
-        readonly=True,
-        store=False,
-    )
     ucth_id = fields.Many2one(
         comodel_name='field.notebook.ucth',
         required=True,
         tracking=True,
-        domain="['|', ('company_id', '=', False), ('company_id', '=', company_id)]",
     )
     exploitation_id = fields.Many2one(
         comodel_name='field.notebook.exploitation',
         related="ucth_id.exploitation_id",
         store=True,
         domain="['|', ('company_id', '=', False), ('company_id', '=', company_id)]",
+    )
+    company_id = fields.Many2one(
+        comodel_name='res.company',
+        string='Company',
+        related="ucth_id.company_id",
+        tracking=True,
+        required=True,
+    )
+    associate_id = fields.Many2one(
+        comodel_name='res.partner',
+        string='Associated',
+        related="ucth_id.associate_id",
+        required=True,
+        tracking=True,
     )
     employee_ids = fields.Many2many(
         comodel_name='hr.employee',
@@ -174,9 +172,3 @@ class FieldNotebookPhytosanitary(models.Model):
             return None
         return self.env['field.notebook.campaign'].sudo().browse(int(default_campaign_id)).exists()
 
-    @api.depends('company_id')
-    def _compute_associate_id_domain(self):
-        for rec in self:
-            rec.associate_id_domain = json.dumps(
-                [('associate', '=', True), '|', ('company_id', '=', False), ('company_id', '=', rec.company_id.id)]
-            )

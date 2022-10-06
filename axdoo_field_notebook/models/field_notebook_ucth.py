@@ -1,6 +1,8 @@
 # Copyright 2020 Manuel Calero <manuelcalero@xtendoo.es>
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).
-# Parcela
+# UCTH
+
+import json
 
 from odoo import _, fields, models, api
 
@@ -20,6 +22,16 @@ class FieldNotebookUCTH(models.Model):
         comodel_name='res.company',
         required=True,
         default=lambda self: self.env.company,
+    )
+    associate_id = fields.Many2one(
+        comodel_name='res.partner',
+        string='Associated',
+        required=True,
+    )
+    associate_id_domain = fields.Char(
+        compute="_compute_associate_id_domain",
+        readonly=True,
+        store=False,
     )
     exploitation_id = fields.Many2one(
         comodel_name='field.notebook.exploitation',
@@ -91,6 +103,13 @@ class FieldNotebookUCTH(models.Model):
     def _onchange_crop_id(self):
         for rec in self:
             return {"domain": {"crop_variety_id": [("crop_id", "=", rec.crop_id.id)]}}
+
+    @api.depends('company_id')
+    def _compute_associate_id_domain(self):
+        for rec in self:
+            rec.associate_id_domain = json.dumps(
+                [('associate', '=', True), '|', ('company_id', '=', False), ('company_id', '=', rec.company_id.id)]
+            )
 
 
 class FieldNotebookUCTHParcel(models.Model):

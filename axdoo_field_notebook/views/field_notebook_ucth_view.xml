@@ -9,6 +9,9 @@
                         <group>
                             <field name="name"/>
                             <field name="exploitation_id" options="{'no_create': True}"/>
+                            <field name="company_id" options="{'no_create': True}" groups="base.group_multi_company"/>
+                            <field name="associate_id_domain" invisible="1"/>
+                            <field name="associate_id" domain="associate_id_domain"/>
                         </group>
                         <group>
                             <field name="zone_ids" widget="many2many_tags"/>
