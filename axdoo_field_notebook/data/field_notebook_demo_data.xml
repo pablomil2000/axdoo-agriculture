@@ -37,8 +37,18 @@
         <field name="irrigation_coefficient">0</field>
     </record>
 
-    <record id="ucth_demo_1" model="field.notebook.ucth">
-        <field name="name">UCTH Demo</field>
+    <record id="enclosure_demo_2" model="field.notebook.enclosure">
+        <field name="parcel_id" ref="parcel_demo"/>
+        <field name="enclosure">4</field>
+        <field name="surface">0.0804</field>
+        <field name="slope">1.4</field>
+        <field name="plot_use_id" ref="improductivos"/>
+        <field name="irrigation_coefficient">0</field>
+    </record>
+
+    <record id="associated_demo" model="res.partner">
+        <field name="name">Socio Demo</field>
+        <field name="associate">True</field>
     </record>
 
     <record id="ucth_parcel_demo" model="field.notebook.ucth.parcel">
@@ -60,6 +70,12 @@
 
     <record id="exploitation_ucth_demo" model="field.notebook.exploitation.ucth">
         <field name="ucth_id" ref="ucth_demo_1"/>
+        <field name="exploitation_id" ref="exploitation_demo"/>
+    </record>
+
+    <record id="ucth_demo_1" model="field.notebook.ucth">
+        <field name="name">UCTH Demo</field>
+        <field name="associate_id" ref="associated_demo"/>
         <field name="exploitation_id" ref="exploitation_demo"/>
     </record>
 
