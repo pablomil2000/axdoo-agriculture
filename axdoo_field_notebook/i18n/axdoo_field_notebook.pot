@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-29 08:44+0000\n"
-"PO-Revision-Date: 2022-09-29 08:44+0000\n"
+"POT-Creation-Date: 2022-10-06 10:34+0000\n"
+"PO-Revision-Date: 2022-10-06 10:34+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -161,12 +161,18 @@ msgid "Associate"
 msgstr ""
 
 #. module: axdoo_field_notebook
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth__associate_id_domain
+msgid "Associate Id Domain"
+msgstr ""
+
+#. module: axdoo_field_notebook
 #: model:ir.actions.act_window,name:axdoo_field_notebook.action_associate_contacts
 #: model:ir.actions.act_window,name:axdoo_field_notebook.res_partner_associated_action
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_harvest__associate_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__associate_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor__associate_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__associate_id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth__associate_id
 #: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_associated_menu
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_phytosanitary_view_filter
 msgid "Associated"
@@ -225,6 +231,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__campaign_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor__campaign_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__campaign_id
+#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth_nursery__campaign_id
 #: model:ir.ui.menu,name:axdoo_field_notebook.field_notebook_campaign_menu
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_phytosanitary_view_filter
 msgid "Campaign"
@@ -672,6 +679,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__equipment_ids
 #: model:ir.ui.menu,name:axdoo_field_notebook.menu_equipment_form
 msgid "Equipments"
+msgstr ""
+
+#. module: axdoo_field_notebook
+#: model:ir.model.constraint,message:axdoo_field_notebook.constraint_field_notebook_parcel_technical_technical_uniq
+msgid "Este técnico ya existe en esta parecela !"
 msgstr ""
 
 #. module: axdoo_field_notebook
@@ -1513,23 +1525,6 @@ msgid "Name"
 msgstr ""
 
 #. module: axdoo_field_notebook
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_campaign__activity_calendar_event_id
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__activity_calendar_event_id
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__activity_calendar_event_id
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__activity_calendar_event_id
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_harvest__activity_calendar_event_id
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__activity_calendar_event_id
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_labor__activity_calendar_event_id
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel__activity_calendar_event_id
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_parcel_enclosure__activity_calendar_event_id
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__activity_calendar_event_id
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth__activity_calendar_event_id
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth_enclosure__activity_calendar_event_id
-#: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_variety__activity_calendar_event_id
-msgid "Next Activity Calendar Event"
-msgstr ""
-
-#. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_campaign__activity_date_deadline
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_crop__activity_date_deadline
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_enclosure__activity_date_deadline
@@ -2216,35 +2211,30 @@ msgstr ""
 
 #. module: axdoo_field_notebook
 #: code:addons/axdoo_field_notebook/models/field_notebook_exploitation.py:0
-#: model:ir.model.constraint,message:axdoo_field_notebook.constraint_field_notebook_exploitation_ucth_ucth_uniq
 #, python-format
 msgid "This UCTH already exists in some exploitation !"
 msgstr ""
 
 #. module: axdoo_field_notebook
 #: code:addons/axdoo_field_notebook/models/field_notebook_parcel.py:0
-#: model:ir.model.constraint,message:axdoo_field_notebook.constraint_field_notebook_parcel_enclosure_enclosure_uniq
 #, python-format
 msgid "This enclosure already exists in this parcel !"
 msgstr ""
 
 #. module: axdoo_field_notebook
 #: code:addons/axdoo_field_notebook/models/field_notebook_ucth.py:0
-#: model:ir.model.constraint,message:axdoo_field_notebook.constraint_field_notebook_ucth_enclosure_enclosure_uniq
 #, python-format
 msgid "This enclosure already exists in this ucth !"
 msgstr ""
 
 #. module: axdoo_field_notebook
 #: code:addons/axdoo_field_notebook/models/field_notebook_parcel.py:0
-#: model:ir.model.constraint,message:axdoo_field_notebook.constraint_field_notebook_parcel_technical_technical_uniq
 #, python-format
 msgid "This technical already exists in this parcel !"
 msgstr ""
 
 #. module: axdoo_field_notebook
 #: code:addons/axdoo_field_notebook/models/field_notebook_ucth.py:0
-#: model:ir.model.constraint,message:axdoo_field_notebook.constraint_field_notebook_ucth_technical_technical_uniq
 #, python-format
 msgid "This technical already exists in this ucth !"
 msgstr ""
@@ -2551,4 +2541,24 @@ msgstr ""
 #. module: axdoo_field_notebook
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_parcel_view_form
 msgid "total"
+msgstr ""
+
+#. module: axdoo_field_notebook
+#: model:ir.model.constraint,message:axdoo_field_notebook.constraint_field_notebook_exploitation_ucth_ucth_uniq
+msgid "¡Esta UCTH ya existe en alguna explotación!"
+msgstr ""
+
+#. module: axdoo_field_notebook
+#: model:ir.model.constraint,message:axdoo_field_notebook.constraint_field_notebook_ucth_technical_technical_uniq
+msgid "¡Esta técnico ya existe en este UCTH!"
+msgstr ""
+
+#. module: axdoo_field_notebook
+#: model:ir.model.constraint,message:axdoo_field_notebook.constraint_field_notebook_parcel_enclosure_enclosure_uniq
+msgid "¡Este recinto ya existe en esta parcela!"
+msgstr ""
+
+#. module: axdoo_field_notebook
+#: model:ir.model.constraint,message:axdoo_field_notebook.constraint_field_notebook_ucth_enclosure_enclosure_uniq
+msgid "¡Este recinto ya existe en este ucth!"
 msgstr ""

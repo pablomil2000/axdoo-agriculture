@@ -154,6 +154,10 @@ class FieldNotebookUCTHNursery(models.Model):
         index=True,
         copy=False,
     )
+    campaign_id = fields.Many2one(
+        comodel_name='field.notebook.campaign',
+        tracking=True,
+    )
     plants = fields.Integer(
         string='Plants',
     )
