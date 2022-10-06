@@ -51,12 +51,6 @@
         <field name="associate">True</field>
     </record>
 
-    <record id="ucth_parcel_demo" model="field.notebook.ucth.parcel">
-        <field name="parcel_id" ref="parcel_demo"/>
-        <field name="ucth_id" ref="ucth_demo_1"/>
-        <field name="surface">0.0804</field>
-    </record>
-
     <record id="exploitation_demo" model="field.notebook.exploitation">
         <field name="name">Explotación Demo</field>
         <field name="business_name">Explotación Demo</field>
@@ -77,6 +71,12 @@
         <field name="name">UCTH Demo</field>
         <field name="associate_id" ref="associated_demo"/>
         <field name="exploitation_id" ref="exploitation_demo"/>
+    </record>
+
+    <record id="ucth_parcel_demo" model="field.notebook.ucth.parcel">
+        <field name="parcel_id" ref="parcel_demo"/>
+        <field name="ucth_id" ref="ucth_demo_1"/>
+        <field name="surface">0.0804</field>
     </record>
 
 </odoo>
