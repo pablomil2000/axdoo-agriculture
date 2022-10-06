@@ -629,7 +629,7 @@ msgstr ""
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_phytosanitary__emergency
 msgid "Emergency"
-msgstr "Emergencia"
+msgstr "Fenología"
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__employee_ids
@@ -2251,7 +2251,7 @@ msgstr "¡Esta técnico ya existe en este UCTH!"
 #. module: axdoo_field_notebook
 #: model:ir.model.fields.selection,name:axdoo_field_notebook.selection__field_notebook_phytosanitary__justify__threshold_crossing
 msgid "Threshold crossing"
-msgstr "Cruce de umbral"
+msgstr "Superación de umbral"
 
 #. module: axdoo_field_notebook
 #: model_terms:ir.ui.view,arch_db:axdoo_field_notebook.field_notebook_ucth_view_form
