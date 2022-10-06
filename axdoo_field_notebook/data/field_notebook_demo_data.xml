@@ -62,11 +62,6 @@
         <field name="vat">ESB16890287</field>
     </record>
 
-    <record id="exploitation_ucth_demo" model="field.notebook.exploitation.ucth">
-        <field name="ucth_id" ref="ucth_demo_1"/>
-        <field name="exploitation_id" ref="exploitation_demo"/>
-    </record>
-
     <record id="ucth_demo_1" model="field.notebook.ucth">
         <field name="name">UCTH Demo</field>
         <field name="associate_id" ref="associated_demo"/>
@@ -77,6 +72,11 @@
         <field name="parcel_id" ref="parcel_demo"/>
         <field name="ucth_id" ref="ucth_demo_1"/>
         <field name="surface">0.0804</field>
+    </record>
+
+    <record id="exploitation_ucth_demo" model="field.notebook.exploitation.ucth">
+        <field name="ucth_id" ref="ucth_demo_1"/>
+        <field name="exploitation_id" ref="exploitation_demo"/>
     </record>
 
 </odoo>
