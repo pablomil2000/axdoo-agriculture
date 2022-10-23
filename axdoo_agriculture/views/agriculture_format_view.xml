@@ -18,11 +18,19 @@
                             <field name="units"/>
                             <field name="pieces"/>
                             <field name="quality_category"/>
+                            <label for="container_field" />
+                            <div name="container_field">
+                                <field name="container_field" class="oe_inline" /> Gr
+                            </div>
+                            <label for="container_sale" />
+                            <div name="container_sale">
+                                <field name="container_sale" class="oe_inline" /> Gr
+                            </div>
                         </group>
                         <group>
-                            <field name="container_field"/>
-                            <field name="container_sale"/>
-                            <field name="kg_cost"/>
+                            <field name="kg_cost"
+                                   widget="monetary"
+                                   options="{'currency_field': 'company_currency_id'}"/>
                             <field name="bulk"/>
                             <field name="input_output"/>
                             <field name="pda_selection"/>
