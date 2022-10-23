@@ -18,6 +18,18 @@ class FieldNotebookUCTH(models.Model):
         index=True,
         tracking=True,
     )
+    alias = fields.Char(
+        string="Alias",
+        index=True,
+        tracking=True,
+    )
+    campaign_id = fields.Many2one(
+        string="Default Campaign ",
+        comodel_name='field.notebook.campaign',
+        required=True,
+        tracking=True,
+        default=lambda self: self._get_campaign_id(),
+    )
     company_id = fields.Many2one(
         comodel_name='res.company',
         required=True,
@@ -69,9 +81,9 @@ class FieldNotebookUCTH(models.Model):
         copy=True,
         auto_join=True,
     )
-    technical_ids = fields.One2many(
-        string='Technical',
-        comodel_name='field.notebook.ucth.technical',
+    crop_variety_ids = fields.One2many(
+        string='Crop Variety',
+        comodel_name='field.notebook.ucth.crop.variety',
         inverse_name='ucth_id',
         copy=True,
         auto_join=True,
@@ -111,6 +123,13 @@ class FieldNotebookUCTH(models.Model):
                 [('associate', '=', True), '|', ('company_id', '=', False), ('company_id', '=', rec.company_id.id)]
             )
 
+    @api.model
+    def _get_campaign_id(self):
+        default_campaign_id = self.env["ir.config_parameter"].sudo().get_param("field_notebook.campaign_id")
+        if not default_campaign_id:
+            return None
+        return self.env['field.notebook.campaign'].sudo().browse(int(default_campaign_id)).exists()
+
 
 class FieldNotebookUCTHParcel(models.Model):
     _name = 'field.notebook.ucth.parcel'
@@ -129,11 +148,24 @@ class FieldNotebookUCTHParcel(models.Model):
         index=True,
         copy=False,
     )
+    campaign_id = fields.Many2one(
+        comodel_name='field.notebook.campaign',
+        string='Champaign',
+        required=True,
+        default=lambda self: self._get_campaign_id(),
+    )
     surface = fields.Float(
         string='Surface',
         digits=(6, 4),
         default=0.0,
     )
+
+    @api.model
+    def _get_campaign_id(self):
+        default_campaign_id = self.env["ir.config_parameter"].sudo().get_param("field_notebook.campaign_id")
+        if not default_campaign_id:
+            return None
+        return self.env['field.notebook.campaign'].sudo().browse(int(default_campaign_id)).exists()
 
 
 class FieldNotebookUCTHNursery(models.Model):
@@ -181,16 +213,20 @@ class FieldNotebookUCTHNursery(models.Model):
         return self.env['field.notebook.campaign'].sudo().browse(int(default_campaign_id)).exists()
 
 
-class FieldNotebookUCTHTechnical(models.Model):
-    _name = 'field.notebook.ucth.technical'
-    _description = 'UCTH Technical'
+class FieldNotebookUCTHCropVariety(models.Model):
+    _name = 'field.notebook.ucth.crop.variety'
+    _description = 'UCTH CropVariety'
 
-    technical_id = fields.Many2one(
-        comodel_name='res.partner',
-        string='Technical',
+    variety_id = fields.Many2one(
+        comodel_name='field.notebook.crop.variety',
+        string='Crop Variety',
         required=True,
-        domain="[('technical','=', True)]",
-        check_company=True,
+    )
+    crop_id = fields.Many2one(
+        related="variety_id.crop_id",
+        comodel_name="field.notebook.crop",
+        string="Crop",
+        readonly=True,
     )
     ucth_id = fields.Many2one(
         comodel_name='field.notebook.ucth',
@@ -200,14 +236,19 @@ class FieldNotebookUCTHTechnical(models.Model):
         index=True,
         copy=False,
     )
+    campaign_id = fields.Many2one(
+        comodel_name='field.notebook.campaign',
+        string='Champaign',
+        required=True,
+        default=lambda self: self._get_campaign_id(),
+    )
 
-    _sql_constraints = [
-        (
-            "technical_uniq",
-            "unique(technical_id, ucth_id)",
-            _("This technical already exists in this ucth !"),
-        )
-    ]
+    @api.model
+    def _get_campaign_id(self):
+        default_campaign_id = self.env["ir.config_parameter"].sudo().get_param("field_notebook.campaign_id")
+        if not default_campaign_id:
+            return None
+        return self.env['field.notebook.campaign'].sudo().browse(int(default_campaign_id)).exists()
 
 
 class FieldNotebookUCTHEnclosure(models.Model):

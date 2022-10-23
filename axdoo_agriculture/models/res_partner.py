@@ -10,3 +10,4 @@ class ResPartner(models.Model):
     alfinf_id = fields.Float(
         string="Alfinf application id",
     )
+

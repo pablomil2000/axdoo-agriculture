@@ -16,6 +16,6 @@ class FieldNotebookVariety(models.Model):
         tracking=True,
     )
     crop_id = fields.Many2one(
-        comodel_name='field.notebook.crop',
-        string='Crop',
+        comodel_name="field.notebook.crop",
+        string="Crop",
     )

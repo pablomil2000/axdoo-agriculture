@@ -1,0 +1,22 @@
+<odoo>
+
+    <menuitem name="Agriculture"
+              id="agriculture_menu"
+              sequence="11"
+              web_icon="axdoo_agriculture,static/description/icon.png"/>
+
+    <!-- Performance-->
+
+    <menuitem id="agriculture_configuration_menu"
+              name="Configuration"
+              parent="agriculture_menu"
+              sequence="0">
+
+        <menuitem id="agriculture_format_menu"
+                  name="Format"
+                  action="agriculture_format_action"
+                  sequence="1"/>
+
+    </menuitem>
+
+</odoo>
