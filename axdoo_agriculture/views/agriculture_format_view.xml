@@ -20,11 +20,11 @@
                             <field name="quality_category"/>
                             <label for="container_field" />
                             <div name="container_field">
-                                <field name="container_field" class="oe_inline" /> Gr
+                                <field name="container_field" class="oe_inline" /> gr
                             </div>
                             <label for="container_sale" />
                             <div name="container_sale">
-                                <field name="container_sale" class="oe_inline" /> Gr
+                                <field name="container_sale" class="oe_inline" /> gr
                             </div>
                         </group>
                         <group>
