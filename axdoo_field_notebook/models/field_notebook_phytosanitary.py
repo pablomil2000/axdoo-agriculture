@@ -172,3 +172,7 @@ class FieldNotebookPhytosanitary(models.Model):
             return None
         return self.env['field.notebook.campaign'].sudo().browse(int(default_campaign_id)).exists()
 
+    @api.onchange('ucth_id')
+    def _onchange_ucth_id(self):
+        if self.campaign_id != self.ucth_id.campaign_id:
+            self.campaign_id = self.ucth_id.campaign_id
