@@ -326,11 +326,6 @@ msgid "Commercialized"
 msgstr "Comercializado"
 
 #. module: axdoo_field_notebook
-#: model:ir.model,name:axdoo_field_notebook.model_res_company
-msgid "Companies"
-msgstr "Compañías"
-
-#. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_exploitation__company_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_harvest__company_id
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_irrigation__company_id
@@ -340,6 +335,11 @@ msgstr "Compañías"
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_field_notebook_ucth__company_id
 msgid "Company"
 msgstr "Compañia"
+
+#. module: axdoo_field_notebook
+#: model:ir.model,name:axdoo_field_notebook.model_res_company
+msgid "Companies"
+msgstr "Compañías"
 
 #. module: axdoo_field_notebook
 #: model:ir.model.fields,field_description:axdoo_field_notebook.field_product_product__conditioning

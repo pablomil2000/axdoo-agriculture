@@ -10,34 +10,40 @@
     <menuitem name="Field Notebook"
               id="axdoo_field_notebook_menu"
               sequence="10"
-              web_icon="axdoo_field_notebook,static/description/icon.png"/>
+              web_icon="axdoo_field_notebook,static/description/icon.png"
+              groups="axdoo_field_notebook.group_axdoo_field_notebook"/>
 
     <!-- Performance-->
 
     <menuitem id="field_notebook_performance_menu"
               name="Performances"
               parent="axdoo_field_notebook_menu"
-              sequence="1">
+              sequence="1"
+              groups="axdoo_field_notebook.group_axdoo_field_notebook">
 
         <menuitem id="field_notebook_phytosanitary_menu"
                   name="Phytosanitary"
                   action="field_notebook_phytosanitary_action"
-                  sequence="1"/>
+                  sequence="1"
+                  groups="axdoo_field_notebook.group_axdoo_field_notebook"/>
 
         <menuitem id="field_notebook_labor_menu"
                   name="Labor"
                   action="field_notebook_labor_action"
-                  sequence="2"/>
+                  sequence="2"
+                  groups="axdoo_field_notebook.group_axdoo_field_notebook"/>
 
         <menuitem id="field_notebook_harvest_menu"
                   name="Harvest"
                   action="field_notebook_harvest_action"
-                  sequence="3"/>
+                  sequence="3"
+                  groups="axdoo_field_notebook.group_axdoo_field_notebook"/>
 
         <menuitem id="field_notebook_irrigation_menu"
                   name="Irrigation"
                   action="field_notebook_irrigation_action"
-                  sequence="4"/>
+                  sequence="4"
+                  groups="axdoo_field_notebook.group_axdoo_field_notebook"/>
 
     </menuitem>
 
@@ -46,27 +52,32 @@
     <menuitem id="field_notebook_structure_menu"
               name="Structure"
               parent="axdoo_field_notebook_menu"
-              sequence="2">
+              sequence="2"
+              groups="axdoo_field_notebook.group_axdoo_field_notebook">
 
         <menuitem id="field_notebook_associated_menu"
                   name="Associated"
                   action="action_associate_contacts"
-                  sequence="1"/>
+                  sequence="1"
+                  groups="axdoo_field_notebook.group_axdoo_field_notebook"/>
 
         <menuitem id="field_notebook_exploitation_menu"
                   name="Exploitation"
                   action="field_notebook_exploitation_action"
-                  sequence="2"/>
+                  sequence="2"
+                  groups="axdoo_field_notebook.group_axdoo_field_notebook"/>
 
         <menuitem id="field_notebook_ucth_menu"
                   name="U.C.T.H."
                   action="field_notebook_ucth_action"
-                  sequence="3"/>
+                  sequence="3"
+                  groups="axdoo_field_notebook.group_axdoo_field_notebook"/>
 
         <menuitem id="field_notebook_parcel_menu"
                   name="Parcel"
                   action="field_notebook_parcel_action"
-                  sequence="4"/>
+                  sequence="4"
+                  groups="axdoo_field_notebook.group_axdoo_field_notebook"/>
 
     </menuitem>
 
@@ -75,7 +86,8 @@
     <menuitem id="field_notebook_configuration_menu"
               name="Configuration"
               parent="axdoo_field_notebook_menu"
-              sequence="3"/>
+              sequence="3"
+              groups="axdoo_field_notebook.group_axdoo_field_notebook"/>
 
     <menuitem id="axdoo_field_notebook_menu_configuration"
               name="Settings"
@@ -87,91 +99,108 @@
     <menuitem id="field_notebook_parcel_ucth_menu"
               name="Parcel / U.C.T.H."
               parent="field_notebook_configuration_menu"
-              sequence="1">
+              sequence="1"
+              groups="axdoo_field_notebook.group_axdoo_field_notebook">
 
         <menuitem id="field_notebook_campaign_menu"
                   name="Campaign"
                   action="field_notebook_campaign_action"
-                  sequence="1"/>
+                  sequence="1"
+                  groups="axdoo_field_notebook.group_axdoo_field_notebook"/>
 
         <menuitem id="field_notebook_crop_menu"
                   name="Crop"
                   action="field_notebook_crop_action"
-                  sequence="2"/>
+                  sequence="2"
+                  groups="axdoo_field_notebook.group_axdoo_field_notebook"/>
 
         <menuitem id="field_notebook_plot_use_menu"
                   name="Plot use"
                   action="field_notebook_plot_use_action"
-                  sequence="3"/>
+                  sequence="3"
+                  groups="axdoo_field_notebook.group_axdoo_field_notebook"/>
 
         <menuitem id="field_notebook_zone_menu"
                   name="Vulnerable zone"
                   action="field_notebook_zone_action"
-                  sequence="4"/>
+                  sequence="4"
+                  groups="axdoo_field_notebook.group_axdoo_field_notebook"/>
 
         <menuitem id="field_notebook_system_menu"
                   name="Agricultural system"
                   action="field_notebook_system_action"
-                  sequence="5"/>
+                  sequence="5"
+                  groups="axdoo_field_notebook.group_axdoo_field_notebook"/>
 
         <menuitem id="field_notebook_irrigation_system_menu"
                   name="Irrigation system"
                   action="field_notebook_irrigation_system_action"
-                  sequence="6"/>
+                  sequence="6"
+                  groups="axdoo_field_notebook.group_axdoo_field_notebook"/>
 
         <menuitem id="field_notebook_nursery_menu"
                   name="Nursery"
                   action="action_nursery_contacts"
-                  sequence="7"/>
+                  sequence="7"
+                  groups="axdoo_field_notebook.group_axdoo_field_notebook"/>
 
         <menuitem id="menu_phytosanitary_application_type_form"
                   name="Phytosanitary Application Type"
                   action="field_notebook_phytosanitary_application_type_action"
-                  sequence="8"/>
+                  sequence="8"
+                  groups="axdoo_field_notebook.group_axdoo_field_notebook"/>
 
         <menuitem id="menu_agents_form"
                   name="Agents"
                   action="field_notebook_agent_action"
-                  sequence="9"/>
+                  sequence="9"
+                  groups="axdoo_field_notebook.group_axdoo_field_notebook"/>
 
     </menuitem>
 
     <menuitem id="field_notebook_location_menu"
               name="Location"
               parent="field_notebook_configuration_menu"
-              sequence="2">
+              sequence="2"
+              groups="axdoo_field_notebook.group_axdoo_field_notebook">
 
         <menuitem id="field_notebook_autonomy_menu"
                   name="Autonomy"
                   action="field_notebook_autonomy_action"
-                  sequence="1"/>
+                  sequence="1"
+                  groups="axdoo_field_notebook.group_axdoo_field_notebook"/>
 
         <menuitem id="field_notebook_province_menu"
                   name="Provinces"
                   action="field_notebook_province_action"
-                  sequence="2"/>
+                  sequence="2"
+                  groups="axdoo_field_notebook.group_axdoo_field_notebook"/>
 
         <menuitem id="field_notebook_town_menu"
                   name="Towns"
                   action="field_notebook_town_action"
-                  sequence="3"/>
+                  sequence="3"
+                  groups="axdoo_field_notebook.group_axdoo_field_notebook"/>
 
     </menuitem>
 
     <menuitem id="field_notebook_machinery_menu"
               name="Machinery"
               parent="field_notebook_configuration_menu"
-              sequence="3">
+              sequence="3"
+              groups="axdoo_field_notebook.group_axdoo_field_notebook">
 
         <menuitem id="field_notebook_equipment_implement_menu"
                   name="Implements"
                   action="field_notebook_equipment_implement_action"
-                  sequence="1"/>
+                  sequence="1"
+                  groups="axdoo_field_notebook.group_axdoo_field_notebook"/>
 
         <menuitem id="menu_product_form"
                   name="Products"
                   action="product.product_template_action"
-                  sequence="2"/>
+                  sequence="2"
+                  groups="axdoo_field_notebook.group_axdoo_field_notebook"/>
 
         <menuitem id="menu_equipment_form"
                   name="Equipments"

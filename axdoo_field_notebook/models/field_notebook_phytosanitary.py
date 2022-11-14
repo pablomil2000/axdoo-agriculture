@@ -174,5 +174,5 @@ class FieldNotebookPhytosanitary(models.Model):
 
     @api.onchange('ucth_id')
     def _onchange_ucth_id(self):
-        if self.campaign_id != self.ucth_id.campaign_id:
+        if self.ucth_id.campaign_id and self.ucth_id.campaign_id != self.campaign_id:
             self.campaign_id = self.ucth_id.campaign_id

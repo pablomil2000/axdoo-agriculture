@@ -129,3 +129,8 @@ class FieldNotebookHarvest(models.Model):
             rec.associate_id_domain = json.dumps(
                 [('associate', '=', True), '|', ('company_id', '=', False), ('company_id', '=', rec.company_id.id)]
             )
+
+    @api.onchange('ucth_id')
+    def _onchange_ucth_id(self):
+        if self.ucth_id.campaign_id and self.ucth_id.campaign_id != self.campaign_id:
+            self.campaign_id = self.ucth_id.campaign_id
