@@ -41,30 +41,31 @@ class FieldNotebookPhytosanitary(models.Model):
         tracking=True,
         default=lambda self: self._get_campaign_id(),
     )
-    ucth_id = fields.Many2one(
-        comodel_name='field.notebook.ucth',
-        required=True,
-        tracking=True,
-    )
     exploitation_id = fields.Many2one(
         comodel_name='field.notebook.exploitation',
-        related="ucth_id.exploitation_id",
         store=True,
-        domain="['|', ('company_id', '=', False), ('company_id', '=', company_id)]",
-    )
-    company_id = fields.Many2one(
-        comodel_name='res.company',
-        string='Company',
-        related="ucth_id.company_id",
-        tracking=True,
         required=True,
+    )
+    ucth_ids = fields.Many2many(
+        comodel_name='field.notebook.exploitation.ucth',
+        relation="exploitation_ucth_rel",
+        required=True,
+        tracking=True,
+        domain="[('exploitation_id', '=', exploitation_id)]",
     )
     associate_id = fields.Many2one(
         comodel_name='res.partner',
         string='Associated',
-        related="ucth_id.associate_id",
+        related="exploitation_id.associate_id",
         required=True,
         tracking=True,
+    )
+    company_id = fields.Many2one(
+        comodel_name='res.company',
+        string='Company',
+        related="associate_id.company_id",
+        tracking=True,
+        required=True,
     )
     employee_ids = fields.Many2many(
         comodel_name='hr.employee',
@@ -172,7 +173,7 @@ class FieldNotebookPhytosanitary(models.Model):
             return None
         return self.env['field.notebook.campaign'].sudo().browse(int(default_campaign_id)).exists()
 
-    @api.onchange('ucth_id')
-    def _onchange_ucth_id(self):
-        if self.ucth_id.campaign_id and self.ucth_id.campaign_id != self.campaign_id:
-            self.campaign_id = self.ucth_id.campaign_id
+    # @api.onchange('ucth_id')
+    # def _onchange_ucth_id(self):
+    #     if self.ucth_id.campaign_id and self.ucth_id.campaign_id != self.campaign_id:
+    #         self.campaign_id = self.ucth_id.campaign_id
