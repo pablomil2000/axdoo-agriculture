@@ -150,7 +150,7 @@ class FieldNotebookUCTHParcel(models.Model):
     )
     campaign_id = fields.Many2one(
         comodel_name='field.notebook.campaign',
-        string='Champaign',
+        string='Campaign',
         required=True,
         default=lambda self: self._get_campaign_id(),
     )
@@ -188,7 +188,7 @@ class FieldNotebookUCTHNursery(models.Model):
     )
     campaign_id = fields.Many2one(
         comodel_name='field.notebook.campaign',
-        string='Champaign',
+        string='Campaign',
         required=True,
         default=lambda self: self._get_campaign_id(),
     )
@@ -238,7 +238,7 @@ class FieldNotebookUCTHCropVariety(models.Model):
     )
     campaign_id = fields.Many2one(
         comodel_name='field.notebook.campaign',
-        string='Champaign',
+        string='Campaign',
         required=True,
         default=lambda self: self._get_campaign_id(),
     )
@@ -270,6 +270,25 @@ class FieldNotebookUCTHEnclosure(models.Model):
         index=True,
         copy=False,
     )
+    campaign_id = fields.Many2one(
+        comodel_name='field.notebook.campaign',
+        string='Campaign',
+        required=True,
+        default=lambda self: self._get_campaign_id(),
+    )
+    surface = fields.Float(
+        string='Surface',
+        digits=(6, 4),
+        default=0.0,
+    )
+
+    @api.model
+    def _get_campaign_id(self):
+        default_campaign_id = self.env["ir.config_parameter"].sudo().get_param("field_notebook.campaign_id")
+        if not default_campaign_id:
+            return None
+        return self.env['field.notebook.campaign'].sudo().browse(int(default_campaign_id)).exists()
+
     _sql_constraints = [
         (
             "enclosure_uniq",

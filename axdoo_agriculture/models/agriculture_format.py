@@ -13,6 +13,15 @@ class AgricultureFormat(models.Model):
         string="Name",
         required=True,
     )
+    company_id = fields.Many2one(
+        string='Company',
+        comodel_name='res.company',
+        tracking=True,
+        required=True,
+    )
+    alfinf_id = fields.Float(
+        string="Alfinf application id",
+    )
     format = fields.Float(
         string="Units format",
     )

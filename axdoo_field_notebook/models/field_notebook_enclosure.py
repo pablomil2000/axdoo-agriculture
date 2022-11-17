@@ -2,14 +2,19 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).
 # Recintos
 
-from odoo import fields, models
+from odoo import api, fields, models
 
 
 class FieldNotebookEnclosure(models.Model):
-    _name = "field.notebook.enclosure"
-    _inherit = ["mail.thread", "mail.activity.mixin"]
-    _description = "Field Notebook Enclosure"
+    _name = 'field.notebook.enclosure'
+    _inherit = ['mail.thread', 'mail.activity.mixin']
+    _description = 'Field Notebook Enclosure'
 
+    name = fields.Char(
+        string='Name',
+        index=True,
+        tracking=True,
+    )
     parcel_id = fields.Many2one(
         comodel_name='field.notebook.parcel',
         string='Parcel',
@@ -18,10 +23,9 @@ class FieldNotebookEnclosure(models.Model):
         index=True,
         copy=False,
     )
-    name = fields.Char(
-        string='Enclosure Name',
-        index=True,
-        tracking=True,
+    parcel_name = fields.Char(
+        related='parcel_id.name',
+        readonly=False,
     )
     enclosure = fields.Float(
         string='Enclosure Number',
@@ -56,3 +60,7 @@ class FieldNotebookEnclosure(models.Model):
         digits=(6, 0),
         default=0.0,
     )
+
+    @api.model
+    def name_get(self):
+        return [(rec.id, '%s - %i' % (rec.parcel_name, rec.enclosure)) for rec in self]

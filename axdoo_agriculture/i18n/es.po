@@ -69,7 +69,7 @@ msgstr "Contador de Adjuntos"
 #. module: axdoo_agriculture
 #: model:ir.model.fields,field_description:axdoo_agriculture.field_agriculture_format__bulk
 msgid "Bulk"
-msgstr "A granel"
+msgstr "Industria"
 
 #. module: axdoo_agriculture
 #: model:ir.ui.menu,name:axdoo_agriculture.agriculture_configuration_menu

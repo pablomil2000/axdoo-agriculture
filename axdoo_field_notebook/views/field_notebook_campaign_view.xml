@@ -55,7 +55,7 @@
 
     <record id="field_notebook_campaign_action"
             model="ir.actions.act_window">
-        <field name="name">Crop</field>
+        <field name="name">Campaign</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">field.notebook.campaign</field>
         <field name="view_mode">tree,form,kanban</field>

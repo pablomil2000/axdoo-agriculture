@@ -22,11 +22,11 @@
                         </group>
                     </group>
                     <notebook>
-                        <page name="parcel" string="Parcels">
-                            <field name="parcel_ids" widget="One2many" context="{'show_attribute': False}">
+                        <page name="enclosure" string="Enclosure">
+                            <field name="enclosure_ids" widget="One2many" context="{'show_attribute': False}">
                                 <tree editable="bottom">
                                     <field name="campaign_id"/>
-                                    <field name="parcel_id"/>
+                                    <field name="enclosure_id"/>
                                     <field name="surface" sum="Total"/>
                                 </tree>
                             </field>
