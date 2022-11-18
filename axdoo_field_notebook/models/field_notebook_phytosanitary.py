@@ -46,6 +46,13 @@ class FieldNotebookPhytosanitary(models.Model):
         store=True,
         required=True,
     )
+    associate_id = fields.Many2one(
+        comodel_name='res.partner',
+        string='Associated',
+        related="exploitation_id.associate_id",
+        required=True,
+        tracking=True,
+    )
     ucth_ids = fields.Many2many(
         comodel_name='field.notebook.exploitation.ucth',
         relation="exploitation_ucth_rel",
@@ -53,10 +60,21 @@ class FieldNotebookPhytosanitary(models.Model):
         tracking=True,
         domain="[('exploitation_id', '=', exploitation_id)]",
     )
-    associate_id = fields.Many2one(
-        comodel_name='res.partner',
-        string='Associated',
-        related="exploitation_id.associate_id",
+    agent_ids = fields.Many2many(
+        comodel_name='field.notebook.agent',
+        required=True,
+        tracking=True,
+    )
+    crop_variety_id = fields.Many2one(
+        string='Crop Variety',
+        comodel_name='field.notebook.crop.variety',
+        required=True,
+        tracking=True,
+    )
+    crop_id = fields.Many2one(
+        comodel_name='field.notebook.crop',
+        string='Crop',
+        related="crop_variety_id.crop_id",
         required=True,
         tracking=True,
     )
@@ -77,11 +95,10 @@ class FieldNotebookPhytosanitary(models.Model):
         string='Equipments',
         domain="['|', ('company_id', '=', False), ('company_id', '=', company_id)]",
     )
-    product_id = fields.Many2one(
-        comodel_name='product.product',
-        required=True,
-        tracking=True,
-        domain="[('phytosanitary','=',True),'|', ('company_id', '=', False), ('company_id', '=', company_id)]",
+    product_ids = fields.Many2many(
+        comodel_name='field.notebook.phytosanitary.product',
+        relation='field_notebook_phytosanitary_product_rel',
+        string='Products',
     )
     phytosanitary_application_type_id = fields.Many2one(
         comodel_name='field.notebook.phytosanitary.application.type',
@@ -173,7 +190,30 @@ class FieldNotebookPhytosanitary(models.Model):
             return None
         return self.env['field.notebook.campaign'].sudo().browse(int(default_campaign_id)).exists()
 
-    # @api.onchange('ucth_id')
-    # def _onchange_ucth_id(self):
-    #     if self.ucth_id.campaign_id and self.ucth_id.campaign_id != self.campaign_id:
-    #         self.campaign_id = self.ucth_id.campaign_id
+
+class FieldNotebookPhytosanitaryProducts(models.Model):
+    _name = "field.notebook.phytosanitary.product"
+    _description = "Field Notebook Phytosanitary Products"
+
+    name = fields.Char(
+        string='Name',
+        index=True,
+        tracking=True,
+    )
+    product_id = fields.Many2one(
+        comodel_name='product.product',
+        required=True,
+        domain="[('phytosanitary','=',True)]",
+    )
+    phytosanitary_id = fields.Many2one(
+        comodel_name='field.notebook.phytosanitary',
+        string='Phytosanitary',
+        required=True,
+        ondelete='cascade',
+        index=True,
+        copy=False,
+    )
+
+    @api.model
+    def name_get(self):
+        return [rec.product_id.name for rec in self]

@@ -7,8 +7,14 @@
         <field name="year">2022</field>
     </record>
 
+    <record id="associated_demo" model="res.partner">
+        <field name="name">Socio Demo</field>
+        <field name="associate">True</field>
+    </record>
+
     <record id="parcel_demo" model="field.notebook.parcel">
         <field name="name">Parcela Demo</field>
+        <field name="associate_id" ref="associated_demo"/>
         <field name="autonomy_id" ref="autonomy_code_01"/>
         <field name="province_id" ref="province_code_21"/>
         <field name="town_id" ref="town_code_21_054"/>
@@ -46,13 +52,9 @@
         <field name="irrigation_coefficient">0</field>
     </record>
 
-    <record id="associated_demo" model="res.partner">
-        <field name="name">Socio Demo</field>
-        <field name="associate">True</field>
-    </record>
-
     <record id="exploitation_demo" model="field.notebook.exploitation">
         <field name="name">Explotación Demo</field>
+        <field name="associate_id" ref="associated_demo"/>
         <field name="business_name">Explotación Demo</field>
         <field name="street">Calle Real, 58</field>
         <field name="zip">21700</field>
