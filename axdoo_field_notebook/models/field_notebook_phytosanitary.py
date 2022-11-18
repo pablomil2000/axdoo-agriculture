@@ -2,8 +2,6 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 # Fitosanitarios
 
-import json
-
 from odoo import fields, models, api
 
 
@@ -203,7 +201,6 @@ class FieldNotebookPhytosanitaryProducts(models.Model):
     product_id = fields.Many2one(
         comodel_name='product.product',
         required=True,
-        domain="[('phytosanitary','=',True)]",
     )
     phytosanitary_id = fields.Many2one(
         comodel_name='field.notebook.phytosanitary',
@@ -212,6 +209,26 @@ class FieldNotebookPhytosanitaryProducts(models.Model):
         ondelete='cascade',
         index=True,
         copy=False,
+    )
+    dose = fields.Float(
+        string='Dose Kg/ha',
+        digits=(16, 2),
+        default=0.0,
+        required=True,
+    )
+    application_number = fields.Integer(
+        string='Application N.',
+        required=True,
+    )
+    intervals_days = fields.Integer(
+        string='Intervals',
+        required=True,
+    )
+    volume_broth = fields.Char(
+        string='Vol/Broth',
+    )
+    specific_conditions = fields.Char(
+        string='Conditions',
     )
 
     @api.model

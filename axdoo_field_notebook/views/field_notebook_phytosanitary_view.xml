@@ -41,13 +41,17 @@
                             <field name="date_end"/>
                         </group>
                     </group>
-
                     <group>
                         <group>
-                            <field name="product_ids">
-                                <tree delete="1" editable="0">
-                                    <field name="name" />
-                                    <field name="product_id" />
+                            <field name="product_ids" mode="tree">
+                                <tree editable="bottom">
+                                    <control>
+                                        <create name="add_product_control" string="Add a product"/>
+                                    </control>
+                                    <field name="sequence" widget="handle"/>
+                                    <field name="product_id" domain="[('sale_ok', '=', True), '|', ('company_id', '=', False), ('company_id', '=', parent.company_id)]"/>
+                                    <field name="name" optional="show"/>
+                                    <field name="dose"/>
                                 </tree>
                             </field>
                             <field name="phytosanitary_application_type_id"/>
