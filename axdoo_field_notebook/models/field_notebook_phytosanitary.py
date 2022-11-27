@@ -11,6 +11,9 @@ class FieldNotebookPhytosanitary(models.Model):
     _description = "Field Notebook Phytosanitary"
     _check_company_auto = True
 
+    sequence = fields.Integer(
+        required=True
+    )
     name = fields.Char(
         string='Phytosanitary Reference',
         required=True,
