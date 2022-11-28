@@ -12,7 +12,7 @@ class FieldNotebookPhytosanitary(models.Model):
     _check_company_auto = True
 
     sequence = fields.Integer(
-        required=True
+        required=True,
     )
     name = fields.Char(
         string='Phytosanitary Reference',
