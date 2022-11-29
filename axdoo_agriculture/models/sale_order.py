@@ -4,8 +4,16 @@ res_partner.py# Copyright 2020 Manuel Calero <manuelcalero@xtendoo.es>
 from odoo import fields, models
 
 
-class ResPartner(models.Model):
-    _inherit = 'res.partner'
+class SaleOrder(models.Model):
+    _inherit = "sale.order"
+
+    alfinf_id = fields.Float(
+        string="Alfinf application id",
+    )
+
+
+class SaleOrderLine(models.Model):
+    _inherit = "sale.order.line"
 
     alfinf_id = fields.Float(
         string="Alfinf application id",
