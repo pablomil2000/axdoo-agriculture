@@ -8,6 +8,7 @@
     'author': 'Xtendoo',
     'depends': [
         'base',
+        'sale',
         'axdoo_field_notebook',
     ],
     'data': [
