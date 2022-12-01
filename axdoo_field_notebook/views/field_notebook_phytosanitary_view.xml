@@ -1,7 +1,6 @@
 <!-- Copyright 2022 Darío Cruz
      License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).-->
 <odoo>
-
     <record id="field_notebook_phytosanitary_view_form" model="ir.ui.view">
         <field name="name">field.notebook.phytosanitary.form</field>
         <field name="model">field.notebook.phytosanitary</field>
@@ -22,54 +21,57 @@
                             <field name="associate_id"/>
                             <field name="crop_variety_id"/>
                             <field name="crop_id"/>
-                            <field name="agent_ids"/>
-                            <field name="ucth_ids">
-                                <tree delete="1" editable="0">
-                                    <field name="name" />
-                                </tree>
-                            </field>
-
                         </group>
-                    </group>
-
-                    <group>
                         <group>
                             <field name="date_expected"/>
-                        </group>
-                        <group>
                             <field name="date_start"/>
                             <field name="date_end"/>
+                            <field name="agent_ids" widget="many2many_tags"/>
+                            <field name="ucth_ids" widget="many2many_tags"/>
                         </group>
                     </group>
-                    <group>
-                        <group>
-                            <field name="product_ids" mode="tree">
+
+                    <notebook>
+                        <page string="Products" id="products">
+                            <field name="product_ids" widget="one2many_list">
                                 <tree editable="bottom">
                                     <control>
                                         <create name="add_product_control" string="Add a product"/>
                                     </control>
-<!--                                    <field name="sequence" widget="handle"/>-->
-                                    <field name="product_id" domain="[('sale_ok', '=', True), '|', ('company_id', '=', False), ('company_id', '=', parent.company_id)]"/>
-                                    <field name="name" optional="show"/>
+                                    <field name="sequence" widget="handle"/>
+                                    <field name="product_id"/>
+                                    <field name="name"/>
                                     <field name="dose"/>
+                                    <field name="application_number" optional="show"/>
+                                    <field name="intervals_days" optional="show"/>
+                                    <field name="volume_broth" optional="show"/>
+                                    <field name="specific_conditions" optional="show"/>
                                 </tree>
                             </field>
-                            <field name="phytosanitary_application_type_id"/>
-                            <field name="justify"/>
-                            <field name="emergency"/>
-                            <field name="wind_speed"/>
-                            <field name="execution"/>
-                            <field name="problematic"/>
-                            <field name="efficiency"/>
-                            <field name="weather_condition"/>
-                        </group>
-                        <group colspan="12">
-                            <field name="employee_ids" widget="many2many_tags" />
-                        </group>
-                        <group colspan="12">
-                            <field name="equipment_ids" widget="many2many_tags" />
-                        </group>
-                    </group>
+                        </page>
+                        <page string="Employee" >
+                            <field name="employee_ids"/>
+                        </page>
+                        <page string="Equipment" >
+                            <field name="equipment_ids"/>
+                        </page>
+                        <page string="Others" >
+                            <group>
+                                <group>
+                                    <field name="phytosanitary_application_type_id"/>
+                                    <field name="justify"/>
+                                    <field name="emergency"/>
+                                    <field name="wind_speed"/>
+                                </group>
+                                <group>
+                                    <field name="execution"/>
+                                    <field name="problematic"/>
+                                    <field name="efficiency"/>
+                                    <field name="weather_condition"/>
+                                </group>
+                            </group>
+                        </page>
+                    </notebook>
 
                 </sheet>
                 <div class="oe_chatter">
@@ -129,5 +131,4 @@
         <field name="search_view_id"
                ref="field_notebook_phytosanitary_view_filter"/>
     </record>
-
 </odoo>

@@ -11,9 +11,6 @@ class FieldNotebookPhytosanitary(models.Model):
     _description = "Field Notebook Phytosanitary"
     _check_company_auto = True
 
-    sequence = fields.Integer(
-        required=True,
-    )
     name = fields.Char(
         string='Phytosanitary Reference',
         required=True,
@@ -96,11 +93,14 @@ class FieldNotebookPhytosanitary(models.Model):
         string='Equipments',
         domain="['|', ('company_id', '=', False), ('company_id', '=', company_id)]",
     )
-    product_ids = fields.Many2many(
+    product_ids = fields.One2many(
         comodel_name='field.notebook.phytosanitary.product',
-        relation='field_notebook_phytosanitary_product_rel',
+        inverse_name='phytosanitary_id',
         string='Products',
+        copy=True,
+        auto_join=True,
     )
+    # relation = 'field_notebook_phytosanitary_product_rel',
     phytosanitary_application_type_id = fields.Many2one(
         comodel_name='field.notebook.phytosanitary.application.type',
         tracking=True,
@@ -196,36 +196,35 @@ class FieldNotebookPhytosanitaryProducts(models.Model):
     _name = "field.notebook.phytosanitary.product"
     _description = "Field Notebook Phytosanitary Products"
 
-    name = fields.Char(
-        string='Name',
+    sequence = fields.Integer(
+        default=10,
+    )
+    phytosanitary_id = fields.Many2one(
+        comodel_name="field.notebook.phytosanitary",
+        string="Phytosanitary",
+        required=True,
+        ondelete="cascade",
         index=True,
-        tracking=True,
+        copy=False,
     )
     product_id = fields.Many2one(
         comodel_name='product.product',
         required=True,
     )
-    phytosanitary_id = fields.Many2one(
-        comodel_name='field.notebook.phytosanitary',
-        string='Phytosanitary',
-        required=True,
-        ondelete='cascade',
+    name = fields.Char(
+        string='Name',
         index=True,
-        copy=False,
     )
     dose = fields.Float(
         string='Dose Kg/ha',
         digits=(16, 2),
         default=0.0,
-        required=True,
     )
     application_number = fields.Integer(
         string='Application N.',
-        required=True,
     )
     intervals_days = fields.Integer(
         string='Intervals',
-        required=True,
     )
     volume_broth = fields.Char(
         string='Vol/Broth',

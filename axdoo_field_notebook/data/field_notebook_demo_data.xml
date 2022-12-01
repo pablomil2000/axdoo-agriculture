@@ -68,13 +68,16 @@
         <field name="name">UCTH Demo</field>
         <field name="associate_id" ref="associated_demo"/>
         <field name="exploitation_id" ref="exploitation_demo"/>
+        <field name="campaign_id" ref="campaign_demo"/>
+        <field name="company_id" ref="base.main_company" />
     </record>
 
-    <record id="ucth_parcel_demo" model="field.notebook.ucth.parcel">
-        <field name="parcel_id" ref="parcel_demo"/>
-        <field name="ucth_id" ref="ucth_demo_1"/>
-        <field name="surface">0.0804</field>
-    </record>
+<!--    <record id="ucth_parcel_demo" model="field.notebook.ucth.parcel">-->
+<!--        <field name="parcel_id" ref="parcel_demo"/>-->
+<!--        <field name="ucth_id" ref="ucth_demo_1"/>-->
+<!--        <field name="company_id">1</field>-->
+<!--        <field name="surface">0.0804</field>-->
+<!--    </record>-->
 
     <record id="exploitation_ucth_demo" model="field.notebook.exploitation.ucth">
         <field name="ucth_id" ref="ucth_demo_1"/>
