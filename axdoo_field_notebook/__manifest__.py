@@ -15,6 +15,7 @@
         'mrp',
         'maintenance',
         'hr',
+        'account',
         'web_domain_field',
     ],
     'data': [

@@ -209,8 +209,11 @@ class FieldNotebookPhytosanitaryProducts(models.Model):
     )
     product_id = fields.Many2one(
         comodel_name='product.product',
+        ondelete='restrict',
         required=True,
+        domain="[('phytosanitary', '=', True)]",
     )
+    # check_company = True,
     name = fields.Char(
         string='Name',
         index=True,
@@ -232,7 +235,38 @@ class FieldNotebookPhytosanitaryProducts(models.Model):
     specific_conditions = fields.Char(
         string='Conditions',
     )
+    crop_id = fields.Many2one(
+        comodel_name='field.notebook.crop',
+        string='Crop',
+        related="phytosanitary_id.crop_id",
+    )
+    agent_ids = fields.Many2many(
+        comodel_name='field.notebook.agent',
+        string='Agent',
+        related="phytosanitary_id.agent_ids",
+    )
 
     @api.model
     def name_get(self):
         return [rec.product_id.name for rec in self]
+
+    def _get_product_dose(self):
+        product_dose = self.product_id.dose_ids.search(
+            [
+                ("crop_ids", "=", self.crop_id.id),
+                ("agent_ids", "in", self.agent_ids.ids),
+            ],
+            limit=1,
+        )
+        return product_dose or None
+
+    @api.onchange('product_id')
+    def product_id_change(self):
+        self.name = self.product_id.name
+        product_dose = self._get_product_dose()
+        if product_dose:
+            self.dose = product_dose.dose
+            self.application_number = product_dose.application_number
+            self.intervals_days = product_dose.intervals_days
+            self.volume_broth = product_dose.volume_broth
+

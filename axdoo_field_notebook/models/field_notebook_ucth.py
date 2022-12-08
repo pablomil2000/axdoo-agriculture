@@ -82,7 +82,7 @@ class FieldNotebookUCTH(models.Model):
         auto_join=True,
     )
     crop_variety_ids = fields.One2many(
-        string='Crop Variety',
+        string='Crop Varieties',
         comodel_name='field.notebook.ucth.crop.variety',
         inverse_name='ucth_id',
         copy=True,

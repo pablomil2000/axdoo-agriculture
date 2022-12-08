@@ -8,7 +8,7 @@
                 <field name="phytosanitary" />
                 <label for="phytosanitary" />
             </xpath>
-            <xpath expr="//page[@name='inventory']" position="after">
+            <xpath expr="//page[@name='invoicing']" position="after">
                 <page name="field_notebook" string="Field Notebook">
                     <form>
                     <sheet>

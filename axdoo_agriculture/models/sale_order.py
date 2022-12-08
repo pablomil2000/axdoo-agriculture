@@ -11,6 +11,9 @@ class SaleOrder(models.Model):
         string="Alfinf application id",
     )
 
+    def create_invoices(self, grouped=False, final=False, date=None):
+        return self._create_invoices(grouped, final, date)
+
 
 class SaleOrderLine(models.Model):
     _inherit = "sale.order.line"
@@ -18,3 +21,4 @@ class SaleOrderLine(models.Model):
     alfinf_id = fields.Float(
         string="Alfinf application id",
     )
+    
