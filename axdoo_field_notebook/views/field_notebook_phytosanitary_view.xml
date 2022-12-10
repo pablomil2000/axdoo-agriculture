@@ -26,8 +26,8 @@
                             <field name="date_expected"/>
                             <field name="date_start"/>
                             <field name="date_end"/>
-                            <field name="agent_ids" widget="many2many_tags"/>
                             <field name="ucth_ids" widget="many2many_tags"/>
+                            <field name="agent_ids" widget="many2many_tags"/>
                         </group>
                     </group>
 
@@ -91,12 +91,13 @@
                 <field name="name" readonly="1" decoration-bf="1"/>
                 <field name="campaign_id"/>
                 <field name="associate_id"/>
-                <field name="ucth_ids" widget="list_activity"/>
                 <field name="date_expected"/>
                 <field name="date_start" optional="hide"/>
                 <field name="date_end" optional="hide"/>
-                <field name="product_ids" widget="list_activity" optional="show"/>
-                <field name="activity_ids" widget="list_activity" optional="show"/>
+                <field name="ucth_ids" widget="many2many_tags"/>
+                <field name="agent_ids" widget="many2many_tags"/>
+<!--                <field name="product_ids" widget="many2many_tags" optional="show"/>-->
+                <field name="activity_ids" widget="many2many_tags" optional="show"/>
                 <field name="company_id" groups="base.group_multi_company" optional="show" readonly="1"/>
             </tree>
         </field>

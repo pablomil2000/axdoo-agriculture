@@ -12,7 +12,7 @@ class FieldNotebookPhytosanitary(models.Model):
     _check_company_auto = True
 
     name = fields.Char(
-        string='Phytosanitary Reference',
+        string='Name',
         required=True,
         index=True,
         readonly=True,
@@ -100,7 +100,6 @@ class FieldNotebookPhytosanitary(models.Model):
         copy=True,
         auto_join=True,
     )
-    # relation = 'field_notebook_phytosanitary_product_rel',
     phytosanitary_application_type_id = fields.Many2one(
         comodel_name='field.notebook.phytosanitary.application.type',
         tracking=True,
@@ -199,6 +198,10 @@ class FieldNotebookPhytosanitaryProducts(models.Model):
     sequence = fields.Integer(
         default=10,
     )
+    name = fields.Char(
+        string='Name',
+        index=True,
+    )
     phytosanitary_id = fields.Many2one(
         comodel_name="field.notebook.phytosanitary",
         string="Phytosanitary",
@@ -214,10 +217,6 @@ class FieldNotebookPhytosanitaryProducts(models.Model):
         domain="[('phytosanitary', '=', True)]",
     )
     # check_company = True,
-    name = fields.Char(
-        string='Name',
-        index=True,
-    )
     dose = fields.Float(
         string='Dose Kg/ha',
         digits=(16, 2),
