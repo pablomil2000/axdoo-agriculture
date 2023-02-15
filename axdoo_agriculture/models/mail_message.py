@@ -21,3 +21,16 @@ class Message(models.Model):
                 self.env[message.model].browse(message.res_id).with_context(
                     do_not_send_copy=True
                 )._notify_thread(message)
+
+            tracking_email = self.env["mail.tracking.email"].search(
+                [
+                    ("mail_message_id", "=", message.id),
+                    ("partner_id", "=", self.recipient.id),
+                ]
+            )
+
+            print("*"*80)
+            print("tracking_email.state", tracking_email.state)
+            print("tracking_email.error_type", tracking_email.error_type)
+            print("tracking_email.state",tracking_email.state,)
+            print("*"*80)
