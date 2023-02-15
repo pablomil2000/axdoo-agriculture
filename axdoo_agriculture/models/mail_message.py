@@ -11,6 +11,12 @@ class Message(models.Model):
 
     def send(self):
         for message in self:
+
+            print("*"*80)
+            print("message", message)
+            print("message.is_thread_message", message.is_thread_message())
+            print("*"*80)
+
             if message.is_thread_message():
                 self.env[message.model].browse(message.res_id).with_context(
                     do_not_send_copy=True
