@@ -58,7 +58,7 @@ class Message(models.Model):
             .create(
                 {
                     "subject": "Message test",
-                    "author_id": 1,
+                    "author_id": 10,
                     "email_from": "antonio@alfinf.com",
                     "message_type": "comment",
                     "model": "res.partner",
