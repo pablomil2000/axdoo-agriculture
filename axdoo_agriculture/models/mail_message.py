@@ -58,12 +58,12 @@ class Message(models.Model):
             .create(
                 {
                     "subject": "Message test",
-                    "author_id": self.sender.id,
-                    "email_from": self.sender.email,
+                    "author_id": 8,
+                    "email_from": "from@test.es",
                     "message_type": "comment",
                     "model": "res.partner",
-                    "res_id": self.recipient.id,
-                    "partner_ids": [(4, self.recipient.id)],
+                    "res_id": 4722,
+                    "partner_ids": [(4, 4722)],
                     "body": "<p>This is a test message</p>",
                 }
             )
