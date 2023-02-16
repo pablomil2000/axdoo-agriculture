@@ -71,9 +71,9 @@ class Message(models.Model):
         if message.is_thread_message():
             self.env[message.model].browse(message.res_id)._notify_thread(message)
 
-    print("*" * 80)
-    print("message", message)
-    print("*" * 80)
+        print("*" * 80)
+        print("message", message)
+        print("*" * 80)
 
     def send(self):
         for message in self:
