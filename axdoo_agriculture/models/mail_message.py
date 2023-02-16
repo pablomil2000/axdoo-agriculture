@@ -4,6 +4,31 @@
 from odoo import fields, models
 
 
+from odoo import api, models
+
+
+class MailThread(models.AbstractModel):
+    _inherit = 'mail.thread'
+
+    def message_send(self, message):
+
+        print("*" * 80)
+        print("message", message)
+        print("*" * 80)
+
+        # [{
+        #     "subject": "Subject",
+        #     "body": "Body",
+        #     "model": "res.partner",
+        #     "res_id": 4722,
+        #     "attachment_ids": [
+        #         [0, false, {
+        #             "name": "adjunto.txt",
+        #             "datas": "VGVzdA=="
+        #         }]
+        #     ]
+
+
 class Message(models.Model):
     _inherit = 'mail.message'
     _description = 'Message'
@@ -22,15 +47,3 @@ class Message(models.Model):
                     do_not_send_copy=True
                 )._notify_thread(message)
 
-            tracking_email = self.env["mail.tracking.email"].search(
-                [
-                    ("mail_message_id", "=", message.id),
-                    ("partner_id", "=", self.recipient.id),
-                ]
-            )
-
-            print("*"*80)
-            print("tracking_email.state", tracking_email.state)
-            print("tracking_email.error_type", tracking_email.error_type)
-            print("tracking_email.state",tracking_email.state,)
-            print("*"*80)
