@@ -10,7 +10,25 @@ from odoo import api, models
 class MailThread(models.AbstractModel):
     _inherit = 'mail.thread'
 
-    def message_send(self, message):
+    def message_send(self):
+        message = (
+            self.env["mail.message"]
+            .sudo()
+            .create(
+                {
+                    "subject": "Message test",
+                    "author_id": self.sender.id,
+                    "email_from": self.sender.email,
+                    "message_type": "comment",
+                    "model": "res.partner",
+                    "res_id": self.recipient.id,
+                    "partner_ids": [(4, self.recipient.id)],
+                    "body": "<p>This is a test message</p>",
+                }
+            )
+        )
+        if message.is_thread_message():
+            self.env[message.model].browse(message.res_id)._notify_thread(message)
 
         print("*" * 80)
         print("message", message)
