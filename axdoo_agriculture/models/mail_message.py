@@ -59,7 +59,7 @@ class Message(models.Model):
                 {
                     "subject": "Message test",
                     "author_id": 1,
-                    "email_from": "from@test.es",
+                    "email_from": "antonio@alfinf.com",
                     "message_type": "comment",
                     "model": "res.partner",
                     "res_id": 4722,
