@@ -145,3 +145,10 @@ class MailThread(models.AbstractModel):
                 ('email', '=', tools.email_normalize(email_from))], limit=1)
         return partner_id
 
+    def _get_allowed_message_post_params(self):
+        return {'attachment_ids', 'body', 'message_type', 'partner_ids', 'subtype_xmlid', 'parent_id'}
+
+    def mail_message_post(self, thread_model, thread_id, post_data, **kwargs):
+        thread = self.env[thread_model].browse(int(thread_id)).exists()
+        return thread.message_post(**{key: value for key, value in post_data.items() if key in self._get_allowed_message_post_params()}).message_format()[0]
+
