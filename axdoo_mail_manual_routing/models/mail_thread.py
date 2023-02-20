@@ -149,6 +149,13 @@ class MailThread(models.AbstractModel):
         return {'attachment_ids', 'body', 'message_type', 'partner_ids', 'subtype_xmlid', 'parent_id'}
 
     def mail_message_post(self, thread_model, thread_id, post_data, **kwargs):
-        thread = self.env[thread_model].browse(int(thread_id)).exists()
-        return thread.message_post(**{key: value for key, value in post_data.items() if key in self._get_allowed_message_post_params()}).message_format()[0]
+        print("*"*80)
+        print("thread_model", thread_model)
+        print("thread_id", thread_id)
+        print("post_data", post_data)
+        print("kwargs", kwargs)
+        print("*"*80)
+
+        # thread = self.env[thread_model].browse(int(thread_id)).exists()
+        # return thread.message_post(**{key: value for key, value in post_data.items() if key in self._get_allowed_message_post_params()}).message_format()[0]
 
