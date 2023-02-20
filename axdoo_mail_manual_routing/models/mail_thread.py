@@ -148,7 +148,7 @@ class MailThread(models.AbstractModel):
     def _get_allowed_message_post_params(self):
         return {'attachment_ids', 'body', 'message_type', 'partner_ids', 'subtype_xmlid', 'parent_id'}
 
-    def mail_message_post(self, thread_model, thread_id, post_data, **kwargs):
+    def xmlrpc_mail_message_post(self, thread_model, thread_id, post_data, **kwargs):
         print("*"*80)
         print("thread_model", thread_model)
         print("thread_id", thread_id)
