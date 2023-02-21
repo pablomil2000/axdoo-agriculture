@@ -49,21 +49,39 @@ class MailThread(models.AbstractModel):
     def _get_allowed_message_post_params(self):
         return {'attachment_ids', 'body', 'message_type', 'partner_ids', 'subtype_xmlid', 'parent_id'}
 
-    def xmlrpc_mail_message_post(self, thread_model, thread_id, post_data, **kwargs):
+    def xmlrpc_mail_message_post(self, thread_model, thread_id, body, attachment_name, attachment_encode):
         print("*"*80)
         print("thread_model", thread_model)
         print("thread_id", thread_id)
-        print("post_data", post_data)
-        print("kwargs", kwargs)
+        print("body", body)
+        print("attachment_name", attachment_name)
+        print("attachment_encode", attachment_encode)
         print("*"*80)
 
-        thread = self.env[thread_model].browse(int(thread_id)).exists()
-
-        print("*"*80)
-        print("thread", thread)
-        print("*"*80)
-
-        return thread.message_post(**{key: value for key, value in post_data.items() if key in {'attachment_ids', 'body', 'message_type', 'partner_ids', 'subtype_xmlid', 'parent_id'}}).message_format()[0]
+ #        attachment_ids =
+ #
+ #        post_data = { "partner_ids": [thread_id], "body": body, "attachment_ids" : [attachment_ids], "message_type": "comment", "subtype_xmlid": "mail.mt_comment"
+ # }
+ #
+ #        "attachment_ids": [
+ #            [0, false, {
+ #                "name": "adjunto.txt",
+ #                "datas": "VGVzdA=="
+ #            }]],
+ #        "body": "Example Body",
+ #        "message_type": "comment",
+ #        "partner_ids": [4724],
+ #        "subtype_xmlid": "mail.mt_comment"
+ #
+ #        thread = self.env[thread_model].browse(int(thread_id)).exists()
+ #        if not thread:
+ #            return
+ #
+ #        print("*"*80)
+ #        print("thread", thread)
+ #        print("*"*80)
+ #
+ #        return thread.message_post(**{key: value for key, value in post_data.items() if key in {'attachment_ids', 'body', 'message_type', 'partner_ids', 'subtype_xmlid', 'parent_id'}}).message_format()[0]
 
 
 class Message(models.Model):
