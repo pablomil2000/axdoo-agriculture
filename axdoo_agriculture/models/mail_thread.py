@@ -17,7 +17,7 @@ class MailThread(models.AbstractModel):
         print("attachment_encode", attachment_encode)
         print("*" * 80)
 
-        attachment = None
+        post_data = {"partner_ids": [thread_id], "body": body, "message_type": "comment", "subtype_xmlid": "mail.mt_comment"}
 
         if attachment_name and attachment_encode:
             attachment = self.env["ir.attachment"].create(
@@ -25,13 +25,11 @@ class MailThread(models.AbstractModel):
                     "name": attachment_name,
                     "datas": attachment_encode
                 })
+            post_data.update({"attachment_ids": [attachment.id]})
 
         print("*" * 80)
         print("attachment", attachment)
         print("*" * 80)
-
-        post_data = {"partner_ids": [thread_id], "body": body, "attachment_ids": [attachment.id],
-                     "message_type": "comment", "subtype_xmlid": "mail.mt_comment"}
 
         print("*" * 80)
         print("post_data", post_data)
