@@ -58,6 +58,11 @@ class MailThread(models.AbstractModel):
         print("*"*80)
 
         thread = self.env[thread_model].browse(int(thread_id)).exists()
+
+        print("*"*80)
+        print("thread", thread)
+        print("*"*80)
+
         return thread.message_post(**{key: value for key, value in post_data.items() if key in {'attachment_ids', 'body', 'message_type', 'partner_ids', 'subtype_xmlid', 'parent_id'}}).message_format()[0]
 
 
