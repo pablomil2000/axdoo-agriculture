@@ -144,6 +144,3 @@ class MailThread(models.AbstractModel):
             partner_id = self.env['res.partner'].sudo().search([
                 ('email', '=', tools.email_normalize(email_from))], limit=1)
         return partner_id
-
-    def _get_allowed_message_post_params(self):
-        return {'attachment_ids', 'body', 'message_type', 'partner_ids', 'subtype_xmlid', 'parent_id'}

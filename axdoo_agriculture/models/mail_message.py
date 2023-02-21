@@ -46,6 +46,9 @@ class MailThread(models.AbstractModel):
         #         }]
         #     ]
 
+    # def _get_allowed_message_post_params(self):
+    #     return {'attachment_ids', 'body', 'message_type', 'partner_ids', 'subtype_xmlid', 'parent_id'}
+
     def xmlrpc_mail_message_post(self, thread_model, thread_id, post_data, **kwargs):
         print("*"*80)
         print("thread_model", thread_model)
@@ -54,9 +57,8 @@ class MailThread(models.AbstractModel):
         print("kwargs", kwargs)
         print("*"*80)
 
-        # thread = self.env[thread_model].browse(int(thread_id)).exists()
-        # return thread.message_post(**{key: value for key, value in post_data.items() if key in self._get_allowed_message_post_params()}).message_format()[0]
-
+        thread = self.env[thread_model].browse(int(thread_id)).exists()
+        return thread.message_post(**{key: value for key, value in post_data.items() if key in self._get_allowed_message_post_params()}).message_format()[0]
 
 
 class Message(models.Model):
