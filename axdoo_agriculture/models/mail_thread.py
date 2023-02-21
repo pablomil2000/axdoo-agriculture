@@ -7,7 +7,6 @@ from odoo import api, models
 class MailThread(models.AbstractModel):
     _inherit = 'mail.thread'
 
-
     def xmlrpc_mail_message_post(self, thread_model, thread_id, body, attachment_name, attachment_encode):
         print("*" * 80)
         print("thread_model", thread_model)
@@ -17,7 +16,8 @@ class MailThread(models.AbstractModel):
         print("attachment_encode", attachment_encode)
         print("*" * 80)
 
-        post_data = {"partner_ids": [thread_id], "body": body, "message_type": "comment", "subtype_xmlid": "mail.mt_comment"}
+        post_data = {"partner_ids": [thread_id], "body": body, "message_type": "comment",
+                     "subtype_xmlid": "mail.mt_comment"}
 
         if attachment_name and attachment_encode:
             attachment = self.env["ir.attachment"].create(
