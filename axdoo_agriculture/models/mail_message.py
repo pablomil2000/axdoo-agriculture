@@ -58,7 +58,19 @@ class MailThread(models.AbstractModel):
         print("attachment_encode", attachment_encode)
         print("*"*80)
 
- #        attachment_ids =
+        attachment = None
+
+        if attachment_name and attachment_encode:
+            attachment = self.env["ir.attachment"].create(
+                {
+                    "name": attachment_name,
+                    "datas": attachment_encode
+                })
+
+        print("*"*80)
+        print("attachment", attachment)
+        print("*"*80)
+
  #
  #        post_data = { "partner_ids": [thread_id], "body": body, "attachment_ids" : [attachment_ids], "message_type": "comment", "subtype_xmlid": "mail.mt_comment"
  # }
