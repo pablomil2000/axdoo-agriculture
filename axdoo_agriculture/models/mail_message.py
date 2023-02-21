@@ -71,9 +71,13 @@ class MailThread(models.AbstractModel):
         print("attachment", attachment)
         print("*"*80)
 
- #
- #        post_data = { "partner_ids": [thread_id], "body": body, "attachment_ids" : [attachment_ids], "message_type": "comment", "subtype_xmlid": "mail.mt_comment"
- # }
+
+        post_data = { "partner_ids": [thread_id], "body": body, "attachment_ids" : [attachment.id], "message_type": "comment", "subtype_xmlid": "mail.mt_comment"}
+
+        print("*"*80)
+        print("post_data", post_data)
+        print("*"*80)
+
  #
  #        "attachment_ids": [
  #            [0, false, {
@@ -85,15 +89,15 @@ class MailThread(models.AbstractModel):
  #        "partner_ids": [4724],
  #        "subtype_xmlid": "mail.mt_comment"
  #
- #        thread = self.env[thread_model].browse(int(thread_id)).exists()
- #        if not thread:
- #            return
- #
- #        print("*"*80)
- #        print("thread", thread)
- #        print("*"*80)
- #
- #        return thread.message_post(**{key: value for key, value in post_data.items() if key in {'attachment_ids', 'body', 'message_type', 'partner_ids', 'subtype_xmlid', 'parent_id'}}).message_format()[0]
+        thread = self.env[thread_model].browse(int(thread_id)).exists()
+        if not thread:
+            return
+
+        print("*"*80)
+        print("thread", thread)
+        print("*"*80)
+
+        return thread.message_post(**{key: value for key, value in post_data.items() if key in {'attachment_ids', 'body', 'message_type', 'partner_ids', 'subtype_xmlid', 'parent_id'}}).message_format()[0]
 
 
 class Message(models.Model):
