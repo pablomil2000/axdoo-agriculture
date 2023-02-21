@@ -3,7 +3,6 @@
 
 from odoo import fields, models
 
-
 from odoo import api, models
 
 
@@ -35,13 +34,13 @@ class MailThread(models.AbstractModel):
         print("*" * 80)
 
     def xmlrpc_mail_message_post(self, thread_model, thread_id, body, attachment_name, attachment_encode):
-        print("*"*80)
+        print("*" * 80)
         print("thread_model", thread_model)
         print("thread_id", thread_id)
         print("body", body)
         print("attachment_name", attachment_name)
         print("attachment_encode", attachment_encode)
-        print("*"*80)
+        print("*" * 80)
 
         attachment = None
 
@@ -52,25 +51,28 @@ class MailThread(models.AbstractModel):
                     "datas": attachment_encode
                 })
 
-        print("*"*80)
+        print("*" * 80)
         print("attachment", attachment)
-        print("*"*80)
+        print("*" * 80)
 
-        post_data = { "partner_ids": [thread_id], "body": body, "attachment_ids" : [attachment.id], "message_type": "comment", "subtype_xmlid": "mail.mt_comment"}
+        post_data = {"partner_ids": [thread_id], "body": body, "attachment_ids": [attachment.id],
+                     "message_type": "comment", "subtype_xmlid": "mail.mt_comment"}
 
-        print("*"*80)
+        print("*" * 80)
         print("post_data", post_data)
-        print("*"*80)
+        print("*" * 80)
 
         thread = self.env[thread_model].browse(int(thread_id)).exists()
         if not thread:
             return
 
-        print("*"*80)
+        print("*" * 80)
         print("thread", thread)
-        print("*"*80)
+        print("*" * 80)
 
-        return thread.message_post(**{key: value for key, value in post_data.items() if key in {'attachment_ids', 'body', 'message_type', 'partner_ids', 'subtype_xmlid', 'parent_id'}}).message_format()[0]
+        return thread.message_post(**{key: value for key, value in post_data.items() if
+                                      key in {'attachment_ids', 'body', 'message_type', 'partner_ids', 'subtype_xmlid',
+                                              'parent_id'}}).message_format()[0]
 
 
 class Message(models.Model):
@@ -104,13 +106,12 @@ class Message(models.Model):
     def send(self):
         for message in self:
 
-            print("*"*80)
+            print("*" * 80)
             print("message", message)
             print("message.is_thread_message", message.is_thread_message())
-            print("*"*80)
+            print("*" * 80)
 
             if message.is_thread_message():
                 self.env[message.model].browse(message.res_id).with_context(
                     do_not_send_copy=True
                 )._notify_thread(message)
-
