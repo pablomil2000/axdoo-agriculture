@@ -34,21 +34,6 @@ class MailThread(models.AbstractModel):
         print("message", message)
         print("*" * 80)
 
-        # [{
-        #     "subject": "Subject",
-        #     "body": "Body",
-        #     "model": "res.partner",
-        #     "res_id": 4722,
-        #     "attachment_ids": [
-        #         [0, false, {
-        #             "name": "adjunto.txt",
-        #             "datas": "VGVzdA=="
-        #         }]
-        #     ]
-
-    def _get_allowed_message_post_params(self):
-        return {'attachment_ids', 'body', 'message_type', 'partner_ids', 'subtype_xmlid', 'parent_id'}
-
     def xmlrpc_mail_message_post(self, thread_model, thread_id, body, attachment_name, attachment_encode):
         print("*"*80)
         print("thread_model", thread_model)
@@ -71,24 +56,12 @@ class MailThread(models.AbstractModel):
         print("attachment", attachment)
         print("*"*80)
 
-
         post_data = { "partner_ids": [thread_id], "body": body, "attachment_ids" : [attachment.id], "message_type": "comment", "subtype_xmlid": "mail.mt_comment"}
 
         print("*"*80)
         print("post_data", post_data)
         print("*"*80)
 
- #
- #        "attachment_ids": [
- #            [0, false, {
- #                "name": "adjunto.txt",
- #                "datas": "VGVzdA=="
- #            }]],
- #        "body": "Example Body",
- #        "message_type": "comment",
- #        "partner_ids": [4724],
- #        "subtype_xmlid": "mail.mt_comment"
- #
         thread = self.env[thread_model].browse(int(thread_id)).exists()
         if not thread:
             return
