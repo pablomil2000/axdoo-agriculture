@@ -1,13 +1,14 @@
 # Copyright 2020 Manuel Calero <manuelcalero@xtendoo.es>
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).
 
-from odoo import api, models
+from odoo import api, models, fields
 
 
 class MailThread(models.AbstractModel):
     _inherit = 'mail.thread'
 
-    def xmlrpc_mail_message_post(self, thread_model, thread_id, body, attachment_name, attachment_encode):
+
+    def xmlrpc_mail_message_post(self, thread_model, thread_id, body, attachment_name, attachment_encode, agriculture_type):
         print("*" * 80)
         print("thread_model", thread_model)
         print("thread_id", thread_id)
@@ -43,6 +44,11 @@ class MailThread(models.AbstractModel):
         print("thread", thread)
         print("*" * 80)
 
-        return thread.message_post(**{key: value for key, value in post_data.items() if
+        new_message = thread.message_post(**{key: value for key, value in post_data.items() if
                                       key in {'attachment_ids', 'body', 'message_type', 'partner_ids', 'subtype_xmlid',
                                               'parent_id'}}).message_format()[0]
+
+        if new_message:
+            new_message.write({'agriculture_type', agriculture_type})
+
+        return new_message
