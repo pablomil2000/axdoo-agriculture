@@ -48,6 +48,10 @@ class MailThread(models.AbstractModel):
                                              key in {'attachment_ids', 'body', 'message_type', 'partner_ids',
                                                      'subtype_xmlid', 'parent_id'}}).message_format()[0]
 
+        print("*" * 80)
+        print("new_message", new_message)
+        print("*" * 80)
+
         if new_message:
             new_message.write({'agriculture_type', agriculture_type})
 
