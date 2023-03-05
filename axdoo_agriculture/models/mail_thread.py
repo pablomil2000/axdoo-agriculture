@@ -57,6 +57,7 @@ class MailThread(models.AbstractModel):
 
             print("*" * 80)
             print("mail.message", new_message["id"])
+            print("self.env[mail.message].browse(new_message[id])", self.env['mail.message'].browse(new_message["id"]))
             print("*" * 80)
 
         return new_message
