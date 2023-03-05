@@ -53,6 +53,6 @@ class MailThread(models.AbstractModel):
         print("*" * 80)
 
         if new_message:
-            new_message.write({'agriculture_type', agriculture_type})
+            self.env['mail.message'].browse(new_message["id"]).write({'agriculture_type', agriculture_type})
 
         return new_message
