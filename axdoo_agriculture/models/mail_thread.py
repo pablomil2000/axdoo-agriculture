@@ -53,14 +53,14 @@ class MailThread(models.AbstractModel):
         print("*" * 80)
 
         if new_message:
-            # self.env['mail.message'].browse(new_message["id"]).write({'agriculture_type', agriculture_type})
+            self.env['mail.message'].browse(new_message["id"]).write({'agriculture_type': agriculture_type})
 
-            for message in self.env['mail.message'].browse(new_message["id"]):
-                message.write({'agriculture_type', agriculture_type})
-
-            print("*" * 80)
-            print("mail.message", new_message["id"])
-            print("self.env[mail.message].browse(new_message[id])", self.env['mail.message'].browse(new_message["id"]))
-            print("*" * 80)
+            # for message in self.env['mail.message'].browse(new_message["id"]):
+            #     message.write({'agriculture_type', agriculture_type})
+            #
+            # print("*" * 80)
+            # print("mail.message", new_message["id"])
+            # print("self.env[mail.message].browse(new_message[id])", self.env['mail.message'].browse(new_message["id"]))
+            # print("*" * 80)
 
         return new_message
