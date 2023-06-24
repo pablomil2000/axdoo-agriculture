@@ -78,6 +78,7 @@
                         <tree editable="bottom">
                             <field name="crop_ids" widget="many2many_tags"/>
                             <field name="days_of_security"/>
+                            <field name="hours_of_security"/>
                         </tree>
                     </field>
                 </page>

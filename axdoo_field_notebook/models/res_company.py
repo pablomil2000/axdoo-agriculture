@@ -7,6 +7,29 @@ from odoo import api, fields, models
 class Company(models.Model):
     _inherit = 'res.company'
 
+    def _create_performance_sequence(self):
+        vals = []
+        for company in self:
+            vals.append({
+                'name': 'Sequence of performance',
+                'code': 'field.notebook.performance',
+                'company_id': company.id,
+                'prefix': 'ACT/%(year)s/',
+                'padding': 5,
+                'number_next': 1,
+                'number_increment': 1
+            })
+        if vals:
+            self.env['ir.sequence'].create(vals)
+
+    @api.model
+    def create_missing_performance_sequences(self):
+        company_ids = self.env['res.company'].search([])
+        company_has_performance_seq = self.env['ir.sequence'].search(
+            [('code', '=', 'field.notebook.performance')]).mapped('company_id')
+        company_todo_sequence = company_ids - company_has_performance_seq
+        company_todo_sequence._create_performance_sequence()
+
     def _create_phytosanitary_sequence(self):
         vals = []
         for company in self:
@@ -101,6 +124,7 @@ class Company(models.Model):
 
     def _create_per_company_sequences(self):
         super(Company, self)._create_per_company_sequences()
+        self._create_performance_sequence()
         self._create_phytosanitary_sequence()
         self._create_labor_sequence()
         self._create_harvest_sequence()

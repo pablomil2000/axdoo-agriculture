@@ -1,4 +1,4 @@
-# Copyright 2022 Darío Cruz
+# Copyright 2022 Manuel Calero
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 # Fitosanitarios
 

@@ -26,6 +26,7 @@
         'views/field_notebook_labor_view.xml',
         'views/field_notebook_harvest_view.xml',
         'views/field_notebook_phytosanitary_view.xml',
+        'views/field_notebook_performance_view.xml',
         'views/field_notebook_phytosanitary_application_type_view.xml',
         'views/field_notebook_autonomy_view.xml',
         'views/field_notebook_town_view.xml',

@@ -22,3 +22,7 @@ class ProductTemplateSecurityTerm(models.Model):
         string='Days of security',
         required=True,
     )
+    hours_of_security = fields.Integer(
+        string='Hours of security',
+        required=True,
+    )

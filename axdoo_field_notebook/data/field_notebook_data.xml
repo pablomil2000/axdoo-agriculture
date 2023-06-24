@@ -7,7 +7,6 @@
         <field name="domain_force">[('company_id', 'in', company_ids)]</field>
     </record>
 
-
     <function model="res.company" name="create_missing_phytosanitary_sequences" />
 
     <record model="ir.rule" id="labor_comp_rule">

@@ -14,6 +14,7 @@ from . import field_notebook_parcel
 from . import field_notebook_labor
 from . import field_notebook_harvest
 from . import field_notebook_labor_type
+from . import field_notebook_performance
 from . import field_notebook_phytosanitary
 from . import field_notebook_phytosanitary_application_type
 from . import field_notebook_exploitation
@@ -26,4 +27,3 @@ from . import res_config_settings
 from . import product_template_security_term
 from . import product_template_dose
 from . import field_notebook_agent
-

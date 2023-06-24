@@ -1,0 +1,29 @@
+<!--
+Copyright 2023 Antonio Alfaro
+License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
+-->
+<odoo>
+
+<!--    <record id="view_field_notebook_agent_tree" model="ir.ui.view">-->
+<!--        <field name="name">field.notebook.agent.tree</field>-->
+<!--        <field name="model">field.notebook.agent</field>-->
+<!--        <field name="priority">1</field>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <tree editable="bottom">-->
+<!--                <field name="name"/>-->
+<!--                <field name="latin_name"/>-->
+<!--            </tree>-->
+<!--        </field>-->
+<!--    </record>-->
+
+<!--    <record id="field_notebook_agent_action"-->
+<!--            model="ir.actions.act_window">-->
+<!--        <field name="name">Agents</field>-->
+<!--        <field name="type">ir.actions.act_window</field>-->
+<!--        <field name="res_model">field.notebook.agent</field>-->
+<!--        <field name="view_mode">tree,form,kanban</field>-->
+<!--        <field name="view_id"-->
+<!--               ref="view_field_notebook_agent_tree"/>-->
+<!--    </record>-->
+
+</odoo>
