@@ -13,5 +13,5 @@ class FieldNotebookAgent(models.Model):
         string="Name",
     )
     latin_name = fields.Char(
-        string="Latin Name",
+        string="Texto Name",
     )

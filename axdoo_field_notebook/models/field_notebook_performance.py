@@ -18,12 +18,14 @@ class FieldNotebookPerformance(models.Model):
         readonly=True,
         default="New",
     )
+    # Terapy lo usaremos para tratamientos fitosanitarios que no queremos que aparezcan en el cuaderno de campo
     type = fields.Selection([
         ('phytosanitary', 'Phytosanitary'),
         ('harvest', 'Harvest'),
         ('irrigation', 'Irrigation'),
         ('labor', 'Labor'),
-    ],
+        ('therapy', 'Therapy'),
+        ],
         default='phytosanitary',
         required=True,
         tracking=True,
@@ -48,6 +50,11 @@ class FieldNotebookPerformance(models.Model):
         tracking=True,
         default=lambda self: fields.Datetime.today(),
     )
+    confirmation_ids = fields.Many2many(
+        comodel_name='field.notebook.confirmation',
+        string='Confirmation',
+    )
+
     # company_id = fields.Many2one(
     #     comodel_name='res.company',
     #     string='Company',
@@ -204,5 +211,3 @@ class FieldNotebookPerformance(models.Model):
         if not default_campaign_id:
             return None
         return self.env['field.notebook.campaign'].sudo().browse(int(default_campaign_id)).exists()
-
-

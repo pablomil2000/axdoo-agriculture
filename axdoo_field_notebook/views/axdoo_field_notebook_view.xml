@@ -51,6 +51,13 @@
                   sequence="5"
                   groups="axdoo_field_notebook.group_axdoo_field_notebook"/>
 
+        <menuitem id="field_notebook_confirmation_menu"
+                  name="Confirmation"
+                  action="field_notebook_confirmation_action"
+                  sequence="6"
+                  groups="axdoo_field_notebook.group_axdoo_field_notebook"/>
+
+
     </menuitem>
 
     <!-- Structure-->

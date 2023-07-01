@@ -18,65 +18,73 @@
                             <field name="type"/>
                         </group>
 
-<!--                        <group>-->
-<!--                            <field name="campaign_id"/>-->
-<!--                            <field name="exploitation_id"/>-->
-<!--                            <field name="company_id"/>-->
-<!--                            <field name="associate_id"/>-->
-<!--                            <field name="crop_variety_id"/>-->
-<!--                            <field name="crop_id"/>-->
-<!--                        </group>-->
+                        <!--                        <group>-->
+                        <!--                            <field name="campaign_id"/>-->
+                        <!--                            <field name="exploitation_id"/>-->
+                        <!--                            <field name="company_id"/>-->
+                        <!--                            <field name="associate_id"/>-->
+                        <!--                            <field name="crop_variety_id"/>-->
+                        <!--                            <field name="crop_id"/>-->
+                        <!--                        </group>-->
                         <group>
                             <field name="date"/>
                             <field name="date_limit"/>
                             <field name="date_start"/>
                             <field name="date_end"/>
-<!--                            <field name="ucth_ids" widget="many2many_tags"/>-->
-<!--                            <field name="agent_ids" widget="many2many_tags"/>-->
+                            <!--                            <field name="ucth_ids" widget="many2many_tags"/>-->
+                            <!--                            <field name="agent_ids" widget="many2many_tags"/>-->
                         </group>
+                        <field name="confirmation_ids">
+                            <tree editable="bottom">
+                                <field name="text_name"/>
+                                <field name="date_time_start"/>
+                                <field name="date_time_end"/>
+                            </tree>
+                        </field>
+
                     </group>
 
-<!--                    <notebook>-->
-<!--                        <page string="Products" id="products">-->
-<!--                            <field name="product_ids" widget="one2many_list">-->
-<!--                                <tree editable="bottom">-->
-<!--                                    <control>-->
-<!--                                        <create name="add_product_control" string="Add a product"/>-->
-<!--                                    </control>-->
-<!--                                    <field name="sequence" widget="handle"/>-->
-<!--                                    <field name="product_id"/>-->
-<!--                                    <field name="name"/>-->
-<!--                                    <field name="dose"/>-->
-<!--                                    <field name="application_number" optional="show"/>-->
-<!--                                    <field name="intervals_days" optional="show"/>-->
-<!--                                    <field name="volume_broth" optional="show"/>-->
-<!--                                    <field name="specific_conditions" optional="show"/>-->
-<!--                                </tree>-->
-<!--                            </field>-->
-<!--                        </page>-->
-<!--                        <page string="Employee" >-->
-<!--                            <field name="employee_ids"/>-->
-<!--                        </page>-->
-<!--                        <page string="Equipment" >-->
-<!--                            <field name="equipment_ids"/>-->
-<!--                        </page>-->
-<!--                        <page string="Others" >-->
-<!--                            <group>-->
-<!--                                <group>-->
-<!--                                    <field name="performance_application_type_id"/>-->
-<!--                                    <field name="justify"/>-->
-<!--                                    <field name="emergency"/>-->
-<!--                                    <field name="wind_speed"/>-->
-<!--                                </group>-->
-<!--                                <group>-->
-<!--                                    <field name="execution"/>-->
-<!--                                    <field name="problematic"/>-->
-<!--                                    <field name="efficiency"/>-->
-<!--                                    <field name="weather_condition"/>-->
-<!--                                </group>-->
-<!--                            </group>-->
-<!--                        </page>-->
-<!--                    </notebook>-->
+                    <!--                    <notebook>-->
+                    <!--                        <page string="Products" id="products">-->
+                    <!--                            <field name="product_ids" widget="one2many_list">-->
+                    <!--                                <tree editable="bottom">-->
+                    <!--                                    <control>-->
+                    <!--                                        <create name="add_product_control" string="Add a product"/>-->
+                    <!--                                    </control>-->
+                    <!--                                    <field name="sequence" widget="handle"/>-->
+                    <!--                                    <field name="product_id"/>-->
+                    <!--                                    <field name="name"/>-->
+                    <!--                                    <field name="dose"/>-->
+                    <!--                                    <field name="application_number" optional="show"/>-->
+                    <!--                                    <field name="intervals_days" optional="show"/>-->
+                    <!--                                    <field name="volume_broth" optional="show"/>-->
+                    <!--                                    <field name="specific_conditions" optional="show"/>-->
+                    <!--                                </tree>-->
+                    <!--                            </field>-->
+                    <!--                        </page>-->
+                    <!--                        <page string="Employee" >-->
+                    <!--                            <field name="employee_ids"/>-->
+                    <!--                        </page>-->
+                    <!--                        <page string="Equipment" >-->
+                    <!--                            <field name="equipment_ids"/>-->
+                    <!--                        </page>-->
+                    <!--                        <page string="Others" >-->
+                    <!--                            <group>-->
+                    <!--                                <group>-->
+                    <!--                                    <field name="performance_application_type_id"/>-->
+                    <!--                                    <field name="justify"/>-->
+                    <!--                                    <field name="emergency"/>-->
+                    <!--                                    <field name="wind_speed"/>-->
+                    <!--                                </group>-->
+                    <!--                                <group>-->
+                    <!--                                    <field name="execution"/>-->
+                    <!--                                    <field name="problematic"/>-->
+                    <!--                                    <field name="efficiency"/>-->
+                    <!--                                    <field name="weather_condition"/>-->
+                    <!--                                </group>-->
+                    <!--                            </group>-->
+                    <!--                        </page>-->
+                    <!--                    </notebook>-->
 
                 </sheet>
                 <div class="oe_chatter">
@@ -94,16 +102,16 @@
         <field name="arch" type="xml">
             <tree multi_edit="1" sample="1">
                 <field name="name" readonly="1" decoration-bf="1"/>
-<!--                <field name="campaign_id"/>-->
-<!--                <field name="associate_id"/>-->
+                <!--                <field name="campaign_id"/>-->
+                <!--                <field name="associate_id"/>-->
                 <field name="date"/>
                 <field name="date_limit"/>
                 <field name="date_start" optional="hide"/>
                 <field name="date_end" optional="hide"/>
-<!--                <field name="ucth_ids" widget="many2many_tags"/>-->
-<!--                <field name="agent_ids" widget="many2many_tags"/>-->
-<!--                <field name="activity_ids" widget="many2many_tags" optional="show"/>-->
-<!--                <field name="company_id" groups="base.group_multi_company" optional="show" readonly="1"/>-->
+                <!--                <field name="ucth_ids" widget="many2many_tags"/>-->
+                <!--                <field name="agent_ids" widget="many2many_tags"/>-->
+                <!--                <field name="activity_ids" widget="many2many_tags" optional="show"/>-->
+                <!--                <field name="company_id" groups="base.group_multi_company" optional="show" readonly="1"/>-->
             </tree>
         </field>
     </record>
@@ -115,9 +123,9 @@
         <field name="arch" type="xml">
             <search string="Search performance">
                 <group expand="0" string="Group By">
-<!--                    <filter string="Campaign" name="campaign_id" context="{'group_by': 'campaign_id'}"/>-->
-<!--                    <filter string="Associated" name="associate_id" context="{'group_by': 'associate_id'}"/>-->
-<!--                    <filter string="Exploitation" name="exploitation_id" context="{'group_by': 'exploitation_id'}"/>-->
+                    <!--                    <filter string="Campaign" name="campaign_id" context="{'group_by': 'campaign_id'}"/>-->
+                    <!--                    <filter string="Associated" name="associate_id" context="{'group_by': 'associate_id'}"/>-->
+                    <!--                    <filter string="Exploitation" name="exploitation_id" context="{'group_by': 'exploitation_id'}"/>-->
                     <filter string="Date" name="date" context="{'group_by': 'date'}"/>
                     <filter string="Limit date" name="date_limit" context="{'group_by': 'date_limit'}"/>
                     <filter string="Start date" name="date_start" context="{'group_by': 'date_start'}"/>
