@@ -7,7 +7,16 @@
         <field name="model">alfinf.control.panel</field>
         <field name="arch" type="xml">
             <form>
-                <field name="name"/>
+                <group>
+                    <field name="name"/>
+                    <field name="company"/>
+                    <field name="family"/>
+                    <field name="delivery_note"/>
+                    <field name="invoice"/>
+                    <field name="date_delivery_note"/>
+                    <field name="date_invoice"/>
+                    <field name="client"/>
+                </group>
             </form>
         </field>
     </record>
@@ -18,6 +27,13 @@
         <field name="arch" type="xml">
             <tree>
                 <field name="name"/>
+                <field name="company"/>
+                <field name="family"/>
+                <field name="delivery_note"/>
+                <field name="invoice"/>
+                <field name="date_delivery_note"/>
+                <field name="date_invoice"/>
+                <field name="client"/>
             </tree>
         </field>
     </record>
@@ -37,9 +53,9 @@
     </record>
 
     <record id="alfinf_control_panel_action" model="ir.actions.act_window">
-        <field name="name">Alfinf Control Panel </field>
+        <field name="name">Alfinf Control Panel</field>
         <field name="type">ir.actions.act_window</field>
-        <field name="model">alfinf.control.panel</field>
+        <field name="res_model">alfinf.control.panel</field>
         <field name="view_mode">tree,form,kanban</field>
         <field name="view_id"
                ref="alfinf_control_panel_view_tree"/>
