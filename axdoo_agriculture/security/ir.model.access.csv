@@ -1,2 +1,3 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_agriculture_format,access_agriculture_format,model_agriculture_format,base.group_user,1,1,1,1
+access_alfinf_control_panel,access_alfinf_control_panel,model_alfinf_control_panel,base.group_user,1,1,1,1

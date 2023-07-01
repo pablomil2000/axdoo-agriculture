@@ -12,10 +12,15 @@
               parent="agriculture_menu"
               sequence="0">
 
+        <menuitem id="alfinf_control_panel_menu"
+                  name="Alfinf Contol Panel"
+                  action="alfinf_control_panel_action"
+                  sequence="1"/>
+
         <menuitem id="agriculture_format_menu"
                   name="Format"
                   action="agriculture_format_action"
-                  sequence="1"/>
+                  sequence="2"/>
 
     </menuitem>
 
