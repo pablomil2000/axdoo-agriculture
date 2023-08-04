@@ -31,4 +31,7 @@ class FieldNotebookCampaign(models.Model):
     end_date = fields.Date(
         string="End Date",
     )
+    sampling_units = fields.Integer(
+        string="Sampling Units",
+    )
 

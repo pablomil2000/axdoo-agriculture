@@ -8,7 +8,6 @@
                     <group>
                         <group>
                             <field name="name"/>
-                            <field name="alias"/>
                             <field name="campaign_id" options="{'no_create': True}"/>
                             <field name="exploitation_id" options="{'no_create': True}"/>
                             <field name="company_id" options="{'no_create': True}" groups="base.group_multi_company"/>
@@ -16,6 +15,7 @@
                             <field name="associate_id" domain="associate_id_domain"/>
                         </group>
                         <group>
+                            <field name="alias"/>
                             <field name="zone_ids" widget="many2many_tags"/>
                             <field name="system_ids" widget="many2many_tags"/>
                             <field name="irrigation_id"/>
@@ -25,7 +25,6 @@
                         <page name="enclosure" string="Enclosure">
                             <field name="enclosure_ids" widget="One2many" context="{'show_attribute': False}">
                                 <tree editable="bottom">
-                                    <field name="campaign_id"/>
                                     <field name="enclosure_id"/>
                                     <field name="surface" sum="Total"/>
                                 </tree>

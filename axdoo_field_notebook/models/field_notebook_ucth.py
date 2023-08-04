@@ -18,17 +18,16 @@ class FieldNotebookUCTH(models.Model):
         index=True,
         tracking=True,
     )
+    campaign_id = fields.Many2one(
+        comodel_name='field.notebook.campaign',
+        string='Campaign',
+        required=True,
+        default=lambda self: self._get_campaign_id(),
+    )
     alias = fields.Char(
         string="Alias",
         index=True,
         tracking=True,
-    )
-    campaign_id = fields.Many2one(
-        string="Default Campaign ",
-        comodel_name='field.notebook.campaign',
-        required=True,
-        tracking=True,
-        default=lambda self: self._get_campaign_id(),
     )
     company_id = fields.Many2one(
         comodel_name='res.company',
@@ -111,6 +110,14 @@ class FieldNotebookUCTH(models.Model):
         store=True
     )
 
+    _sql_constraints = [
+        (
+            "ucth_name_uniq",
+            "unique(name, campaign_id, company_id)",
+            _("This UCTH name and campaign already exists !"),
+        )
+    ]
+
     @api.onchange("autonomy_id")
     def _onchange_crop_id(self):
         for rec in self:
@@ -148,24 +155,11 @@ class FieldNotebookUCTHParcel(models.Model):
         index=True,
         copy=False,
     )
-    campaign_id = fields.Many2one(
-        comodel_name='field.notebook.campaign',
-        string='Campaign',
-        required=True,
-        default=lambda self: self._get_campaign_id(),
-    )
     surface = fields.Float(
         string='Surface',
         digits=(6, 4),
         default=0.0,
     )
-
-    @api.model
-    def _get_campaign_id(self):
-        default_campaign_id = self.env["ir.config_parameter"].sudo().get_param("field_notebook.campaign_id")
-        if not default_campaign_id:
-            return None
-        return self.env['field.notebook.campaign'].sudo().browse(int(default_campaign_id)).exists()
 
 
 class FieldNotebookUCTHNursery(models.Model):
