@@ -16,33 +16,54 @@
                     <group>
                         <group>
                             <field name="type"/>
+                            <field name="campaign_id"/>
+                            <field name="exploitation_id"/>
+                            <field name="company_id"/>
+                            <field name="associate_id"/>
+                            <field name="crop_variety_id"/>
+                            <field name="crop_id"/>
                         </group>
-
-                        <!--                        <group>-->
-                        <!--                            <field name="campaign_id"/>-->
-                        <!--                            <field name="exploitation_id"/>-->
-                        <!--                            <field name="company_id"/>-->
-                        <!--                            <field name="associate_id"/>-->
-                        <!--                            <field name="crop_variety_id"/>-->
-                        <!--                            <field name="crop_id"/>-->
-                        <!--                        </group>-->
                         <group>
                             <field name="date"/>
                             <field name="date_limit"/>
                             <field name="date_start"/>
                             <field name="date_end"/>
-                            <!--                            <field name="ucth_ids" widget="many2many_tags"/>-->
-                            <!--                            <field name="agent_ids" widget="many2many_tags"/>-->
+<!--                            <field name="ucth_ids" widget="many2many_tags"/>-->
+                            <field name="agent_ids" widget="many2many_tags"
+                                   attrs="{'invisible': [('type', '!=', 'phytosanitary')]}"/>
                         </group>
-                        <field name="confirmation_ids">
-                            <tree editable="bottom">
-                                <field name="text_name"/>
-                                <field name="date_time_start"/>
-                                <field name="date_time_end"/>
-                            </tree>
-                        </field>
-
                     </group>
+
+                    <notebook>
+                        <page string="Products" id="products" attrs="{'invisible': [('type', '!=', 'phytosanitary')]}">
+                            <field name="product_ids" widget="one2many_list">
+                                <tree editable="bottom">
+                                    <control>
+                                        <create name="add_product_control" string="Add a product"/>
+                                    </control>
+                                    <field name="sequence" widget="handle"/>
+                                    <field name="product_id"/>
+                                    <field name="name"/>
+                                    <field name="dose"/>
+                                    <field name="application_number" optional="show"/>
+                                    <field name="intervals_days" optional="show"/>
+                                    <field name="volume_broth" optional="show"/>
+                                    <field name="specific_conditions" optional="show"/>
+                                </tree>
+                            </field>
+                        </page>
+
+                        <page string="Confirmations" id="confirmation">
+                            <field name="confirmation_ids">
+                                <tree editable="bottom">
+                                    <field name="text_name"/>
+                                    <field name="date_time_start"/>
+                                    <field name="date_time_end"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+
 
                     <!--                    <notebook>-->
                     <!--                        <page string="Products" id="products">-->

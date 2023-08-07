@@ -73,6 +73,13 @@ class FieldNotebookUCTH(models.Model):
         copy=True,
         auto_join=True,
     )
+    enclosure_ids = fields.One2many(
+        string='Enclosures',
+        comodel_name='field.notebook.ucth.enclosure',
+        inverse_name='ucth_id',
+        copy=True,
+        auto_join=True,
+    )
     nursery_ids = fields.One2many(
         string='Nursery',
         comodel_name='field.notebook.ucth.nursery',
@@ -83,13 +90,6 @@ class FieldNotebookUCTH(models.Model):
     crop_variety_ids = fields.One2many(
         string='Crop Varieties',
         comodel_name='field.notebook.ucth.crop.variety',
-        inverse_name='ucth_id',
-        copy=True,
-        auto_join=True,
-    )
-    enclosure_ids = fields.One2many(
-        string='Enclosures',
-        comodel_name='field.notebook.ucth.enclosure',
         inverse_name='ucth_id',
         copy=True,
         auto_join=True,
@@ -136,6 +136,59 @@ class FieldNotebookUCTH(models.Model):
         if not default_campaign_id:
             return None
         return self.env['field.notebook.campaign'].sudo().browse(int(default_campaign_id)).exists()
+
+
+class FieldNotebookEnclosure(models.Model):
+    _name = 'field.notebook.ucth.enclosure'
+    _inherit = ['mail.thread', 'mail.activity.mixin']
+    _description = 'Field Notebook UCTH Enclosure'
+
+    name = fields.Char(
+        string='Name',
+        index=True,
+        tracking=True,
+    )
+    ucth_id = fields.Many2one(
+        comodel_name='field.notebook.ucth',
+        string='UCTH',
+        required=True,
+        ondelete='cascade',
+        index=True,
+        copy=False,
+    )
+    enclosure = fields.Float(
+        string='Enclosure Number',
+        digits=(6, 0),
+        default=0.0,
+        index=True,
+        tracking=True,
+    )
+    plot_use_id = fields.Many2one(
+        comodel_name='field.notebook.plot.use',
+        string='Plot Use',
+        copy=True,
+        auto_join=True,
+    )
+    surface = fields.Float(
+        string='Surface',
+        digits=(6, 4),
+        default=0.0,
+    )
+    slope = fields.Float(
+        string='Slope',
+        digits=(6, 2),
+        default=0.0,
+    )
+    irrigation_coefficient = fields.Float(
+        string='Irrigation Coefficient',
+        digits=(6, 2),
+        default=0.0,
+    )
+    region = fields.Float(
+        string='Region',
+        digits=(6, 0),
+        default=0.0,
+    )
 
 
 class FieldNotebookUCTHParcel(models.Model):
@@ -244,49 +297,50 @@ class FieldNotebookUCTHCropVariety(models.Model):
             return None
         return self.env['field.notebook.campaign'].sudo().browse(int(default_campaign_id)).exists()
 
-
-class FieldNotebookUCTHEnclosure(models.Model):
-    _name = 'field.notebook.ucth.enclosure'
-    _description = 'UCTH Enclosure'
-
-    enclosure_id = fields.Many2one(
-        comodel_name='field.notebook.enclosure',
-        string='Enclosure',
-        required=True,
-        ondelete='cascade',
-        delegate=True,
-    )
-    ucth_id = fields.Many2one(
-        comodel_name='field.notebook.ucth',
-        string='UCTH',
-        required=True,
-        ondelete='cascade',
-        index=True,
-        copy=False,
-    )
-    campaign_id = fields.Many2one(
-        comodel_name='field.notebook.campaign',
-        string='Campaign',
-        required=True,
-        default=lambda self: self._get_campaign_id(),
-    )
-    surface = fields.Float(
-        string='Surface',
-        digits=(6, 4),
-        default=0.0,
-    )
-
-    @api.model
-    def _get_campaign_id(self):
-        default_campaign_id = self.env["ir.config_parameter"].sudo().get_param("field_notebook.campaign_id")
-        if not default_campaign_id:
-            return None
-        return self.env['field.notebook.campaign'].sudo().browse(int(default_campaign_id)).exists()
-
-    _sql_constraints = [
-        (
-            "enclosure_uniq",
-            "unique(enclosure_id, ucth_id)",
-            _("This enclosure already exists in this ucth !"),
-        )
-    ]
+# Deprecated models
+#
+# class FieldNotebookUCTHEnclosure(models.Model):
+#     _name = 'field.notebook.ucth.enclosure'
+#     _description = 'UCTH Enclosure'
+#
+#     enclosure_id = fields.Many2one(
+#         comodel_name='field.notebook.enclosure',
+#         string='Enclosure',
+#         required=True,
+#         ondelete='cascade',
+#         delegate=True,
+#     )
+#     ucth_id = fields.Many2one(
+#         comodel_name='field.notebook.ucth',
+#         string='UCTH',
+#         required=True,
+#         ondelete='cascade',
+#         index=True,
+#         copy=False,
+#     )
+#     campaign_id = fields.Many2one(
+#         comodel_name='field.notebook.campaign',
+#         string='Campaign',
+#         required=True,
+#         default=lambda self: self._get_campaign_id(),
+#     )
+#     surface = fields.Float(
+#         string='Surface',
+#         digits=(6, 4),
+#         default=0.0,
+#     )
+#
+#     @api.model
+#     def _get_campaign_id(self):
+#         default_campaign_id = self.env["ir.config_parameter"].sudo().get_param("field_notebook.campaign_id")
+#         if not default_campaign_id:
+#             return None
+#         return self.env['field.notebook.campaign'].sudo().browse(int(default_campaign_id)).exists()
+#
+#     _sql_constraints = [
+#         (
+#             "enclosure_uniq",
+#             "unique(enclosure_id, ucth_id)",
+#             _("This enclosure already exists in this ucth !"),
+#         )
+#     ]

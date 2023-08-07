@@ -22,11 +22,24 @@
                         </group>
                     </group>
                     <notebook>
+<!--                        <page name="enclosure" string="Enclosure">-->
+<!--                            <field name="enclosure_ids" widget="One2many" context="{'show_attribute': False}">-->
+<!--                                <tree editable="bottom">-->
+<!--                                    <field name="enclosure_id"/>-->
+<!--                                    <field name="surface" sum="Total"/>-->
+<!--                                </tree>-->
+<!--                            </field>-->
+<!--                        </page>-->
+
                         <page name="enclosure" string="Enclosure">
                             <field name="enclosure_ids" widget="One2many" context="{'show_attribute': False}">
                                 <tree editable="bottom">
-                                    <field name="enclosure_id"/>
-                                    <field name="surface" sum="Total"/>
+                                    <field name="enclosure"/>
+                                    <field name="surface" sum="total"/>
+                                    <field name="slope"/>
+                                    <field name="plot_use_id"/>
+                                    <field name="irrigation_coefficient"/>
+                                    <field name="region"/>
                                 </tree>
                             </field>
                         </page>
