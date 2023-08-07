@@ -28,7 +28,7 @@
                             <field name="date_limit"/>
                             <field name="date_start"/>
                             <field name="date_end"/>
-<!--                            <field name="ucth_ids" widget="many2many_tags"/>-->
+                            <!--                            <field name="ucth_ids" widget="many2many_tags"/>-->
                             <field name="agent_ids" widget="many2many_tags"
                                    attrs="{'invisible': [('type', '!=', 'phytosanitary')]}"/>
                         </group>
@@ -61,6 +61,12 @@
                                     <field name="date_time_end"/>
                                 </tree>
                             </field>
+                        </page>
+                        <page string="Employee" attrs="{'invisible': [('type', '!=', 'phytosanitary')]}">
+                            <field name="employee_ids"/>
+                        </page>
+                        <page string="Equipment" attrs="{'invisible': [('type', '!=', 'phytosanitary')]}">
+                            <field name="equipment_ids"/>
                         </page>
                     </notebook>
 
