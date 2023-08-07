@@ -34,7 +34,6 @@
                         <page name="crop_variety" string="Crop Variety">
                             <field name="crop_variety_ids" widget="One2many" context="{'show_attribute': False}">
                                 <tree editable="bottom">
-                                    <field name="campaign_id"/>
                                     <field name="variety_id"/>
                                     <field name="crop_id"/>
                                 </tree>
@@ -44,7 +43,6 @@
                         <page name="nursery" string="Nurseries">
                             <field name="nursery_ids" widget="One2many" context="{'show_attribute': False}">
                                 <tree editable="bottom">
-                                    <field name="campaign_id"/>
                                     <field name="nursery_id"/>
                                     <field name="plants" sum="Total"/>
                                     <field name="replant" sum="Total"/>
