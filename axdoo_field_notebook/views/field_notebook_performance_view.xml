@@ -68,6 +68,22 @@
                         <page string="Equipment" attrs="{'invisible': [('type', '!=', 'phytosanitary')]}">
                             <field name="equipment_ids"/>
                         </page>
+                        <page string="Others" attrs="{'invisible': [('type', '!=', 'phytosanitary')]}">
+                            <group>
+                                <group>
+                                    <field name="performance_application_type_id"/>
+                                    <field name="justify"/>
+                                    <field name="emergency"/>
+                                    <field name="wind_speed"/>
+                                </group>
+                                <group>
+                                    <field name="execution"/>
+                                    <field name="problematic"/>
+                                    <field name="efficiency"/>
+                                    <field name="weather_condition"/>
+                                </group>
+                            </group>
+                        </page>
                     </notebook>
 
 

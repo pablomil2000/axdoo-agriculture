@@ -121,7 +121,7 @@ class FieldNotebookPerformance(models.Model):
         copy=True,
         auto_join=True,
     )
-    phytosanitary_application_type_id = fields.Many2one(
+    performance_application_type_id = fields.Many2one(
         comodel_name='field.notebook.phytosanitary.application.type',
         tracking=True,
     )
@@ -188,11 +188,14 @@ class FieldNotebookPerformance(models.Model):
     def create(self, vals):
         if vals.get("name", "New") == "New":
             vals["name"] = self._prepare_name(vals)
+        result = super().create(vals)
+        print("Agents_ids",vals.get("agents_ids"))
+        print("Type",vals.get("type"))
         if not vals.get("agents_ids") and vals.get("type") == "phytosanitary":
             raise ValidationError(
                 _('Agents must be completed.')
             )
-        return super().create(vals)
+        return result
 
     def copy(self, default=None):
         self.ensure_one()
