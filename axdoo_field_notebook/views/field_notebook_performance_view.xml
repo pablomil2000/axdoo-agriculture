@@ -52,23 +52,13 @@
                                 </tree>
                             </field>
                         </page>
-
-                        <page string="Confirmations" id="confirmation">
-                            <field name="confirmation_ids">
-                                <tree editable="bottom">
-                                    <field name="text_name"/>
-                                    <field name="date_time_start"/>
-                                    <field name="date_time_end"/>
-                                </tree>
-                            </field>
-                        </page>
                         <page string="Employee" attrs="{'invisible': [('type', '!=', 'phytosanitary')]}">
                             <field name="employee_ids"/>
                         </page>
                         <page string="Equipment" attrs="{'invisible': [('type', '!=', 'phytosanitary')]}">
                             <field name="equipment_ids"/>
                         </page>
-                        <page string="Others" attrs="{'invisible': [('type', '!=', 'phytosanitary')]}">
+                        <page string="Others" attrs="{'invisible': [('type', '!=', 'phytosanitary', 'or', 'labor')]}">
                             <group>
                                 <group>
                                     <field name="performance_application_type_id"/>
@@ -83,6 +73,15 @@
                                     <field name="weather_condition"/>
                                 </group>
                             </group>
+                        </page>
+                        <page string="Confirmations" id="confirmation">
+                            <field name="confirmation_ids">
+                                <tree editable="bottom">
+                                    <field name="text_name"/>
+                                    <field name="date_time_start"/>
+                                    <field name="date_time_end"/>
+                                </tree>
+                            </field>
                         </page>
                     </notebook>
 
