@@ -28,7 +28,7 @@
                             <field name="date_limit"/>
                             <field name="date_start"/>
                             <field name="date_end"/>
-                            <!--                            <field name="ucth_ids" widget="many2many_tags"/>-->
+                            <field name="ucth_ids" widget="many2many_tags"/>
                             <field name="agent_ids" widget="many2many_tags"
                                    attrs="{'invisible': [('type', '!=', 'phytosanitary')]}"/>
                         </group>

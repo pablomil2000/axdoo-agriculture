@@ -76,13 +76,11 @@ class FieldNotebookPerformance(models.Model):
         required=True,
         tracking=True,
     )
-    # ucth_ids = fields.Many2many(
-    #     comodel_name='field.notebook.exploitation.ucth',
-    #     relation="exploitation_ucth_rel",
-    #     required=True,
-    #     tracking=True,
-    #     domain="[('exploitation_id', '=', exploitation_id)]",
-    # )
+    ucth_ids = fields.Many2many(
+        comodel_name='field.notebook.ucth',
+        required=True,
+        tracking=True,
+    )
     agent_ids = fields.Many2many(
         comodel_name='field.notebook.agent',
         tracking=True,
@@ -295,3 +293,34 @@ class FieldNotebookPerformanceProducts(models.Model):
             self.application_number = product_dose.application_number
             self.intervals_days = product_dose.intervals_days
             self.volume_broth = product_dose.volume_broth
+
+
+class FieldNotebookPerformanceUCTH(models.Model):
+    _name = 'field.notebook.performance.ucth'
+    _description = 'Performance UCTH'
+
+    ucth_id = fields.Many2one(
+        comodel_name='field.notebook.ucth',
+        string='UCTH',
+        required=True,
+        ondelete='cascade',
+    )
+    name = fields.Char(
+        related='ucth_id.name',
+    )
+    performance_id = fields.Many2one(
+        comodel_name='field.notebook.performance',
+        string='Performance',
+        required=True,
+        ondelete='cascade',
+        index=True,
+    )
+
+    _sql_constraints = [
+        (
+            "ucth_uniq",
+            "unique(ucth_id, performance_id)",
+            _("This UCTH already exists!"),
+        )
+    ]
+
