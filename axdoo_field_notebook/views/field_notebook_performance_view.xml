@@ -52,13 +52,13 @@
                                 </tree>
                             </field>
                         </page>
-                        <page string="Employee" attrs="{'invisible': [('type', '!=', 'phytosanitary')]}">
+                        <page string="Employee" attrs="{'invisible': [('type', 'not in', ['phytosanitary', 'labor'])]}">
                             <field name="employee_ids"/>
                         </page>
                         <page string="Equipment" attrs="{'invisible': [('type', '!=', 'phytosanitary')]}">
                             <field name="equipment_ids"/>
                         </page>
-                        <page string="Others" attrs="{'invisible': [('type', '!=', 'phytosanitary', 'or', 'labor')]}">
+                        <page string="Others" attrs="{'invisible': [('type', '!=', 'phytosanitary')]}">
                             <group>
                                 <group>
                                     <field name="performance_application_type_id"/>
