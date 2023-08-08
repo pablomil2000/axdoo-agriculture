@@ -62,6 +62,12 @@
                                 </tree>
                             </field>
                         </page>
+                        <page string="Employee" attrs="{'invisible': [('type', '!=', 'phytosanitary')]}">
+                            <field name="employee_ids"/>
+                        </page>
+                        <page string="Equipment" attrs="{'invisible': [('type', '!=', 'phytosanitary')]}">
+                            <field name="equipment_ids"/>
+                        </page>
                     </notebook>
 
 
