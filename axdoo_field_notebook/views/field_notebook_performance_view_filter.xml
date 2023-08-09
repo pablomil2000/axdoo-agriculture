@@ -1,0 +1,14 @@
+<odoo>
+    <record id="field_notebook_performance_view_filter" model="ir.ui.view">
+        <field name="name">field.notebook.performance.view.filter</field>
+        <field name="model">field.notebook.performance</field>
+        <field name="arch" type="xml">
+            <search>
+                <filter name="phytosanitary" string="Phytosanitary" domain="[('type', '=', 'phytosanitary')]"/>
+                <filter name="labor" string="Labor" domain="[('type', '=', 'labor')]"/>
+                <filter name="harvest" string="Harvest" domain="[('type', '=', 'harvest')]"/>
+                <filter name="irrigation" string="Irrigation" domain="[('type', '=', 'irrigation')]"/>
+            </search>
+        </field>
+    </record>
+</odoo>
