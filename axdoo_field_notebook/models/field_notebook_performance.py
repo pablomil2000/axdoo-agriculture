@@ -81,6 +81,64 @@ class FieldNotebookPerformance(models.Model):
         required=True,
         tracking=True,
     )
+    state = fields.Selection([
+        ('open', 'Open'),
+        ('in_progress', 'In progress'),
+        ('closed', 'Closed')
+    ],
+        default='open',
+        tracking=True,
+    )
+    labor_type_id = fields.Many2one(
+        comodel_name='field.notebook.labor.type',
+        tracking=True,
+    )
+    duration = fields.Float(
+        group_operator='sum',
+        tracking=True,
+    )
+    customer_id = fields.Many2one(
+        comodel_name='res.partner',
+        tracking=True,
+        string='Customer',
+        check_company=True,
+    )
+    commercialization = fields.Selection([
+        ('commercialized', 'Commercialized'),
+        ('direct', 'Direct')
+    ],
+        default='commercialized',
+        tracking=True,
+    )
+    quantity_kg = fields.Float(
+        digits=(16, 2),
+        group_operator='sum',
+        tracking=True,
+    )
+    price = fields.Float(
+        digits=(16, 2),
+    )
+    total_price = fields.Float(
+        digits=(16, 2),
+        group_operator='sum',
+        compute='_compute_total_price',
+        store=True,
+        readonly=True,
+    )
+    lot = fields.Char(
+        tracking=True,
+    )
+    irrigation_system_id = fields.Many2one(
+        comodel_name='field.notebook.irrigation.system',
+    )
+    water_quality = fields.Selection([
+        ('good', 'Good'),
+        ('medium', 'Medium'),
+        ('bad', 'Bad')
+    ],
+        default='good',
+        tracking=True,
+    )
     agent_ids = fields.Many2many(
         comodel_name='field.notebook.agent',
         tracking=True,
@@ -181,6 +239,11 @@ class FieldNotebookPerformance(models.Model):
         default='none',
         tracking=True,
     )
+
+    @api.depends('quantity_kg', 'price')
+    def _compute_total_price(self):
+        for performance in self:
+            performance.total_price = performance.quantity_kg * performance.price
 
     @api.model
     def create(self, vals):

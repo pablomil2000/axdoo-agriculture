@@ -20,22 +20,38 @@
                             <field name="exploitation_id"/>
                             <field name="company_id"/>
                             <field name="associate_id"/>
-                            <field name="crop_variety_id"/>
-                            <field name="crop_id"/>
+                            <field name="crop_variety_id" attrs="{'invisible': [('type', '!=', 'phytosanitary')]}"/>
+                            <field name="crop_id" attrs="{'invisible': [('type', '!=', 'phytosanitary')]}"/>
+                            <field name="labor_type_id" attrs="{'invisible': [('type', '!=', 'labor')]}"/>
+                            <field name="customer_id" attrs="{'invisible': [('type', '!=', 'harvest')]}"/>
+                            <field name="quantity_kg" attrs="{'invisible': [('type', '!=', 'harvest')]}"/>
+                            <field name="total_price" attrs="{'invisible': [('type', '!=', 'harvest')]}"/>
+                            <field name="irrigation_system_id" attrs="{'invisible': [('type', '!=', 'irrigation')]}"/>
                         </group>
                         <group>
-                            <field name="date"/>
-                            <field name="date_limit"/>
+                            <field name="commercialization" attrs="{'invisible': [('type', '!=', 'harvest')]}"/>
+                            <field name="state" attrs="{'invisible': [('type', '!=', 'labor')]}"/>
+                            <field name="date"
+                                   attrs="{'invisible': [('type', 'not in', ['phytosanitary', 'harvest'])]}"/>
+                            <field name="date_limit"
+                                   attrs="{'invisible': [('type', 'not in', ['phytosanitary', 'labor', 'irrigation'])]}"/>
                             <field name="date_start"/>
                             <field name="date_end"/>
                             <field name="ucth_ids" widget="many2many_tags"/>
                             <field name="agent_ids" widget="many2many_tags"
                                    attrs="{'invisible': [('type', '!=', 'phytosanitary')]}"/>
+                            <field name="duration" type="measure" widget="timesheet_uom"
+                                   decoration-danger="duration &gt; 24"
+                                   attrs="{'invisible': [('type', 'not in', ['labor', 'irrigation'])]}"/>
+                            <field name="price" attrs="{'invisible': [('type', '!=', 'harvest')]}"/>
+                            <field name="lot" attrs="{'invisible': [('type', '!=', 'harvest')]}"/>
+                            <field name="water_quality" attrs="{'invisible': [('type', '!=', 'irrigation')]}"/>
                         </group>
                     </group>
 
                     <notebook>
-                        <page string="Products" id="products" attrs="{'invisible': [('type', '!=', 'phytosanitary')]}">
+                        <page string="Products" id="products"
+                              attrs="{'invisible': [('type', 'not in', ['phytosanitary', 'labor', 'harvest', 'irrigation'])]}">
                             <field name="product_ids" widget="one2many_list">
                                 <tree editable="bottom">
                                     <control>
@@ -52,10 +68,12 @@
                                 </tree>
                             </field>
                         </page>
-                        <page string="Employee" attrs="{'invisible': [('type', 'not in', ['phytosanitary', 'labor'])]}">
+                        <page string="Employee"
+                              attrs="{'invisible': [('type', 'not in', ['phytosanitary', 'labor', 'irrigation'])]}">
                             <field name="employee_ids"/>
                         </page>
-                        <page string="Equipment" attrs="{'invisible': [('type', '!=', 'phytosanitary')]}">
+                        <page string="Equipment"
+                              attrs="{'invisible': [('type', 'not in', ['phytosanitary', 'labor', 'irrigation'])]}">
                             <field name="equipment_ids"/>
                         </page>
                         <page string="Others" attrs="{'invisible': [('type', '!=', 'phytosanitary')]}">
