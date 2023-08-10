@@ -8,6 +8,14 @@
                 <filter name="labor" string="Labor" domain="[('type', '=', 'labor')]"/>
                 <filter name="harvest" string="Harvest" domain="[('type', '=', 'harvest')]"/>
                 <filter name="irrigation" string="Irrigation" domain="[('type', '=', 'irrigation')]"/>
+                <filter name="therapy" string="Therapy" domain="[('type', '=', 'therapy')]"/>
+                <separator/>
+                <filter name="date" string="Date" icon="terp-partner" context="{'group_by':'date'}"/>
+                <filter name="date_limit" string="Date limit" icon="terp-partner" context="{'group_by':'date_limit'}"/>
+                <filter name="date_start" string="Date start" icon="terp-partner" context="{'group_by':'date_start'}"/>
+                <filter name="date_end" string="Date end" icon="terp-partner" context="{'group_by':'date_end'}"/>
+                <filter name="campaign_id" string="Campaign" icon="terp-partner" context="{'group_by':'campaign_id'}"/>
+                <filter name="ucth_ids" string="UCTH" icon="terp-partner" context="{'group_by':'ucth_ids'}"/>
             </search>
         </field>
     </record>

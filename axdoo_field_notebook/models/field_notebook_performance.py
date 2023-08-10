@@ -1,6 +1,7 @@
 # Copyright 2023 Manuel Calero
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 # Fitosanitarios
+import datetime
 
 from odoo import _, fields, models, api
 from odoo.exceptions import ValidationError
@@ -94,8 +95,10 @@ class FieldNotebookPerformance(models.Model):
         tracking=True,
     )
     duration = fields.Float(
-        group_operator='sum',
+        string="Duracion en Horas",
         tracking=True,
+        widget="float_time",
+        compute='_compute_duration',
     )
     customer_id = fields.Many2one(
         comodel_name='res.partner',
@@ -150,14 +153,12 @@ class FieldNotebookPerformance(models.Model):
     crop_variety_id = fields.Many2one(
         string='Crop Variety',
         comodel_name='field.notebook.crop.variety',
-        required=True,
         tracking=True,
     )
     crop_id = fields.Many2one(
         comodel_name='field.notebook.crop',
         string='Crop',
         related="crop_variety_id.crop_id",
-        required=True,
         tracking=True,
     )
     employee_ids = fields.Many2many(
@@ -239,6 +240,20 @@ class FieldNotebookPerformance(models.Model):
         default='none',
         tracking=True,
     )
+
+    @api.depends('date_start', 'date_end')
+    def _compute_duration(self):
+        for performance in self:
+            if performance.date_start and performance.date_end:
+                start_datetime = fields.Datetime.from_string(performance.date_start)
+                end_datetime = fields.Datetime.from_string(performance.date_end)
+                duration = end_datetime - start_datetime
+                total_seconds = duration.total_seconds()
+                hours = total_seconds // 3600
+                minutes = (total_seconds % 3600) // 60
+                performance.duration = hours + minutes / 60
+            else:
+                performance.duration = 0.0
 
     @api.depends('quantity_kg', 'price')
     def _compute_total_price(self):

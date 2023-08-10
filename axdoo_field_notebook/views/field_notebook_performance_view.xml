@@ -20,8 +20,10 @@
                             <field name="exploitation_id"/>
                             <field name="company_id"/>
                             <field name="associate_id"/>
-                            <field name="crop_variety_id" attrs="{'invisible': [('type', '!=', 'phytosanitary')]}"/>
-                            <field name="crop_id" attrs="{'invisible': [('type', '!=', 'phytosanitary')]}"/>
+                            <field name="crop_variety_id"
+                                   attrs="{'invisible': [('type', 'not in', ['phytosanitary', 'therapy'])]}"/>
+                            <field name="crop_id"
+                                   attrs="{'invisible': [('type', 'not in', ['phytosanitary', 'therapy'])]}"/>
                             <field name="labor_type_id" attrs="{'invisible': [('type', '!=', 'labor')]}"/>
                             <field name="customer_id" attrs="{'invisible': [('type', '!=', 'harvest')]}"/>
                             <field name="quantity_kg" attrs="{'invisible': [('type', '!=', 'harvest')]}"/>
@@ -32,17 +34,16 @@
                             <field name="commercialization" attrs="{'invisible': [('type', '!=', 'harvest')]}"/>
                             <field name="state" attrs="{'invisible': [('type', '!=', 'labor')]}"/>
                             <field name="date"
-                                   attrs="{'invisible': [('type', 'not in', ['phytosanitary', 'harvest'])]}"/>
+                                   attrs="{'invisible': [('type', 'not in', ['phytosanitary', 'harvest', 'therapy'])]}"/>
                             <field name="date_limit"
-                                   attrs="{'invisible': [('type', 'not in', ['phytosanitary', 'labor', 'irrigation'])]}"/>
+                                   attrs="{'invisible': [('type', 'not in', ['phytosanitary', 'labor', 'irrigation', 'therapy'])]}"/>
                             <field name="date_start"/>
                             <field name="date_end"/>
+                            <field name="duration" type="measure" widget="timesheet_uom"
+                                   decoration-danger="duration &gt; 24"/>
                             <field name="ucth_ids" widget="many2many_tags"/>
                             <field name="agent_ids" widget="many2many_tags"
-                                   attrs="{'invisible': [('type', '!=', 'phytosanitary')]}"/>
-                            <field name="duration" type="measure" widget="timesheet_uom"
-                                   decoration-danger="duration &gt; 24"
-                                   attrs="{'invisible': [('type', 'not in', ['labor', 'irrigation'])]}"/>
+                                   attrs="{'invisible': [('type', 'not in', ['phytosanitary', 'therapy'])]}"/>
                             <field name="price" attrs="{'invisible': [('type', '!=', 'harvest')]}"/>
                             <field name="lot" attrs="{'invisible': [('type', '!=', 'harvest')]}"/>
                             <field name="water_quality" attrs="{'invisible': [('type', '!=', 'irrigation')]}"/>
@@ -51,7 +52,7 @@
 
                     <notebook>
                         <page string="Products" id="products"
-                              attrs="{'invisible': [('type', 'not in', ['phytosanitary', 'labor', 'harvest', 'irrigation'])]}">
+                              attrs="{'invisible': [('type', 'not in', ['phytosanitary', 'labor', 'harvest', 'irrigation', 'therapy'])]}">
                             <field name="product_ids" widget="one2many_list">
                                 <tree editable="bottom">
                                     <control>
@@ -69,14 +70,14 @@
                             </field>
                         </page>
                         <page string="Employee"
-                              attrs="{'invisible': [('type', 'not in', ['phytosanitary', 'labor', 'irrigation'])]}">
+                              attrs="{'invisible': [('type', 'not in', ['phytosanitary', 'labor', 'irrigation', 'therapy'])]}">
                             <field name="employee_ids"/>
                         </page>
                         <page string="Equipment"
-                              attrs="{'invisible': [('type', 'not in', ['phytosanitary', 'labor', 'irrigation'])]}">
+                              attrs="{'invisible': [('type', 'not in', ['phytosanitary', 'labor', 'irrigation', 'therapy'])]}">
                             <field name="equipment_ids"/>
                         </page>
-                        <page string="Others" attrs="{'invisible': [('type', '!=', 'phytosanitary')]}">
+                        <page string="Others" attrs="{'invisible': [('type', 'not in', ['phytosanitary', 'therapy'])]}">
                             <group>
                                 <group>
                                     <field name="performance_application_type_id"/>
@@ -162,22 +163,23 @@
         <field name="arch" type="xml">
             <tree multi_edit="1" sample="1">
                 <field name="name" readonly="1" decoration-bf="1"/>
-                <!--                <field name="campaign_id"/>-->
-                <!--                <field name="associate_id"/>-->
+                <field name="type"/>
+                <field name="campaign_id"/>
+                <field name="exploitation_id"/>
+                <field name="company_id"/>
+                <field name="associate_id"/>
+                <field name="ucth_ids" optional="hide" widget="many2many_tags"/>
                 <field name="date"/>
                 <field name="date_limit"/>
                 <field name="date_start" optional="hide"/>
                 <field name="date_end" optional="hide"/>
-                <!--                <field name="ucth_ids" widget="many2many_tags"/>-->
-                <!--                <field name="agent_ids" widget="many2many_tags"/>-->
-                <!--                <field name="activity_ids" widget="many2many_tags" optional="show"/>-->
-                <!--                <field name="company_id" groups="base.group_multi_company" optional="show" readonly="1"/>-->
+                <field name="duration"/>
             </tree>
         </field>
     </record>
 
     <record id="axdoo_field_notebook.field_notebook_performance_view_filter" model="ir.ui.view">
-        <field name="name">fha.subvention.view.filter</field>
+        <field name="name">field.notebook.performance.view.tree_filter</field>
         <field name="model">field.notebook.performance</field>
         <field name="priority" eval="1"/>
         <field name="arch" type="xml">
