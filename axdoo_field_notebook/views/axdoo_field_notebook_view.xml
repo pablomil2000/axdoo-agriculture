@@ -27,35 +27,35 @@
                   sequence="1"
                   groups="axdoo_field_notebook.group_axdoo_field_notebook"/>
 
-        <menuitem id="field_notebook_phytosanitary_menu"
-                  name="Phytosanitary"
-                  action="field_notebook_phytosanitary_action"
-                  sequence="2"
-                  groups="axdoo_field_notebook.group_axdoo_field_notebook"/>
+<!--        <menuitem id="field_notebook_phytosanitary_menu"-->
+<!--                  name="Phytosanitary"-->
+<!--                  action="field_notebook_phytosanitary_action"-->
+<!--                  sequence="2"-->
+<!--                  groups="axdoo_field_notebook.group_axdoo_field_notebook"/>-->
 
-        <menuitem id="field_notebook_labor_menu"
-                  name="Labor"
-                  action="field_notebook_labor_action"
-                  sequence="3"
-                  groups="axdoo_field_notebook.group_axdoo_field_notebook"/>
+<!--        <menuitem id="field_notebook_labor_menu"-->
+<!--                  name="Labor"-->
+<!--                  action="field_notebook_labor_action"-->
+<!--                  sequence="3"-->
+<!--                  groups="axdoo_field_notebook.group_axdoo_field_notebook"/>-->
 
-        <menuitem id="field_notebook_harvest_menu"
-                  name="Harvest"
-                  action="field_notebook_harvest_action"
-                  sequence="4"
-                  groups="axdoo_field_notebook.group_axdoo_field_notebook"/>
+<!--        <menuitem id="field_notebook_harvest_menu"-->
+<!--                  name="Harvest"-->
+<!--                  action="field_notebook_harvest_action"-->
+<!--                  sequence="4"-->
+<!--                  groups="axdoo_field_notebook.group_axdoo_field_notebook"/>-->
 
-        <menuitem id="field_notebook_irrigation_menu"
-                  name="Irrigation"
-                  action="field_notebook_irrigation_action"
-                  sequence="5"
-                  groups="axdoo_field_notebook.group_axdoo_field_notebook"/>
+<!--        <menuitem id="field_notebook_irrigation_menu"-->
+<!--                  name="Irrigation"-->
+<!--                  action="field_notebook_irrigation_action"-->
+<!--                  sequence="5"-->
+<!--                  groups="axdoo_field_notebook.group_axdoo_field_notebook"/>-->
 
-        <menuitem id="field_notebook_confirmation_menu"
-                  name="Confirmation"
-                  action="field_notebook_confirmation_action"
-                  sequence="6"
-                  groups="axdoo_field_notebook.group_axdoo_field_notebook"/>
+<!--        <menuitem id="field_notebook_confirmation_menu"-->
+<!--                  name="Confirmation"-->
+<!--                  action="field_notebook_confirmation_action"-->
+<!--                  sequence="6"-->
+<!--                  groups="axdoo_field_notebook.group_axdoo_field_notebook"/>-->
 
 
     </menuitem>
