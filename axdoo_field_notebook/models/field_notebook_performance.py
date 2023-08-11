@@ -95,9 +95,8 @@ class FieldNotebookPerformance(models.Model):
         tracking=True,
     )
     duration = fields.Float(
-        string="Duracion en Horas",
+        string="Duration (hours)",
         tracking=True,
-        widget="float_time",
         compute='_compute_duration',
     )
     customer_id = fields.Many2one(
