@@ -4,13 +4,17 @@
 from odoo import fields, models
 
 
-class SaleOrder(models.Model):
-    _inherit = "sale.order"
+class SaleOrderLine(models.Model):
+    _inherit = "sale.order.line"
 
     alfinf_id = fields.Float(
         string="Alfinf application id",
     )
+    agriculture_format_id = fields.Many2one(
+        comodel_name="agriculture.format",
+        string="Format",
+    )
 
-    def create_invoices(self, grouped=False, final=False, date=None):
-        return self._create_invoices(grouped, final, date)
+
+
 

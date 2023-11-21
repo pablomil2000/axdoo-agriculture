@@ -9,7 +9,6 @@
     'depends': [
         'base',
         'sale',
-        'axdoo_field_notebook',
     ],
     'data': [
         'security/security.xml',
@@ -18,6 +17,7 @@
         'views/alfinf_control_panel_view.xml',
         'views/res_partner_view.xml',
         'views/agriculture_view.xml',
+        'views/sale_order_view.xml',
     ],
     'application': True,
 }
