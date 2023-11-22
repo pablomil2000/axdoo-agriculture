@@ -17,7 +17,7 @@ class AgricultureFormat(models.Model):
         string='Company',
         comodel_name='res.company',
         tracking=True,
-        required=True,
+        default=lambda self: self.env.company,
     )
     alfinf_id = fields.Float(
         string="Alfinf application id",

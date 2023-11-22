@@ -35,6 +35,9 @@
                             <field name="input_output"/>
                             <field name="pda_selection"/>
                         </group>
+                        <group>
+                            <field name="company_id"/>
+                        </group>
                     </group>
                 </sheet>
                 <div class="oe_chatter">
