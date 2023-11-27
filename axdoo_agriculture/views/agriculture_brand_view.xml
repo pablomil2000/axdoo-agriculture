@@ -1,0 +1,54 @@
+<!-- Copyright 2023 Alberto alberto@alfinf.com
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).-->
+<odoo>
+
+    <record id="agriculture_brand_view_form" model="ir.ui.view">
+        <field name="name">agriculture.brand.form</field>
+        <field name="model">agriculture.brand</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <!--<field name="company_id"/>-->
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="axdoo_agriculture.agriculture_brand_view_tree" model="ir.ui.view">
+        <field name="name">agriculture.brand.view.tree</field>
+        <field name="model">agriculture.brand</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="axdoo_agriculture.agriculture_brand_view_filter" model="ir.ui.view">
+        <field name="name">agriculture.brand.view.filter</field>
+        <field name="model">agriculture.brand</field>
+        <field name="priority" eval="1"/>
+        <field name="arch" type="xml">
+            <search string="Search Brand">
+                <group expand="0" string="Group By">
+                    <filter string="Name" name="name" context="{'group_by': 'name'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="agriculture_brand_action" model="ir.actions.act_window">
+        <field name="name">Brand</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">agriculture.brand</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id"
+               ref="agriculture_brand_view_tree"/>
+        <field name="search_view_id"
+               ref="agriculture_brand_view_filter"/>
+    </record>
+
+</odoo>

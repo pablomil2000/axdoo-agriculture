@@ -8,6 +8,7 @@
             <field name="arch" type="xml">
                 <xpath expr="//field[@name='order_line']//tree//field[@name='product_uom_qty']" position="after">
                     <field name="agriculture_format_id" options="{'no_create': True}"/>
+                    <field name="agriculture_brand_id" options="{'no_create': True}"/>
                 </xpath>
            </field>
         </record>

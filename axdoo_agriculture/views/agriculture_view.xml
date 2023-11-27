@@ -22,6 +22,11 @@
                   action="agriculture_format_action"
                   sequence="2"/>
 
+        <menuitem id="agriculture_brand_menu"
+                  name="Brand"
+                  action="agriculture_brand_action"
+                  sequence="3"/>
+
     </menuitem>
 
 </odoo>
