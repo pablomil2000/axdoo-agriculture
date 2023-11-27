@@ -13,8 +13,5 @@ class SaleOrderLine(models.Model):
     agriculture_format_id = fields.Many2one(
         comodel_name="agriculture.format",
         string="Format",
+        domain="[('company_id', '=', company_id)]",
     )
-
-
-
-
