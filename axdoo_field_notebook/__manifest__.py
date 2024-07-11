@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Axdoo Field Notebook',
-    'version': '15.0.1.0.0',
+    'version': '16.0.1.0.0',
     'category': 'Tools',
     'summary': 'Centralize agriculture field notebooks',
     'description': '''
