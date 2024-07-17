@@ -75,11 +75,11 @@ class MailThread(models.AbstractModel):
 
     @api.returns("mail.message", lambda value: value.id)
     def _create_message(self, *,
-                             body="", subject=None, message_type="notification",
-                             email_from=None, author_id=None, parent_id=False,
-                             subtype_xmlid=None, subtype_id=False, partner_ids=None,
-                             attachments=None, attachment_ids=None,
-                             add_sign=True, record_name=False,
+                            body="", subject=None, message_type="notification",
+                            email_from=None, author_id=None, parent_id=False,
+                            subtype_xmlid=None, subtype_id=False, partner_ids=None,
+                            attachments=None, attachment_ids=None,
+                            add_sign=True, record_name=False,
                              **kwargs):
         """
         The method to prepare lost message and create it.
