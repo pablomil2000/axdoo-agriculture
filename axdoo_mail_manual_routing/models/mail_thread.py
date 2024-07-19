@@ -22,17 +22,17 @@ class MailThread(models.AbstractModel):
                 thread_id=thread_id, custom_values=custom_values
             )
         except ValueError:
-            
+
             print("*"*80)
             print("ValueError")
             print("*"*80)
-            
+
             parent_id = None
             user_id = self._get_email_to_user(message_dict)
 
+
             print("*"*80)
             print("user_id", user_id)
-            print("user_id.partner_id", user_id.partner_id)
             print("*"*80)
 
             if not user_id:
@@ -51,16 +51,19 @@ class MailThread(models.AbstractModel):
 
             if not parent_id:
                 return
-
-            if parent_id:
+            else:
                 message_dict.update({
                     "model": "res.partner",
                     "res_id": parent_id.id,
                 })
 
-            self._create_notification(user_id, parent_id)
+            print("*"*80)
+            print("message_dict", message_dict)
+            print("*"*80)
 
-            self._create_message(**message_dict)
+            # self._create_notification(user_id, parent_id)
+
+            self._create_message(user_id, parent_id, **message_dict)
 
         return res
 
@@ -78,59 +81,55 @@ class MailThread(models.AbstractModel):
             })],
         })
 
-    @api.returns("mail.message", lambda value: value.id)
-    def _create_message(self, *,
-                            body="", subject=None, message_type="notification",
-                            email_from=None, author_id=None, parent_id=False,
-                            subtype_xmlid=None, subtype_id=False, partner_ids=None,
-                            attachments=None, attachment_ids=None,
-                            add_sign=True, record_name=False,
-                             **kwargs):
-        """
-        The method to prepare lost message and create it.
-        It represents a modified copy of message_post
-        """
-        msg_kwargs = dict((key, val) for key, val in kwargs.items() if key in self.env["mail.message"]._fields)
-        author_id, email_from = self._message_compute_author(author_id, email_from, raise_exception=True)
-        if subtype_xmlid:
-            subtype_id = self.env["ir.model.data"]._xmlid_to_res_id(subtype_xmlid)
-        if not subtype_id:
-            subtype_id = self.env["ir.model.data"]._xmlid_to_res_id("mail_mt_note")
 
-        values = dict(msg_kwargs)
-        values.update({
-            "author_id": author_id,
-            "email_from": email_from,
-            "body": body,
-            "subject": subject or False,
-            "message_type": message_type,
-            "parent_id": parent_id,
-            "subtype_id": subtype_id,
-            "partner_ids": set(partner_ids or []),
-            "add_sign": add_sign,
-            "record_name": record_name,
-        })
+    def _create_message(self, user_id, parent_id, **message_dict):
 
-        attachments = attachments or []
-        attachment_ids = attachment_ids or []
-        attachment_values = self._message_post_process_attachments(attachments, attachment_ids, values)
-        values.update(attachment_values)
-        message_id = self._message_create(values)
-        return message_id
+        print("*"*80)
+        print("_create_message")
+        print("-"*80)
+        print("user_id", user_id)
+        print("-"*80)
+        print("parent_id", parent_id)
+        print("*"*80)
+
+
+        values = {
+            'body': message_dict.get('body'),
+            'author_id': parent_id.id
+        }
+
+        try:
+
+            attachments = attachments or []
+            attachment_ids = attachment_ids or []
+            attachment_values = self._message_post_process_attachments(attachments, attachment_ids, values)
+            values.update(attachment_values)
+
+        except Exception:
+            pass
+
+        print("|"*80)
+        print("values", values)
+        print("|"*80)
+
+
+
+        message = parent_id.message_post(values)
+
+        return message
+
 
     @api.model
     def _get_email_to_user(self, message_dict):
         email_to = message_dict.get("to")
 
-        print("*"*80)
-        print("email_to", email_to)
-        print("*"*80)
-
         if not email_to:
             return None
-        email_to = email_to.split('<')[-1].split('>')[0]
+
         user_id = self.env['res.users'].sudo().search([
-            ('email', '=', email_to)], limit=1)
+            ('login', '=', 'admin')
+        ], limit=1)
+
         return user_id
 
     @api.model
