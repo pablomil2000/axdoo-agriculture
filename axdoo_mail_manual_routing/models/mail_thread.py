@@ -22,6 +22,11 @@ class MailThread(models.AbstractModel):
                 thread_id=thread_id, custom_values=custom_values
             )
         except ValueError:
+            
+            print("*"*80)
+            print("ValueError")
+            print("*"*80)
+            
             parent_id = None
             user_id = self._get_email_to_user(message_dict)
 
